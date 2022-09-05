@@ -12,8 +12,8 @@
 <br>
 <a href="https://j45bongsik.github.io/ifcom/09_현대오일뱅크/oilbank/build/html/대시보드.html">09_현대오일뱅크 열기</a>
 <br>
-<a href="https://j45bongsik.github.io/ifcom/15_kgeo입지분석시스템/kgeop/build/html/대시보드.html">09_현대오일뱅크 열기</a>
+<a href="https://j45bongsik.github.io/ifcom/15_kgeo입지분석시스템/kgeop/build/html/대시보드.html">15_kgeo입지분석시스템 열기</a>
 <br>
-<a href="https://j45bongsik.github.io/ifcom/18_KLIS부동산개발업/부동산개발업/build/html/대시보드.html">09_현대오일뱅크 열기</a>
+<a href="https://j45bongsik.github.io/ifcom/18_KLIS부동산개발업/부동산개발업/build/html/대시보드.html">18_KLIS부동산개발업 열기</a>
 
 
