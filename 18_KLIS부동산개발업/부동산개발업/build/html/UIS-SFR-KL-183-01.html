@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="">
+<meta name="description" content="">
+<meta property="og:image" content="">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:url" content="">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="stylesheet" href="../lib/swiper/css/swiper.css">
+<link rel="stylesheet" href="../lib/jquery-ui.css">
+<link rel="stylesheet" href="../lib/jqGrid-4.7.1/css/ui.jqgrid.css">
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/jqGridCustom.css">
+<script src="../lib/jquery-1.12.4.js"></script>
+<script src="../lib/jquery-ui.js"></script>
+<script src="../lib/jqGrid-4.7.1/js/minified/jquery.jqGrid.min.js"></script>
+<script src="../lib/swiper/js/swiper.js"></script>
+<script src="../js/ui.js"></script>
+<script src="../js/popup.js"></script>
+<script src="../js/jqGrid.js"></script>
+
+ 
+    <title>KLIS 부동산개발업</title>
+</head>
+<body>
+    <!-- wrap -->
+    <div id="wrap" class="">
+        <!-- container -->
+        <main class="container">
+            <!-- left -->
+            <div class="left">
+                <!-- leftInner -->
+                <div class="leftInner">
+                    <!-- logoArea -->
+                    <div class="logoArea">
+                        <h1>
+                            <a class="logo" href="#" title="K-Geo 플랫폼">
+                                <img src="../images/common/logo.png" alt="K-Geo 플랫폼 로고">
+                            </a>
+                            <a class="logo" href="#" title="KLIS">
+                                <img src="../images/common/logo-KLIS.png" alt="KLIS 로고">
+                            </a>
+                        </h1>
+                        <span class="logoTit">부동산개발업</span>
+                    </div>
+                    <!-- //logoArea -->
+                
+                    <!-- loginArea -->
+                    <article class="loginArea">
+                        <!-- inner -->
+                        <div class="inner">
+                            <div class="userInfoArea">
+                                <span class="userAuth">
+                                    <strong>시도사용자</strong>
+                                </span>
+                                <span class="areaName">경상북도(ED)
+                                    <span>님</span>
+                                </span>
+                            </div>
+                            <div class="btnArea">
+                                <button type="button" class="btnLogin">
+                                    <span>로그아웃</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- //inner -->
+                    </article>
+                    <!-- //loginArea -->
+                </div>
+                <!-- //leftInner -->
+
+                <!-- lnb -->
+                <nav class="lnb">
+                    <ul class="dep1 overflow-y">
+                        <li class="registManage lnbIco01">
+                            <a href="javascript:void(0)">
+                                <span class="dep1Name">현황통계</span>
+                            </a>
+                            <ul class="dep2">
+                                <li>
+                                    <a href="javascript:void(0)">사업실적 현황</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">등록말소 현황</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">등록취소 현황</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">행정처분 현황</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">과태료처분 현황</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">상속 현황</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">양도 현황</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">합병 현황</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">폐업 현황</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="registManage lnbIco02 active">
+                            <a href="javascript:void(0)">
+                                <span class="dep1Name">개발업 통계</span>
+                            </a>
+                            <ul class="dep2" style="display: block;">
+                                <li class="active">
+                                    <a href="javascript:void(0)">등록사업자 현황</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">사무실 현황</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">자본금 현황</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">전문인력 보유현황</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">년도별/지역별 통계</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">년도별/용도별 통계</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">등록업체 실적 순위</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">등록업체 자본금 순위</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">위탁업무 통계</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">부정행위 통계</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="registManage lnbIco03">
+                            <a href="javascript:void(0)">
+                                <span class="dep1Name">시계열 통계</span>
+                            </a>
+                            <ul class="dep2">
+                                <li>
+                                    <a href="javascript:void(0)">사업실적현황(총괄)</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">사업실적현황(년도별)</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">행정처분현황(년도별)</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">전문인력증감현황(전년도대비)</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">부동산개발업현황</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">재무정보 통계</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">행정처분 통계</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="registManage lnbIco04">
+                            <a href="javascript:void(0)">
+                                <span class="dep1Name">현황 조회</span>
+                            </a>
+                            <ul class="dep2">
+                                <li>
+                                    <a href="javascript:void(0)">전국사업자 조회</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">전국임원 조회</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">전국전문인력 조회</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">건축물 인허가 조회</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">전출입이전관리내역조회</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">수수료 조회</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- //lnb -->
+            </div>
+            <!-- //left -->
+
+            <!-- right -->
+            <div class="right">
+                <!-- headWrap -->
+                <div class="headWrap">
+                    <!-- gnb -->
+                    <div class="gnb">
+                        <ul>
+                            <li>
+                                <a href="#">민원대행</a>
+                            </li>
+                            <li>
+                                <a href="#">신청신고</a>
+                            </li>
+                            <li>
+                                <a href="#">등록관리</a>
+                            </li>
+                            <li>
+                                <a href="#">사업실적/재무정보</a>
+                            </li>
+                            <li class="active">
+                                <a href="#">현황/통계</a>
+                            </li>
+                            <li>
+                                <a href="#">서식출력</a>
+                            </li>
+                            <li>
+                                <a href="#">업무관리</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //gnb -->
+
+                    <!-- util -->
+                    <article class="util">
+                        <ul class="menu">
+                            <li>
+                                <a href="javascript:void(0)">유지관리홈페이지</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">원격지원</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">사이트안내</a>
+                            </li>
+                        </ul>
+                        <div class="btnArea">
+                            <button type="button" class="scale btnScaleUp" title="크기 확대">
+                                <span class="hidden">크기 확대</span>
+                            </button>
+                            <button type="button" class="scale btnScaleDown" title="크기 축소">
+                                <span class="hidden">크기 축소</span>
+                            </button>
+                        </div>
+                    </article>
+                    <!-- //util -->
+                </div>
+                <!-- //headWrap -->
+                <!-- content -->
+                <div id="content">
+                    <h2 class="hidden">본문 영역</h2>
+
+                    <!-- contArea -->
+                    <div class="contArea">
+                        <!-- titArea -->
+                        <div class="titArea">
+                            <h3 class="titPage mrA">
+                                <strong>등록사업자 현황</strong>
+                            </h3>
+
+                            <div class="flex col acfe">
+                                <!-- breadCrumb -->
+                                <div class="breadCrumb">
+                                    <ul>
+                                        <li class="home">
+                                            <a href="javascript:void(0)">
+                                                <span class="hidden">홈</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">현황/통계</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">개발업 통계</a>
+                                        </li>
+                                        <li class="current">
+                                            <a href="javascript:void(0)">등록사업자 현황</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- //breadCrumb -->
+
+                                <!-- btnArea -->
+                                <div class="btnArea">
+                                    <button type="button" class="btn type01 bgPrimary btnHelp" title="도움말">
+                                        <span>도움말</span>
+                                    </button>
+                                </div>
+                                <!-- btnArea -->
+                            </div>
+                        </div>
+                        <!-- //titArea -->
+
+                        <!-- boardArea -->
+                        <article class="boardArea">
+                            <!-- inner -->
+                            <div class="inner">
+
+                                <!-- secContainer -->
+                                <section class="secContainer">
+                                    <!-- titSecBox -->
+                                    <div class="titSecBox">
+                                        <h4 class="tit arrowBullet">
+                                            <strong>등록사업자 현황통계</strong>
+                                        </h4>
+                                        <!-- <p class="desc">※ 부동산개발업등록정보를 모두 입력하고 [저장]버튼을 클릭하여 (신고)기본정보를 저장합니다.</p> -->
+                                        <div class="btnArea">
+                                            <button type="button" class="btn type05 sm2 bgGray4">
+                                                <span>엑셀저장</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- //titSecBox -->
+
+                                    <!-- tableContainer -->
+                                    <article class="tableContainer">
+                                        <!-- table -->
+                                        <div class="table">
+                                            <table>
+                                                <caption>등록사업자 현황 통계 게시물로 출력물제목, 시도, 시군구, 등록년월, 등록상태 등의 정보를 제공합니다.
+                                                </caption>
+                                                <colgroup>
+                                                    <col style="width:160px;">
+                                                    <col style="width:382px;">
+                                                    <col style="width:165px;">
+                                                    <col style="width:382px;">
+                                                    <col style="width:160px;">
+                                                    <col style="width:auto;">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <label for="s01">출력물제목</label>
+                                                        </th>
+                                                        <td>
+                                                            <select id="s01">
+                                                                <option value="">지역</option>
+                                                            </select>
+                                                        </td>
+                                                        <th scope="row">
+                                                            <label for="s02">시도</label>
+                                                        </th>
+                                                        <td>
+                                                            <select  id="s02">
+                                                                <option value="">전체</option>
+                                                            </select>
+                                                        </td>
+                                                        <th scope="row">
+                                                            <label for="s03">시군구</label>
+                                                        </th>
+                                                        <td>
+                                                            <select id="s03">
+                                                                <option value="">전체</option>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <label for="s04">등록년월</label>
+                                                        </th>
+                                                        <td>
+                                                            <div class="inputGroup">
+                                                                <div class="inputBox" style="flex:1;">
+                                                                    <select id="s04" title="등록 년도">
+                                                                        <option value="">2022</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="inputBox" style="flex:1;">
+                                                                    <select title="등록 월">
+                                                                        <option value="">06</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <th scope="row">
+                                                            <label for="s05">등록상태</label>
+                                                        </th>
+                                                        <td colspan="3">
+                                                            <select id="s05" style="width:352px;">
+                                                                <option value="">전체</option>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            
+                                        </div>
+                                        <!-- //table -->
+                                    </article>
+                                    <!-- //tableContainer -->
+                                    <!-- btnArea -->
+                                    <div class="btnArea jc">
+                                        <button type="button" class="btn type02 bgGray">
+                                            <span>초기화</span>
+                                        </button>
+                                        <button type="button" class="btn wide bgPrimary2 btnSearch">
+                                            <span>검색</span>
+                                        </button>
+                                    </div>
+                                    <!-- //btnArea -->
+                                </section>
+                                <!-- //secContainer -->
+
+                                <!-- secContainer -->
+                                <section class="secContainer" style="margin-top: 29px;">
+                                    <div class="resultContainer">
+                                        <div class="resultArea">
+                                            <span class="numOfCase">총<em>2775</em>건</span>
+                                            <p class="pages">(1 of 278 pages)</p>
+                                        </div> 
+                                    </div>
+
+                                    <!-- tableContainer -->
+                                    <article class="tableContainer">
+                                        <!-- table -->
+                                        <div class="table column hover overflow-y" style="max-height: 500px;">
+                                            <table id="gridTable16"></table>
+                                        </div>
+                                        <!-- //table -->
+                                    </article>
+                                    <!-- //tableContainer -->
+                                    <div class="pagination">
+                                        <button type="button" class="btnFirst" title="맨앞으로">
+                                            <span class="hidden">맨앞으로</span>
+                                            <svg width="13.121" height="13.414" viewBox="0 0 13.121 13.414">
+                                                <g id="icon" transform="translate(1.414 0.707)">
+                                                  <path id="arrow" d="M1206,1446l-6,6,6,6" transform="translate(-1195 -1446)" fill="none" stroke="#bbb" stroke-width="2"></path>
+                                                  <path id="arrow-2" data-name="arrow" d="M1206,1446l-6,6,6,6" transform="translate(-1200 -1446)" fill="none" stroke="#bbb" stroke-width="2"></path>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                        <button type="button" class="btnPrev" title="이전페이지">
+                                            <span class="hidden">이전페이지</span>
+                                            <svg width="8.121" height="13.414" viewBox="0 0 8.121 13.414">
+                                                <path id="arrow-3" d="M1206,1446l-6,6,6,6" transform="translate(-1198.586 -1445.293)" fill="none" stroke="#bbb" stroke-width="2"></path>
+                                            </svg>
+                                        </button>
+                                        <a href="#" class="active" title="1">1</a>
+                                        <a href="#" title="2">2</a>
+                                        <a href="#" title="3">3</a>
+                                        <a href="#" title="4">4</a>
+                                        <a href="#" title="5">5</a>
+                                        <a href="#" title="6">6</a>
+                                        <a href="#" title="7">7</a>
+                                        <a href="#" title="8">8</a>
+                                        <a href="#" title="9">9</a>
+                                        <a href="#" title="10">10</a>
+                                        <button type="button" class="btnNext" title="다음페이지">
+                                            <span class="hidden">다음페이지</span>
+                                            <svg width="8.121" height="13.414" viewBox="0 0 8.121 13.414">
+                                                <path id="arrow-4" d="M1200,1446l6,6-6,6" transform="translate(-1199.293 -1445.293)" fill="none" stroke="#bbb" stroke-width="2"></path>
+                                            </svg>
+                                        </button>
+                                        <button type="button" class="btnLast" title="맨뒤로">
+                                            <span class="hidden">맨뒤로</span>
+                                            <svg width="13.121" height="13.414" viewBox="0 0 13.121 13.414">
+                                                <g id="icon-2" transform="translate(-16.293 -13.293)">
+                                                  <path id="arrow-5" d="M1200,1446l6,6-6,6" transform="translate(-1183 -1432)" fill="none" stroke="#bbb" stroke-width="2"></path>
+                                                  <path id="arrow-6" data-name="arrow" d="M1200,1446l6,6-6,6" transform="translate(-1178 -1432)" fill="none" stroke="#bbb" stroke-width="2"></path>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                </section>
+                                <!-- //secContainer -->
+                            </div>
+                            <!-- //inner -->
+                        </article>
+                        <!-- //boardArea -->
+                    </div>
+                    <!-- //contArea -->
+                </div>
+                <!-- //content -->
+            </div>
+            <!-- //right -->
+        </main>
+        <!-- //container -->
+    </div>
+    <!-- //wrap -->
+</body>
+</html>

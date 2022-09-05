@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="">
+<meta name="description" content="">
+<meta property="og:image" content="">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:url" content="">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="stylesheet" href="../lib/swiper/css/swiper.css">
+<link rel="stylesheet" href="../lib/jquery-ui.css">
+<link rel="stylesheet" href="../lib/jqGrid-4.7.1/css/ui.jqgrid.css">
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/jqGridCustom.css">
+<script src="../lib/jquery-1.12.4.js"></script>
+<script src="../lib/jquery-ui.js"></script>
+<script src="../lib/jqGrid-4.7.1/js/minified/jquery.jqGrid.min.js"></script>
+<script src="../lib/swiper/js/swiper.js"></script>
+<script src="../js/ui.js"></script>
+<script src="../js/popup.js"></script>
+<script src="../js/jqGrid.js"></script>
+
+ 
+    <title>KLIS 부동산개발업</title>
+</head>
+<body>
+    <!-- wrap -->
+    <div id="wrap" class="">
+        <!-- container -->
+        <main class="container">
+            <!-- left -->
+            <div class="left">
+                <!-- leftInner -->
+                <div class="leftInner">
+                    <!-- logoArea -->
+                    <div class="logoArea">
+                        <h1>
+                            <a class="logo" href="#" title="K-Geo 플랫폼">
+                                <img src="../images/common/logo.png" alt="K-Geo 플랫폼 로고">
+                            </a>
+                            <a class="logo" href="#" title="KLIS">
+                                <img src="../images/common/logo-KLIS.png" alt="KLIS 로고">
+                            </a>
+                        </h1>
+                        <span class="logoTit">부동산개발업</span>
+                    </div>
+                    <!-- //logoArea -->
+                
+                    <!-- loginArea -->
+                    <article class="loginArea">
+                        <!-- inner -->
+                        <div class="inner">
+                            <div class="userInfoArea">
+                                <span class="userAuth">
+                                    <strong>부동산개발협회</strong>
+                                </span>
+                                <span class="areaName">부동산개발업_협회
+                                    <span>님</span>
+                                </span>
+                            </div>
+                            <div class="btnArea">
+                                <button type="button" class="btnLogin">
+                                    <span>로그아웃</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- //inner -->
+                    </article>
+                    <!-- //loginArea -->
+                </div>
+                <!-- //leftInner -->
+
+                <!-- lnb -->
+                <nav class="lnb">
+                    <ul class="dep1 overflow-y">
+                        <li class="new noDepth">
+                            <a href="javascript:void(0)">
+                                <span class="dep1Name">신청신고 통합조회</span>
+                            </a>
+                            <!-- <ul class="dep2">
+                                <li>
+                                    <a href="javascript:void(0)">토지거래허가</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">허가증교부내역관리</a>
+                                </li>
+                            </ul> -->
+                        </li>
+                        <li class="write active">
+                            <a href="javascript:void(0)">
+                                <span class="dep1Name">이관정보 관리</span>
+                            </a>
+                            <ul class="dep2" style="display: block;">
+                                <li class="active">
+                                    <a href="javascript:void(0)">전입전출신고</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">양도신고</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">법인합병신고</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- //lnb -->
+            </div>
+            <!-- //left -->
+
+            <!-- right -->
+            <div class="right">
+                <!-- headWrap -->
+                <div class="headWrap">
+                    <!-- gnb -->
+                    <div class="gnb">
+                        <ul>
+                            <li>
+                                <a href="#">민원대행</a>
+                            </li>
+                            <li class="active">
+                                <a href="#">신청신고</a>
+                            </li>
+                            <li>
+                                <a href="#">등록관리</a>
+                            </li>
+                            <li>
+                                <a href="#">사업실적/재무정보</a>
+                            </li>
+                            <li>
+                                <a href="#">현황/통계</a>
+                            </li>
+                            <li>
+                                <a href="#">서식출력</a>
+                            </li>
+                            <li>
+                                <a href="#">업무관리</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //gnb -->
+
+                    <!-- util -->
+                    <article class="util">
+                        <ul class="menu">
+                            <li>
+                                <a href="javascript:void(0)">유지관리홈페이지</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">원격지원</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">사이트안내</a>
+                            </li>
+                        </ul>
+                        <div class="btnArea">
+                            <button type="button" class="scale btnScaleUp" title="크기 확대">
+                                <span class="hidden">크기 확대</span>
+                            </button>
+                            <button type="button" class="scale btnScaleDown" title="크기 축소">
+                                <span class="hidden">크기 축소</span>
+                            </button>
+                        </div>
+                    </article>
+                    <!-- //util -->
+                </div>
+                <!-- //headWrap -->
+                <!-- content -->
+                <div id="content">
+                    <h2 class="hidden">본문 영역</h2>
+
+                    <!-- contArea -->
+                    <div class="contArea">
+                        <!-- titArea -->
+                        <div class="titArea">
+                            <h3 class="titPage mrA">
+                                <strong>전입전출신고</strong>
+                            </h3>
+
+                            <div class="flex col acfe">
+                                <!-- breadCrumb -->
+                                <div class="breadCrumb">
+                                    <ul>
+                                        <li class="home">
+                                            <a href="javascript:void(0)">
+                                                <span class="hidden">홈</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">신청신고</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">이관정보관리</a>
+                                        </li>
+                                        <li class="current">
+                                            <a href="javascript:void(0)">전입전출신고</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- //breadCrumb -->
+
+                                <!-- btnArea -->
+                                <div class="btnArea">
+                                    <button type="button" class="btn type01 bgPrimary btnHelp" title="도움말">
+                                        <span>도움말</span>
+                                    </button>
+                                </div>
+                                <!-- btnArea -->
+                            </div>
+                        </div>
+                        <!-- //titArea -->
+
+                        <!-- boardArea -->
+                        <article class="boardArea">
+                            <!-- inner -->
+                            <div class="inner">
+
+                                <!-- secContainer -->
+                                <section class="secContainer">
+                                    <!-- titSecBox -->
+                                    <div class="titSecBox">
+                                        <h4 class="tit arrowBullet">
+                                            <strong>(신고)기본정보</strong>
+                                        </h4>
+                                        <!-- <p class="desc">※ 부동산개발업등록정보를 모두 입력하고 [저장]버튼을 클릭하여 (신고)기본정보를 저장합니다.</p> -->
+                                        <div class="btnArea">
+                                            <button type="button" class="btn type05 sm2 bgGray">
+                                                <span>목록</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- //titSecBox -->
+
+                                    <!-- tableContainer -->
+                                    <article class="tableContainer">
+                                        <!-- table -->
+                                        <div class="table">
+                                            <table>
+                                                <caption>신고 기본정보 게시물이며 민원관리번호, 등록번호, 상호, 대표자, 법인구분, 주민(법인)등록번호, 첨부서류제출방법, 신청일, 신청인, 담당자, 접수일, 접수번호, 진행상태, 최초등록구분, 최초등록ID/이름, 처리구분, 비고 등의 정보를 제공합니다.</caption>
+                                                <colgroup>
+                                                    <col style="width: 150px;"/>
+                                                    <col style="width: 382px;"/>
+                                                    <col style="width: 164px;"/>
+                                                    <col style="width: 382px;"/>
+                                                    <col style="width: 160px;"/>
+                                                    <col style="width: auto;"/>
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <label for="i01">민원관리번호</label>
+                                                        </th>
+                                                        <td>
+                                                            <input type="text" id="i01" disabled class="disabled">
+                                                        </td>
+                                                        <th scope="row">
+                                                            <label for="i02">등록번호</label>
+                                                        </th>
+                                                        <td colspan="3">
+                                                            <input type="text" id="i02" disabled class="disabled" style="width: 352px;">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <label for="i03">상호</label>
+                                                        </th>
+                                                        <td>
+                                                            <input type="text" id="i03" disabled class="disabled">
+                                                        </td>
+                                                        <th scope="row">
+                                                            <label for="i04">대표자</label>
+                                                        </th>
+                                                        <td colspan="3">
+                                                            <input type="text" id="i04" disabled class="disabled" style="width: 352px;">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <label for="s01">법인구분</label>
+                                                        </th>
+                                                        <td>
+                                                            <select id="s01" disabled class="disabled">
+                                                                <option value="">일반법인</option>
+                                                            </select>
+                                                        </td>
+                                                        <th scope="row">
+                                                            <label for="i05">주민(법인)등록번호</label>
+                                                        </th>
+                                                        <td>
+                                                            <!-- inputGroup -->
+                                                            <div class="inputGroup">
+                                                                <input type="text" id="i05" disabled class="disabled" title="앞번호">
+                                                                <span class="dash">-</span>
+                                                                <input type="text" disabled class="disabled" title="뒷번호">
+                                                            </div>
+                                                            <!-- //inputGroup -->
+                                                        </td>
+                                                        <th scope="row">
+                                                            <label for="s02">첨부서류제출방법</label>
+                                                        </th>
+                                                        <td>
+                                                            <select id="s02" disabled class="disabled">
+                                                                <option value="">방문</option>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <label for="i06">신청일</label>
+                                                        </th>
+                                                        <td>
+                                                            <input type="text" id="i06" disabled class="disabled cal">
+                                                        </td>
+                                                        <th scope="row">
+                                                            <label for="i07">신청인</label>
+                                                        </th>
+                                                        <td>
+                                                            <input type="text" id="i07" disabled class="disabled">
+                                                        </td>
+                                                        <th scope="row">
+                                                            <label for="i08">담당자</label>
+                                                        </th>
+                                                        <td>
+                                                            <input type="text" id="i08" disabled class="disabled">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <label for="i09">접수일</label>
+                                                        </th>
+                                                        <td>
+                                                            <input type="text" id="i09" disabled class="disabled cal">
+                                                        </td>
+                                                        <th scope="row">
+                                                            <label for="i10">접수번호</label>
+                                                        </th>
+                                                        <td>
+                                                            <input type="text" id="i10" disabled class="disabled">
+                                                        </td>
+                                                        <th scope="row">
+                                                            <label for="s03">진행상태</label>
+                                                        </th>
+                                                        <td>
+                                                            <select id="s03" disabled class="disabled">
+                                                                <option value="">완료</option>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <label for="s04">최초등록구분</label>
+                                                        </th>
+                                                        <td>
+                                                            <select id="s04" disabled class="disabled">
+                                                                <option value="">협회</option>
+                                                            </select>
+                                                        </td>
+                                                        <th scope="row">
+                                                            <label for="i11">최초등록 ID / 이름</label>
+                                                        </th>
+                                                        <td>
+                                                            <!-- inputGroup -->
+                                                            <div class="inputGroup">
+                                                                <input type="text" id="i11" disabled class="disabled" title="최초등록 ID">
+                                                                <span class="dash">/</span>
+                                                                <input type="text" disabled class="disabled" title="최초등록 이름">
+                                                            </div>
+                                                            <!-- //inputGroup -->
+                                                        </td>
+                                                        <th scope="row">
+                                                            <label for="s05">처리구분</label>
+                                                        </th>
+                                                        <td>
+                                                            <select id="s05" disabled class="disabled">
+                                                                <option value="">이송</option>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <label for="i12">비고</label>
+                                                        </th>
+                                                        <td colspan="5">
+                                                            <input type="text" id="i12" style="width: 712px;">
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- //table -->
+                                    </article>
+                                    <!-- //tableContainer -->
+                                </section>
+                                <!-- //secContainer -->
+
+                                <!-- secContainer -->
+                                <section class="secContainer" style="">
+                                    <!-- titSecBox -->
+                                    <div class="titSecBox">
+                                        <h4 class="tit arrowBullet">
+                                            <strong>변경사무실</strong>
+                                        </h4>
+                                        <!-- <p class="desc">※ 부동산개발업등록정보를 모두 입력하고 [저장]버튼을 클릭하여 (신고)기본정보를 저장합니다.</p> -->
+                                        
+                                    </div>
+                                    <!-- //titSecBox -->
+
+                                    <!-- tableContainer -->
+                                    <article class="tableContainer">
+                                        <!-- table -->
+                                        <div class="table column hover overflow-x">
+                                            <!-- gridTable -->
+                                            <table id="gridTable05" style="width: 2272px;">
+
+                                            </table>
+                                            <!-- //gridTable -->
+                                        </div>
+                                        <!-- //table -->
+                                    </article>
+                                    <!-- //tableContainer -->
+                                </section>
+                                <!-- //secContainer -->
+                                
+                                <!-- secContainer -->
+                                <section class="secContainer">
+                                    <!-- tabWrap -->
+                                    <div class="tabWrap type01">
+                                        <!-- tabNav -->
+                                        <div class="tabNav">
+                                            <!-- tabList -->
+                                            <ul class="tabList">
+                                                <li class="active">
+                                                    <a href="javascript:void(0)">변경내용</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0)">(신고)첨부서류</a>
+                                                </li>
+                                            </ul>
+                                            <!-- //tabList -->
+                                        </div>
+                                        <!-- //tabNav -->
+
+                                        <!-- tabCont -->
+                                        <div class="tabCont active">
+                                            <!-- titSecBox -->
+                                            <div class="titSecBox type02">
+                                                
+                                            </div>
+                                            <!-- titSecBox -->
+
+                                            <!-- table -->
+                                            <div class="table column hover overflow-x" style="margin-top:0;">
+                                                <!-- gridTable -->
+                                                <table id="gridTable06" style="width: 2272px;">
+                                                    
+                                                </table>
+                                                <!-- //gridTable -->
+                                            </div>
+                                            <!-- //table -->
+
+                                            <!-- titSecBox -->
+                                            <div class="titSecBox">
+                                                <h4 class="tit arrowBullet">
+                                                    <strong>등록요건심사</strong>
+                                                </h4>
+                                                <div class="btnArea">
+                                                    <button type="button" class="btn type05 bgGray4">
+                                                        <span>전입처리</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- //titSecBox -->
+
+                                            <!-- tableContainer -->
+                                            <article class="tableContainer">
+                                                <!-- table -->
+                                                <div class="table column">
+                                                    <table>
+                                                        <caption>등록요건심사 게시물이며 자본금, 전문인력, 임원, 사무실, 비고 등의 정보를 제공합니다.</caption>
+                                                        <colgroup>
+                                                            <col style="width:320px;"/>
+                                                            <col style="width:320px;"/>
+                                                            <col style="width:320px;"/>
+                                                            <col style="width:320px;"/>
+                                                            <col style="width:auto;"/>
+                                                        </colgroup>
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">자본금</th>
+                                                                <th scope="col">전문인력</th>
+                                                                <th scope="col">임원</th>
+                                                                <th scope="col">사무실</th>
+                                                                <th scope="col">비고</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <select id="s06">
+                                                                        <option>적합</option>
+                                                                    </select>
+                                                                        
+                                                                </td>
+                                                                <td>
+                                                                    <select id="s07">
+                                                                        <option>적합</option>
+                                                                    </select>
+                                                                        
+                                                                </td>
+                                                                <td>
+                                                                    <select id="s08">
+                                                                        <option>적합</option>
+                                                                    </select>
+                                                                        
+                                                                </td>
+                                                                <td>
+                                                                    <select id="s09">
+                                                                        <option>적합</option>
+                                                                    </select>
+                                                                        
+                                                                </td>
+                                                                <td>
+                                                                    <input type="text" disabled="" class="disabled" title="비고">
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- //table -->
+                                            </article>
+                                            <!-- //tableContainer -->
+
+
+                                        </div>
+                                        <!-- //tabCont -->
+
+                                        <!-- tabCont -->
+                                        <div class="tabCont">
+                                            22
+                                        </div>
+                                        <!-- //tabCont -->
+
+                                        <!-- tabCont -->
+                                        <div class="tabCont">
+                                            33
+                                        </div>
+                                        <!-- //tabCont -->
+                                    </div>
+                                    <!-- //tabWrap -->
+                                </section>
+                                <!-- //secContainer -->
+
+
+                            </div>
+                            <!-- //inner -->
+                        </article>
+                        <!-- //boardArea -->
+                    </div>
+                    <!-- //contArea -->
+                </div>
+                <!-- //content -->
+            </div>
+            <!-- //right -->
+        </main>
+        <!-- //container -->
+
+        <!-- popup -->
+        <!-- disply: block 삭제후 사용 -->
+        <div class="popup uiDrag popup02" style="display: block; width: 932px;">
+            <!-- head -->
+            <div class="head">
+                <p class="popTit">전입처리</p>
+                <button type="button" class="btnClose">
+                    <span class="hidden">팝업 닫기</span>
+                </button>
+            </div>
+            <!-- //head -->
+            <!-- cont -->
+            <div class="cont type02 dragCancel">
+                <!-- secContainer -->
+                <section class="secContainer">
+                    <div class="titSecBox type03">
+                        <h5 class="tit">
+                            <strong>전출사업자정보</strong>
+                        </h5>
+                    </div>
+
+                    <!-- tableContainer -->
+                    <article class="tableContainer">
+                        <!-- table -->
+                        <div class="table type02">
+                            <table>
+                                <caption>전출사업자정보 게시물이며 등록시도, 이송지역(시도), 부동산개발업 등록정보, 등록일자, 말소일자, 국적,소속국가명, 등록상태, 처리상태, 자본금, 출자금액, 출자비율 등의 정보를 제공합니다.</caption>
+                                <colgroup>
+                                    <col style="width: 120px;"/>
+                                    <col style="width: 177px;"/>
+                                    <col style="width: 120px;"/>
+                                    <col style="width: 177px;"/>
+                                    <col style="width: 120px;"/>
+                                    <col style="width: auto;"/>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+
+                                        <th scope="row">
+                                            <label for="pops01">등록시도</label>
+                                        </th>
+                                        <td>
+                                            <select id="pops01" disabled class="disabled">
+                                                <option>경상북도</option>
+                                            </select>
+                                        </td>
+                                        <th scope="row">
+                                            <label for="pops02">이송지역(시도)</label>
+                                        </th>
+                                        <td colspan="3">
+                                            <select id="pops02" disabled class="disabled" style="width: 157px;">
+                                                <option>전라남도</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="popi01" class="">부동산개발업<br />등록정보</label>
+                                        </th>
+                                        <td>
+                                            <input type="text" id="popi01" disabled class="disabled">
+                                        </td>
+                                        <th scope="row">
+                                            <label for="popi02">등록일자</label>
+                                        </th>
+                                        <td>
+                                            <input type="text" id="popi02" class="cal">
+                                        </td>
+                                        <th scope="row">
+                                            <label for="popi03">말소일자</label>
+                                        </th>
+                                        <td>
+                                            <input type="text" disabled id="popi03" class="disabled">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="pops03">국적.소속국가명</label>
+                                        </th>
+                                        <td>
+                                            <select id="pops03" disabled class="disabled">
+                                                <option>대한민국</option>
+                                            </select>
+                                        </td>
+                                        <th scope="row">
+                                            <label for="popi04">등록상태</label>
+                                        </th>
+                                        <td>
+                                            <input type="text" id="popi04" disabled class="disabled">
+                                        </td>
+                                        <th scope="row">
+                                            <label for="popi05">처리상태</label>
+                                        </th>
+                                        <td>
+                                            <input type="text" id="popi05" disabled class="disabled">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="popi06">자본금</label>
+                                        </th>
+                                        <td>
+                                            <div class="inputGroup">
+                                                <input type="text" id="popi06">
+                                                <span class="ea type02">만원</span>
+                                            </div>
+                                        </td>
+
+                                        <th scope="row">
+                                            <label for="popi07">출자금액</label>
+                                        </th>
+                                        <td>
+                                            <div class="inputGroup">
+                                                <input type="text" id="popi07">
+                                                <span class="ea type02">만원</span>
+                                            </div>
+                                        </td>
+                                        <th scope="row">
+                                            <label for="popi08">출자비율</label>
+                                        </th>
+                                        <td>
+                                            <div class="inputGroup">
+                                                <input type="text" id="popi08">
+                                                <span class="ea type02">%</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- //table -->
+                    </article>
+                    <!-- //tableContainer -->
+
+                    <div class="titSecBox type03">
+                        <h5 class="tit">
+                            <strong>전입사업자정보</strong>
+                        </h5>
+                    </div>
+
+                    <!-- tableContainer -->
+                    <article class="tableContainer">
+                        <!-- table -->
+                        <div class="table type02">
+                            <table>
+                                <caption>전입사업자정보 게시물이며 등록번호, 등록일, 상호, 대표자, 법인구분, 주민법인등록번호, 첨부서류제출방법, 담당자, 등록상태, 신청일, 신청인명, 처리상태 등의 정보를 제공합니다.</caption>
+                                <colgroup>
+                                    <col style="width: 120px;"/>
+                                    <col style="width: 177px;"/>
+                                    <col style="width: 120px;"/>
+                                    <col style="width: 177px;"/>
+                                    <col style="width: 120px;"/>
+                                    <col style="width: auto;"/>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="popi09">등록번호</label>
+                                        </th>
+                                        <td colspan="3">
+                                            <!-- inputGroup -->
+                                            <div class="inputGroup">
+                                                <input type="text" id="popi09">
+                                                <button type="button" class="btn type03 bgPrimary" style="margin-left: 10px;" title="전화번호 관리">
+                                                    <span>등록번호 생성</span>
+                                                </button>
+                                            </div>
+                                            <!-- //inputGroup -->
+                                        </td>
+                                        <th scope="row">
+                                            <label for="popi10">등록일</label>
+                                        </th>
+                                        <td>
+                                            <input type="text" id="popi10" class="cal"> 
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="popi11">상호</label>
+                                        </th>
+                                        <td>
+                                            <input type="text" id="popi11" disabled class="disabled">
+                                        </td>
+                                        <th scope="row">
+                                            <label for="popi12">대표자</label>
+                                        </th>
+                                        <td colspan="3">
+                                            <input type="text" id="popi12" disabled class="disabled" style="width: 157px;">
+                                        </td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="popi13">법인구분</label>
+                                        </th>
+                                        <td>
+                                            <input type="text" id="popi13" disabled class="disabled">
+                                        </td>
+                                        <th scope="row">
+                                            <label for="popi14">주민법인등록번호</label>
+                                        </th>
+                                        <td>
+                                            <input type="text" id="popi14" disabled class="disabled">
+                                        </td>
+                                        <th scope="row">
+                                            <label for="pops04">첨부서류제출방법</label>
+                                        </th>
+                                        <td>
+                                            <select id="pops04">
+                                                <option value="">option</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="popi15">담당자</label>
+                                        </th>
+                                        <td colspan="3">
+                                            <input type="text" id="popi15" disabled class="disabled" style="width: 157px;">
+                                        </td>
+                                        <th scope="row">
+                                            <label for="pops05">등록상태</label>
+                                        </th>
+                                        <td>
+                                            <select id="pops05">
+                                                <option value="">option</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="popi16">신청일</label>
+                                        </th>
+                                        <td>
+                                            <input type="text" id="popi16" disabled class="disabled">
+                                        </td>
+                                        <th scope="row">
+                                            <label for="popi17">신청인명</label>
+                                        </th>
+                                        <td>
+                                            <input type="text" id="popi17" disabled class="disabled">
+                                        </td>
+                                        <th scope="row">
+                                            <label for="pops06">처리상태</label>
+                                        </th>
+                                        <td>
+                                            <select id="pops06">
+                                                <option value="">option</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- //table -->
+                    </article>
+                    <!-- //tableContainer -->
+                    
+                    <!-- tableContainer -->
+                    <article class="tableContainer">
+                        <!-- tabWrap -->
+                        <div class="tabWrap type01">
+                            <!-- tabNav -->
+                            <div class="tabNav">
+                                <!-- tabList -->
+                                <ul class="tabList">
+                                    <li class="active">
+                                        <a href="javascript:void(0)">변경사무실</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">등록전확인사항<br />조회</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">사업실적</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">과태료</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">행정처분</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">임원</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">전문인력</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">사무실</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">변경이력</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">등록증교부</a>
+                                    </li>
+                                </ul>
+                                <!-- //tabList -->
+                            </div>
+                            <!-- //tabNav -->
+
+                            <!-- tabCont -->
+                            <div class="tabCont active">
+                                <!-- titSecBox -->
+                                <div class="titSecBox type02">
+                                    
+                                </div>
+                                <!-- titSecBox -->
+
+                                <!-- table -->
+                                <div class="table column hover overflow-x" style="margin-top:0;">
+                                    <!-- gridTable -->
+                                    <table id="gridTable07" style="width: 100%;">
+                                        
+                                    </table>
+                                    <!-- //gridTable -->
+                                </div>
+                                <!-- //table -->
+
+                            </div>
+                            <!-- //tabCont -->
+
+                            <!-- tabCont -->
+                            <div class="tabCont">
+                                22
+                            </div>
+                            <!-- //tabCont -->
+
+                            <!-- tabCont -->
+                            <div class="tabCont">
+                                33
+                            </div>
+                            <!-- //tabCont -->
+                        </div>
+                        <!-- //tabWrap -->
+                    </article>
+                    <!-- //tableContainer -->
+
+                    <div class="btnArea jc">
+                        <button type="button" class="btn type04 bgWhite wide">
+                            <span>중복검사</span>
+                        </button>
+                        <button type="button" class="btn type04 bgWine wide">
+                            <span>저장</span>
+                        </button>
+                    </div>
+                </section>
+                <!-- //secContainer --> 
+
+            
+            </div>
+            <!-- //cont -->
+        </div>
+        <!-- //popup -->
+        <div class="dimmed"></div>
+
+    </div>
+    <!-- //wrap -->
+</body>
+</html>
