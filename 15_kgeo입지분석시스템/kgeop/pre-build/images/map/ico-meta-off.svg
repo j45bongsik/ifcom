@@ -1,0 +1,21 @@
+<svg id="메타데이터" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+  <g id="off" transform="translate(-375 -180)">
+    <g id="타원_1089" data-name="타원 1089" transform="translate(375 180)" fill="#fff" stroke="#d8dee3" stroke-width="1">
+      <circle cx="13" cy="13" r="13" stroke="none"/>
+      <circle cx="13" cy="13" r="12.5" fill="none"/>
+    </g>
+    <g id="Icon_feather-database" data-name="Icon feather-database" transform="translate(378.5 184)">
+      <path id="패스_63685" data-name="패스 63685" d="M14.5,4.8c0,.994-2.239,1.8-5,1.8s-5-.806-5-1.8S6.739,3,9.5,3,14.5,3.806,14.5,4.8Z" transform="translate(0 0)" fill="none" stroke="#999" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"/>
+      <path id="패스_63686" data-name="패스 63686" d="M14.5,18c0,1-2.222,1.8-5,1.8s-5-.8-5-1.8" transform="translate(0 -9)" fill="none" stroke="#999" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"/>
+      <path id="패스_63687" data-name="패스 63687" d="M4.5,7.5v8.4c0,1,2.222,1.8,5,1.8s5-.8,5-1.8V7.5" transform="translate(0 -2.7)" fill="none" stroke="#999" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"/>
+    </g>
+  </g>
+  <g id="on" transform="translate(-375 -180)" opacity="0">
+    <circle id="타원_1089-2" data-name="타원 1089" cx="13" cy="13" r="13" transform="translate(375 180)" fill="#353990"/>
+    <g id="Icon_feather-database-2" data-name="Icon feather-database" transform="translate(378.5 184)">
+      <path id="패스_63685-2" data-name="패스 63685" d="M14.5,4.8c0,.994-2.239,1.8-5,1.8s-5-.806-5-1.8S6.739,3,9.5,3,14.5,3.806,14.5,4.8Z" transform="translate(0 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"/>
+      <path id="패스_63686-2" data-name="패스 63686" d="M14.5,18c0,1-2.222,1.8-5,1.8s-5-.8-5-1.8" transform="translate(0 -9)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"/>
+      <path id="패스_63687-2" data-name="패스 63687" d="M4.5,7.5v8.4c0,1,2.222,1.8,5,1.8s5-.8,5-1.8V7.5" transform="translate(0 -2.7)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"/>
+    </g>
+  </g>
+</svg>

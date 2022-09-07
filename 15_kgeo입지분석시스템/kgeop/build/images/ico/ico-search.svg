@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="icon" transform="translate(-12 -11.678)">
+    <rect id="사각형_9209" data-name="사각형 9209" width="20" height="20" transform="translate(12 11.678)" fill="none"/>
+    <path id="search" d="M17.162,15.971,13.987,12.8A5.9,5.9,0,1,0,12.8,13.987l3.174,3.174a.843.843,0,0,0,1.191-1.191Zm-12.1-6.7a4.21,4.21,0,1,1,4.21,4.21A4.21,4.21,0,0,1,5.059,9.269Z" transform="translate(11.625 11.303)" fill="#fff"/>
+  </g>
+</svg>

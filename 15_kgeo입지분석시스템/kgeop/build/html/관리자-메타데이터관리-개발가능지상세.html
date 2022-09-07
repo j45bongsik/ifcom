@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="kgeo플랫폼">
+<meta name="description" content="kgeop플랫폼 입지 분석 시스템">
+
+<!-- 오픈그래프 이미지의 경우 최소한 600 x 315 px은 되어야 하며, 1200 x 630 px을 권장함 -->
+<meta property="og:image" content="">
+<meta property="og:title" content="kgeo플랫폼">
+<meta property="og:description" content="kgeo플랫폼 입지 분석 시스템">
+<meta property="og:url" content="">
+<!-- 다음의 태그는 필수는 아니지만, 포함하는 것을 추천함 -->
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<link rel="stylesheet" href="../lib/swiper/css/swiper.css">
+<link rel="stylesheet" href="../lib/jquery-ui.css">
+<link rel="stylesheet" href="../lib/fullPage.js-2.9.7/fullpage.css" />
+<link rel="stylesheet" href="../css/common.css">
+<script src="../lib/jquery-1.12.4.js"></script>
+<script src="../lib/jquery-ui.js"></script>
+<script src="../lib/swiper/js/swiper.js"></script>
+<script src="../lib/fullPage.js-2.9.7/jquery.fullpage.min.js"></script>
+<script src="../js/ui.js"></script>
+
+<title>K-Geo플랫폼 입지 분석 시스템</title>
+
+
+</head>
+
+<body>
+
+    <div id="wrap" style="height: 100%;">
+        <!--header-->
+        <header id="header">
+            <!--accNav-->
+<div id="accNav">
+    <a href="#container">본문 바로가기</a>
+</div>
+<!--//accNav-->
+        </header>
+        <!--header-->
+
+        <!--container-->
+        <main id="container" style="height: 100%;">
+            <!-- contents -->
+            <div id="contents" class="admin" style="height: 100%;">
+                <!-- menuArea -->
+                <div class="menuArea" style="height: 100%;">
+                    <!-- logoArea -->
+                    <article class="logoArea">
+                        <h3>
+                            <a href="#">
+                                <img src="../images/common/img-logo.png" alt="K-Geo플랫폼 입지 분석 시스템">
+                            </a>
+                        </h3>
+                    </article>
+                    <!-- //logoArea -->
+
+                    <!-- utilArea -->
+                    <article class="utilArea">
+                        <!-- btnArea -->
+                        <div class="btnArea">
+                            <button type="button" class="btn blueCircle">
+                                <span>
+                                    국토교통부 <em>이성준</em>님</button>
+                            </span>
+                            <button type="button" class="btn logout">로그아웃</button>
+                        </div>
+                        <!-- //btnArea -->
+                    </article>
+                    <!-- //utilArea -->
+                    
+                    <!-- lnb -->
+                    <nav id="lnb">
+                        <h2 class="hidden">주요메뉴</h2>
+                        <!-- dep01 -->
+                        <ul class="dep01">
+                            <li>
+                                <a href="#">
+                                    <span>
+                                        관리자 대시보드
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>
+                                        사용자 권한관리
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>
+                                        자료 공유 관리
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>
+                                        자료 보안 관리
+                                    </span>
+                                </a>
+                                <ul class="dep02">
+                                    <li>
+                                        <a href="#">다운로드 이력관리</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">다운로드 권한관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>
+                                        사용자 접속통계
+                                    </span>
+                                </a>
+                                <ul class="dep02">
+                                    <li>
+                                        <a href="#">시스템 접속 현황</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">시스템 접속 통계</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>
+                                        레이어 시점관리
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>
+                                        코드 관리
+                                    </span>
+                                </a>
+                                <ul class="dep02">
+                                    <li>
+                                        <a href="#">분류 코드 관리</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">그룹 코드 관리</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">상세 코드 관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="active">
+                                    <span>
+                                        메타데이터 관리
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>
+                                        추출기준 관리
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>
+                                        평가모델 관리
+                                    </span>
+                                </a>
+                            </li>
+                            
+                    
+                        </ul>
+                        <!-- //dep01 -->
+                    </nav>
+                    <!-- //lnb -->
+
+                    <article class="adminSet">
+                        <a href="#">
+                            <svg data-name="icon / 관리자" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                                <path data-name="패스 15982" d="M0,0H22V22H0Z" fill="none"/>
+                                <path data-name="Icon feather-folder" d="M19,17.3a1.6,1.6,0,0,1-1.6,1.6H4.6A1.6,1.6,0,0,1,3,17.3V6.1A1.6,1.6,0,0,1,4.6,4.5h4l1.6,2.4h7.2A1.6,1.6,0,0,1,19,8.5Z" transform="translate(0.5 -0.5)" fill="none" stroke="#a2a4cf" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                            </svg>
+                            <span>
+                                프로젝트
+                            </span>
+                        </a>
+                    </article>
+                </div>
+                <!-- //menuArea -->
+                <!-- content -->
+                <div class="content" style="height: 100%;">
+                    <!-- inner -->
+                    <div class="inner">
+                        <h2 class="hidden">본문 영역</h2>
+                        
+                        <!-- contBody -->
+                        <section class="contBody">
+                            <!-- view -->
+                            <article class="view">
+
+                                <!-- viewHead -->
+                                <div class="viewHead">
+                                    <h3 class="title type10">메타데이터 상세 조회</h3>
+                                </div>
+                                <!-- //viewHead -->
+                                
+                                <!-- viewDetail -->
+                                <article class="viewManage type02">
+                                    
+                                    <!-- tableArea -->
+                                    <div class="tableArea">
+                                        <div class="tableHead" style="margin-bottom: 0;">
+                                            <h3 class="title type04">기본정보</h3>
+                                        </div>
+                                        
+                                        <!-- table -->
+                                        <div class="table type04">
+                                            <table>
+                                                <caption>기본정보 게시물로 데이터 명, 데이터 영문명, 데이터 설명, 등록일시, 파일형식, 수정일시, 좌표계, 담당자명, 관리기관, 연락처, 이메일 등의 정보를 제공합니다.</caption>
+                                                <colgroup>
+                                                    <col style="width: 220px;">
+                                                    <col style="width: 480px;">
+                                                    <col style="width: 220px;">
+                                                    <col style="width: 480px;">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">데이터 명</th>
+                                                        <td>데이터명입니다</td>
+                                                        <th scope="row">데이터 영문명</th>
+                                                        <td>data data</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">데이터 설명</th>
+                                                        <td colspan="3">
+                                                            데이터 설명 길게 나올 때 데이터 설명 길게 나올 때 데이터 설명 길게 나올 때 데이터 설명 길게 나올 때 데이터 설명 길게 나올 때 데이터 설명 길게 나올 때 데이터 설명 길게 나올 때 데이터 설명 길게 나올 때 데이터 설명 길게 나올 때 데이터 설명 길게 나올 때
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">등록일시</th>
+                                                        <td>2022-12-31</td>
+                                                        <th scope="row">파일형식</th>
+                                                        <td>hwp</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">수정일시</th>
+                                                        <td>2022-12-31</td>
+                                                        <th scope="row">좌표계</th>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">담당자 명</th>
+                                                        <td>홍길동</td>
+                                                        <th scope="row">관리기관</th>
+                                                        <td>서울시</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">연락처</th>
+                                                        <td>010-1234-5678</td>
+                                                        <th scope="row">이메일</th>
+                                                        <td>이메일@email.com</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- //table -->
+                                    </div>
+                                    <!-- //tableArea -->
+
+                                    <!-- tableArea -->
+                                    <div class="tableArea" style="margin-top: 60px;">
+                                        <div class="tableHead" style="margin-bottom: 0;">
+                                            <h3 class="title type04">산출정보</h3>
+                                        </div>
+                                        
+                                        <!-- table -->
+                                        <div class="table type07">
+                                            <table>
+                                                <caption>산출정보 게시물로 대상지역, 기개발지, 개발억제지, 군집화, 최소거리, 최소면적, 최소홀면적, 개발불능지, 지역, 표고, 4, 면적 등의 정보를 제공합니다.</caption>
+                                                <colgroup>
+                                                    <col style="width: 100px;">
+                                                    <col style="width: 120px;">
+                                                    <col style="width: 480px;">
+                                                    <col style="width: 220px;">
+                                                    <col style="width: 160px;">
+                                                    <col style="width: 160px;">
+                                                    <col style="width: 160px;">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row" colspan="2">대상지역</th>
+                                                        <td colspan="5">대상지역</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row" colspan="2">기개발지</th>
+                                                        <td>12건</td>
+                                                        <th scope="row" rowspan="4">개발불능지</th>
+                                                        <th scope="col" class="taC">지역</th>
+                                                        <th scope="col" class="taC">표고</th>
+                                                        <th scope="col" class="taC">4</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row" colspan="2">개발억제지</th>
+                                                        <td>12건</td>
+                                                        <td class="taC">수원시</td>
+                                                        <td class="taC">5</td>
+                                                        <td class="taC">3</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row" rowspan="3" style="border-right: 1px solid #ddd;">군집화</th>
+                                                        <th scope="row">최소거리</th>
+                                                        <td>00</td>
+                                                        <td class="taC">안양시</td>
+                                                        <td class="taC">5</td>
+                                                        <td class="taC">3</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">최소면적</th>
+                                                        <td>00</td>
+                                                        <td class="taC">서울시</td>
+                                                        <td class="taC">5</td>
+                                                        <td class="taC">3</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">최소홀면적</th>
+                                                        <td>00</td>
+                                                        <th scope="row">면적</th>
+                                                        <td>000 ㎡</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- //table -->
+                                    </div>
+                                    <!-- //tableArea -->
+                                    
+
+                                </article>
+                                <!-- viewManage -->
+                                <div class="btnArea static">
+                                    <button type="button" class="btn grayCircle">목록</button>
+                                    <button type="button" class="btn grayCircle">삭제</button>
+                                    <button type="button" class="btn navyCircle">수정</button>
+                                </div>
+                            </article>
+                            <!-- //view -->
+
+                        </section>
+                        <!-- //contBody -->
+                    </div>
+                    <!-- //inner -->
+                </div>
+                <!-- //content -->
+            </div>
+            <!-- //contents -->
+        </main>
+        <!--//container-->
+
+        <!--footer-->
+        <footer id="footer">
+            
+        </footer>
+        <!--//footer-->
+    </div>
+</body>
+
+</html>

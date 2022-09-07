@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+  <g id="icon_다운로드" data-name="icon / 다운로드" transform="translate(-419 -278)">
+    <g id="타원_1108" data-name="타원 1108" transform="translate(419 278)" fill="#fff" stroke="#d8dee3" stroke-width="1">
+      <circle cx="13" cy="13" r="13" stroke="none"/>
+      <circle cx="13" cy="13" r="12.5" fill="none"/>
+    </g>
+    <path id="패스_63718" data-name="패스 63718" d="M16.5,22.5v2.667A1.333,1.333,0,0,1,15.167,26.5H5.833A1.333,1.333,0,0,1,4.5,25.167V22.5" transform="translate(421.5 270.5)" fill="none" stroke="#999" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="패스_63719" data-name="패스 63719" d="M17.167,7.833,13.833,4.5,10.5,7.833" transform="translate(418.166 280.5)" fill="none" stroke="#999" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="패스_63720" data-name="패스 63720" d="M18,4.5v8" transform="translate(414 280.5)" fill="none" stroke="#999" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  </g>
+</svg>

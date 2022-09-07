@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+  <g id="icon_download" data-name="icon / download" transform="translate(-1675 -951)">
+    <circle id="타원_7" data-name="타원 7" cx="13" cy="13" r="13" transform="translate(1675 951)" fill="#353990"/>
+    <g id="Icon_feather-download" data-name="Icon feather-download" transform="translate(1676.528 951.527)">
+      <path id="패스_63793" data-name="패스 63793" d="M18.445,22.5v3.1A1.549,1.549,0,0,1,16.9,27.148H6.049A1.549,1.549,0,0,1,4.5,25.6V22.5" transform="translate(0 -8.703)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="패스_63794" data-name="패스 63794" d="M10.5,15l3.874,3.874L18.247,15" transform="translate(-2.901 -5.077)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="패스_63795" data-name="패스 63795" d="M18,13.8V4.5" transform="translate(-6.527)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

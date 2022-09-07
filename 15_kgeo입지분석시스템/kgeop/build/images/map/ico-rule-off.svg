@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+  <g id="icon_규제완화" data-name="icon / 규제완화" transform="translate(-419 -278)">
+    <g id="타원_1108" data-name="타원 1108" transform="translate(419 278)" fill="#fff" stroke="#d8dee3" stroke-width="1">
+      <circle cx="13" cy="13" r="13" stroke="none"/>
+      <circle cx="13" cy="13" r="12.5" fill="none"/>
+    </g>
+    <path id="패스_63723" data-name="패스 63723" d="M426.362,294.317V283.6h12.055v10.713l-3.625-1.89-2.81,1.89-2.537-1.89Z" transform="translate(-0.39 2.04)" fill="none" stroke="#999" stroke-width="1.5"/>
+    <line id="선_51" data-name="선 51" x2="7.427" transform="translate(428.295 288.793)" fill="none" stroke="#999" stroke-width="1.5"/>
+    <line id="선_52" data-name="선 52" x2="7.427" transform="translate(428.295 291.578)" fill="none" stroke="#999" stroke-width="1.5"/>
+  </g>
+</svg>

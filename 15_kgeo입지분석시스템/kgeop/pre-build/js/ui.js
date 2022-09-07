@@ -10,9 +10,30 @@ $(document).ready(function(){
         }
     });
 
+    // datapicker
+    if ($('.cal').length) {
+        $('.cal').datepicker({
+            dateFormat: "yy-mm-dd",
+            monthNames: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+            monthNamesShort: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+            dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+            dayNames: ['일요일' , '월요일' , '화요일' , '수요일' , '목요일' , '금요일' , '토요일'],
+            showMonthAfterYear: true,
+            changeYear:true,
+            changeMonth:true,
+            yearSuffix: "년",
+            nextText:"다음달",
+            prevText:"이전달"
+        });
+    }
+
     //lnb
     $("#lnb .dep01 li a").on('click', function(){
-        $(this).addClass("active").closest("li").siblings("li").children("a").removeClass("active");
+        if ($(this).hasClass("active")) {
+            $(this).removeClass("active");
+        } else {
+            $(this).addClass("active").closest("li").siblings("li").children("a").removeClass("active");
+        }
     })
 
     // search value

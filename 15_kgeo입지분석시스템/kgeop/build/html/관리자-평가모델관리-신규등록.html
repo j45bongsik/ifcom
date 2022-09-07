@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="kgeo플랫폼">
+<meta name="description" content="kgeop플랫폼 입지 분석 시스템">
+
+<!-- 오픈그래프 이미지의 경우 최소한 600 x 315 px은 되어야 하며, 1200 x 630 px을 권장함 -->
+<meta property="og:image" content="">
+<meta property="og:title" content="kgeo플랫폼">
+<meta property="og:description" content="kgeo플랫폼 입지 분석 시스템">
+<meta property="og:url" content="">
+<!-- 다음의 태그는 필수는 아니지만, 포함하는 것을 추천함 -->
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<link rel="stylesheet" href="../lib/swiper/css/swiper.css">
+<link rel="stylesheet" href="../lib/jquery-ui.css">
+<link rel="stylesheet" href="../lib/fullPage.js-2.9.7/fullpage.css" />
+<link rel="stylesheet" href="../css/common.css">
+<script src="../lib/jquery-1.12.4.js"></script>
+<script src="../lib/jquery-ui.js"></script>
+<script src="../lib/swiper/js/swiper.js"></script>
+<script src="../lib/fullPage.js-2.9.7/jquery.fullpage.min.js"></script>
+<script src="../js/ui.js"></script>
+
+<title>K-Geo플랫폼 입지 분석 시스템</title>
+
+
+</head>
+
+<body>
+
+    <div id="wrap" style="height: 100%;">
+        <!--header-->
+        <header id="header">
+            <!--accNav-->
+<div id="accNav">
+    <a href="#container">본문 바로가기</a>
+</div>
+<!--//accNav-->
+        </header>
+        <!--header-->
+
+        <!--container-->
+        <main id="container" style="height: 100%;">
+            <!-- contents -->
+            <div id="contents" class="admin" style="height: 100%;">
+                <!-- menuArea -->
+                <div class="menuArea" style="height: 100%;">
+                    <!-- logoArea -->
+                    <article class="logoArea">
+                        <h3>
+                            <a href="#">
+                                <img src="../images/common/img-logo.png" alt="K-Geo플랫폼 입지 분석 시스템">
+                            </a>
+                        </h3>
+                    </article>
+                    <!-- //logoArea -->
+
+                    <!-- utilArea -->
+                    <article class="utilArea">
+                        <!-- btnArea -->
+                        <div class="btnArea">
+                            <button type="button" class="btn blueCircle">
+                                <span>
+                                    국토교통부 <em>이성준</em>님</button>
+                            </span>
+                            <button type="button" class="btn logout">로그아웃</button>
+                        </div>
+                        <!-- //btnArea -->
+                    </article>
+                    <!-- //utilArea -->
+                    
+                    <!-- lnb -->
+                    <nav id="lnb">
+                        <h2 class="hidden">주요메뉴</h2>
+                        <!-- dep01 -->
+                        <ul class="dep01">
+                            <li>
+                                <a href="#">
+                                    <span>
+                                        관리자 대시보드
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>
+                                        사용자 권한관리
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>
+                                        자료 공유 관리
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>
+                                        자료 보안 관리
+                                    </span>
+                                </a>
+                                <ul class="dep02">
+                                    <li>
+                                        <a href="#">다운로드 이력관리</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">다운로드 권한관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>
+                                        사용자 접속통계
+                                    </span>
+                                </a>
+                                <ul class="dep02">
+                                    <li>
+                                        <a href="#">시스템 접속 현황</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">시스템 접속 통계</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>
+                                        레이어 시점관리
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>
+                                        코드 관리
+                                    </span>
+                                </a>
+                                <ul class="dep02">
+                                    <li>
+                                        <a href="#">분류 코드 관리</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">그룹 코드 관리</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">상세 코드 관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>
+                                        메타데이터 관리
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>
+                                        추출기준 관리
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="active">
+                                    <span>
+                                        평가모델 관리
+                                    </span>
+                                </a>
+                            </li>
+                            
+                    
+                        </ul>
+                        <!-- //dep01 -->
+                    </nav>
+                    <!-- //lnb -->
+
+                    <article class="adminSet">
+                        <a href="#">
+                            <svg data-name="icon / 관리자" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                                <path data-name="패스 15982" d="M0,0H22V22H0Z" fill="none"/>
+                                <path data-name="Icon feather-folder" d="M19,17.3a1.6,1.6,0,0,1-1.6,1.6H4.6A1.6,1.6,0,0,1,3,17.3V6.1A1.6,1.6,0,0,1,4.6,4.5h4l1.6,2.4h7.2A1.6,1.6,0,0,1,19,8.5Z" transform="translate(0.5 -0.5)" fill="none" stroke="#a2a4cf" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                            </svg>
+                            <span>
+                                프로젝트
+                            </span>
+                        </a>
+                    </article>
+                </div>
+                <!-- //menuArea -->
+                <!-- content -->
+                <div class="content" style="height: 100%;">
+                    <!-- inner -->
+                    <div class="inner type02">
+                        <h2 class="hidden">본문 영역</h2>
+
+                        <!-- contBody -->
+                        <section class="contBody">
+                            <!-- view -->
+                            <article class="view">
+                                
+                                <!-- utilBox -->
+                                <article class="utilBox">
+                                    <!-- tableArea -->
+                                    <div class="tableArea">
+                                        <!-- table -->
+                                        <div class="table type05">
+                                            <table>
+                                                <caption>평가모델 상세보기 게시물이며 기본 분석모델, 분석모델 명, 평가기준 설명 등의 정보를 제공합니다.</caption>
+                                                <colgroup>
+                                                    <col style="width: 150px;">
+                                                    <col style="width: auto;">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <label for="s01">
+                                                                기본분석모델
+                                                            </label>
+                                                        </th>
+                                                        <td>
+                                                            <div class="selectArea type02">
+                                                                <select name="" id="s01">
+                                                                    <option value="">일반택지</option>
+                                                                </select>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <label for="i01">분석모델 명</label>
+                                                        </th>
+                                                        <td>
+                                                            <div class="inputArea type02">
+                                                                <input type="text" id="i01" value="일반택지 개발_2022">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <label for="i02">평가기준 설명</label>
+                                                        </th>
+                                                        <td>
+                                                            <div class="inputArea type02">
+                                                                <input type="text" id="i02" value="2022 일반택지 개발 입지분석">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- //table -->
+                                    </div>
+                                    <!-- //tableArea -->
+                                </article>
+                                <!-- //utilBox -->
+
+
+                                <!-- viewDetail -->
+                                <article class="viewManage">
+                                    
+                                    <div class="tableArea">
+
+                                        <!-- tableHead -->
+                                        <div class="tableHead">
+                                            <!-- btnArea -->
+                                            <div class="btnArea">
+                                                <button type="button" class="btn navyCircle03">
+                                                    <span class="plus">지표추가</span>
+                                                </button>
+                                            </div>
+                                            <!-- //btnArea -->
+                                        </div>
+                                        <!-- //tableHead -->
+                                        <!-- table -->
+                                        <div class="table type02">
+                                            <table>
+                                                <caption>평가모델 지표 게시물로 지표분류, 분석지표, 가중치(%), 5분위척도, 지표단위, 5분위 기준값(5, 4, 3, 2, 1) 등의 정보를 제공합니다.</caption>
+                                                <colgroup>
+                                                    <col style="width: 140px;">
+                                                    <col style="width: auto;">
+                                                    <col style="width: 140px;">
+                                                    <col style="width: 120px;">
+                                                    <col style="width: 120px;">
+                                                    <col style="width: 120px;">
+                                                    <col style="width: 120px;">
+                                                    <col style="width: 120px;">
+                                                    <col style="width: 120px;">
+                                                    <col style="width: 120px;">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" rowspan="2">지표분류</th>
+                                                        <th scope="col" rowspan="2">분석지표</th>
+                                                        <th scope="col" rowspan="2">가중치(%)</th>
+                                                        <th scope="col" rowspan="2">5분위척도</th>
+                                                        <th scope="col" rowspan="2">지표단위</th>
+                                                        <th scope="col" colspan="5">5분위 기준값</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col">5</th>
+                                                        <th scope="col">4</th>
+                                                        <th scope="col">3</th>
+                                                        <th scope="col">2</th>
+                                                        <th scope="col">1</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>수요</td>
+                                                        <td>
+                                                            <div class="tooltipBox">
+                                                                <p>
+                                                                    주택보급현황
+                                                                </p>
+                                                                <span class="toolTip question"></span>
+
+                                                                <!-- tooltipCont -->
+                                                                <article class="tooltipCont type02">
+                                                                    <ul class="toolDesc type01">
+                                                                        <li>
+                                                                            <P>후보지에 대한 최근 공시지가와 후보지에 인접한 지역의 비교</P>
+                                                                        </li>
+                                                                        <li>
+                                                                            <P>용도의 표준지 공시지가를 비교하여 가격 경쟁력을 평가</P>
+                                                                        </li>
+                                                                    </ul>
+                                                                    <ul class="toolDesc type02">
+                                                                        <li>
+                                                                            <p><span class="sky">우수</span> : 인접 지역 표준지 공시지가 대비 1/5 이하 가격</p>
+                                                                            <p><span class="green">양호</span> : 인접 지역 표준지 공시지가 대비 1/4 이하 가격</p>
+                                                                            <p><span class="black">보통</span> : 인접 지역 표준지 공시지가 대비 1/3 이하 가격</p>
+                                                                        </li>
+                                                                    </ul>
+                                                                    
+                                                                </article>
+                                                                <!-- tooltipCont -->
+
+
+
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="inputArea">
+                                                                <div class="flex ac">
+                                                                    <input type="text" value="33">
+                                                                    <span class="unit">%</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>미만</td>
+                                                        <td>시군구</td>
+                                                        <td>
+                                                            <div class="inputArea">
+                                                                <input type="text" value="90">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="inputArea">
+                                                                <input type="text" value="100">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="inputArea">
+                                                                <input type="text" value="110">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="inputArea">
+                                                                <input type="text" value="120">
+                                                            </div>
+                                                        </td>
+                                                        <td>이외</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>수요</td>
+                                                        <td>주택보급현황</td>
+                                                        <td>
+                                                            <div class="inputArea">
+                                                                <div class="flex ac">
+                                                                    <input type="text" value="33">
+                                                                    <span class="unit">%</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>미만</td>
+                                                        <td>시군구</td>
+                                                        <td>
+                                                            <div class="inputArea">
+                                                                <input type="text" value="90">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="inputArea">
+                                                                <input type="text" value="100">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="inputArea">
+                                                                <input type="text" value="110">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="inputArea">
+                                                                <input type="text" value="120">
+                                                            </div>
+                                                        </td>
+                                                        <td>이외</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>수요</td>
+                                                        <td>주택보급현황</td>
+                                                        <td>
+                                                            <div class="inputArea">
+                                                                <div class="flex ac">
+                                                                    <input type="text" value="33">
+                                                                    <span class="unit">%</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>미만</td>
+                                                        <td>시군구</td>
+                                                        <td>
+                                                            <div class="inputArea">
+                                                                <input type="text" value="90">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="inputArea">
+                                                                <input type="text" value="100">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="inputArea">
+                                                                <input type="text" value="110">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="inputArea">
+                                                                <input type="text" value="120">
+                                                            </div>
+                                                        </td>
+                                                        <td>이외</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>
+                                                            <div class="selectArea type03">
+                                                                <select name="" id="">
+                                                                    <option value="">전체</option>
+                                                                </select>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="selectArea type03">
+                                                                <select name="" id="">
+                                                                    <option value="">용도지역</option>
+                                                                </select>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="inputArea">
+                                                                <div class="flex ac">
+                                                                    <input type="text">
+                                                                    <span class="unit">%</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>일치</td>
+                                                        <td>5분위</td>
+                                                        <td>
+                                                            <div class="inputArea">
+                                                                <input type="text" value="5">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="inputArea">
+                                                                <input type="text" value="4">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="inputArea">
+                                                                <input type="text" value="3">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="inputArea">
+                                                                <input type="text" value="2">
+                                                            </div>
+                                                        </td>
+                                                        <td>이외</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!-- tableSum -->
+                                            <article class="tableSum">
+                                                <p>가중치 합계 : 100%</p>
+                                            </article>
+                                            <!-- tableSum -->
+                                        </div>
+                                        <!-- //table -->
+                                    </div>
+
+                                </article>
+                                <!-- viewManage -->
+
+                                <!-- btnArea -->
+                                <div class="btnArea static">
+                                    <button type="button" class="btn grayCircle">목록</button>
+                                    <button type="button" class="btn navyCircle">분석모델 등록</button>
+                                </div>
+                                <!-- //btnArea -->
+
+                            </article>
+                            <!-- //view -->
+                            <!-- addList -->
+                            <aside class="addList">
+                                <!-- btnArea -->
+                                <div class="btnArea">
+                                    <button type="button" class="btn addPjt">
+                                        <span class="text">
+                                            분석모델 생성
+                                        </span>
+                                        <span class="partz"></span>
+                                    </button>
+                                </div>
+                                <!-- //btnArea -->
+                            </aside>
+                            <!-- //addList -->
+
+                        </section>
+                        <!-- //contBody -->
+
+                    </div>
+                    <!-- //inner -->
+
+                </div>
+                <!-- //content -->
+            </div>
+            <!-- //contents -->
+        </main>
+        <!--//container-->
+
+        <!--footer-->
+        <footer id="footer">
+            
+        </footer>
+        <!--//footer-->
+    </div>
+</body>
+
+</html>

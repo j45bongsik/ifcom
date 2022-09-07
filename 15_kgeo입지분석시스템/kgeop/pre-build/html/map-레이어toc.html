@@ -72,8 +72,8 @@
                                             <p class="name type01 elips"><i class="ico rect"></i>행정구역시군구_경계 </p>
                                             <div class="btnArea">
                                                 <button type="button" class="btn toggle layerView" title="보기"></button>
-                                                <button type="button" class="btn toggle layerBookmark" title="북마크"></button>
-                                                <button type="button" class="btn toggle layerInfo" title="상세정보"></button>
+                                                <button type="button" class="btn toggle layerBoundary" title="경계편집"></button>
+                                                <button type="button" class="btn toggle layerMeta" title="메타데이터"></button>
                                             </div>
                                         </li>
                                         <li>
@@ -81,7 +81,22 @@
                                             <div class="btnArea">
                                                 <button type="button" class="btn toggle layerView" title="보기"></button>
                                                 <button type="button" class="btn toggle layerBookmark" title="북마크"></button>
-                                                <button type="button" class="btn toggle layerInfo" title="상세정보"></button>
+                                                <button type="button" class="btn toggle layerInfo on" title="상세정보"></button>
+                                                <ul class="dep02">
+                                                    <li class="rule">
+                                                        <button type="button" class="btn">규제완화</button>
+                                                    </li>
+                                                    <li class="meta">
+                                                        <button type="button" class="btn">메타데이터</button>
+                                                    </li>
+                                                    <li class="down">
+                                                        <button type="button" class="btn">다운로드</button>
+                                                    </li>
+                                                    <li class="delete">
+                                                        <button type="button" class="btn">삭제</button>
+                                                    </li>
+                                                </ul>
+                                                
                                             </div>
                                         </li>
                                         <li>
@@ -361,6 +376,460 @@
 
             </article>
             <!-- //mapArea -->
+
+            <!-- popupArea -->
+            <section class="popupArea">
+                <!-- popup -->
+                <article class="popup active">
+                    <div class="inner" style="width: 1406px; min-width: 1406px;">
+                        <!-- popHead -->
+                        <div class="popHead">
+                            <h3 class="title type02">규제완화</h3>
+                            <!-- btnArea -->
+                            <div class="btnArea">
+                                <button type="button" class="btn popClose">
+                                    <span class="hidden">창 닫기</span>
+                                </button>
+                            </div>
+                            <!-- //btnArea -->
+                        </div>
+                        <!-- //popHead -->
+
+                        <!-- popBody -->
+                        <div class="popBody type02">
+
+                            <!-- bodyLeft -->
+                            <acticle class="bodyLeft type04">
+                                <!-- bodyHead -->
+                                <div class="bodyHead">
+                                    <h3 class="title type04">전체 레이어</h3>
+                                </div>
+                                <!-- //bodyHead -->
+
+                                <!-- searchArea -->
+                                <article class="searchArea">
+                                    <label for="s01">
+                                        <input type="text" id="s01" placeholder="검색어를 입력하세요.">
+                                    </label>
+                                    <div class="btnArea">
+                                        <button type="button" class="btn search" title="검색">
+                                            <svg width="14" height="14" viewBox="0 0 14 14">
+                                                <path d="M17.162,15.971,13.987,12.8A5.9,5.9,0,1,0,12.8,13.987l3.174,3.174a.843.843,0,0,0,1.191-1.191Zm-12.1-6.7a4.21,4.21,0,1,1,4.21,4.21A4.21,4.21,0,0,1,5.059,9.269Z" transform="translate(-3.375 -3.375)" fill="#999"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </article>
+                                <!-- //searchArea -->
+
+                                <!-- tableArea -->
+                                <div class="tableArea">
+                                    <!-- tableHead -->
+                                    <article class="tableHead">
+                                        <p>전체
+                                            <span>63건</span>
+                                        </p>
+                                    </article>
+                                    <!-- //tableHead -->
+                                    
+                                    <!-- table -->
+                                    <div class="table type02_1 trActive">
+                                        <table>
+                                            <caption>규제완화 전체 레이어 게시물로, 구분, 레이어명, 법령정보, 추가 등의 정보를 제공합니다.</caption>
+                                            <colgroup>
+                                                <col style="width: 130px;">
+                                                <col style="width: auto;">
+                                                <col style="width: 180px;">
+                                                <col style="width: 60px;">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">구분</th>
+                                                    <th scope="col">레이어명</th>
+                                                    <th scope="col">법령정보</th>
+                                                    <th scope="col">추가</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr style="cursor: pointer;">
+                                                    <td>산림보호구역</td>
+                                                    <td>산림보호/산림보호 산림제한구역</td>
+                                                    <td>「산림보호법」 제7조</td>
+                                                    <td>
+                                                        <div class="btnArea">
+                                                            <button type="button" class="btn popPlus" title="추가"></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr style="cursor: pointer;">
+                                                    <td>산림보호구역</td>
+                                                    <td>산림보호/산림보호 산림제한구역</td>
+                                                    <td>「산림보호법」 제7조</td>
+                                                    <td>
+                                                        <div class="btnArea">
+                                                            <button type="button" class="btn popPlus" title="추가"></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr style="cursor: pointer;">
+                                                    <td>산림보호구역</td>
+                                                    <td>산림보호/산림보호 산림제한구역</td>
+                                                    <td>「산림보호법」 제7조</td>
+                                                    <td>
+                                                        <div class="btnArea">
+                                                            <button type="button" class="btn popPlus" title="추가"></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr style="cursor: pointer;">
+                                                    <td>산림보호구역</td>
+                                                    <td>산림보호/산림보호 산림제한구역</td>
+                                                    <td>「산림보호법」 제7조</td>
+                                                    <td>
+                                                        <div class="btnArea">
+                                                            <button type="button" class="btn popPlus" title="추가"></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr style="cursor: pointer;">
+                                                    <td>산림보호구역</td>
+                                                    <td>산림보호/산림보호 산림제한구역</td>
+                                                    <td>「산림보호법」 제7조</td>
+                                                    <td>
+                                                        <div class="btnArea">
+                                                            <button type="button" class="btn popPlus" title="추가"></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr style="cursor: pointer;">
+                                                    <td>산림보호구역</td>
+                                                    <td>산림보호/산림보호 산림제한구역</td>
+                                                    <td>「산림보호법」 제7조</td>
+                                                    <td>
+                                                        <div class="btnArea">
+                                                            <button type="button" class="btn popPlus" title="추가"></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr style="cursor: pointer;">
+                                                    <td>산림보호구역</td>
+                                                    <td>산림보호/산림보호 산림제한구역</td>
+                                                    <td>「산림보호법」 제7조</td>
+                                                    <td>
+                                                        <div class="btnArea">
+                                                            <button type="button" class="btn popPlus" title="추가"></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr style="cursor: pointer;">
+                                                    <td>산림보호구역</td>
+                                                    <td>산림보호/산림보호 산림제한구역</td>
+                                                    <td>「산림보호법」 제7조</td>
+                                                    <td>
+                                                        <div class="btnArea">
+                                                            <button type="button" class="btn popPlus" title="추가"></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr style="cursor: pointer;">
+                                                    <td>산림보호구역</td>
+                                                    <td>산림보호/산림보호 산림제한구역</td>
+                                                    <td>「산림보호법」 제7조</td>
+                                                    <td>
+                                                        <div class="btnArea">
+                                                            <button type="button" class="btn popPlus" title="추가"></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- //table -->
+                                    <!-- pagination -->
+                                    <article class="pagination">
+                                        <button type="button" class="btn first off" title="첫번째 페이지">
+                                            <span class="hidden">첫번째 페이지</span>
+                                            <svg width="13" height="12" viewBox="0 0 13 12">
+                                                <g data-name="&lt;&lt;" transform="translate(-714.5 -1056)">
+                                                    <path data-name="Shape 1048" d="M1367.118,299.986a.748.748,0,0,1-.54-.232l-5.236-5.418a.811.811,0,0,1,0-1.119.747.747,0,0,1,1.081,0l4.695,4.858,4.7-4.858a.746.746,0,0,1,1.081,0,.811.811,0,0,1,0,1.119l-5.235,5.418A.749.749,0,0,1,1367.118,299.986Z" transform="translate(1014.486 -305.118) rotate(90)" fill="#666" />
+                                                    <path data-name="Shape 1048" d="M1367.118,299.986a.748.748,0,0,1-.54-.232l-5.236-5.418a.811.811,0,0,1,0-1.119.747.747,0,0,1,1.081,0l4.695,4.858,4.7-4.858a.746.746,0,0,1,1.081,0,.811.811,0,0,1,0,1.119l-5.235,5.418A.749.749,0,0,1,1367.118,299.986Z" transform="translate(1020.486 -305.118) rotate(90)" fill="#666" />
+                                                </g>
+                                            </svg>
+                                        </button>
+
+                                        <button type="button" class="btn prev off" title="이전 페이지">
+                                            <span class="hidden">이전 페이지</span>
+                                            <svg width="7" height="12" viewBox="0 0 7 12">
+                                                <g data-name="&lt;" transform="translate(-714.5 -1056)">
+                                                    <path data-name="Shape 1048" d="M1367.118,299.986a.748.748,0,0,1-.54-.232l-5.236-5.418a.811.811,0,0,1,0-1.119.747.747,0,0,1,1.081,0l4.695,4.858,4.7-4.858a.746.746,0,0,1,1.081,0,.811.811,0,0,1,0,1.119l-5.235,5.418A.749.749,0,0,1,1367.118,299.986Z" transform="translate(1014.486 -305.118) rotate(90)" fill="#666" />
+                                                </g>
+                                            </svg>
+                                        </button>
+
+                                        <a href="#" class="active">1</a>
+                                        <a href="#">2</a>
+                                        <a href="#">3</a>
+                                        <a href="#">4</a>
+                                        <a href="#">5</a>
+                                        <a href="#">6</a>
+                                        <a href="#">7</a>
+                                        <a href="#">8</a>
+                                        <a href="#">9</a>
+                                        <a href="#">10</a>
+
+                                        <button type="button" class="btn next " title="다음 페이지">
+                                            <span class="hidden">다음 페이지</span>
+                                            <svg data-name="&gt;" width="7" height="12" viewBox="0 0 7 12">
+                                                <path data-name="Shape 1048" d="M6,0a.748.748,0,0,0-.54.232L.224,5.649a.811.811,0,0,0,0,1.119.747.747,0,0,0,1.081,0L6,1.91l4.7,4.858a.746.746,0,0,0,1.081,0,.811.811,0,0,0,0-1.119L6.541.232A.749.749,0,0,0,6,0Z" transform="translate(7 0) rotate(90)" fill="#666" />
+                                            </svg>
+                                        </button>
+
+                                        <button type="button" class="btn last " title="마지막 페이지">
+                                            <span class="hidden">마지막 페이지</span>
+                                            <svg width="13" height="12" viewBox="0 0 13 12">
+                                                <g transform="translate(0 0)">
+                                                    <path data-name="Shape 1048" d="M6,0a.748.748,0,0,0-.54.232L.224,5.649a.811.811,0,0,0,0,1.119.747.747,0,0,0,1.081,0L6,1.91l4.7,4.858a.746.746,0,0,0,1.081,0,.811.811,0,0,0,0-1.119L6.541.232A.749.749,0,0,0,6,0Z" transform="translate(13) rotate(90)" fill="#666" />
+                                                    <path data-name="Shape 1048" d="M6,0a.748.748,0,0,0-.54.232L.224,5.649a.811.811,0,0,0,0,1.119.747.747,0,0,0,1.081,0L6,1.91l4.7,4.858a.746.746,0,0,0,1.081,0,.811.811,0,0,0,0-1.119L6.541.232A.749.749,0,0,0,6,0Z" transform="translate(7) rotate(90)" fill="#666" />
+                                                </g>
+                                            </svg>
+                                        </button>
+                                    </article>
+                                    <!-- //pagination -->
+                                </div>
+                                <!-- //tableArea -->
+
+                            </acticle>
+                            <!-- //bodyLeft -->
+
+                            <!-- bodyCenter -->
+                            <article class="bodyCenter">
+                                <!-- btnArea -->
+                                <div class="btnArea">
+                                    <button type="button" class="btn listAdd" title="레이어 추가"></button>
+                                    <button type="button" class="btn listDelete" title="레이어 삭제"></button>
+                                </div>
+                                <!-- //btnArea -->
+                            </article>
+                            <!-- ..bodyCenter -->
+
+                            <!-- bodyRight -->
+                            <article class="bodyRight type02">
+                                <!-- bodyHead -->
+                                <div class="bodyHead">
+                                    <h3 class="title type04">선택 레이어</h3>
+                                </div>
+                                <!-- //bodyHead -->
+
+                                <!-- searchArea -->
+                                <article class="searchArea">
+                                    <label for="s01">
+                                        <input type="text" id="s01" placeholder="검색어를 입력하세요.">
+                                    </label>
+                                    <div class="btnArea">
+                                        <button type="button" class="btn search" title="검색">
+                                            <svg width="14" height="14" viewBox="0 0 14 14">
+                                                <path d="M17.162,15.971,13.987,12.8A5.9,5.9,0,1,0,12.8,13.987l3.174,3.174a.843.843,0,0,0,1.191-1.191Zm-12.1-6.7a4.21,4.21,0,1,1,4.21,4.21A4.21,4.21,0,0,1,5.059,9.269Z" transform="translate(-3.375 -3.375)" fill="#999"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </article>
+                                <!-- //searchArea -->
+
+                                <!-- tableArea -->
+                                <div class="tableArea">
+                                    <!-- tableHead -->
+                                    <article class="tableHead">
+                                        <p>전체
+                                            <span>63건</span>
+                                        </p>
+                                    </article>
+                                    <!-- //tableHead -->
+                                    
+                                    <!-- table -->
+                                    <div class="table type02_1 trActive">
+                                        <table>
+                                            <caption>규제완화 선택 레이어 게시물로, 구분, 레이어명, 법령정보, 삭제 등의 정보를 제공합니다.</caption>
+                                            <colgroup>
+                                                <col style="width: 130px;">
+                                                <col style="width: auto;">
+                                                <col style="width: 180px;">
+                                                <col style="width: 60px;">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">구분</th>
+                                                    <th scope="col">레이어명</th>
+                                                    <th scope="col">법령정보</th>
+                                                    <th scope="col">삭제</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr style="cursor: pointer;">
+                                                    <td>산림보호구역</td>
+                                                    <td>산림보호/산림보호 산림제한구역</td>
+                                                    <td>「산림보호법」 제7조</td>
+                                                    <td>
+                                                        <div class="btnArea">
+                                                            <button type="button" class="btn popMinus" title="삭제"></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr style="cursor: pointer;">
+                                                    <td>산림보호구역</td>
+                                                    <td>산림보호/산림보호 산림제한구역</td>
+                                                    <td>「산림보호법」 제7조</td>
+                                                    <td>
+                                                        <div class="btnArea">
+                                                            <button type="button" class="btn popMinus" title="삭제"></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr style="cursor: pointer;">
+                                                    <td>산림보호구역</td>
+                                                    <td>산림보호/산림보호 산림제한구역</td>
+                                                    <td>「산림보호법」 제7조</td>
+                                                    <td>
+                                                        <div class="btnArea">
+                                                            <button type="button" class="btn popMinus" title="삭제"></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr style="cursor: pointer;">
+                                                    <td>산림보호구역</td>
+                                                    <td>산림보호/산림보호 산림제한구역</td>
+                                                    <td>「산림보호법」 제7조</td>
+                                                    <td>
+                                                        <div class="btnArea">
+                                                            <button type="button" class="btn popMinus" title="삭제"></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr style="cursor: pointer;">
+                                                    <td>산림보호구역</td>
+                                                    <td>산림보호/산림보호 산림제한구역</td>
+                                                    <td>「산림보호법」 제7조</td>
+                                                    <td>
+                                                        <div class="btnArea">
+                                                            <button type="button" class="btn popMinus" title="삭제"></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr style="cursor: pointer;">
+                                                    <td>산림보호구역</td>
+                                                    <td>산림보호/산림보호 산림제한구역</td>
+                                                    <td>「산림보호법」 제7조</td>
+                                                    <td>
+                                                        <div class="btnArea">
+                                                            <button type="button" class="btn popMinus" title="삭제"></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr style="cursor: pointer;">
+                                                    <td>산림보호구역</td>
+                                                    <td>산림보호/산림보호 산림제한구역</td>
+                                                    <td>「산림보호법」 제7조</td>
+                                                    <td>
+                                                        <div class="btnArea">
+                                                            <button type="button" class="btn popMinus" title="삭제"></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr style="cursor: pointer;">
+                                                    <td>산림보호구역</td>
+                                                    <td>산림보호/산림보호 산림제한구역</td>
+                                                    <td>「산림보호법」 제7조</td>
+                                                    <td>
+                                                        <div class="btnArea">
+                                                            <button type="button" class="btn popMinus" title="삭제"></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr style="cursor: pointer;">
+                                                    <td>산림보호구역</td>
+                                                    <td>산림보호/산림보호 산림제한구역</td>
+                                                    <td>「산림보호법」 제7조</td>
+                                                    <td>
+                                                        <div class="btnArea">
+                                                            <button type="button" class="btn popMinus" title="삭제"></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- //table -->
+                                    <!-- pagination -->
+                                    <article class="pagination">
+                                        <button type="button" class="btn first off" title="첫번째 페이지">
+                                            <span class="hidden">첫번째 페이지</span>
+                                            <svg width="13" height="12" viewBox="0 0 13 12">
+                                                <g data-name="&lt;&lt;" transform="translate(-714.5 -1056)">
+                                                    <path data-name="Shape 1048" d="M1367.118,299.986a.748.748,0,0,1-.54-.232l-5.236-5.418a.811.811,0,0,1,0-1.119.747.747,0,0,1,1.081,0l4.695,4.858,4.7-4.858a.746.746,0,0,1,1.081,0,.811.811,0,0,1,0,1.119l-5.235,5.418A.749.749,0,0,1,1367.118,299.986Z" transform="translate(1014.486 -305.118) rotate(90)" fill="#666" />
+                                                    <path data-name="Shape 1048" d="M1367.118,299.986a.748.748,0,0,1-.54-.232l-5.236-5.418a.811.811,0,0,1,0-1.119.747.747,0,0,1,1.081,0l4.695,4.858,4.7-4.858a.746.746,0,0,1,1.081,0,.811.811,0,0,1,0,1.119l-5.235,5.418A.749.749,0,0,1,1367.118,299.986Z" transform="translate(1020.486 -305.118) rotate(90)" fill="#666" />
+                                                </g>
+                                            </svg>
+                                        </button>
+
+                                        <button type="button" class="btn prev off" title="이전 페이지">
+                                            <span class="hidden">이전 페이지</span>
+                                            <svg width="7" height="12" viewBox="0 0 7 12">
+                                                <g data-name="&lt;" transform="translate(-714.5 -1056)">
+                                                    <path data-name="Shape 1048" d="M1367.118,299.986a.748.748,0,0,1-.54-.232l-5.236-5.418a.811.811,0,0,1,0-1.119.747.747,0,0,1,1.081,0l4.695,4.858,4.7-4.858a.746.746,0,0,1,1.081,0,.811.811,0,0,1,0,1.119l-5.235,5.418A.749.749,0,0,1,1367.118,299.986Z" transform="translate(1014.486 -305.118) rotate(90)" fill="#666" />
+                                                </g>
+                                            </svg>
+                                        </button>
+
+                                        <a href="#" class="active">1</a>
+                                        <a href="#">2</a>
+                                        <a href="#">3</a>
+                                        <a href="#">4</a>
+                                        <a href="#">5</a>
+                                        <a href="#">6</a>
+                                        <a href="#">7</a>
+                                        <a href="#">8</a>
+                                        <a href="#">9</a>
+                                        <a href="#">10</a>
+
+                                        <button type="button" class="btn next " title="다음 페이지">
+                                            <span class="hidden">다음 페이지</span>
+                                            <svg data-name="&gt;" width="7" height="12" viewBox="0 0 7 12">
+                                                <path data-name="Shape 1048" d="M6,0a.748.748,0,0,0-.54.232L.224,5.649a.811.811,0,0,0,0,1.119.747.747,0,0,0,1.081,0L6,1.91l4.7,4.858a.746.746,0,0,0,1.081,0,.811.811,0,0,0,0-1.119L6.541.232A.749.749,0,0,0,6,0Z" transform="translate(7 0) rotate(90)" fill="#666" />
+                                            </svg>
+                                        </button>
+
+                                        <button type="button" class="btn last " title="마지막 페이지">
+                                            <span class="hidden">마지막 페이지</span>
+                                            <svg width="13" height="12" viewBox="0 0 13 12">
+                                                <g transform="translate(0 0)">
+                                                    <path data-name="Shape 1048" d="M6,0a.748.748,0,0,0-.54.232L.224,5.649a.811.811,0,0,0,0,1.119.747.747,0,0,0,1.081,0L6,1.91l4.7,4.858a.746.746,0,0,0,1.081,0,.811.811,0,0,0,0-1.119L6.541.232A.749.749,0,0,0,6,0Z" transform="translate(13) rotate(90)" fill="#666" />
+                                                    <path data-name="Shape 1048" d="M6,0a.748.748,0,0,0-.54.232L.224,5.649a.811.811,0,0,0,0,1.119.747.747,0,0,0,1.081,0L6,1.91l4.7,4.858a.746.746,0,0,0,1.081,0,.811.811,0,0,0,0-1.119L6.541.232A.749.749,0,0,0,6,0Z" transform="translate(7) rotate(90)" fill="#666" />
+                                                </g>
+                                            </svg>
+                                        </button>
+                                    </article>
+                                    <!-- //pagination -->
+                                </div>
+                                <!-- //tableArea -->
+
+                            </article>
+                            <!-- //bodyRight -->
+
+                            <div class="btnArea right">
+                                <button type="button" class="btn grayCircle">
+                                    <span class="reset">
+                                        초기화
+                                    </span>
+                                </button>
+                                <button type="button" class="btn navyCircle">완료</button>
+                            </div>
+
+                        </div>
+                        <!-- //popBody -->
+                    </div>
+                    <!-- //inner -->
+                </article>
+                <!-- //popup -->
+            </section>
+            <!-- //popupArea -->
         </section>
         <!-- //mapContainer -->
     </div>
