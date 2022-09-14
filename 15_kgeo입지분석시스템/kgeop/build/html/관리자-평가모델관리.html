@@ -26,7 +26,15 @@
 <script src="../lib/jquery-ui.js"></script>
 <script src="../lib/swiper/js/swiper.js"></script>
 <script src="../lib/fullPage.js-2.9.7/jquery.fullpage.min.js"></script>
+<!-- amchart4 -->
+<script src="../lib/amchart/core.js"></script>
+<script src="../lib/amchart/charts.js"></script>
+<!-- //amchart4 -->
 <script src="../js/ui.js"></script>
+<script src="../js/amchart.js"></script>
+
+
+
 
 <title>K-Geo플랫폼 입지 분석 시스템</title>
 
@@ -203,404 +211,825 @@
                     <!-- inner -->
                     <div class="inner type02">
                         <h2 class="hidden">본문 영역</h2>
-                        <!-- contHead -->
-                        <section class="contHead">
 
-                            <!-- inputGroup -->
-                            <div class="inputGroup horizontal">
-                                <!-- selectArea -->
-                                <article class="selectArea typeSum">
-                                    <select name="" id="">
-                                        <option value="">전체</option>
-                                    </select>
-                                </article>
-                                <!-- //selectArea -->
-                                <!-- searchArea -->
-                                <article class="searchArea typeSum">
-                                    <label for="i01">
-                                        <input type="text" id="i01" placeholder="검색할 분석모델 명을 입력하세요.">
-                                    </label>
-                                    <div class="btnArea">
-                                        <button type="button" class="btn search" title="검색">
-                                            <svg width="14" height="14" viewBox="0 0 14 14">
-                                                <path id="search" d="M17.162,15.971,13.987,12.8A5.9,5.9,0,1,0,12.8,13.987l3.174,3.174a.843.843,0,0,0,1.191-1.191Zm-12.1-6.7a4.21,4.21,0,1,1,4.21,4.21A4.21,4.21,0,0,1,5.059,9.269Z" transform="translate(-3.375 -3.375)" fill="#999"></path>
-                                            </svg>
-                                        </button>
+                        <!-- tabNav -->
+                        <article class="tabNav">
+                            <ul class="tabList">
+                                <li>
+                                    <button type="button" class="btn grayTab active">기본분석모델</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn grayTab">분석모델</button>
+                                </li>
+                            </ul>
+                            
+                            <!-- tabCont -->
+                            <article class="tabCont type03 active">
+                                <!-- contHead -->
+                                <section class="contHead">
+
+                                    <!-- inputGroup -->
+                                    <div class="inputGroup horizontal">
+                                        <!-- selectArea -->
+                                        <article class="selectArea typeSum">
+                                            <select name="" id="">
+                                                <option value="">전체</option>
+                                            </select>
+                                        </article>
+                                        <!-- //selectArea -->
+                                        <!-- searchArea -->
+                                        <article class="searchArea typeSum">
+                                            <label for="i01">
+                                                <input type="text" id="i01" placeholder="11검색할 분석모델 명을 입력하세요.">
+                                            </label>
+                                            <div class="btnArea">
+                                                <button type="button" class="btn search" title="검색">
+                                                    <svg width="14" height="14" viewBox="0 0 14 14">
+                                                        <path d="M17.162,15.971,13.987,12.8A5.9,5.9,0,1,0,12.8,13.987l3.174,3.174a.843.843,0,0,0,1.191-1.191Zm-12.1-6.7a4.21,4.21,0,1,1,4.21,4.21A4.21,4.21,0,0,1,5.059,9.269Z" transform="translate(-3.375 -3.375)" fill="#999"></path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </article>
+                                        <!-- //searchArea -->
                                     </div>
-                                </article>
-                                <!-- //searchArea -->
-                            </div>
-                            <!-- //inputGroup -->
-                        </section>
-                        <!-- //contHead -->
+                                    <!-- //inputGroup -->
+                                </section>
+                                <!-- //contHead -->
 
-                        <!-- contBody -->
-                        <section class="contBody">
-                            <!-- viewList -->
-                            <article class="viewList active">
-                                <!-- table -->
-                                <div class="table type02">
-                                    <article class="tableHead">
-                                        <p>전체
-                                            <span>37</span>건</p>
+                                <!-- contBody -->
+                                <section class="contBody">
+                                    <!-- viewList -->
+                                    <article class="viewList active">
+                                        <!-- table -->
+                                        <div class="table type02">
+                                            <article class="tableHead">
+                                                <p>전체
+                                                    <span>11</span>건</p>
+                                            </article>
+                                            <table>
+                                                <caption>
+                                                    평가모델 게시물이며 기본분석모델, 분석모델 명, 분석지표 등록 수, 평가기준 설명, 작성자, 등록/수정일, 삭제 등의 정보를 제공합니다.
+                                                </caption>
+                                                <colgroup>
+                                                    <col style="width: 130px;">
+                                                    <col style="width: 390px;">
+                                                    <col style="width: 100px;">
+                                                    <col style="width: auto;">
+                                                    <col style="width: 110px;">
+                                                    <col style="width: 170px;">
+                                                    <col style="width: 70px;">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th>기본분석모델</th>
+                                                        <th>분석모델 명</th>
+                                                        <th>분석지표 <br />등록 수</th>
+                                                        <th>평가기준 설명</th>
+                                                        <th>작성자</th>
+                                                        <th>등록/수정일</th>
+                                                        <th>삭제</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>11일반택지</td>
+                                                        <td>
+                                                            <a href="#" class="underline elips">지방_일반주택 모델</a>
+                                                        </td>
+                                                        <td class="taR">
+                                                            6
+                                                        </td>
+                                                        <td class="elips">
+                                                            일반택지 기본분석모델
+                                                        </td>
+                                                        <td>
+                                                            홍기를동
+                                                        </td>
+                                                        <td>
+                                                            2022.12.11 13:11:12
+                                                        </td>
+                                                        <td>
+                                                            <div class="btnArea">
+                                                                <button type="button" class="btn popMinus" title="삭제"></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>일반택지</td>
+                                                        <td>
+                                                            <a href="#" class="underline elips">지방_일반주택 모델 지방_일반주택 모델 지방_일반주택 모델 지방_일반주택 모델</a>
+                                                        </td>
+                                                        <td class="taR">
+                                                            185
+                                                        </td>
+                                                        <td class="elips">
+                                                            일반택지 기본분석모델 일반택지 기본분석모델 일반택지 기본분석모델 일반택지 기본분석모델 일반택지 기본분석모델
+                                                        </td>
+                                                        <td>
+                                                            홍기를동
+                                                        </td>
+                                                        <td>
+                                                            2022.12.11 13:11:12
+                                                        </td>
+                                                        <td>
+                                                            <div class="btnArea">
+                                                                <button type="button" class="btn popMinus" title="삭제"></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>일반택지</td>
+                                                        <td>
+                                                            <a href="#" class="underline elips">지방_일반주택 모델</a>
+                                                        </td>
+                                                        <td class="taR">
+                                                            6
+                                                        </td>
+                                                        <td class="elips">
+                                                            일반택지 기본분석모델
+                                                        </td>
+                                                        <td>
+                                                            홍기를동
+                                                        </td>
+                                                        <td>
+                                                            2022.12.11 13:11:12
+                                                        </td>
+                                                        <td>
+                                                            <div class="btnArea">
+                                                                <button type="button" class="btn popMinus" title="삭제"></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>일반택지</td>
+                                                        <td>
+                                                            <a href="#" class="underline elips">지방_일반주택 모델</a>
+                                                        </td>
+                                                        <td class="taR">
+                                                            6
+                                                        </td>
+                                                        <td class="elips">
+                                                            일반택지 기본분석모델
+                                                        </td>
+                                                        <td>
+                                                            홍기를동
+                                                        </td>
+                                                        <td>
+                                                            2022.12.11 13:11:12
+                                                        </td>
+                                                        <td>
+                                                            <div class="btnArea">
+                                                                <button type="button" class="btn popMinus" title="삭제"></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>일반택지</td>
+                                                        <td>
+                                                            <a href="#" class="underline elips">지방_일반주택 모델</a>
+                                                        </td>
+                                                        <td class="taR">
+                                                            6
+                                                        </td>
+                                                        <td class="elips">
+                                                            일반택지 기본분석모델
+                                                        </td>
+                                                        <td>
+                                                            홍기를동
+                                                        </td>
+                                                        <td>
+                                                            2022.12.11 13:11:12
+                                                        </td>
+                                                        <td>
+                                                            <div class="btnArea">
+                                                                <button type="button" class="btn popMinus" title="삭제"></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>일반택지</td>
+                                                        <td>
+                                                            <a href="#" class="underline elips">지방_일반주택 모델</a>
+                                                        </td>
+                                                        <td class="taR">
+                                                            6
+                                                        </td>
+                                                        <td class="elips">
+                                                            일반택지 기본분석모델
+                                                        </td>
+                                                        <td>
+                                                            홍기를동
+                                                        </td>
+                                                        <td>
+                                                            2022.12.11 13:11:12
+                                                        </td>
+                                                        <td>
+                                                            <div class="btnArea">
+                                                                <button type="button" class="btn popMinus" title="삭제"></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>일반택지</td>
+                                                        <td>
+                                                            <a href="#" class="underline elips">지방_일반주택 모델</a>
+                                                        </td>
+                                                        <td class="taR">
+                                                            6
+                                                        </td>
+                                                        <td class="elips">
+                                                            일반택지 기본분석모델
+                                                        </td>
+                                                        <td>
+                                                            홍기를동
+                                                        </td>
+                                                        <td>
+                                                            2022.12.11 13:11:12
+                                                        </td>
+                                                        <td>
+                                                            <div class="btnArea">
+                                                                <button type="button" class="btn popMinus" title="삭제"></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>일반택지</td>
+                                                        <td>
+                                                            <a href="#" class="underline elips">지방_일반주택 모델</a>
+                                                        </td>
+                                                        <td class="taR">
+                                                            6
+                                                        </td>
+                                                        <td class="elips">
+                                                            일반택지 기본분석모델
+                                                        </td>
+                                                        <td>
+                                                            홍기를동
+                                                        </td>
+                                                        <td>
+                                                            2022.12.11 13:11:12
+                                                        </td>
+                                                        <td>
+                                                            <div class="btnArea">
+                                                                <button type="button" class="btn popMinus" title="삭제"></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>일반택지</td>
+                                                        <td>
+                                                            <a href="#" class="underline elips">지방_일반주택 모델</a>
+                                                        </td>
+                                                        <td class="taR">
+                                                            6
+                                                        </td>
+                                                        <td class="elips">
+                                                            일반택지 기본분석모델
+                                                        </td>
+                                                        <td>
+                                                            홍기를동
+                                                        </td>
+                                                        <td>
+                                                            2022.12.11 13:11:12
+                                                        </td>
+                                                        <td>
+                                                            <div class="btnArea">
+                                                                <button type="button" class="btn popMinus" title="삭제"></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>일반택지</td>
+                                                        <td>
+                                                            <a href="#" class="underline elips">지방_일반주택 모델</a>
+                                                        </td>
+                                                        <td class="taR">
+                                                            6
+                                                        </td>
+                                                        <td class="elips">
+                                                            일반택지 기본분석모델
+                                                        </td>
+                                                        <td>
+                                                            홍기를동
+                                                        </td>
+                                                        <td>
+                                                            2022.12.11 13:11:12
+                                                        </td>
+                                                        <td>
+                                                            <div class="btnArea">
+                                                                <button type="button" class="btn popMinus" title="삭제"></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>일반택지</td>
+                                                        <td>
+                                                            <a href="#" class="underline elips">지방_일반주택 모델</a>
+                                                        </td>
+                                                        <td class="taR">
+                                                            6
+                                                        </td>
+                                                        <td class="elips">
+                                                            일반택지 기본분석모델
+                                                        </td>
+                                                        <td>
+                                                            홍기를동
+                                                        </td>
+                                                        <td>
+                                                            2022.12.11 13:11:12
+                                                        </td>
+                                                        <td>
+                                                            <div class="btnArea">
+                                                                <button type="button" class="btn popMinus" title="삭제"></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            
+                                        </div>
+                                        <!-- //table -->
+
+
+                                        <!-- pagination -->
+                                        <article class="pagination">
+                                            <button type="button" class="btn first off" title="첫번째 페이지">
+                                                <span class="hidden">첫번째 페이지</span>
+                                                <svg width="13" height="12" viewBox="0 0 13 12">
+                                                    <g id="_" data-name="&lt;&lt;" transform="translate(-714.5 -1056)">
+                                                        <path id="Shape_1048" data-name="Shape 1048" d="M1367.118,299.986a.748.748,0,0,1-.54-.232l-5.236-5.418a.811.811,0,0,1,0-1.119.747.747,0,0,1,1.081,0l4.695,4.858,4.7-4.858a.746.746,0,0,1,1.081,0,.811.811,0,0,1,0,1.119l-5.235,5.418A.749.749,0,0,1,1367.118,299.986Z" transform="translate(1014.486 -305.118) rotate(90)" fill="#666" />
+                                                        <path id="Shape_1048-2" data-name="Shape 1048" d="M1367.118,299.986a.748.748,0,0,1-.54-.232l-5.236-5.418a.811.811,0,0,1,0-1.119.747.747,0,0,1,1.081,0l4.695,4.858,4.7-4.858a.746.746,0,0,1,1.081,0,.811.811,0,0,1,0,1.119l-5.235,5.418A.749.749,0,0,1,1367.118,299.986Z" transform="translate(1020.486 -305.118) rotate(90)" fill="#666" />
+                                                    </g>
+                                                </svg>
+                                            </button>
+
+                                            <button type="button" class="btn prev off" title="이전 페이지">
+                                                <span class="hidden">이전 페이지</span>
+                                                <svg width="7" height="12" viewBox="0 0 7 12">
+                                                    <g id="_" data-name="&lt;" transform="translate(-714.5 -1056)">
+                                                        <path id="Shape_1048" data-name="Shape 1048" d="M1367.118,299.986a.748.748,0,0,1-.54-.232l-5.236-5.418a.811.811,0,0,1,0-1.119.747.747,0,0,1,1.081,0l4.695,4.858,4.7-4.858a.746.746,0,0,1,1.081,0,.811.811,0,0,1,0,1.119l-5.235,5.418A.749.749,0,0,1,1367.118,299.986Z" transform="translate(1014.486 -305.118) rotate(90)" fill="#666" />
+                                                    </g>
+                                                </svg>
+                                            </button>
+
+                                            <a href="#" class="active">1</a>
+                                            <a href="#">2</a>
+                                            <a href="#">3</a>
+                                            <a href="#">4</a>
+                                            <a href="#">5</a>
+                                            <a href="#">6</a>
+                                            <a href="#">7</a>
+                                            <a href="#">8</a>
+                                            <a href="#">9</a>
+                                            <a href="#">10</a>
+
+                                            <button type="button" class="btn next" title="다음 페이지">
+                                                <span class="hidden">다음 페이지</span>
+                                                <svg id="_" data-name="&gt;" width="7" height="12" viewBox="0 0 7 12">
+                                                    <path id="Shape_1048" data-name="Shape 1048" d="M6,0a.748.748,0,0,0-.54.232L.224,5.649a.811.811,0,0,0,0,1.119.747.747,0,0,0,1.081,0L6,1.91l4.7,4.858a.746.746,0,0,0,1.081,0,.811.811,0,0,0,0-1.119L6.541.232A.749.749,0,0,0,6,0Z" transform="translate(7 0) rotate(90)" fill="#666" />
+                                                </svg>
+                                            </button>
+
+                                            <button type="button" class="btn last" title="마지막 페이지">
+                                                <span class="hidden">마지막 페이지</span>
+                                                <svg width="13" height="12" viewBox="0 0 13 12">
+                                                    <g id="default" transform="translate(0 0)">
+                                                        <path id="Shape_1048" data-name="Shape 1048" d="M6,0a.748.748,0,0,0-.54.232L.224,5.649a.811.811,0,0,0,0,1.119.747.747,0,0,0,1.081,0L6,1.91l4.7,4.858a.746.746,0,0,0,1.081,0,.811.811,0,0,0,0-1.119L6.541.232A.749.749,0,0,0,6,0Z" transform="translate(13) rotate(90)" fill="#666" />
+                                                        <path id="Shape_1048-2" data-name="Shape 1048" d="M6,0a.748.748,0,0,0-.54.232L.224,5.649a.811.811,0,0,0,0,1.119.747.747,0,0,0,1.081,0L6,1.91l4.7,4.858a.746.746,0,0,0,1.081,0,.811.811,0,0,0,0-1.119L6.541.232A.749.749,0,0,0,6,0Z" transform="translate(7) rotate(90)" fill="#666" />
+                                                    </g>
+                                                </svg>
+
+                                            </button>
+
+                                        </article>
+                                        <!-- //pagination -->
                                     </article>
-                                    <table>
-                                        <caption>
-                                            평가모델 게시물이며 기본분석모델, 분석모델 명, 분석지표 등록 수, 평가기준 설명, 작성자, 등록/수정일, 삭제 등의 정보를 제공합니다.
-                                        </caption>
-                                        <colgroup>
-                                            <col style="width: 130px;">
-                                            <col style="width: 390px;">
-                                            <col style="width: 100px;">
-                                            <col style="width: auto;">
-                                            <col style="width: 110px;">
-                                            <col style="width: 170px;">
-                                            <col style="width: 70px;">
-                                        </colgroup>
-                                        <thead>
-                                            <tr>
-                                                <th>기본분석모델</th>
-                                                <th>분석모델 명</th>
-                                                <th>분석지표 <br />등록 수</th>
-                                                <th>평가기준 설명</th>
-                                                <th>작성자</th>
-                                                <th>등록/수정일</th>
-                                                <th>삭제</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>일반택지</td>
-                                                <td>
-                                                    <a href="#" class="underline elips">지방_일반주택 모델</a>
-                                                </td>
-                                                <td class="taR">
-                                                    6
-                                                </td>
-                                                <td class="elips">
-                                                    일반택지 기본분석모델
-                                                </td>
-                                                <td>
-                                                    홍기를동
-                                                </td>
-                                                <td>
-                                                    2022.12.11 13:11:12
-                                                </td>
-                                                <td>
-                                                    <div class="btnArea">
-                                                        <button type="button" class="btn popMinus" title="삭제"></button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>일반택지</td>
-                                                <td>
-                                                    <a href="#" class="underline elips">지방_일반주택 모델 지방_일반주택 모델 지방_일반주택 모델 지방_일반주택 모델</a>
-                                                </td>
-                                                <td class="taR">
-                                                    185
-                                                </td>
-                                                <td class="elips">
-                                                    일반택지 기본분석모델 일반택지 기본분석모델 일반택지 기본분석모델 일반택지 기본분석모델 일반택지 기본분석모델
-                                                </td>
-                                                <td>
-                                                    홍기를동
-                                                </td>
-                                                <td>
-                                                    2022.12.11 13:11:12
-                                                </td>
-                                                <td>
-                                                    <div class="btnArea">
-                                                        <button type="button" class="btn popMinus" title="삭제"></button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>일반택지</td>
-                                                <td>
-                                                    <a href="#" class="underline elips">지방_일반주택 모델</a>
-                                                </td>
-                                                <td class="taR">
-                                                    6
-                                                </td>
-                                                <td class="elips">
-                                                    일반택지 기본분석모델
-                                                </td>
-                                                <td>
-                                                    홍기를동
-                                                </td>
-                                                <td>
-                                                    2022.12.11 13:11:12
-                                                </td>
-                                                <td>
-                                                    <div class="btnArea">
-                                                        <button type="button" class="btn popMinus" title="삭제"></button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>일반택지</td>
-                                                <td>
-                                                    <a href="#" class="underline elips">지방_일반주택 모델</a>
-                                                </td>
-                                                <td class="taR">
-                                                    6
-                                                </td>
-                                                <td class="elips">
-                                                    일반택지 기본분석모델
-                                                </td>
-                                                <td>
-                                                    홍기를동
-                                                </td>
-                                                <td>
-                                                    2022.12.11 13:11:12
-                                                </td>
-                                                <td>
-                                                    <div class="btnArea">
-                                                        <button type="button" class="btn popMinus" title="삭제"></button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>일반택지</td>
-                                                <td>
-                                                    <a href="#" class="underline elips">지방_일반주택 모델</a>
-                                                </td>
-                                                <td class="taR">
-                                                    6
-                                                </td>
-                                                <td class="elips">
-                                                    일반택지 기본분석모델
-                                                </td>
-                                                <td>
-                                                    홍기를동
-                                                </td>
-                                                <td>
-                                                    2022.12.11 13:11:12
-                                                </td>
-                                                <td>
-                                                    <div class="btnArea">
-                                                        <button type="button" class="btn popMinus" title="삭제"></button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>일반택지</td>
-                                                <td>
-                                                    <a href="#" class="underline elips">지방_일반주택 모델</a>
-                                                </td>
-                                                <td class="taR">
-                                                    6
-                                                </td>
-                                                <td class="elips">
-                                                    일반택지 기본분석모델
-                                                </td>
-                                                <td>
-                                                    홍기를동
-                                                </td>
-                                                <td>
-                                                    2022.12.11 13:11:12
-                                                </td>
-                                                <td>
-                                                    <div class="btnArea">
-                                                        <button type="button" class="btn popMinus" title="삭제"></button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>일반택지</td>
-                                                <td>
-                                                    <a href="#" class="underline elips">지방_일반주택 모델</a>
-                                                </td>
-                                                <td class="taR">
-                                                    6
-                                                </td>
-                                                <td class="elips">
-                                                    일반택지 기본분석모델
-                                                </td>
-                                                <td>
-                                                    홍기를동
-                                                </td>
-                                                <td>
-                                                    2022.12.11 13:11:12
-                                                </td>
-                                                <td>
-                                                    <div class="btnArea">
-                                                        <button type="button" class="btn popMinus" title="삭제"></button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>일반택지</td>
-                                                <td>
-                                                    <a href="#" class="underline elips">지방_일반주택 모델</a>
-                                                </td>
-                                                <td class="taR">
-                                                    6
-                                                </td>
-                                                <td class="elips">
-                                                    일반택지 기본분석모델
-                                                </td>
-                                                <td>
-                                                    홍기를동
-                                                </td>
-                                                <td>
-                                                    2022.12.11 13:11:12
-                                                </td>
-                                                <td>
-                                                    <div class="btnArea">
-                                                        <button type="button" class="btn popMinus" title="삭제"></button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>일반택지</td>
-                                                <td>
-                                                    <a href="#" class="underline elips">지방_일반주택 모델</a>
-                                                </td>
-                                                <td class="taR">
-                                                    6
-                                                </td>
-                                                <td class="elips">
-                                                    일반택지 기본분석모델
-                                                </td>
-                                                <td>
-                                                    홍기를동
-                                                </td>
-                                                <td>
-                                                    2022.12.11 13:11:12
-                                                </td>
-                                                <td>
-                                                    <div class="btnArea">
-                                                        <button type="button" class="btn popMinus" title="삭제"></button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>일반택지</td>
-                                                <td>
-                                                    <a href="#" class="underline elips">지방_일반주택 모델</a>
-                                                </td>
-                                                <td class="taR">
-                                                    6
-                                                </td>
-                                                <td class="elips">
-                                                    일반택지 기본분석모델
-                                                </td>
-                                                <td>
-                                                    홍기를동
-                                                </td>
-                                                <td>
-                                                    2022.12.11 13:11:12
-                                                </td>
-                                                <td>
-                                                    <div class="btnArea">
-                                                        <button type="button" class="btn popMinus" title="삭제"></button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>일반택지</td>
-                                                <td>
-                                                    <a href="#" class="underline elips">지방_일반주택 모델</a>
-                                                </td>
-                                                <td class="taR">
-                                                    6
-                                                </td>
-                                                <td class="elips">
-                                                    일반택지 기본분석모델
-                                                </td>
-                                                <td>
-                                                    홍기를동
-                                                </td>
-                                                <td>
-                                                    2022.12.11 13:11:12
-                                                </td>
-                                                <td>
-                                                    <div class="btnArea">
-                                                        <button type="button" class="btn popMinus" title="삭제"></button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    
-                                </div>
-                                <!-- //table -->
+                                    <!-- //viewList -->
 
+                                    <!-- addList -->
+                                    <aside class="addList">
+                                        <!-- btnArea -->
+                                        <div class="btnArea">
+                                            <button type="button" class="btn addPjt">
+                                                <span class="text">
+                                                    분석모델 생성
+                                                </span>
+                                                <span class="partz"></span>
+                                            </button>
+                                        </div>
+                                        <!-- //btnArea -->
+                                    </aside>
+                                    <!-- //addList -->
 
-                                <!-- pagination -->
-                                <article class="pagination">
-                                    <button type="button" class="btn first off" title="첫번째 페이지">
-                                        <span class="hidden">첫번째 페이지</span>
-                                        <svg width="13" height="12" viewBox="0 0 13 12">
-                                            <g id="_" data-name="&lt;&lt;" transform="translate(-714.5 -1056)">
-                                                <path id="Shape_1048" data-name="Shape 1048" d="M1367.118,299.986a.748.748,0,0,1-.54-.232l-5.236-5.418a.811.811,0,0,1,0-1.119.747.747,0,0,1,1.081,0l4.695,4.858,4.7-4.858a.746.746,0,0,1,1.081,0,.811.811,0,0,1,0,1.119l-5.235,5.418A.749.749,0,0,1,1367.118,299.986Z" transform="translate(1014.486 -305.118) rotate(90)" fill="#666" />
-                                                <path id="Shape_1048-2" data-name="Shape 1048" d="M1367.118,299.986a.748.748,0,0,1-.54-.232l-5.236-5.418a.811.811,0,0,1,0-1.119.747.747,0,0,1,1.081,0l4.695,4.858,4.7-4.858a.746.746,0,0,1,1.081,0,.811.811,0,0,1,0,1.119l-5.235,5.418A.749.749,0,0,1,1367.118,299.986Z" transform="translate(1020.486 -305.118) rotate(90)" fill="#666" />
-                                            </g>
-                                        </svg>
-                                    </button>
-
-                                    <button type="button" class="btn prev off" title="이전 페이지">
-                                        <span class="hidden">이전 페이지</span>
-                                        <svg width="7" height="12" viewBox="0 0 7 12">
-                                            <g id="_" data-name="&lt;" transform="translate(-714.5 -1056)">
-                                                <path id="Shape_1048" data-name="Shape 1048" d="M1367.118,299.986a.748.748,0,0,1-.54-.232l-5.236-5.418a.811.811,0,0,1,0-1.119.747.747,0,0,1,1.081,0l4.695,4.858,4.7-4.858a.746.746,0,0,1,1.081,0,.811.811,0,0,1,0,1.119l-5.235,5.418A.749.749,0,0,1,1367.118,299.986Z" transform="translate(1014.486 -305.118) rotate(90)" fill="#666" />
-                                            </g>
-                                        </svg>
-                                    </button>
-
-                                    <a href="#" class="active">1</a>
-                                    <a href="#">2</a>
-                                    <a href="#">3</a>
-                                    <a href="#">4</a>
-                                    <a href="#">5</a>
-                                    <a href="#">6</a>
-                                    <a href="#">7</a>
-                                    <a href="#">8</a>
-                                    <a href="#">9</a>
-                                    <a href="#">10</a>
-
-                                    <button type="button" class="btn next" title="다음 페이지">
-                                        <span class="hidden">다음 페이지</span>
-                                        <svg id="_" data-name="&gt;" width="7" height="12" viewBox="0 0 7 12">
-                                            <path id="Shape_1048" data-name="Shape 1048" d="M6,0a.748.748,0,0,0-.54.232L.224,5.649a.811.811,0,0,0,0,1.119.747.747,0,0,0,1.081,0L6,1.91l4.7,4.858a.746.746,0,0,0,1.081,0,.811.811,0,0,0,0-1.119L6.541.232A.749.749,0,0,0,6,0Z" transform="translate(7 0) rotate(90)" fill="#666" />
-                                        </svg>
-                                    </button>
-
-                                    <button type="button" class="btn last" title="마지막 페이지">
-                                        <span class="hidden">마지막 페이지</span>
-                                        <svg width="13" height="12" viewBox="0 0 13 12">
-                                            <g id="default" transform="translate(0 0)">
-                                                <path id="Shape_1048" data-name="Shape 1048" d="M6,0a.748.748,0,0,0-.54.232L.224,5.649a.811.811,0,0,0,0,1.119.747.747,0,0,0,1.081,0L6,1.91l4.7,4.858a.746.746,0,0,0,1.081,0,.811.811,0,0,0,0-1.119L6.541.232A.749.749,0,0,0,6,0Z" transform="translate(13) rotate(90)" fill="#666" />
-                                                <path id="Shape_1048-2" data-name="Shape 1048" d="M6,0a.748.748,0,0,0-.54.232L.224,5.649a.811.811,0,0,0,0,1.119.747.747,0,0,0,1.081,0L6,1.91l4.7,4.858a.746.746,0,0,0,1.081,0,.811.811,0,0,0,0-1.119L6.541.232A.749.749,0,0,0,6,0Z" transform="translate(7) rotate(90)" fill="#666" />
-                                            </g>
-                                        </svg>
-
-                                    </button>
-
-                                </article>
-                                <!-- //pagination -->
+                                </section>
+                                <!-- //contBody -->
                             </article>
-                            <!-- //viewList -->
+                            <!-- //tabCont -->
 
-                            <!-- addList -->
-                            <aside class="addList">
-                                <!-- btnArea -->
-                                <div class="btnArea">
-                                    <button type="button" class="btn addPjt">
-                                        <span class="text">
-                                            분석모델 생성
-                                        </span>
-                                        <span class="partz"></span>
-                                    </button>
-                                </div>
-                                <!-- //btnArea -->
-                            </aside>
-                            <!-- //addList -->
+                            <!-- tabCont -->
+                            <article class="tabCont type03">
+                                <!-- contHead -->
+                                <section class="contHead">
 
-                        </section>
-                        <!-- //contBody -->
+                                    <!-- inputGroup -->
+                                    <div class="inputGroup horizontal">
+                                        <!-- selectArea -->
+                                        <article class="selectArea typeSum">
+                                            <select name="" id="">
+                                                <option value="">전체</option>
+                                            </select>
+                                        </article>
+                                        <!-- //selectArea -->
+                                        <!-- searchArea -->
+                                        <article class="searchArea typeSum">
+                                            <label for="i02">
+                                                <input type="text" id="i02" placeholder="22검색할 분석모델 명을 입력하세요.22">
+                                            </label>
+                                            <div class="btnArea">
+                                                <button type="button" class="btn search" title="검색">
+                                                    <svg width="14" height="14" viewBox="0 0 14 14">
+                                                        <path d="M17.162,15.971,13.987,12.8A5.9,5.9,0,1,0,12.8,13.987l3.174,3.174a.843.843,0,0,0,1.191-1.191Zm-12.1-6.7a4.21,4.21,0,1,1,4.21,4.21A4.21,4.21,0,0,1,5.059,9.269Z" transform="translate(-3.375 -3.375)" fill="#999"></path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </article>
+                                        <!-- //searchArea -->
+                                    </div>
+                                    <!-- //inputGroup -->
+                                </section>
+                                <!-- //contHead -->
+
+                                <!-- contBody -->
+                                <section class="contBody">
+                                    <!-- viewList -->
+                                    <article class="viewList active">
+                                        <!-- table -->
+                                        <div class="table type02">
+                                            <article class="tableHead">
+                                                <p>전체
+                                                    <span>22</span>건</p>
+                                            </article>
+                                            <table>
+                                                <caption>
+                                                    평가모델 분석모델 게시물이며 기본분석모델, 분석모델 명, 분석지표 등록 수, 평가기준 설명, 작성자, 등록/수정일, 삭제 등의 정보를 제공합니다.
+                                                </caption>
+                                                <colgroup>
+                                                    <col style="width: 130px;">
+                                                    <col style="width: 390px;">
+                                                    <col style="width: 100px;">
+                                                    <col style="width: auto;">
+                                                    <col style="width: 110px;">
+                                                    <col style="width: 170px;">
+                                                    <col style="width: 70px;">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th>기본분석모델</th>
+                                                        <th>분석모델 명</th>
+                                                        <th>분석지표 <br />등록 수</th>
+                                                        <th>평가기준 설명</th>
+                                                        <th>작성자</th>
+                                                        <th>등록/수정일</th>
+                                                        <th>삭제</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>일반택지</td>
+                                                        <td>
+                                                            <a href="#" class="underline elips">지방_일반주택 모델</a>
+                                                        </td>
+                                                        <td class="taR">
+                                                            6
+                                                        </td>
+                                                        <td class="elips">
+                                                            일반택지 기본분석모델
+                                                        </td>
+                                                        <td>
+                                                            홍기를동
+                                                        </td>
+                                                        <td>
+                                                            2022.12.11 13:11:12
+                                                        </td>
+                                                        <td>
+                                                            <div class="btnArea">
+                                                                <button type="button" class="btn popMinus" title="삭제"></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>일반택지</td>
+                                                        <td>
+                                                            <a href="#" class="underline elips">지방_일반주택 모델 지방_일반주택 모델 지방_일반주택 모델 지방_일반주택 모델</a>
+                                                        </td>
+                                                        <td class="taR">
+                                                            185
+                                                        </td>
+                                                        <td class="elips">
+                                                            일반택지 기본분석모델 일반택지 기본분석모델 일반택지 기본분석모델 일반택지 기본분석모델 일반택지 기본분석모델
+                                                        </td>
+                                                        <td>
+                                                            홍기를동
+                                                        </td>
+                                                        <td>
+                                                            2022.12.11 13:11:12
+                                                        </td>
+                                                        <td>
+                                                            <div class="btnArea">
+                                                                <button type="button" class="btn popMinus" title="삭제"></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>일반택지</td>
+                                                        <td>
+                                                            <a href="#" class="underline elips">지방_일반주택 모델</a>
+                                                        </td>
+                                                        <td class="taR">
+                                                            6
+                                                        </td>
+                                                        <td class="elips">
+                                                            일반택지 기본분석모델
+                                                        </td>
+                                                        <td>
+                                                            홍기를동
+                                                        </td>
+                                                        <td>
+                                                            2022.12.11 13:11:12
+                                                        </td>
+                                                        <td>
+                                                            <div class="btnArea">
+                                                                <button type="button" class="btn popMinus" title="삭제"></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>일반택지</td>
+                                                        <td>
+                                                            <a href="#" class="underline elips">지방_일반주택 모델</a>
+                                                        </td>
+                                                        <td class="taR">
+                                                            6
+                                                        </td>
+                                                        <td class="elips">
+                                                            일반택지 기본분석모델
+                                                        </td>
+                                                        <td>
+                                                            홍기를동
+                                                        </td>
+                                                        <td>
+                                                            2022.12.11 13:11:12
+                                                        </td>
+                                                        <td>
+                                                            <div class="btnArea">
+                                                                <button type="button" class="btn popMinus" title="삭제"></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>일반택지</td>
+                                                        <td>
+                                                            <a href="#" class="underline elips">지방_일반주택 모델</a>
+                                                        </td>
+                                                        <td class="taR">
+                                                            6
+                                                        </td>
+                                                        <td class="elips">
+                                                            일반택지 기본분석모델
+                                                        </td>
+                                                        <td>
+                                                            홍기를동
+                                                        </td>
+                                                        <td>
+                                                            2022.12.11 13:11:12
+                                                        </td>
+                                                        <td>
+                                                            <div class="btnArea">
+                                                                <button type="button" class="btn popMinus" title="삭제"></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>일반택지</td>
+                                                        <td>
+                                                            <a href="#" class="underline elips">지방_일반주택 모델</a>
+                                                        </td>
+                                                        <td class="taR">
+                                                            6
+                                                        </td>
+                                                        <td class="elips">
+                                                            일반택지 기본분석모델
+                                                        </td>
+                                                        <td>
+                                                            홍기를동
+                                                        </td>
+                                                        <td>
+                                                            2022.12.11 13:11:12
+                                                        </td>
+                                                        <td>
+                                                            <div class="btnArea">
+                                                                <button type="button" class="btn popMinus" title="삭제"></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>일반택지</td>
+                                                        <td>
+                                                            <a href="#" class="underline elips">지방_일반주택 모델</a>
+                                                        </td>
+                                                        <td class="taR">
+                                                            6
+                                                        </td>
+                                                        <td class="elips">
+                                                            일반택지 기본분석모델
+                                                        </td>
+                                                        <td>
+                                                            홍기를동
+                                                        </td>
+                                                        <td>
+                                                            2022.12.11 13:11:12
+                                                        </td>
+                                                        <td>
+                                                            <div class="btnArea">
+                                                                <button type="button" class="btn popMinus" title="삭제"></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>일반택지</td>
+                                                        <td>
+                                                            <a href="#" class="underline elips">지방_일반주택 모델</a>
+                                                        </td>
+                                                        <td class="taR">
+                                                            6
+                                                        </td>
+                                                        <td class="elips">
+                                                            일반택지 기본분석모델
+                                                        </td>
+                                                        <td>
+                                                            홍기를동
+                                                        </td>
+                                                        <td>
+                                                            2022.12.11 13:11:12
+                                                        </td>
+                                                        <td>
+                                                            <div class="btnArea">
+                                                                <button type="button" class="btn popMinus" title="삭제"></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>일반택지</td>
+                                                        <td>
+                                                            <a href="#" class="underline elips">지방_일반주택 모델</a>
+                                                        </td>
+                                                        <td class="taR">
+                                                            6
+                                                        </td>
+                                                        <td class="elips">
+                                                            일반택지 기본분석모델
+                                                        </td>
+                                                        <td>
+                                                            홍기를동
+                                                        </td>
+                                                        <td>
+                                                            2022.12.11 13:11:12
+                                                        </td>
+                                                        <td>
+                                                            <div class="btnArea">
+                                                                <button type="button" class="btn popMinus" title="삭제"></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>일반택지</td>
+                                                        <td>
+                                                            <a href="#" class="underline elips">지방_일반주택 모델</a>
+                                                        </td>
+                                                        <td class="taR">
+                                                            6
+                                                        </td>
+                                                        <td class="elips">
+                                                            일반택지 기본분석모델
+                                                        </td>
+                                                        <td>
+                                                            홍기를동
+                                                        </td>
+                                                        <td>
+                                                            2022.12.11 13:11:12
+                                                        </td>
+                                                        <td>
+                                                            <div class="btnArea">
+                                                                <button type="button" class="btn popMinus" title="삭제"></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>일반택지</td>
+                                                        <td>
+                                                            <a href="#" class="underline elips">지방_일반주택 모델</a>
+                                                        </td>
+                                                        <td class="taR">
+                                                            6
+                                                        </td>
+                                                        <td class="elips">
+                                                            일반택지 기본분석모델
+                                                        </td>
+                                                        <td>
+                                                            홍기를동
+                                                        </td>
+                                                        <td>
+                                                            2022.12.11 13:11:12
+                                                        </td>
+                                                        <td>
+                                                            <div class="btnArea">
+                                                                <button type="button" class="btn popMinus" title="삭제"></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            
+                                        </div>
+                                        <!-- //table -->
+
+
+                                        <!-- pagination -->
+                                        <article class="pagination">
+                                            <button type="button" class="btn first off" title="첫번째 페이지">
+                                                <span class="hidden">첫번째 페이지</span>
+                                                <svg width="13" height="12" viewBox="0 0 13 12">
+                                                    <g id="_" data-name="&lt;&lt;" transform="translate(-714.5 -1056)">
+                                                        <path id="Shape_1048" data-name="Shape 1048" d="M1367.118,299.986a.748.748,0,0,1-.54-.232l-5.236-5.418a.811.811,0,0,1,0-1.119.747.747,0,0,1,1.081,0l4.695,4.858,4.7-4.858a.746.746,0,0,1,1.081,0,.811.811,0,0,1,0,1.119l-5.235,5.418A.749.749,0,0,1,1367.118,299.986Z" transform="translate(1014.486 -305.118) rotate(90)" fill="#666" />
+                                                        <path id="Shape_1048-2" data-name="Shape 1048" d="M1367.118,299.986a.748.748,0,0,1-.54-.232l-5.236-5.418a.811.811,0,0,1,0-1.119.747.747,0,0,1,1.081,0l4.695,4.858,4.7-4.858a.746.746,0,0,1,1.081,0,.811.811,0,0,1,0,1.119l-5.235,5.418A.749.749,0,0,1,1367.118,299.986Z" transform="translate(1020.486 -305.118) rotate(90)" fill="#666" />
+                                                    </g>
+                                                </svg>
+                                            </button>
+
+                                            <button type="button" class="btn prev off" title="이전 페이지">
+                                                <span class="hidden">이전 페이지</span>
+                                                <svg width="7" height="12" viewBox="0 0 7 12">
+                                                    <g id="_" data-name="&lt;" transform="translate(-714.5 -1056)">
+                                                        <path id="Shape_1048" data-name="Shape 1048" d="M1367.118,299.986a.748.748,0,0,1-.54-.232l-5.236-5.418a.811.811,0,0,1,0-1.119.747.747,0,0,1,1.081,0l4.695,4.858,4.7-4.858a.746.746,0,0,1,1.081,0,.811.811,0,0,1,0,1.119l-5.235,5.418A.749.749,0,0,1,1367.118,299.986Z" transform="translate(1014.486 -305.118) rotate(90)" fill="#666" />
+                                                    </g>
+                                                </svg>
+                                            </button>
+
+                                            <a href="#" class="active">1</a>
+                                            <a href="#">2</a>
+                                            <a href="#">3</a>
+                                            <a href="#">4</a>
+                                            <a href="#">5</a>
+                                            <a href="#">6</a>
+                                            <a href="#">7</a>
+                                            <a href="#">8</a>
+                                            <a href="#">9</a>
+                                            <a href="#">10</a>
+
+                                            <button type="button" class="btn next" title="다음 페이지">
+                                                <span class="hidden">다음 페이지</span>
+                                                <svg id="_" data-name="&gt;" width="7" height="12" viewBox="0 0 7 12">
+                                                    <path id="Shape_1048" data-name="Shape 1048" d="M6,0a.748.748,0,0,0-.54.232L.224,5.649a.811.811,0,0,0,0,1.119.747.747,0,0,0,1.081,0L6,1.91l4.7,4.858a.746.746,0,0,0,1.081,0,.811.811,0,0,0,0-1.119L6.541.232A.749.749,0,0,0,6,0Z" transform="translate(7 0) rotate(90)" fill="#666" />
+                                                </svg>
+                                            </button>
+
+                                            <button type="button" class="btn last" title="마지막 페이지">
+                                                <span class="hidden">마지막 페이지</span>
+                                                <svg width="13" height="12" viewBox="0 0 13 12">
+                                                    <g id="default" transform="translate(0 0)">
+                                                        <path id="Shape_1048" data-name="Shape 1048" d="M6,0a.748.748,0,0,0-.54.232L.224,5.649a.811.811,0,0,0,0,1.119.747.747,0,0,0,1.081,0L6,1.91l4.7,4.858a.746.746,0,0,0,1.081,0,.811.811,0,0,0,0-1.119L6.541.232A.749.749,0,0,0,6,0Z" transform="translate(13) rotate(90)" fill="#666" />
+                                                        <path id="Shape_1048-2" data-name="Shape 1048" d="M6,0a.748.748,0,0,0-.54.232L.224,5.649a.811.811,0,0,0,0,1.119.747.747,0,0,0,1.081,0L6,1.91l4.7,4.858a.746.746,0,0,0,1.081,0,.811.811,0,0,0,0-1.119L6.541.232A.749.749,0,0,0,6,0Z" transform="translate(7) rotate(90)" fill="#666" />
+                                                    </g>
+                                                </svg>
+
+                                            </button>
+
+                                        </article>
+                                        <!-- //pagination -->
+                                    </article>
+                                    <!-- //viewList -->
+
+                                    <!-- addList -->
+                                    <aside class="addList">
+                                        <!-- btnArea -->
+                                        <div class="btnArea">
+                                            <button type="button" class="btn addPjt">
+                                                <span class="text">
+                                                    분석모델 생성
+                                                </span>
+                                                <span class="partz"></span>
+                                            </button>
+                                        </div>
+                                        <!-- //btnArea -->
+                                    </aside>
+                                    <!-- //addList -->
+
+                                </section>
+                                <!-- //contBody -->
+                            </article>
+                            <!-- //tabCont -->
+                        </article>
+                        <!-- tabNav -->
 
                     </div>
                     <!-- //inner -->

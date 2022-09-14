@@ -50,8 +50,9 @@ $(document).ready(function(){
     // viewControl
     $(".viewControl .btnArea .grayRect").on('click', function(){
         let viewNum = $(this).index();
+        
         $(this).addClass("active").siblings().removeClass("active");
-        $(".viewList").eq(viewNum).addClass("active").siblings().removeClass("active")
+        $(this).closest('.contHead').siblings('.contBody').children('.viewList').eq(viewNum).addClass("active").siblings().removeClass("active")
     });
 
     // pagination
@@ -155,6 +156,7 @@ $(document).ready(function(){
     //toc on/off 
     $(".tocSwitch .label").on('click', function(){
         $(this).toggleClass("active").closest(".toc").toggleClass("active");
+        $('.tooltipArea').toggleClass("left");
     })
 
     // location
@@ -244,7 +246,7 @@ $(document).ready(function(){
     });
 
     // 팝업 left 아코디언 lnb type02
-    $(".acco02 > ul > li > a").on('click', function(){
+    $(".acco02 ul li a").on('click', function(){
         if (!$(this).closest("li").hasClass("active")) {
             $(this).closest("li").siblings().removeClass("active").children(".dep").stop().slideUp(100);
             $(this).closest("li").addClass("active").children(".dep").stop().slideDown(100);
@@ -275,6 +277,15 @@ $(document).ready(function(){
     $(".btnArea .onChange").on('click', function(){
         $(this).text("일괄 분석 재실행").addClass("grayCircle").removeClass("navyCircle");
     });
+
+    // tooltip popup
+    $(".toolTip").on('mouseenter', function(){
+        $(".tooltipArea").addClass("active")
+    })
+
+    $(".toolTip").on('mouseleave', function(){
+        $(".tooltipArea").removeClass("active")
+    })
     
     /* 서규영 추가 */
     /* file path */

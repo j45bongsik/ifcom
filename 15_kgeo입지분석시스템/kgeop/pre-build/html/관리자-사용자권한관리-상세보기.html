@@ -57,14 +57,14 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="#" class="active">
                                     <span>
                                         사용자 권한관리
                                     </span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="active">
+                                <a href="#">
                                     <span>
                                         자료 공유 관리
                                     </span>
@@ -169,9 +169,8 @@
                 <!-- content -->
                 <div class="content" style="height: 100%;">
                     <!-- inner -->
-                    <div class="inner type02">
+                    <div class="inner">
                         <h2 class="hidden">본문 영역</h2>
-
 
                         <!-- contBody -->
                         <section class="contBody">
@@ -179,36 +178,15 @@
                             <article class="view">
                                 <!-- viewHead -->
                                 <div class="viewHead">
-                                    <h3 class="title type10">자료 공유 상세</h3>
+                                    <h3 class="title type10">권한변경 신청 상세</h3>
                                 </div>
                                 <!-- //viewHead -->
 
 
                                 <!-- viewDetail -->
                                 <article class="viewManage type02">
-                                    <h3 class="title type04">공유 정보</h3>
-                                    <!-- utilBox -->
-                                    <article class="utilBox">
-
-                                        <!-- reportArea -->
-                                        <div class="reportArea">
-                                            <ul>
-                                                <li>
-                                                    <h4 class="title type09">프로젝트 정보</h4>
-                                                    <p>2022년 ㅇㅇ 신혼부부 공공택지</p>
-                                                </li>
-                                                <li>
-                                                    <h4 class="title type09">프로젝트 설명</h4>
-                                                    <p>2022년 ㅇㅇ 신혼부부 공공택지에 대한 내용입니다.</p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <!-- //reportArea -->
-                                    </article>
-                                    <!-- //utilBox -->
-                                    
                                     <!-- tableArea -->
-                                    <div class="tableArea" style="margin-top: 60px;">
+                                    <div class="tableArea">
                                         <div class="tableHead" style="margin-bottom: 0;">
                                             <h3 class="title type04">처리현황</h3>
                                         </div>
@@ -242,42 +220,86 @@
                                     </div>
                                     <!-- //tableArea -->
 
+                                    <!-- gridArea -->
+                                    <article class="gridArea">
+                                        <h3 class="title type04">신청자 정보</h3>
+                                        <ul>
+                                            <li>
+                                                <i class="id"></i>
+                                                <h4 class="title type08">아이디</h4>
+                                                <p>clsung</p>
+                                            </li>
+                                            <li>
+                                                <i class="person"></i>
+                                                <h4 class="title type08">신청자명</h4>
+                                                <p>이성준</p>
+                                            </li>
+                                            <li>
+                                                <i class="division"></i>
+                                                <h4 class="title type08">신청자 구분</h4>
+                                                <p>본부사용자</p>
+                                            </li>
+                                            <li>
+                                                <i class="agency"></i>
+                                                <h4 class="title type08">소속기관</h4>
+                                                <p class="elips02" title="국토교통부 공공주택본부 공공주택추진단 공공택지조사과">국토교통부 공공주택본부 공공주택추진단 공공택지조사과</p>
+                                            </li>
+                                            <li>
+                                                <i class="cellphone"></i>
+                                                <h4 class="title type08">휴대폰 번호</h4>
+                                                <p>010-2222-4444</p>
+                                            </li>
+                                            <li>
+                                                <i class="phone"></i>
+                                                <h4 class="title type08">행정전화번호</h4>
+                                                <p>-</p>
+                                            </li>
+                                        </ul>
+                                    </article>
+                                    <!-- //gridArea -->
+
                                     <!-- tableArea -->
                                     <div class="tableArea" style="margin-top: 60px;">
                                         <div class="tableHead" style="margin-bottom: 0;">
-                                            <h3 class="title type04">신청자 정보</h3>
+                                            <h3 class="title type04">권한변경 신청현황</h3>
                                         </div>
                                         
                                         <!-- table -->
-                                        <div class="table type02">
+                                        <div class="table type02 notHover">
                                             <table>
-                                                <caption>신청자 정보 게시물로 아이디, 신청자명, 신청자 구분, 소속기관, 휴대폰 번호, 행정전화번호 등의 정보를 제공합니다.</caption>
+                                                <caption>권한변경 신청현황 게시물로 권한명, 역할명, 요청구분, 신청권한, 신청권한 사유 및 대상 업무 등의 정보를 제공합니다.</caption>
                                                 <colgroup>
-                                                    <col style="width: 233px;">
-                                                    <col style="width: 233px;">
-                                                    <col style="width: 233px;">
-                                                    <col style="width: 233px;">
-                                                    <col style="width: 233px;">
+                                                    <col style="width: 200px;">
+                                                    <col style="width: 400px;">
+                                                    <col style="width: 400px;">
                                                     <col style="width: auto;">
                                                 </colgroup>
                                                 <thead>
                                                     <tr>
-                                                        <th scope="col">아이디</th>
-                                                        <th scope="col">신청자명</th>
-                                                        <th scope="col">신청자 구분</th>
-                                                        <th scope="col">소속기관</th>
-                                                        <th scope="col">휴대폰 번호</th>
-                                                        <th scope="col">행정전화번호</th>
+                                                        <th scope="col"></th>
+                                                        <th scope="col">권한명</th>
+                                                        <th scope="col">역할명</th>
+                                                        <th scope="col">요청구분</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td>test9999</td>
-                                                        <td>홍길동</td>
-                                                        <td>본부사용자</td>
-                                                        <td>국토교통부</td>
-                                                        <td>010-2222-3333</td>
-                                                        <td>-</td>
+                                                        <th scope="row" rowspan="3">신청권한</th>
+                                                        <td rowspan="3" style="border-right: 1px solid #ddd;">입지분석 사용자 권한</td>
+                                                        <td>입지분석 추출</td>
+                                                        <td>추가</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>입지분석 kgeo 활용</td>
+                                                        <td>추가</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>입지분석 분석</td>
+                                                        <td>추가</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">신청권한 사유 및 대상 업무</th>
+                                                        <td colspan="3">aaa</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -291,8 +313,6 @@
 
                                 <!-- btnArea -->
                                 <div class="btnArea static">
-                                    <button type="button" class="btn redCircle">반려</button>
-                                    <button type="button" class="btn navyCircle">승인</button>
                                     <button type="button" class="btn grayCircle">목록</button>
                                 </div>
                                 <!-- //btnArea -->

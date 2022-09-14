@@ -141,21 +141,21 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="#" class="active">
                                     <span>
                                         레이어 시점관리
                                     </span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="active">
+                                <a href="#">
                                     <span>
                                         코드 관리
                                     </span>
                                 </a>
                                 <ul class="dep02">
                                     <li>
-                                        <a href="#" class="active">분류 코드 관리</a>
+                                        <a href="#">분류 코드 관리</a>
                                     </li>
                                     <li>
                                         <a href="#">그룹 코드 관리</a>
@@ -218,6 +218,12 @@
                             <!-- view -->
                             <article class="view">
                                 
+                                <!-- viewHead -->
+                                <div class="viewHead">
+                                    <h3 class="title type04">레이어 정보</h3>
+                                </div>
+                                <!-- //viewHead -->
+                                
                                 <!-- utilBox -->
                                 <article class="utilBox type02">
                                     
@@ -225,133 +231,119 @@
                                     <div class="utilForm ">
                                         <ul>
                                             <li>
-                                                <label for="l01">분류코드</label>
-                                                <div class="inputArea type02">
-                                                    <input type="text" id="l01">
+                                                <div class="inputArea type02" style="width: 400px;">
+                                                    <input type="text" disabled class="disabled">
                                                 </div>
                                             </li>
                                             <li>
-                                                <label for="l02">분류코드명</label>
-                                                <div class="inputArea type02">
-                                                    <input type="text" id="l02">
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <label for="l03">사용여부</label>
                                                 <div class="selectArea type02">
-                                                    <select name="" id="l03">
-                                                        <option value="">전체</option>
+                                                    <select name="" id="">
+                                                        <option value="">2020</option>
                                                     </select>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <label for="l01">변경사유</label>
+                                                <div class="inputArea type02" style="width: 400px;">
+                                                    <input type="text" id="l01">
                                                 </div>
                                             </li>
                                             
                                         </ul>
                                     </div>
                                     <!-- //utilForm -->
-
-                                    <div class="btnArea">
-                                        <button type="button" class="btn navyCircle">
-                                            <span class="search">
-                                                검색
-                                            </span>
-                                        </button>
-                                    </div>
-
                                 </article>
                                 <!-- //utilBox -->
 
 
                                 <!-- viewDetail -->
-                                <article class="viewManage type02">
+                                <article class="viewManage">
                                     
                                     <div class="tableArea">
 
                                         <!-- tableHead -->
-                                        <article class="tableHead">
-                                            <p>전체
-                                                <span>37</span>
-                                                건
-                                            </p>
+                                        <article class="tableHead type03">
+                                            <h3 class="title type11">변경 이력</h3>
                                         </article>
                                         <!-- //tableHead -->
                                         <!-- table -->
                                         <div class="table type02">
                                             <table>
-                                                <caption>분류 코드 관리 게시물이며 분류코드, 분류코드명, 사용여부, 설명 등의 정보를 제공합니다.</caption>
+                                                <caption>변경 이력 게시물이며 레이어 명, 변경사유, 작성자, 변경일 등의 정보를 제공합니다.</caption>
                                                 <colgroup>
-                                                    <col style="width: 270px;">
-                                                    <col style="width: 270px;">
-                                                    <col style="width: 150px;">
+                                                    <col style="width: 520px;">
                                                     <col style="width: auto;">
+                                                    <col style="width: 170px;">
+                                                    <col style="width: 170px;">
                                                 </colgroup>
                                                 <thead>
                                                     <tr>
-                                                        <th scope="col">분류코드</th>
-                                                        <th scope="col">분류코드명</th>
-                                                        <th scope="col">사용여부</th>
-                                                        <th scope="col">설명</th>
+                                                        <th scope="col">레이어 명</th>
+                                                        <th scope="col">변경사유</th>
+                                                        <th scope="col">작성자</th>
+                                                        <th scope="col">변경일</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td>ABS</td>
-                                                        <td>행정사무지원</td>
-                                                        <td>사용</td>
-                                                        <td class="elips">지가산정자료추출</td>
+                                                        <td>일반택지</td>
+                                                        <td>일반택지 기본분석모델</td>
+                                                        <td>홍길동</td>
+                                                        <td>2022-07-11 17:12:11</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>ABS</td>
-                                                        <td>행정사무지원</td>
-                                                        <td>사용</td>
-                                                        <td class="elips">지가산정자료추출</td>
+                                                        <td>일반택지</td>
+                                                        <td>일반택지 기본분석모델</td>
+                                                        <td>홍길동</td>
+                                                        <td>2022-07-11 17:12:11</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>ABS</td>
-                                                        <td>행정사무지원</td>
-                                                        <td>사용</td>
-                                                        <td class="elips">지가산정자료추출</td>
+                                                        <td>일반택지</td>
+                                                        <td>일반택지 기본분석모델</td>
+                                                        <td>홍길동</td>
+                                                        <td>2022-07-11 17:12:11</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>ABS</td>
-                                                        <td>행정사무지원</td>
-                                                        <td>사용</td>
-                                                        <td class="elips">지가산정자료추출</td>
+                                                        <td>일반택지</td>
+                                                        <td>일반택지 기본분석모델</td>
+                                                        <td>홍길동</td>
+                                                        <td>2022-07-11 17:12:11</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>ABS</td>
-                                                        <td>행정사무지원</td>
-                                                        <td>사용</td>
-                                                        <td class="elips">지가산정자료추출</td>
+                                                        <td>일반택지</td>
+                                                        <td>일반택지 기본분석모델</td>
+                                                        <td>홍길동</td>
+                                                        <td>2022-07-11 17:12:11</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>ABS</td>
-                                                        <td>행정사무지원</td>
-                                                        <td>사용</td>
-                                                        <td class="elips">지가산정자료추출</td>
+                                                        <td>일반택지</td>
+                                                        <td>일반택지 기본분석모델</td>
+                                                        <td>홍길동</td>
+                                                        <td>2022-07-11 17:12:11</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>ABS</td>
-                                                        <td>행정사무지원</td>
-                                                        <td>사용</td>
-                                                        <td class="elips">지가산정자료추출</td>
+                                                        <td>일반택지</td>
+                                                        <td>일반택지 기본분석모델</td>
+                                                        <td>홍길동</td>
+                                                        <td>2022-07-11 17:12:11</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>ABS</td>
-                                                        <td>행정사무지원</td>
-                                                        <td>사용</td>
-                                                        <td class="elips">지가산정자료추출</td>
+                                                        <td>일반택지</td>
+                                                        <td>일반택지 기본분석모델</td>
+                                                        <td>홍길동</td>
+                                                        <td>2022-07-11 17:12:11</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>ABS</td>
-                                                        <td>행정사무지원</td>
-                                                        <td>사용</td>
-                                                        <td class="elips">지가산정자료추출</td>
+                                                        <td>일반택지</td>
+                                                        <td>일반택지 기본분석모델</td>
+                                                        <td>홍길동</td>
+                                                        <td>2022-07-11 17:12:11</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>ABS</td>
-                                                        <td>행정사무지원</td>
-                                                        <td>사용</td>
-                                                        <td class="elips">지가산정자료추출</td>
+                                                        <td>일반택지</td>
+                                                        <td>일반택지 기본분석모델</td>
+                                                        <td>홍길동</td>
+                                                        <td>2022-07-11 17:12:11</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -412,6 +404,12 @@
 
                                 </article>
                                 <!-- viewManage -->
+
+                                <!-- btnArea -->
+                                <div class="btnArea type02">
+                                    <button type="button" class="btn navyCircle">변경</button>
+                                </div>
+                                <!-- //btnArea -->
                             </article>
                             <!-- //view -->
                         </section>

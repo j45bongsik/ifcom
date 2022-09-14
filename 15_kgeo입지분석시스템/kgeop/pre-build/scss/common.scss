@@ -393,6 +393,15 @@ a {
           background: url("../images/ico/ico-search.svg") no-repeat center;
         }
       }
+      &.down {
+        position: relative;
+        padding-left: 24px;
+        &:before {
+          content: ''; position: absolute; left: 0; top: 4px;
+          width: 20px; height: 20px;
+          background: url("../images/ico/ico-down.svg") no-repeat center;
+        }
+      }
     }
   }
   &.navyCircle02 {
@@ -1167,7 +1176,19 @@ a {
     color: #222222;
     border-bottom: 1px solid #D8DEE3;
   }
-  
+  &.type11 {
+    font-family: 'Noto Sans';
+    font-weight: bold;
+    font-size: 22px;
+    color: #222222;
+  }
+  &.type12 {
+    padding-bottom: 16px;
+    font-family: 'Noto Sans';
+    font-weight: bold;
+    font-size: 28px;
+    color: #222222;
+  }
 }
 
 //서규영 추가
@@ -1576,6 +1597,9 @@ input[type="number"]::-webkit-inner-spin-button {
     &:hover, &:focus {
       &::placeholder{color:#222;}
     }
+    &.disabled {
+      background: #eee;
+    }
   }
   &.type02 {
     input {
@@ -1969,6 +1993,7 @@ input[type="number"]::-webkit-inner-spin-button {
       font-size: 14px;
       color: #222;
       thead {
+        border-bottom: 1px solid #253258;
         tr {
           background: #F4F4F9;
           th {
@@ -1991,6 +2016,15 @@ input[type="number"]::-webkit-inner-spin-button {
         tr {
           transition: 0.3s;
           border-bottom: 1px solid #D8DEE3;
+          th {
+            &[scope="row"] {
+              padding: 0px 20px;
+              background: #f5f5f5;
+              font-weight: bold;
+              text-align: left;
+              
+            }
+          }
           td {
             height: 48px;
             padding: 0px 10px;
@@ -2008,7 +2042,21 @@ input[type="number"]::-webkit-inner-spin-button {
           }
           &:first-child {
             td {
-              border-top: 1px solid #253258;
+              
+            }
+          }
+        }
+      }
+    }
+    &.notHover {
+      table {
+        thead {}
+        tbody {
+          tr {
+            th,td {}
+            td {}
+            &:hover {
+              background: #fff;
             }
           }
         }
@@ -2070,6 +2118,61 @@ input[type="number"]::-webkit-inner-spin-button {
       }
     }
   }
+  &.type02_2 {
+    table {
+      text-align: center;
+      border-top: 2px solid #253258;
+      font-family: 'Noto Sans';
+      font-size: 14px;
+      color: #222;
+      thead {
+        tr {
+          background: #F4F4F9;
+          th {
+            height: 40px;
+            padding: 0px 5px;
+            font-weight: bold;
+            &:not(:first-child) {
+              border-left: 1px solid #D8DEE3;
+            }
+          }
+          &:not(:first-child) {
+            th {
+              border-top: 1px solid #D8DEE3;
+              border-left: 1px solid #D8DEE3;
+            }
+          }
+        }
+      }
+      tbody {
+        tr {
+          transition: 0.3s;
+          border-bottom: 1px solid #D8DEE3;
+          td {
+            height: 48px;
+            padding: 0px 10px;
+            a {
+              &:hover, &:focus {
+                  &.underline {text-decoration: underline;}
+              }
+            }
+            &:not(:first-child) {
+              border-left: 1px solid #D8DEE3;
+            }
+          }
+          &:hover {
+            background: #F5F9FC;
+          }
+          &:first-child {
+            td {
+              border-top: 1px solid #253258;
+            }
+          }
+        }
+      }
+    }
+  }
+  
   &.type03 {
     display: flex;
     justify-content: center;
@@ -2378,6 +2481,36 @@ input[type="number"]::-webkit-inner-spin-button {
           th, td {
             height: 48px;
             padding: 14px 20px;
+            font-family: 'Noto Sans';
+            font-size: 14px;
+            color: #222;
+          }
+          th {
+            text-align: left;
+            font-weight: bold;
+            background: #F4F4F9;
+            &[scope="col"] {
+              background: #F5F5F5;
+            }
+          }
+          td {
+            &:not(:first-of-type) {
+              border-left: 1px solid #D8DEE3;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.type07_2 {
+    table {
+      border-top: 2px solid #253258; 
+      tbody {
+        tr {
+          border-bottom: 1px solid #D8DEE3;
+          th, td {
+            height: 48px;
+            padding: 0px 20px;
             font-family: 'Noto Sans';
             font-size: 14px;
             color: #222;
@@ -2886,8 +3019,11 @@ input[type="number"]::-webkit-inner-spin-button {
     margin-left: auto;
     margin-right: 0;
   }
-  >.type04 {
-    
+  &.type02 {
+    align-items: flex-end;
+  }
+  &.type03 {
+    margin-bottom: 16px;
   }
 }
 
@@ -3207,6 +3343,12 @@ input[type="number"]::-webkit-inner-spin-button {
     &.active {
       display: flex;
     }
+  }
+  &.type03 {
+    margin-top: -40px;
+  }
+  &.type04 {
+    margin-top: 0;
   }
 }
 
@@ -4179,8 +4321,9 @@ input[type="number"]::-webkit-inner-spin-button {
                   width: 8px; height: 2px; background: #000;
                   background: #999999;
                 }
-                &:hover, &:focus {
+                &:hover {
                   color: #353990;
+                  font-weight: bold;
                   &:before {
                     background: #353990;
                   }
@@ -4188,6 +4331,50 @@ input[type="number"]::-webkit-inner-spin-button {
               }
               &:first-child {
                 margin-top: 0px;
+              }
+              .dep02 {
+                li {
+                  a {
+                    position: relative;
+                    padding-left: 9px;
+                    font-family: 'Noto Sans';
+                    font-size: 14px;
+                    color: #999;
+                    &:before {
+                      content: ''; position: absolute; left: 0; top: 9px;
+                      width: 3px; height: 3px; background: #999; border-radius: 50%;
+                    }
+                    &:hover {
+                      color: #222;
+                      &:before {
+                        background: #222;
+                      }
+                    }
+                  }
+                  &:not(:first-child) {
+                    margin-top: 5px;
+                  }
+                  &.active {
+                    a {
+                      color: #222;
+                      &:before {
+                        background: #222;
+                      }
+                    }
+                  }
+                }
+              }
+              &.active {
+                a {
+                  color: #353990;
+                  font-weight: bold;
+                  &:before {
+                    background: #353990;
+                  }
+                }
+                .dep02 {
+                  display: block;
+                }
               }
             }
             li {
@@ -4481,6 +4668,7 @@ input[type="number"]::-webkit-inner-spin-button {
       }
     }
     .contBody {
+      position: relative;
       .viewList {
         ul {
           li {
@@ -4492,6 +4680,10 @@ input[type="number"]::-webkit-inner-spin-button {
         margin-top: 30px;
         .btn {}
         .a {}
+      }
+      >.btnArea {
+        position: absolute;
+        bottom: 0; left: 0;
       }
     }
     .addList {
@@ -4544,6 +4736,9 @@ input[type="number"]::-webkit-inner-spin-button {
       }
       &.type02 {
         margin-top: 40px;
+      }
+      &.type03 {
+        margin-top: 0;
       }
     }
     >.btnArea {
@@ -4684,7 +4879,7 @@ input[type="number"]::-webkit-inner-spin-button {
   display: flex;
   justify-content: flex-start;
   height: 100%;
-  z-index: 2;
+  z-index: 4;
 }
 
 #toc {
@@ -5861,6 +6056,35 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 }
 
+.tooltipArea {
+  display: none;
+  position: absolute;
+  left: 810px;
+  top: 70px;
+  width: 860px;
+  padding: 20px;
+  background: #FFF;
+  border-radius: 10px;
+  .toolCont {
+    .tableArea {
+      .tableHead {
+        margin-bottom: 16px;
+      }
+      &:not(:first-child) {
+        .tableHead {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  &.active {
+    display: block;
+  }
+  &.left {
+    left: 410px;
+  }
+}
+
 .basicArea {
   margin-top: 70px;
 }
@@ -6519,8 +6743,64 @@ input[type="number"]::-webkit-inner-spin-button {
         }
       }
     }
+  }
+}
 
-
+.graphArea {
+  display: flex; justify-content: flex-start; align-items: flex-start;
+  padding: 30px;
+  border: 1px solid #D8DEE3; border-radius: 8px;
+  .inner {
+    flex:1;
+    .box {
+      flex:1;
+      .amchart {
+        >div {
+          >div {
+            >div {
+              // amchart sign
+              canvas {
+                &:last-child {display: none;}
+              }
+            }
+          }
+        }
+      }
+    }
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
+  }
+  &.type02 {
+    padding: 0;
+    border: none; border-radius: 0;
+    .inner {
+      display: flex; justify-content: flex-start; align-items: flex-start; flex-wrap: wrap;
+      flex:1;
+      .title {
+        width: 100%;
+        border-bottom: none;
+      }
+      .boxList {
+        width: 100%;
+        display: flex; justify-content: flex-start; align-items: flex-start;
+        padding: 30px;
+        border: 1px solid #D8DEE3; border-radius: 8px;
+        .box {
+          flex: auto;
+          width: 300px;
+          &:not(:first-child) {
+            margin-left: 20px;
+          }
+        }
+      }
+      &:not(:first-child) {
+        width: calc(100% - 362px);
+      }
+    }
+  }
+  &:not(:first-child) {
+    margin-top: 60px;
   }
 }
 
@@ -6592,6 +6872,28 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 
+// amchart custom
+
+
+.amchart {
+  font-family: 'Noto Sans';
+  font-size: 14px;
+  // 범례
+  g {
+    &[role="region"] {
+      // amchart sign
+      &+g {
+        >g {
+          >g {
+            &[opacity="0.3"] {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 
 // animation

@@ -2,7 +2,43 @@
 <html lang="ko">
 
 <head>
-    @@include('include/head.html')
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="kgeo플랫폼">
+<meta name="description" content="kgeop플랫폼 입지 분석 시스템">
+
+<!-- 오픈그래프 이미지의 경우 최소한 600 x 315 px은 되어야 하며, 1200 x 630 px을 권장함 -->
+<meta property="og:image" content="">
+<meta property="og:title" content="kgeo플랫폼">
+<meta property="og:description" content="kgeo플랫폼 입지 분석 시스템">
+<meta property="og:url" content="">
+<!-- 다음의 태그는 필수는 아니지만, 포함하는 것을 추천함 -->
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<link rel="stylesheet" href="../lib/swiper/css/swiper.css">
+<link rel="stylesheet" href="../lib/jquery-ui.css">
+<link rel="stylesheet" href="../lib/fullPage.js-2.9.7/fullpage.css" />
+<link rel="stylesheet" href="../css/common.css">
+<script src="../lib/jquery-1.12.4.js"></script>
+<script src="../lib/jquery-ui.js"></script>
+<script src="../lib/swiper/js/swiper.js"></script>
+<script src="../lib/fullPage.js-2.9.7/jquery.fullpage.min.js"></script>
+<!-- amchart4 -->
+<script src="../lib/amchart/core.js"></script>
+<script src="../lib/amchart/charts.js"></script>
+<!-- //amchart4 -->
+<script src="../js/ui.js"></script>
+<script src="../js/amchart.js"></script>
+
+
+
+
+<title>K-Geo플랫폼 입지 분석 시스템</title>
+
+
 </head>
 
 <body>
@@ -10,7 +46,11 @@
     <div id="wrap" style="height: 100%;">
         <!--header-->
         <header id="header">
-            @@include('include/header.html')
+            <!--accNav-->
+<div id="accNav">
+    <a href="#container">본문 바로가기</a>
+</div>
+<!--//accNav-->
         </header>
         <!--header-->
 
@@ -50,7 +90,7 @@
                         <!-- dep01 -->
                         <ul class="dep01">
                             <li>
-                                <a href="#">
+                                <a href="#" class="active">
                                     <span>
                                         관리자 대시보드
                                     </span>
@@ -64,7 +104,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="active">
+                                <a href="#">
                                     <span>
                                         자료 공유 관리
                                     </span>
@@ -169,7 +209,7 @@
                 <!-- content -->
                 <div class="content" style="height: 100%;">
                     <!-- inner -->
-                    <div class="inner type02">
+                    <div class="inner">
                         <h2 class="hidden">본문 영역</h2>
 
 
@@ -177,125 +217,94 @@
                         <section class="contBody">
                             <!-- view -->
                             <article class="view">
-                                <!-- viewHead -->
-                                <div class="viewHead">
-                                    <h3 class="title type10">자료 공유 상세</h3>
-                                </div>
-                                <!-- //viewHead -->
-
-
                                 <!-- viewDetail -->
-                                <article class="viewManage type02">
-                                    <h3 class="title type04">공유 정보</h3>
-                                    <!-- utilBox -->
-                                    <article class="utilBox">
-
-                                        <!-- reportArea -->
-                                        <div class="reportArea">
-                                            <ul>
-                                                <li>
-                                                    <h4 class="title type09">프로젝트 정보</h4>
-                                                    <p>2022년 ㅇㅇ 신혼부부 공공택지</p>
-                                                </li>
-                                                <li>
-                                                    <h4 class="title type09">프로젝트 설명</h4>
-                                                    <p>2022년 ㅇㅇ 신혼부부 공공택지에 대한 내용입니다.</p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <!-- //reportArea -->
-                                    </article>
-                                    <!-- //utilBox -->
+                                <article class="viewManage type03">
                                     
-                                    <!-- tableArea -->
-                                    <div class="tableArea" style="margin-top: 60px;">
-                                        <div class="tableHead" style="margin-bottom: 0;">
-                                            <h3 class="title type04">처리현황</h3>
+                                    <!-- graphArea -->
+                                    <article class="graphArea type02">
+                                        <!-- inner -->
+                                        <div class="inner">
+                                            <h3 class="title type12">사용자 접속 현황</h3>
+                                            <!-- boxList -->
+                                            <div class="boxList">
+                                                <div class="box">
+                                                    <h3 class="title type04">사용자 업무 별 접속통계</h3>
+                                                    <div id="chartdiv01" class="amchart" style="height: 300px;"></div>
+                                                </div>
+                                            </div>
+                                            <!-- //boxList -->
                                         </div>
-                                        
-                                        <!-- table -->
-                                        <div class="table type02">
-                                            <table>
-                                                <caption>처리 현황 게시물로 권한신청 상태, 신청일시, 처리일시 등의 정보를 제공합니다.</caption>
-                                                <colgroup>
-                                                    <col style="width: 466px;">
-                                                    <col style="width: 466px;">
-                                                    <col style="width: auto;">
-                                                </colgroup>
-                                                <thead>
-                                                    <tr>
-                                                        <th scope="col">권한신청 상태</th>
-                                                        <th scope="col">신청일시</th>
-                                                        <th scope="col">처리일시</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="cBlue">승인</td>
-                                                        <td>2022-08-05 00:36:04</td>
-                                                        <td>2022-08-05 00:36:04</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <!-- //table -->
-                                    </div>
-                                    <!-- //tableArea -->
+                                        <!-- //inner -->
+                                    </article>
+                                    <!-- //graphArea -->
 
-                                    <!-- tableArea -->
-                                    <div class="tableArea" style="margin-top: 60px;">
-                                        <div class="tableHead" style="margin-bottom: 0;">
-                                            <h3 class="title type04">신청자 정보</h3>
+                                    <!-- graphArea -->
+                                    <article class="graphArea type02">
+                                        <!-- inner -->
+                                        <div class="inner" >
+                                            <h3 class="title type12">권한신청 현황</h3>
+                                            <!-- boxList -->
+                                            <div class="boxList">
+                                                <div class="box">
+                                                    <h3 class="title type04">권한신청 현황</h3>
+                                                    <div id="chartdiv02" class="amchart" style="width:300px; height: 300px;"></div>
+                                                    
+                                                    <script>
+                                                        
+                                                    </script>
+                                                
+                                                </div>
+                                            </div>
+                                            <!-- //boxList -->
                                         </div>
-                                        
-                                        <!-- table -->
-                                        <div class="table type02">
-                                            <table>
-                                                <caption>신청자 정보 게시물로 아이디, 신청자명, 신청자 구분, 소속기관, 휴대폰 번호, 행정전화번호 등의 정보를 제공합니다.</caption>
-                                                <colgroup>
-                                                    <col style="width: 233px;">
-                                                    <col style="width: 233px;">
-                                                    <col style="width: 233px;">
-                                                    <col style="width: 233px;">
-                                                    <col style="width: 233px;">
-                                                    <col style="width: auto;">
-                                                </colgroup>
-                                                <thead>
-                                                    <tr>
-                                                        <th scope="col">아이디</th>
-                                                        <th scope="col">신청자명</th>
-                                                        <th scope="col">신청자 구분</th>
-                                                        <th scope="col">소속기관</th>
-                                                        <th scope="col">휴대폰 번호</th>
-                                                        <th scope="col">행정전화번호</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>test9999</td>
-                                                        <td>홍길동</td>
-                                                        <td>본부사용자</td>
-                                                        <td>국토교통부</td>
-                                                        <td>010-2222-3333</td>
-                                                        <td>-</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                        <!-- //inner -->
+                                        <!-- inner -->
+                                        <div class="inner" style="">
+                                            <h3 class="title type12">작업 별 현황</h3>
+                                            <!-- boxList -->
+                                            <div class="boxList">
+
+                                                <div class="box">
+                                                    <h3 class="title type04">현황분석</h3>
+                                                    <div id="chartdiv03" class="amchart" style="width:300px; height: 300px;"></div>
+                                                </div>
+                                                <div class="box">
+                                                    <h3 class="title type04">잠재력 분석</h3>
+                                                    <div id="chartdiv04" class="amchart" style="width:300px; height: 300px;"></div>
+                                                </div>
+                                                <div class="box">
+                                                    <h3 class="title type04">추출</h3>
+                                                    <div id="chartdiv05" class="amchart" style="width:300px; height: 300px;"></div>
+                                                </div>
+                                            </div>
+                                            <!-- //boxList -->
                                         </div>
-                                        <!-- //table -->
-                                    </div>
-                                    <!-- //tableArea -->
+                                        <!-- //inner -->
+                                    </article>
+                                    <!-- //graphArea -->
+
+                                    <!-- graphArea -->
+                                    <article class="graphArea type02">
+                                        <!-- inner -->
+                                        <div class="inner">
+                                            <h3 class="title type12">다운로드 현황</h3>
+                                            <!-- boxList -->
+                                            <div class="boxList">
+                                                <div class="box">
+                                                    <h3 class="title type04">다운로드 현황</h3>
+                                                    <div id="chartdiv06" class="amchart" style="height: 300px;"></div>
+                                                </div>
+                                            </div>
+                                            <!-- //boxList -->
+                                        </div>
+                                        <!-- //inner -->
+                                    </article>
+                                    <!-- //graphArea -->
 
                                 </article>
                                 <!-- viewManage -->
 
-                                <!-- btnArea -->
-                                <div class="btnArea static">
-                                    <button type="button" class="btn redCircle">반려</button>
-                                    <button type="button" class="btn navyCircle">승인</button>
-                                    <button type="button" class="btn grayCircle">목록</button>
-                                </div>
-                                <!-- //btnArea -->
+                                
                             </article>
                             <!-- //view -->
                         </section>
@@ -314,7 +323,7 @@
 
         <!--footer-->
         <footer id="footer">
-            @@include('include/footer.html')
+            
         </footer>
         <!--//footer-->
     </div>

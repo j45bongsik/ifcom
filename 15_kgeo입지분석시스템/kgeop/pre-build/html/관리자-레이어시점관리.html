@@ -2,43 +2,7 @@
 <html lang="ko">
 
 <head>
-    <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0" >
-<meta name="format-detection" content="telephone=no">
-<meta name="author" content="kgeo플랫폼">
-<meta name="description" content="kgeop플랫폼 입지 분석 시스템">
-
-<!-- 오픈그래프 이미지의 경우 최소한 600 x 315 px은 되어야 하며, 1200 x 630 px을 권장함 -->
-<meta property="og:image" content="">
-<meta property="og:title" content="kgeo플랫폼">
-<meta property="og:description" content="kgeo플랫폼 입지 분석 시스템">
-<meta property="og:url" content="">
-<!-- 다음의 태그는 필수는 아니지만, 포함하는 것을 추천함 -->
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-
-<link rel="stylesheet" href="../lib/swiper/css/swiper.css">
-<link rel="stylesheet" href="../lib/jquery-ui.css">
-<link rel="stylesheet" href="../lib/fullPage.js-2.9.7/fullpage.css" />
-<link rel="stylesheet" href="../css/common.css">
-<script src="../lib/jquery-1.12.4.js"></script>
-<script src="../lib/jquery-ui.js"></script>
-<script src="../lib/swiper/js/swiper.js"></script>
-<script src="../lib/fullPage.js-2.9.7/jquery.fullpage.min.js"></script>
-<!-- amchart4 -->
-<script src="../lib/amchart/core.js"></script>
-<script src="../lib/amchart/charts.js"></script>
-<!-- //amchart4 -->
-<script src="../js/ui.js"></script>
-<script src="../js/amchart.js"></script>
-
-
-
-
-<title>K-Geo플랫폼 입지 분석 시스템</title>
-
-
+    @@include('include/head.html')
 </head>
 
 <body>
@@ -46,11 +10,7 @@
     <div id="wrap" style="height: 100%;">
         <!--header-->
         <header id="header">
-            <!--accNav-->
-<div id="accNav">
-    <a href="#container">본문 바로가기</a>
-</div>
-<!--//accNav-->
+            @@include('include/header.html')
         </header>
         <!--header-->
 
@@ -111,7 +71,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="active">
+                                <a href="#">
                                     <span>
                                         자료 보안 관리
                                     </span>
@@ -121,7 +81,7 @@
                                         <a href="#">다운로드 이력관리</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="active">다운로드 권한관리</a>
+                                        <a href="#">다운로드 권한관리</a>
                                     </li>
                                 </ul>
                             </li>
@@ -141,7 +101,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="#" class="active">
                                     <span>
                                         레이어 시점관리
                                     </span>
@@ -226,7 +186,7 @@
                                 <!-- searchArea -->
                                 <article class="searchArea typeSum">
                                     <label for="i01">
-                                        <input type="text" id="i01" placeholder="신청자 명을 입력하세요.">
+                                        <input type="text" id="i01" placeholder="검색할 레이어 명을 입력하세요.">
                                     </label>
                                     <div class="btnArea">
                                         <button type="button" class="btn search" title="검색">
@@ -254,115 +214,171 @@
                                     </article>
                                     <table>
                                         <caption>
-                                            다운로드 권한관리 게시물이며 순번, 레이어 명, 신청자명, 신청일시, 상태구분 등의 정보를 제공합니다.
+                                            레이어 시점관리 게시물이며 선택, 분류, 레이어 명, 시점, 변경일 등의 정보를 제공합니다.
                                         </caption>
                                         <colgroup>
-                                            <col style="width: 50px;">
+                                            <col style="width: 70px;">
+                                            <col style="width: 450px;">
                                             <col style="width: auto;">
-                                            <col style="width: 150px;">
-                                            <col style="width: 200px;">
-                                            <col style="width: 150px;">
+                                            <col style="width: 170px;">
+                                            <col style="width: 170px;">
                                         </colgroup>
                                         <thead>
                                             <tr>
-                                                <th>순번</th>
+                                                <th>
+                                                    <p class="checkbox type02">
+                                                        <input type="checkbox" id="ckd01" checked>
+                                                        <label for="ckd01"></label>
+                                                    </p>
+                                                </th>
+                                                <th>분류</th>
                                                 <th>레이어 명</th>
-                                                <th>신청자명</th>
-                                                <th>신청일시</th>
-                                                <th>상태구분</th>
+                                                <th>시점</th>
+                                                <th>변경일</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>1</td>
                                                 <td>
-                                                    <a href="#" class="elips underline">OOO레이어</a>
+                                                    <p class="checkbox type02">
+                                                        <input type="checkbox" id="ckd02">
+                                                        <label for="ckd02"></label>
+                                                    </p>
                                                 </td>
-                                                <td>홍길동</td>
+                                                <td>일반택지</td>
+                                                <td>
+                                                    <a href="#" class="elips underline">일반택지 기본분석모델</a>
+                                                </td>
+                                                <td>2022-01-01</td>
                                                 <td>2022-07-11 17:12:11</td>
-                                                <td class="cBlue">승인</td>
                                             </tr>
                                             <tr>
-                                                <td>2</td>
                                                 <td>
-                                                    <a href="#" class="elips underline">OOO레이어</a>
+                                                    <p class="checkbox type02">
+                                                        <input type="checkbox" id="ckd03">
+                                                        <label for="ckd03"></label>
+                                                    </p>
                                                 </td>
-                                                <td>홍길동</td>
+                                                <td>일반택지</td>
+                                                <td>
+                                                    <a href="#" class="elips underline">일반택지 기본분석모델</a>
+                                                </td>
+                                                <td>2022-01-01</td>
                                                 <td>2022-07-11 17:12:11</td>
-                                                <td class="cRed">미승인</td>
                                             </tr>
                                             <tr>
-                                                <td>3</td>
                                                 <td>
-                                                    <a href="#" class="elips underline">OOO레이어</a>
+                                                    <p class="checkbox type02">
+                                                        <input type="checkbox" id="ckd04">
+                                                        <label for="ckd04"></label>
+                                                    </p>
                                                 </td>
-                                                <td>홍길동</td>
+                                                <td>일반택지</td>
+                                                <td>
+                                                    <a href="#" class="elips underline">일반택지 기본분석모델</a>
+                                                </td>
+                                                <td>2022-01-01</td>
                                                 <td>2022-07-11 17:12:11</td>
-                                                <td class="cRed">미승인</td>
                                             </tr>
                                             <tr>
-                                                <td>4</td>
                                                 <td>
-                                                    <a href="#" class="elips underline">OOO레이어</a>
+                                                    <p class="checkbox type02">
+                                                        <input type="checkbox" id="ckd05">
+                                                        <label for="ckd05"></label>
+                                                    </p>
                                                 </td>
-                                                <td>홍길동</td>
+                                                <td>일반택지</td>
+                                                <td>
+                                                    <a href="#" class="elips underline">일반택지 기본분석모델</a>
+                                                </td>
+                                                <td>2022-01-01</td>
                                                 <td>2022-07-11 17:12:11</td>
-                                                <td class="cRed">미승인</td>
                                             </tr>
                                             <tr>
-                                                <td>5</td>
                                                 <td>
-                                                    <a href="#" class="elips underline">OOO레이어</a>
+                                                    <p class="checkbox type02">
+                                                        <input type="checkbox" id="ckd06">
+                                                        <label for="ckd06"></label>
+                                                    </p>
                                                 </td>
-                                                <td>홍길동</td>
+                                                <td>일반택지</td>
+                                                <td>
+                                                    <a href="#" class="elips underline">일반택지 기본분석모델</a>
+                                                </td>
+                                                <td>2022-01-01</td>
                                                 <td>2022-07-11 17:12:11</td>
-                                                <td class="cRed">미승인</td>
                                             </tr>
                                             <tr>
-                                                <td>6</td>
                                                 <td>
-                                                    <a href="#" class="elips underline">OOO레이어</a>
+                                                    <p class="checkbox type02">
+                                                        <input type="checkbox" id="ckd07">
+                                                        <label for="ckd07"></label>
+                                                    </p>
                                                 </td>
-                                                <td>홍길동</td>
+                                                <td>일반택지</td>
+                                                <td>
+                                                    <a href="#" class="elips underline">일반택지 기본분석모델</a>
+                                                </td>
+                                                <td>2022-01-01</td>
                                                 <td>2022-07-11 17:12:11</td>
-                                                <td class="cRed">미승인</td>
                                             </tr>
                                             <tr>
-                                                <td>7</td>
                                                 <td>
-                                                    <a href="#" class="elips underline">OOO레이어</a>
+                                                    <p class="checkbox type02">
+                                                        <input type="checkbox" id="ckd08">
+                                                        <label for="ckd08"></label>
+                                                    </p>
                                                 </td>
-                                                <td>홍길동</td>
+                                                <td>일반택지</td>
+                                                <td>
+                                                    <a href="#" class="elips underline">일반택지 기본분석모델</a>
+                                                </td>
+                                                <td>2022-01-01</td>
                                                 <td>2022-07-11 17:12:11</td>
-                                                <td class="cRed">미승인</td>
                                             </tr>
                                             <tr>
-                                                <td>8</td>
                                                 <td>
-                                                    <a href="#" class="elips underline">OOO레이어</a>
+                                                    <p class="checkbox type02">
+                                                        <input type="checkbox" id="ckd09">
+                                                        <label for="ckd09"></label>
+                                                    </p>
                                                 </td>
-                                                <td>홍길동</td>
+                                                <td>일반택지</td>
+                                                <td>
+                                                    <a href="#" class="elips underline">일반택지 기본분석모델</a>
+                                                </td>
+                                                <td>2022-01-01</td>
                                                 <td>2022-07-11 17:12:11</td>
-                                                <td class="cRed">미승인</td>
                                             </tr>
                                             <tr>
-                                                <td>9</td>
                                                 <td>
-                                                    <a href="#" class="elips underline">OOO레이어</a>
+                                                    <p class="checkbox type02">
+                                                        <input type="checkbox" id="ckd10">
+                                                        <label for="ckd10"></label>
+                                                    </p>
                                                 </td>
-                                                <td>홍길동</td>
+                                                <td>일반택지</td>
+                                                <td>
+                                                    <a href="#" class="elips underline">일반택지 기본분석모델</a>
+                                                </td>
+                                                <td>2022-01-01</td>
                                                 <td>2022-07-11 17:12:11</td>
-                                                <td class="cRed">미승인</td>
                                             </tr>
                                             <tr>
-                                                <td>10</td>
                                                 <td>
-                                                    <a href="#" class="elips underline">OOO레이어</a>
+                                                    <p class="checkbox type02">
+                                                        <input type="checkbox" id="ckd11">
+                                                        <label for="ckd11"></label>
+                                                    </p>
                                                 </td>
-                                                <td>홍길동</td>
+                                                <td>일반택지</td>
+                                                <td>
+                                                    <a href="#" class="elips underline">일반택지 기본분석모델</a>
+                                                </td>
+                                                <td>2022-01-01</td>
                                                 <td>2022-07-11 17:12:11</td>
-                                                <td class="cRed">미승인</td>
                                             </tr>
+                                            
                                         </tbody>
                                     </table>
                                     
@@ -439,7 +455,7 @@
 
         <!--footer-->
         <footer id="footer">
-            
+            @@include('include/footer.html')
         </footer>
         <!--//footer-->
     </div>
