@@ -3,7 +3,7 @@ $(document).ready(function(){
     // a, button태그 title 속성 비어있을때 작성된text로 title 생성
     $('a, .btn').each(function(){
         let Tag = $(this);
-        let attr = Tag.text();
+        let attr = Tag.text().trim();
         if ($(this).is('[title]')) {
         } else {
             Tag.attr("title",attr);
@@ -94,4 +94,9 @@ $(document).ready(function(){
         $(this).closest(".popup").removeClass("show")
     })
 
+    $('.btnFavorites').on({
+        'click': function(){
+            $(this).toggleClass('active');
+        }
+    });
 })

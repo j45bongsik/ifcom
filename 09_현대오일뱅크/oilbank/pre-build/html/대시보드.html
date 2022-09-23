@@ -6,10 +6,9 @@
 
 <body style="overflow: hidden;">
 
-    <div id="wrap" style="height: 100%;">
+    <div id="wrap" style="height: 100%; overflow: hidden;">
         <!--header-->
         <header id="header">
-            @@include('include/header.html')
         </header>
         <!--header-->
 
@@ -131,18 +130,18 @@
                                     '<h3 class="title type02">차량상태' +
                                         '<span class="sub">당일 기준 2022-04-28</span>' +
                                     '</h3>' +
-                                    '<div class="selectArea">' +
+                                '</div>' +
+                                '<div class="selectArea">' +
                                         '<select name="" id="">' +
                                             '<option value="">수송사</option>' +
                                         '</select>' +
                                         '<select name="" id="">' +
                                             '<option value="">실행사</option>' +
                                         '</select>' +
-                                        '<select name="" id="">' +
+                                        '<select class="mw75" name="" id="">' +
                                             '<option value="">유종</option>' +
                                         '</select>' +
                                     '</div>' +
-                                '</div>' +
                                 '<div class="gridBody">' +
                                     '<div class="info">' +
                                         '<ul>' +
@@ -196,14 +195,16 @@
                             {
                                 w:4,
                                 h:2,
+                                minH: 2,
                                 noResize: true,
                                 content:
                                 '<div class="gridHead">' +
                                     '<h3 class="title type02">사고현황' +
                                         '<span class="sub">당월 누계 2022-04</span>' +
                                     '</h3>' +
-                                    '<div class="selectArea">' +
-                                        '<select name="" id="">' +
+                                '</div>' +
+                                '<div class="selectArea">' +
+                                        '<select class="mw75" name="" id="">' +
                                             '<option value="">당월</option>' +
                                         '</select>' +
                                         '<select name="" id="">' +
@@ -213,8 +214,7 @@
                                             '<option value="">실행사</option>' +
                                         '</select>' +
                                     '</div>' +
-                                '</div>' +
-                                '<div class="gridBody">' +
+                                '<div class="gridBody type05">' +
                                     '<div class="info type02">' +
                                         '<ul>' +
                                             '<li class="mix">' +
@@ -262,7 +262,7 @@
                                     '</h3>' +
                                     '<a href=# title="더보기" class="more"></a>' +
                                 '</div>' +
-                                '<div class="gridBody">' +
+                                '<div class="gridBody type06">' +
                                     '<div class="notice">' +
                                         '<ul>' +
                                             '<li>' +
@@ -295,12 +295,12 @@
                                 '<div class="gridHead">' +
                                     '<h3 class="title type02">유종별 수송량' +
                                     '</h3>' +
-                                    '<div class="selectArea type03">' +
+                                '</div>' +
+                                '<div class="selectArea type03">' +
                                         '<select name="" id="">' +
                                             '<option value="">당월</option>' +
                                         '</select>' +
                                     '</div>' +
-                                '</div>' +
                                 '<div class="gridBody">' +
                                     '<div class="graph">' +
                                         '<div class="swiper01">' +
@@ -392,18 +392,18 @@
                                 '<div class="gridHead">' +
                                     '<h3 class="title type02">차량 매출현황' +
                                     '</h3>' +
-                                    '<div class="selectArea">' +
-                                        '<select name="" id="">' +
+                                '</div>' +
+                                '<div class="selectArea">' +
+                                        '<select class="mw75" name="" id="">' +
                                             '<option value="">전월</option>' +
                                         '</select>' +
                                         '<select name="" id="">' +
                                             '<option value="">수송사</option>' +
                                         '</select>' +
-                                        '<select name="" id="">' +
+                                        '<select class="mw75" name="" id="">' +
                                             '<option value="">유종</option>' +
                                         '</select>' +
                                     '</div>' +
-                                '</div>' +
                                 '<div class="gridBody">' +
                                     '<div class="graph">' +
                                         '<div id="ib-containerCar01"></div>' +
@@ -420,15 +420,15 @@
                                 '<div class="gridHead">' +
                                     '<h3 class="title type02">수송량, 수송단가' +
                                     '</h3>' +
-                                    '<div class="selectArea">' +
-                                        '<select name="" id="">' +
+                                '</div>' +
+                                '<div class="selectArea">' +
+                                        '<select class="mw75" name="" id="">' +
                                             '<option value="">전월</option>' +
                                         '</select>' +
                                         '<select name="" id="">' +
                                             '<option value="">수송사</option>' +
                                         '</select>' +
-                                    '</div>' +
-                                '</div>' +
+                                    '</div>' + 
                                 '<div class="gridBody">' +
                                     '<div class="graph">' +
                                         '<div id="ib-containerCompany01"></div>' +
@@ -438,9 +438,7 @@
                             },
                         ];
 
-                        var grid = GridStack.init({
-                            
-                        });
+                        var grid = GridStack.init();
 
                         grid.load(items);
 
@@ -1312,11 +1310,6 @@
         </main>
         <!--//container-->
 
-        <!--footer-->
-        <footer id="footer">
-            @@include('include/footer.html')
-        </footer>
-        <!--//footer-->
     </div>
 </body>
 </html>
