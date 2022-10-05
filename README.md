@@ -1,5 +1,8 @@
 # ifcom
 
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fgjbae1212%2Fhit-counter&count_bg=%23FF8000&title_bg=%23000000&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+
+
 <a href="https://j45bongsik.github.io/ifcom/01_철도재산포털(폐기)/kr/build/html/00_coding_list.html">01_철도재산포털(폐기) 열기</a>
 <br>
 <a href="https://j45bongsik.github.io/ifcom/02_KLIP헬프데스크/KLIP헬프데스크/build/html/00_coding_list.html">02_KLIP헬프데스크 열기</a>
