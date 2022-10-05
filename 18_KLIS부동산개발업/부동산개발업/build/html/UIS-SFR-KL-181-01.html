@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="">
+<meta name="description" content="">
+<meta property="og:image" content="">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:url" content="">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="stylesheet" href="../lib/swiper/css/swiper.css">
+<link rel="stylesheet" href="../lib/jquery-ui.css">
+<link rel="stylesheet" href="../lib/jqGrid-4.7.1/css/ui.jqgrid.css">
+<link rel="stylesheet" href="../css/common.css">
+<script src="../lib/jquery-1.12.4.js"></script>
+<script src="../lib/jquery-ui.js"></script>
+<script src="../lib/jqGrid-4.7.1/js/minified/jquery.jqGrid.min.js"></script>
+<script src="../lib/swiper/js/swiper.js"></script>
+<script src="../js/ui.js"></script>
+<script src="../js/popup.js"></script>
+<script src="../js/jqGrid.js"></script>
+
+ 
+    <title>KLIS 부동산개발업</title>
+</head>
+<body>
+    <!-- wrap -->
+    <div id="wrap" class="">
+        <!-- container -->
+        <main class="container">
+            <!-- left -->
+            <div class="left">
+                <!-- leftInner -->
+                <div class="leftInner">
+                    <!-- logoArea -->
+                    <div class="logoArea">
+                        <h1>
+                            <a class="logo" href="#" title="K-Geo 플랫폼">
+                                <img src="../images/common/logo.png" alt="K-Geo 플랫폼 로고">
+                            </a>
+                            <a class="logo" href="#" title="KLIS">
+                                <img src="../images/common/logo-KLIS.png" alt="KLIS 로고">
+                            </a>
+                        </h1>
+                        <span class="logoTit">부동산개발업</span>
+                    </div>
+                    <!-- //logoArea -->
+                
+                    <!-- loginArea -->
+                    <article class="loginArea">
+                        <!-- inner -->
+                        <div class="inner">
+                            <div class="userInfoArea">
+                                <span class="userAuth">
+                                    <strong>부동산개발협회</strong>
+                                </span>
+                                <span class="areaName">부동산개발업_협회
+                                    <span>님</span>
+                                </span>
+                            </div>
+                            <div class="btnArea">
+                                <button type="button" class="btnLogin">
+                                    <span>로그아웃</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- //inner -->
+                    </article>
+                    <!-- //loginArea -->
+                </div>
+                <!-- //leftInner -->
+
+                <!-- lnb -->
+                <nav class="lnb">
+                    <ul class="dep1 overflow-y">
+                        <li class="noDepth registManage lnbIco01">
+                            <a href="javascript:void(0)">
+                                <span class="dep1Name">등록사업자 관리</span>
+                            </a>
+                            <!-- <ul class="dep2">
+                                <li>
+                                    <a href="javascript:void(0)">토지거래허가</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">허가증교부내역관리</a>
+                                </li>
+                            </ul> -->
+                        </li>
+                        <li class="noDepth registManage lnbIco02">
+                            <a href="javascript:void(0)">
+                                <span class="dep1Name">사무실정보 관리</span>
+                            </a>
+                        </li>
+                        <li class="registManage lnbIco03 active">
+                            <a href="javascript:void(0)">
+                                <span class="dep1Name">인력정보 관리</span>
+                            </a>
+                            <ul class="dep2" style="display: block;">
+                                <li>
+                                    <a href="javascript:void(0)">임원관리</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">전문인력 관리</a>
+                                </li>
+                                <li class="active">
+                                    <a href="javascript:void(0)">전문인력(이력) 관리</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="noDepth registManage lnbIco04">
+                            <a href="javascript:void(0)">
+                                <span class="dep1Name">자산관리자 관리</span>
+                            </a>
+                        </li>
+                        <li class="noDepth registManage lnbIco05">
+                            <a href="javascript:void(0)">
+                                <span class="dep1Name">신용평가정보<br>관리</span>
+                            </a>
+                        </li>
+                        <li class="noDepth registManage lnbIco06">
+                            <a href="javascript:void(0)">
+                                <span class="dep1Name">실태조사정보<br>관리</span>
+                            </a>
+                        </li>
+                        <li class="noDepth registManage lnbIco07">
+                            <a href="javascript:void(0)">
+                                <span class="dep1Name">행정처분 과태료 관리</span>
+                            </a>
+                        </li>
+                        <li class="noDepth registManage lnbIco08">
+                            <a href="javascript:void(0)">
+                                <span class="dep1Name">과태료 부과(예정)<br>대상관리</span>
+                            </a>
+                        </li>
+                        <li class="noDepth registManage lnbIco09">
+                            <a href="javascript:void(0)">
+                                <span class="dep1Name">부정행위업체<br>관리</span>
+                            </a>
+                        </li>
+                        <li class="noDepth registManage lnbIco10">
+                            <a href="javascript:void(0)">
+                                <span class="dep1Name">등록증교부정보 관리</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- //lnb -->
+            </div>
+            <!-- //left -->
+
+            <!-- right -->
+            <div class="right">
+                <!-- headWrap -->
+                <div class="headWrap">
+                    <!-- gnb -->
+                    <div class="gnb">
+                        <ul>
+                            <li>
+                                <a href="#">민원대행</a>
+                            </li>
+                            <li>
+                                <a href="#">신청신고</a>
+                            </li>
+                            <li class="active">
+                                <a href="#">등록관리</a>
+                            </li>
+                            <li>
+                                <a href="#">사업실적/재무정보</a>
+                            </li>
+                            <li>
+                                <a href="#">현황/통계</a>
+                            </li>
+                            <li>
+                                <a href="#">서식출력</a>
+                            </li>
+                            <li>
+                                <a href="#">업무관리</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //gnb -->
+
+                    <!-- util -->
+                    <article class="util">
+                        <ul class="menu">
+                            <li>
+                                <a href="javascript:void(0)">유지관리홈페이지</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">원격지원</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">사이트안내</a>
+                            </li>
+                        </ul>
+                        <div class="btnArea">
+                            <button type="button" class="scale btnScaleUp" title="크기 확대">
+                                <span class="hidden">크기 확대</span>
+                            </button>
+                            <button type="button" class="scale btnScaleDown" title="크기 축소">
+                                <span class="hidden">크기 축소</span>
+                            </button>
+                        </div>
+                    </article>
+                    <!-- //util -->
+                </div>
+                <!-- //headWrap -->
+                <!-- content -->
+                <div id="content">
+                    <h2 class="hidden">본문 영역</h2>
+
+                    <!-- contArea -->
+                    <div class="contArea">
+                        <!-- titArea -->
+                        <div class="titArea">
+                            <h3 class="titPage mrA">
+                                <strong>연수교육 관리</strong>
+                            </h3>
+
+                            <div class="flex col acfe">
+                                <!-- breadCrumb -->
+                                <div class="breadCrumb">
+                                    <ul>
+                                        <li class="home">
+                                            <a href="javascript:void(0)">
+                                                <span class="hidden">홈</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">등록관리</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">인력정보 관리</a>
+                                        </li>
+                                        <li class="current">
+                                            <a href="javascript:void(0)">연수교육 관리</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- //breadCrumb -->
+
+                                <!-- btnArea -->
+                                <div class="btnArea">
+                                    <button type="button" class="btn type01 bgPrimary btnHelp" title="도움말">
+                                        <span>도움말</span>
+                                    </button>
+                                </div>
+                                <!-- btnArea -->
+                            </div>
+                        </div>
+                        <!-- //titArea -->
+
+                        <!-- boardArea -->
+                        <article class="boardArea">
+                            <!-- inner -->
+                            <div class="inner">
+
+                                <!-- secContainer -->
+                                <section class="secContainer">
+                                    <!-- titSecBox -->
+                                    <div class="titSecBox">
+                                        <h4 class="tit arrowBullet">
+                                            <strong>전문인력 목록</strong>
+                                        </h4>
+                                        <!-- <p class="desc">※ 전문인력 목록를 모두 입력하고 [저장]버튼을 클릭하여 (신고)기본정보를 저장합니다.</p> -->
+                                        <div class="btnArea">
+                                            <button type="button" class="btn type05 sm2 bgGray4">
+                                                <span>이력정보</span>
+                                            </button>
+                                            <button type="button" class="btn type05 sm2 bgGray4">
+                                                <span>연수교육 대상자 조회</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- //titSecBox -->
+
+                                    <!-- tableContainer -->
+                                    <article class="tableContainer">
+                                        <!-- table -->
+                                        <div class="table">
+                                            <table>
+                                                <caption>전문인력 목록 게시물이며 부동산개발업등록번호, 자격등급, 전문인력구분, 성명, 주민등록번호, 상호, 교육구분, 자료등록양식,  자료등록</caption>
+                                                <colgroup>
+                                                    <col style="width:165px;"/>
+                                                    <col style="width:382px;"/>
+                                                    <col style="width:165px;"/>
+                                                    <col style="width:382px;"/>
+                                                    <col style="width:160px;"/>
+                                                    <col style="width:auto;"/>
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <label for="i01">부동산개발업등록번호</label>
+                                                        </th>
+                                                        <td>
+                                                            <input type="text" id="i01">
+                                                        </td>
+                                                        <th scope="row">
+                                                            <label for="i02">자격등급</label>
+                                                        </th>
+                                                        <td>
+                                                            <input type="text" id="i02">
+                                                        </td>
+                                                        <th scope="row">
+                                                            <label for="i03">전문인력구분</label>
+                                                        </th>
+                                                        <td>
+                                                            <input type="text" id="i03"/>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <label for="i04">성명</label>
+                                                        </th>
+                                                        <td>
+                                                            <input type="text" id="i04"/>
+                                                        </td>
+                                                        <th scope="row">
+                                                            <label for="i05">주민(법인)등록번호</label>
+                                                        </th>
+                                                        <td>
+                                                            <div class="inputGroup">
+                                                                <input type="text" id="i05" title="앞 번호">
+                                                                <span class="dash">-</span>
+                                                                <input type="text" title="뒷 번호">
+                                                            </div>
+                                                            <!-- //inputGroup -->
+                                                        </td>
+                                                        <th scope="row">
+                                                            <label for="i06">상호</label>
+                                                        </th>
+                                                        <td>
+                                                            <input type="text" id="i06" style="width: 352px;">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <label for="s01">교육구분</label>
+                                                        </th>
+                                                        <td>
+                                                            <select id="s01">
+                                                                <option>-</option>
+                                                            </select>
+                                                        </td>
+                                                        <th scope="row">
+                                                            <label>자료등록양식</label>
+                                                        </th>
+                                                        <td>
+                                                            <button type="button" class="btn type05 wide bgPrimary brNo" onclick="location.href='../images/common/logo.png'">
+                                                                <span>다운로드</span>
+                                                            </button>
+                                                        </td>
+                                                        <th scope="row">
+                                                            <label>자료등록</label>
+                                                        </th>
+                                                        <td>
+                                                            <button type="button" class="btn type05 wide bgPrimary brNo btnuploadShow">
+                                                                <span>업로드</span>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- //table -->
+                                    </article>
+                                    <!-- //tableContainer -->
+
+                                    <!-- btnArea -->
+                                    <div class="btnArea jc">
+                                        <button type="button" class="btn type02 bgGray">
+                                            <span>초기화</span>
+                                        </button>
+                                        <button type="button" class="btn wide bgPrimary2 btnSearch">
+                                            <span>검색</span>
+                                        </button>
+                                    </div>
+                                    <!-- //btnArea -->
+                                </section>
+                                <!-- //secContainer -->
+
+                                <!-- secContainer -->
+                                <section class="secContainer" style="margin-top: 29px;">
+                                    <div class="resultContainer">
+                                        <div class="resultArea">
+                                            <span class="numOfCase">총<em>2775</em>건</span>
+                                            <p class="pages">(1 of 278 pages)</p>
+                                        </div> 
+                                        <div class="btnArea">
+                                            <button type="button" class="btn type05 sm2 bgGray">
+                                                <span>파일저장</span>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <!-- tableContainer -->
+                                    <article class="tableContainer">
+                                        <!-- table -->
+                                        <div class="table column hover">
+                                            <!-- gridTable -->
+                                            <table id="gridTable54">
+
+                                            </table>
+                                            <!-- //gridTable -->
+                                        </div>
+                                        <!-- //table -->
+                                    </article>
+                                    <!-- //tableContainer -->
+                                    
+                                    <!-- PAGER:그리드자동생성(개발소스동기화) -->
+                                    <div class="ui-jqgrid">
+   <div id="conPermInfoListPager" class="ui-state-default ui-jqgrid-pager ui-corner-bottom" dir="ltr">
+      <div id="pg_conPermInfoListPager" class="ui-pager-control" role="group">
+         <table cellspacing="0" cellpadding="0" border="0" class="ui-pg-table" style="width:100%;table-layout:fixed;height:100%;">
+            <tbody>
+               <tr>
+                  <td id="conPermInfoListPager_left" align="left"></td>
+                  <td id="conPermInfoListPager_center" align="center" style="white-space: pre; width: 268px;">
+                     <table cellspacing="0" cellpadding="0" border="0" style="table-layout:auto;" class="ui-pg-table">
+                        <tbody>
+                           <tr>
+                              <td id="first_conPermInfoListPager" class="ui-pg-button ui-corner-all ui-state-disabled" title="First Page" style="cursor: default;"><span class="ui-icon ui-icon-seek-first"></span></td>
+                              <td id="prev_conPermInfoListPager" class="ui-pg-button ui-corner-all ui-state-disabled" title="Previous Page"><span class="ui-icon ui-icon-seek-prev"></span></td>
+                              <td class="ui-pg-button ui-state-disabled" style="width:4px;"><span class="ui-separator"></span></td>
+                              <td dir="ltr">페이지 <input class="ui-pg-input ui-corner-all" type="text" size="2" maxlength="7" value="0" role="textbox"> / <span id="sp_1_conPermInfoListPager">713</span></td>
+                              <td class="ui-pg-button ui-state-disabled" style="width:4px;"><span class="ui-separator"></span></td>
+                              <td id="next_conPermInfoListPager" class="ui-pg-button ui-corner-all" title="Next Page"><span class="ui-icon ui-icon-seek-next"></span></td>
+                              <td id="last_conPermInfoListPager" class="ui-pg-button ui-corner-all" title="Last Page"><span class="ui-icon ui-icon-seek-end"></span></td>
+                              <td dir="ltr">
+                                 <select class="ui-pg-selbox ui-widget-content ui-corner-all" role="listbox" title="Records per Page">
+                                    <option role="option" value="5">5</option>
+                                    <option role="option" value="10" selected="selected">10</option>
+                                    <option role="option" value="20">20</option>
+                                    <option role="option" value="30">30</option>
+                                    <option role="option" value="50">50</option>
+                                 </select>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </td>
+                  <td id="conPermInfoListPager_right" align="right"></td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+   </div>
+</div>
+                                    <!-- //PAGER:그리드자동생성(개발소스동기화) -->
+
+                                </section>
+                                <!-- //secContainer -->
+
+                            </div>
+                            <!-- //inner -->
+                        </article>
+                        <!-- //boardArea -->
+                    </div>
+                    <!-- //contArea -->
+                </div>
+                <!-- //content -->
+            </div>
+            <!-- //right -->
+        </main>
+        <!-- //container -->
+
+        <!-- popup -->
+        <div class="popup uiDrag" style="display: block; width: 1100px;">
+            <!-- head -->
+            <div class="head">
+                <p class="popTit">연수교육 대상자 조회</p>
+                <button type="button" class="btnClose">
+                    <span class="hidden">팝업 닫기</span>
+                </button>
+            </div>
+            <!-- //head -->
+            <!-- cont -->
+            <div class="cont dragCancel">
+                <!-- secContainer -->
+                <section class="secContainer">
+                    <div class="titSecBox type03">
+                        <h6 class="tit addressName">
+                            <strong>연수교육 대상자</strong>
+                        </h6>
+                    </div>
+
+                    <!-- tableContainer -->
+                    <article class="tableContainer">
+                        <!-- table -->
+                        <div class="table">
+                            <table>
+                                <caption>연수교육 대상자 테이블</caption>
+                                <colgroup>
+                                    <col style="width: 165px;">
+                                    <col style="width: 300px;">
+                                    <col style="width: 150px;">
+                                    <col style="width: 300px;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="pl01">연수교육 이수기한</label>
+                                        </th>
+                                        <td>
+                                            <input type="text" class="cal" value="2022-12-31" id="pl01" />
+                                        </td>
+                                        <th scope="row">
+                                            <label for="pl02">대상자</label>
+                                        </th>
+                                        <td>
+                                            <select id="pl02">
+                                                <option selected>미이수자</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- //table -->
+                    
+                    </article>
+                    <!-- //tableContainer -->
+
+                    <!-- btnArea -->
+                    <div class="btnArea jc">
+                        <button type="button" class="btn type02 bgGray">
+                            <span>초기화</span>
+                        </button>
+                        <button type="button" class="btn wide bgPrimary2 btnSearch">
+                            <span>검색</span>
+                        </button>
+                    </div>
+                    <!-- //btnArea -->
+
+                </section>
+                <!-- //secContainer -->
+
+                <!-- secContainer -->
+                <section class="secContainer">
+                    <div class="resultContainer">
+                        <div class="resultArea">
+                            <span class="numOfCase">총<em>2775</em>건</span>
+                            <p class="pages">(1 of 278 pages)</p>
+                        </div> 
+                        <div class="btnArea">
+                            <button type="button" class="btn type05 sm2 bgGray4">
+                                <span>연수교육보고서 출력</span>
+                            </button>
+                            <button type="button" class="btn type05 sm2 bgGray">
+                                <span>파일저장</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- tableContainer -->
+                    <article class="tableContainer">
+                        <!-- table -->
+                        <div class="table column hover hscroll_line5">
+                            <!-- gridTable -->
+                            <table id="gridTable55">
+
+                            </table>
+                            <!-- //gridTable -->
+                        </div>
+                        <!-- //table -->
+                    </article>
+                    <!-- //tableContainer -->
+                    
+                    <!-- PAGER:그리드자동생성(개발소스동기화) -->
+                    <div class="ui-jqgrid">
+   <div id="conPermInfoListPager" class="ui-state-default ui-jqgrid-pager ui-corner-bottom" dir="ltr">
+      <div id="pg_conPermInfoListPager" class="ui-pager-control" role="group">
+         <table cellspacing="0" cellpadding="0" border="0" class="ui-pg-table" style="width:100%;table-layout:fixed;height:100%;">
+            <tbody>
+               <tr>
+                  <td id="conPermInfoListPager_left" align="left"></td>
+                  <td id="conPermInfoListPager_center" align="center" style="white-space: pre; width: 268px;">
+                     <table cellspacing="0" cellpadding="0" border="0" style="table-layout:auto;" class="ui-pg-table">
+                        <tbody>
+                           <tr>
+                              <td id="first_conPermInfoListPager" class="ui-pg-button ui-corner-all ui-state-disabled" title="First Page" style="cursor: default;"><span class="ui-icon ui-icon-seek-first"></span></td>
+                              <td id="prev_conPermInfoListPager" class="ui-pg-button ui-corner-all ui-state-disabled" title="Previous Page"><span class="ui-icon ui-icon-seek-prev"></span></td>
+                              <td class="ui-pg-button ui-state-disabled" style="width:4px;"><span class="ui-separator"></span></td>
+                              <td dir="ltr">페이지 <input class="ui-pg-input ui-corner-all" type="text" size="2" maxlength="7" value="0" role="textbox"> / <span id="sp_1_conPermInfoListPager">713</span></td>
+                              <td class="ui-pg-button ui-state-disabled" style="width:4px;"><span class="ui-separator"></span></td>
+                              <td id="next_conPermInfoListPager" class="ui-pg-button ui-corner-all" title="Next Page"><span class="ui-icon ui-icon-seek-next"></span></td>
+                              <td id="last_conPermInfoListPager" class="ui-pg-button ui-corner-all" title="Last Page"><span class="ui-icon ui-icon-seek-end"></span></td>
+                              <td dir="ltr">
+                                 <select class="ui-pg-selbox ui-widget-content ui-corner-all" role="listbox" title="Records per Page">
+                                    <option role="option" value="5">5</option>
+                                    <option role="option" value="10" selected="selected">10</option>
+                                    <option role="option" value="20">20</option>
+                                    <option role="option" value="30">30</option>
+                                    <option role="option" value="50">50</option>
+                                 </select>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </td>
+                  <td id="conPermInfoListPager_right" align="right"></td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+   </div>
+</div>
+                    <!-- //PAGER:그리드자동생성(개발소스동기화) -->
+
+                </section>
+                <!-- //secContainer -->
+                
+                <!-- secContainer -->
+                <section class="secContainer">
+                    <div class="titSecBox type03">
+                        <h6 class="tit addressName">
+                            <strong>문자발송내역</strong>
+                        </h6>
+                    </div>
+
+                    <!-- tableContainer -->
+                    <article class="tableContainer">
+                        <!-- table -->
+                        <div class="table column hover hscroll_line5">
+                            <!-- gridTable -->
+                            <table id="gridTable56">
+
+                            </table>
+                            <!-- //gridTable -->
+                        </div>
+                        <!-- //table -->
+                    </article>
+                    <!-- //tableContainer -->
+
+
+                </section>
+                <!-- //secContainer -->
+                <!-- secContainer -->
+                <section class="secContainer">
+                    <div class="titSecBox type03">
+                        <h6 class="tit addressName">
+                            <strong>문자내역상세</strong>
+                        </h6>
+                        <div class="btnArea">
+                            <button type="button" class="btn type05 sm2 bgGray">
+                                <span>문자발송</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- tableContainer -->
+                    <article class="tableContainer">
+                        <!-- table -->
+                        <div class="table">
+                            <table>
+                                <caption>문자발송내역 상세 테이블</caption>
+                                <colgroup>
+                                    <col style="width: 165px;">
+                                    <col style="width: 300px;">
+                                    <col style="width: 150px;">
+                                    <col style="width: 300px;">
+                                    <col style="width: 150px;">
+                                    <col style="width: 300px;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="pl03">수신자 성명</label>
+                                        </th>
+                                        <td>
+                                            <input type="text" id="pl03" value="김연수" />
+                                        </td>
+                                        <th scope="row">
+                                            <label for="pl04">수신자 전화번호</label>
+                                        </th>
+                                        <td>
+                                            <input type="text" id="pl04" />
+                                        </td>
+                                        <th scope="row">
+                                            <label for="pl05">회신번호</label>
+                                        </th>
+                                        <td>
+                                            <input type="text" id="pl05" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="pl06">사무소명</label>
+                                        </th>
+                                        <td colspan="5">
+                                            <input type="text" id="pl06" value="종로부동산중개㈜" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="pl07">메시지내용</label>
+                                        </th>
+                                        <td colspan="5">
+                                            <input type="text" id="pl07" value="귀하께서는 2022.12.31 까지 연수교육을 이수하여야 하며 기한 내 미이수시는 500만원 이하의 과태료가 부과됩니다." />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- //table -->
+                    
+                    </article>
+                    <!-- //tableContainer -->
+
+                    <div class="btnArea jc">
+                        <button type="button" class="btn type04 bgWhite wide btnCancel">
+                            <span>닫기</span>
+                        </button>
+                       <!--  <button type="button" class="btn type04 bgPrimary2 wide">
+                            <span>저장</span>
+                        </button> -->
+                    </div>
+
+                </section>
+                <!-- //secContainer -->
+
+
+
+            </div>
+            <!-- //cont -->
+        </div>
+        <!-- //popup -->
+        <div class="dimmed" style="display: block;"></div>
+
+        
+        <!-- popup -->
+        <div class="popup uiDrag" style="display: block;width: 1100px;">
+            <!-- head -->
+            <div class="head">
+                <p class="popTit">교육수료관리 이력 정보</p>
+                <button type="button" class="btnClose">
+                    <span class="hidden">팝업 닫기</span>
+                </button>
+            </div>
+            <!-- //head -->
+            <!-- cont -->
+            <div class="cont dragCancel">
+                <!-- secContainer -->
+                <section class="secContainer">
+
+                    <div class="titSecBox type03">
+                        <h6 class="tit addressName">
+                            <strong>교육수료관리 이력</strong>
+                        </h6>
+                    </div>
+
+                    <!-- tableContainer -->
+                    <article class="tableContainer">
+                        <!-- table -->
+                        <div class="table">
+                            <table>
+                                <caption>교육수료관리 이력 테이블</caption>
+                                <colgroup>
+                                    <col style="width: 150px;">
+                                    <col style="width: 300px;">
+                                    <col style="width: 150px;">
+                                    <col style="width: 300px;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="pl08">시도</label>
+                                        </th>
+                                        <td>
+                                            <input type="text" disabled class="disabled" value="시도" id="pl08" />
+                                        </td>
+                                        <th scope="row">
+                                            <label for="pl09">시군구</label>
+                                        </th>
+                                        <td>
+                                            <input type="text" disabled class="disabled" value="부산광역시 수영구" id="pl09" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="pl10">성명</label>
+                                        </th>
+                                        <td>
+                                            <input type="text" disabled class="disabled" value="홍길동" id="pl10" />
+                                        </td>
+                                        <th scope="row">
+                                            <label for="pl11">주민등록번호</label>
+                                        </th>
+                                        <td>
+                                            <input type="text" disabled class="disabled" value="791001" id="pl11" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="pl12">교육수료일</label>
+                                        </th>
+                                        <td>
+                                            <input type="text" disabled class="disabled" value="2022-05-18" id="pl12" />
+                                        </td>
+                                        <th scope="row">
+                                            <label for="pl13">교육회차</label>
+                                        </th>
+                                        <td>
+                                            <input type="text" disabled class="disabled" value="5" id="pl13" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="pl14">수료증발급번호</label>
+                                        </th>
+                                        <td colspan="3">
+                                            <input type="text" disabled class="disabled" value="22-22-02-12345-45678" id="pl14" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="pl15">교육구분</label>
+                                        </th>
+                                        <td>
+                                            <input type="text" disabled class="disabled" value="연수" id="pl15" />
+                                        </td>
+                                        <th scope="row">
+                                            <label for="pl16">교육기관구분</label>
+                                        </th>
+                                        <td>
+                                            <input type="text" disabled class="disabled" value="부동산협회" id="pl16" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="pl17">자격증번호</label>
+                                        </th>
+                                        <td>
+                                            <input type="text" disabled class="disabled" value="22-4562" id="pl17" />
+                                        </td>
+                                        <th scope="row">
+                                            <label for="pl18">종사자구분</label>
+                                        </th>
+                                        <td>
+                                            <input type="text" disabled class="disabled" value="부동산개발업" id="pl18" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="pl19">주소</label>
+                                        </th>
+                                        <td colspan="3">
+                                            <input type="text" disabled class="disabled" value="부산광역시 연제구" id="pl19" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="pl20">기타주소</label>
+                                        </th>
+                                        <td>
+                                            <input type="text" disabled class="disabled" value="1층" id="pl20" />
+                                        </td>
+                                        <th scope="row">
+                                            <label for="pl21">우편번호</label>
+                                        </th>
+                                        <td>
+                                            <input type="text" disabled class="disabled" value="47591" id="pl21" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="pl22">도로명주소</label>
+                                        </th>
+                                        <td colspan="3">
+                                            <input type="text" disabled class="disabled" value="부산광역시 연제구" id="pl22" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="pl23">구지번주소</label>
+                                        </th>
+                                        <td colspan="3">
+                                            <input type="text" disabled class="disabled" value="부산광역시 연제구 연산동1-1" id="pl23" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="pl24">전화번호</label>
+                                        </th>
+                                        <td>
+                                            <input type="text" disabled class="disabled" value="010-1234-5678" id="pl24" />
+                                        </td>
+                                        <th scope="row">
+                                            <label for="pl25">비고</label>
+                                        </th>
+                                        <td>
+                                            <input type="text" disabled class="disabled" id="pl25" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="pl26">접수일</label>
+                                        </th>
+                                        <td>
+                                            <input type="text" disabled class="disabled" value="2022-08-01" id="pl26" />
+                                        </td>
+                                        <th scope="row">
+                                            <label for="pl27">연수교육 이수기한</label>
+                                        </th>
+                                        <td>
+                                            <input type="text" disabled class="disabled" value="2022-12-31" id="pl27" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="pl28">연수교육 통지일</label>
+                                        </th>
+                                        <td>
+                                            <input type="text" disabled class="disabled" value="2022-07-31" id="pl28" />
+                                        </td>
+                                        <th scope="row">
+                                            <label for="pl29">과태료 부과일</label>
+                                        </th>
+                                        <td>
+                                            <input type="text" disabled class="disabled" id="pl29" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="pl30">과태료부과 문서번호</label>
+                                        </th>
+                                        <td>
+                                            <input type="text" disabled class="disabled" id="pl30" />
+                                        </td>
+                                        <th scope="row">
+                                            <label for="pl31">과태료 부과금액</label>
+                                        </th>
+                                        <td>
+                                            <input type="text" disabled class="disabled" value="0" id="pl31" />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- //table -->
+                    
+                    </article>
+                    <!-- //tableContainer -->
+
+                </section>
+                <!-- //secContainer -->
+
+                    
+                <!-- secContainer -->
+                <section class="secContainer">
+                    <div class="resultContainer">
+                        <div class="resultArea">
+                            <span class="numOfCase">총<em>2775</em>건</span>
+                            <p class="pages">(1 of 278 pages)</p>
+                        </div> 
+                    </div>
+                    
+                    <!-- table -->
+                    <div class="table column hover hscroll_line5">
+                        <table id="gridTable57"></table>
+                    </div>
+                    <!-- //table -->
+                </section>
+                <!-- //secContainer -->
+
+                <!-- secContainer -->
+                <section class="secContainer">
+                    <div class="btnArea jc">
+                        <button type="button" class="btn type04 bgWhite wide btnCancel">
+                            <span>닫기</span>
+                        </button>
+                        <!-- <button type="button" class="btn type04 bgPrimary2 wide">
+                            <span>저장</span>
+                        </button> -->
+                    </div>
+
+                </section>
+                <!-- //secContainer -->
+
+            </div>
+            <!-- //cont -->
+        </div>
+        <!-- //popup -->
+        <div class="dimmed" style="display: block;"></div>
+
+
+    </div>
+    <!-- //wrap -->
+</body>
+</html>

@@ -1,3 +1,12 @@
+// maincolor
+$mainColor-lnbBg: #B63568;  //lnb
+$mainColor-lnbLine: #CC4F81;  //lnb
+$mainColor-th: #FFEFF8;    //table
+$mainColor-light: #F2D0D9;    //login
+$mainColor-mid: #B84271;      //head,lnb
+$mainColor-middark: #B32A5A;  //login,lnb
+$mainColor-dark: #842048;     //breadCrumb,checkbox
+
 /* jqGrid table custom */
 .ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr{border-top-right-radius: 0;}
   
@@ -20,7 +29,9 @@ html .ui-button.ui-state-disabled:active{border: 0;}
 
 .ui-jqgrid .ui-jqgrid-htable th div{overflow: inherit; height: auto;}
 
-.ui-jqgrid .ui-jqgrid-bdiv{overflow: hidden;}
+// 가로스크롤 자동생성필요!
+// .ui-jqgrid .ui-jqgrid-bdiv{overflow: hidden;}
+.ui-jqgrid .ui-jqgrid-bdiv{overflow-x: hidden;}
 
 .ui-th-column, .ui-jqgrid .ui-jqgrid-htable th.ui-th-column{white-space: normal; overflow: inherit;}
 
@@ -42,7 +53,12 @@ html .ui-button.ui-state-disabled:active{border: 0;}
 /* 데이터 클릭 시 tr active 되는 부분 */
 .ui-state-highlight, 
 .ui-widget-content .ui-state-highlight, 
-.ui-widget-header .ui-state-highlight{border: 0; border-right: 1px solid #ddd; border-color: #ddd; background: #f4f4f4;}
+.ui-widget-header .ui-state-highlight{border: 0; border-right: 1px solid #ddd; border-color: #ddd; background: #f4f4f4;
+    td{color: $mainColor-middark !important; border-top: 1px solid #ddd;
+        &.jqTitle{color: #454545; font-weight: normal !important;}
+    }
+    .ui-state-default, .ui-widget-content .ui-state-default{color: inherit; background: inherit;}
+}
 /* ---- */
 
 /* jqGrid checkbox */
@@ -50,7 +66,12 @@ html .ui-button.ui-state-disabled:active{border: 0;}
     &:after{content: ''; display: flex; width: 20px; height: 20px; border: 1px solid #ccc;
     border-radius: 4px; background-color: #fff;}
 }
-
+/* jqGrid checkbox:checked:th,td */
+input[type="checkbox"].cbox:checked,
+.ui-widget-content.ui-state-highlight input[type="checkbox"]::after{
+    background: $mainColor-dark url("../images/ico/common/ico-checkbox-fill.png") no-repeat center center;border-radius: 4px;
+}
+input[type="checkbox"].cbox:checked:after{background: transparent;border:0}
 /* jqGrid th,td checkbox 위치 설정 */
 thead tr th[role="columnheader"] div > .cbox ,
 tbody tr td[role="gridcell"] > .cbox{left: 50%; top: 50%; transform: translate(-50%,-50%); margin: 0;}
@@ -60,4 +81,8 @@ tbody tr td[role="gridcell"] > .cbox{left: 50%; top: 50%; transform: translate(-
 
 .ui-th-ltr{
     &[colspan]{height: 30px !important;}
+}
+// resize 시 헤더틀어지는 이슈로 인한 리셋값
+.ui-jqgrid .ui-jqgrid-htable th, .ui-jqgrid tr.jqgrow td{
+    padding: 0 !important;
 }

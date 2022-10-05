@@ -137,10 +137,13 @@
                                     <a href="javascript:void(0)">사업실적현황(년도별)</a>
                                 </li>
                                 <li>
+                                    <a href="javascript:void(0)">사업실적현황(전년대비)</a>
+                                </li>
+                                <li>
                                     <a href="javascript:void(0)">행정처분현황(년도별)</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)">전문인력증감현황(전년도대비)</a>
+                                    <a href="javascript:void(0)">전문인력증감현황(전년대비)</a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0)">부동산개발업현황</a>
@@ -299,11 +302,6 @@
                                             <strong>사무실 현황통계</strong>
                                         </h4>
                                         <!-- <p class="desc">※ 부동산개발업등록정보를 모두 입력하고 [저장]버튼을 클릭하여 (신고)기본정보를 저장합니다.</p> -->
-                                        <div class="btnArea">
-                                            <button type="button" class="btn type05 sm2 bgGray4">
-                                                <span>엑셀저장</span>
-                                            </button>
-                                        </div>
                                     </div>
                                     <!-- //titSecBox -->
 
@@ -429,6 +427,11 @@
                                             <span class="numOfCase">총<em>2775</em>건</span>
                                             <p class="pages">(1 of 278 pages)</p>
                                         </div> 
+                                        <div class="btnArea">
+                                            <button type="button" class="btn type05 sm2 bgGray">
+                                                <span>파일저장</span>
+                                            </button>
+                                        </div>
                                     </div>
 
                                     <!-- tableContainer -->
@@ -440,48 +443,46 @@
                                         <!-- //table -->
                                     </article>
                                     <!-- //tableContainer -->
-                                    <div class="pagination">
-                                        <button type="button" class="btnFirst" title="맨앞으로">
-                                            <span class="hidden">맨앞으로</span>
-                                            <svg width="13.121" height="13.414" viewBox="0 0 13.121 13.414">
-                                                <g id="icon" transform="translate(1.414 0.707)">
-                                                  <path id="arrow" d="M1206,1446l-6,6,6,6" transform="translate(-1195 -1446)" fill="none" stroke="#bbb" stroke-width="2"></path>
-                                                  <path id="arrow-2" data-name="arrow" d="M1206,1446l-6,6,6,6" transform="translate(-1200 -1446)" fill="none" stroke="#bbb" stroke-width="2"></path>
-                                                </g>
-                                            </svg>
-                                        </button>
-                                        <button type="button" class="btnPrev" title="이전페이지">
-                                            <span class="hidden">이전페이지</span>
-                                            <svg width="8.121" height="13.414" viewBox="0 0 8.121 13.414">
-                                                <path id="arrow-3" d="M1206,1446l-6,6,6,6" transform="translate(-1198.586 -1445.293)" fill="none" stroke="#bbb" stroke-width="2"></path>
-                                            </svg>
-                                        </button>
-                                        <a href="#" class="active" title="1">1</a>
-                                        <a href="#" title="2">2</a>
-                                        <a href="#" title="3">3</a>
-                                        <a href="#" title="4">4</a>
-                                        <a href="#" title="5">5</a>
-                                        <a href="#" title="6">6</a>
-                                        <a href="#" title="7">7</a>
-                                        <a href="#" title="8">8</a>
-                                        <a href="#" title="9">9</a>
-                                        <a href="#" title="10">10</a>
-                                        <button type="button" class="btnNext" title="다음페이지">
-                                            <span class="hidden">다음페이지</span>
-                                            <svg width="8.121" height="13.414" viewBox="0 0 8.121 13.414">
-                                                <path id="arrow-4" d="M1200,1446l6,6-6,6" transform="translate(-1199.293 -1445.293)" fill="none" stroke="#bbb" stroke-width="2"></path>
-                                            </svg>
-                                        </button>
-                                        <button type="button" class="btnLast" title="맨뒤로">
-                                            <span class="hidden">맨뒤로</span>
-                                            <svg width="13.121" height="13.414" viewBox="0 0 13.121 13.414">
-                                                <g id="icon-2" transform="translate(-16.293 -13.293)">
-                                                  <path id="arrow-5" d="M1200,1446l6,6-6,6" transform="translate(-1183 -1432)" fill="none" stroke="#bbb" stroke-width="2"></path>
-                                                  <path id="arrow-6" data-name="arrow" d="M1200,1446l6,6-6,6" transform="translate(-1178 -1432)" fill="none" stroke="#bbb" stroke-width="2"></path>
-                                                </g>
-                                            </svg>
-                                        </button>
+                                    <!-- ui-jqgrid -->
+                                    <div class="ui-jqgrid">
+                                        <div id="conPermInfoListPager" class="ui-state-default ui-jqgrid-pager ui-corner-bottom" dir="ltr">
+                                           <div id="pg_conPermInfoListPager" class="ui-pager-control" role="group">
+                                              <table cellspacing="0" cellpadding="0" border="0" class="ui-pg-table" style="width:100%;table-layout:fixed;height:100%;">
+                                                 <tbody>
+                                                    <tr>
+                                                       <td id="conPermInfoListPager_left" align="left"></td>
+                                                       <td id="conPermInfoListPager_center" align="center" style="white-space: pre; width: 268px;">
+                                                          <table cellspacing="0" cellpadding="0" border="0" style="table-layout:auto;" class="ui-pg-table">
+                                                             <tbody>
+                                                                <tr>
+                                                                   <td id="first_conPermInfoListPager" class="ui-pg-button ui-corner-all ui-state-disabled" title="First Page" style="cursor: default;"><span class="ui-icon ui-icon-seek-first"></span></td>
+                                                                   <td id="prev_conPermInfoListPager" class="ui-pg-button ui-corner-all ui-state-disabled" title="Previous Page"><span class="ui-icon ui-icon-seek-prev"></span></td>
+                                                                   <td class="ui-pg-button ui-state-disabled" style="width:4px;"><span class="ui-separator"></span></td>
+                                                                   <td dir="ltr">페이지 <input class="ui-pg-input ui-corner-all" type="text" size="2" maxlength="7" value="0" role="textbox"> / <span id="sp_1_conPermInfoListPager">713</span></td>
+                                                                   <td class="ui-pg-button ui-state-disabled" style="width:4px;"><span class="ui-separator"></span></td>
+                                                                   <td id="next_conPermInfoListPager" class="ui-pg-button ui-corner-all" title="Next Page"><span class="ui-icon ui-icon-seek-next"></span></td>
+                                                                   <td id="last_conPermInfoListPager" class="ui-pg-button ui-corner-all" title="Last Page"><span class="ui-icon ui-icon-seek-end"></span></td>
+                                                                   <td dir="ltr">
+                                                                      <select class="ui-pg-selbox ui-widget-content ui-corner-all" role="listbox" title="Records per Page">
+                                                                         <option role="option" value="5">5</option>
+                                                                         <option role="option" value="10" selected="selected">10</option>
+                                                                         <option role="option" value="20">20</option>
+                                                                         <option role="option" value="30">30</option>
+                                                                         <option role="option" value="50">50</option>
+                                                                      </select>
+                                                                   </td>
+                                                                </tr>
+                                                             </tbody>
+                                                          </table>
+                                                       </td>
+                                                       <td id="conPermInfoListPager_right" align="right"></td>
+                                                    </tr>
+                                                 </tbody>
+                                              </table>
+                                           </div>
+                                        </div>
                                     </div>
+                                    <!-- // ui-jqgrid -->
 
                                 </section>
                                 <!-- //secContainer -->

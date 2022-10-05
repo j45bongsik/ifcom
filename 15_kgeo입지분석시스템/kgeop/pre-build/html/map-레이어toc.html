@@ -52,14 +52,27 @@
                             <!-- groupBox -->
                             <article class="groupBox">
                                 <!-- label -->
-                                <div class="label active">
+                                <div class="label">
+                                    <!-- labelTitle -->
                                     <div class="labelTitle">
-                                        <button type="button" class="btn title type05 elips">
-                                            기본지도
-                                        </button>
-                                        <button type="button" class="btn setting" title="설정"></button>
+                                        <!-- inputArea -->
+                                        <div class="inputArea change">
+                                            <input type="text">
+                                        </div>
+                                        <!-- //inputArea -->
+                                        <!-- titleArea -->
+                                        <div class="titleArea">
+                                            <button type="button" class="btn title type05 elips">
+                                                기본지도
+                                            </button>
+                                            
+                                            <button type="button" class="btn setting" title="설정"></button>
+                                        </div>
+                                        <!-- //titleArea -->
                                     </div>
+                                    <!-- //labelTitle -->
                                     <div class="btnArea">
+                                        <button type="button" class="btn toggle layerWrite" title="수정"></button>
                                         <button type="button" class="btn toggle layerView" title="보기"></button>
                                         <button type="button" class="btn toggle layerDelete" title="지우기"></button>
                                     </div>
@@ -81,7 +94,7 @@
                                             <div class="btnArea">
                                                 <button type="button" class="btn toggle layerView" title="보기"></button>
                                                 <button type="button" class="btn toggle layerBookmark" title="북마크"></button>
-                                                <button type="button" class="btn toggle layerInfo on" title="상세정보"></button>
+                                                <button type="button" class="btn toggle layerInfo " title="상세정보"></button>
                                                 <ul class="dep02">
                                                     <li class="rule">
                                                         <button type="button" class="btn">규제완화</button>
@@ -129,6 +142,21 @@
                                                 <button type="button" class="btn toggle layerView" title="보기"></button>
                                                 <button type="button" class="btn toggle layerBookmark" title="북마크"></button>
                                                 <button type="button" class="btn toggle layerInfo" title="상세정보"></button>
+                                                <ul class="dep02">
+                                                    <li class="rule">
+                                                        <button type="button" class="btn">규제완화</button>
+                                                    </li>
+                                                    <li class="meta">
+                                                        <button type="button" class="btn">메타데이터</button>
+                                                    </li>
+                                                    <li class="down">
+                                                        <button type="button" class="btn">다운로드</button>
+                                                    </li>
+                                                    <li class="delete">
+                                                        <button type="button" class="btn">삭제</button>
+                                                    </li>
+                                                </ul>
+                                                
                                             </div>
                                         </li>
                                     </ul>
@@ -209,8 +237,423 @@
                                 <!-- list -->
                             </article>
                             <!-- groupBox -->
+
+                            <!-- groupBox -->
+                            <article class="groupBox">
+                                <!-- label -->
+                                <div class="label">
+                                    <!-- labelTitle -->
+                                    <div class="labelTitle">
+                                        <!-- inputArea -->
+                                        <div class="inputArea change">
+                                            <input type="text">
+                                        </div>
+                                        <!-- //inputArea -->
+                                        <!-- titleArea -->
+                                        <div class="titleArea">
+                                            <button type="button" class="btn title type05 elips">
+                                                기본지도
+                                            </button>
+                                            
+                                            <button type="button" class="btn setting" title="설정"></button>
+                                        </div>
+                                        <!-- //titleArea -->
+                                    </div>
+                                    <!-- //labelTitle -->
+                                    <div class="btnArea">
+                                        <button type="button" class="btn toggle layerWrite" title="수정"></button>
+                                        <button type="button" class="btn toggle layerView" title="보기"></button>
+                                        <button type="button" class="btn toggle layerDelete" title="지우기"></button>
+                                    </div>
+                                </div>
+                                <!-- //label -->
+                                <!-- list -->
+                                <div class="list">
+                                    <ul>
+                                        <li>
+                                            <p class="name type01 elips"><i class="ico rect"></i>행정구역시군구_경계 </p>
+                                            <div class="btnArea">
+                                                <button type="button" class="btn toggle layerView" title="보기"></button>
+                                                <button type="button" class="btn toggle layerBoundary" title="경계편집"></button>
+                                                <button type="button" class="btn toggle layerMeta" title="메타데이터"></button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p class="name type01 elips"><i class="ico line"></i>행정구역_읍면동(법정동)</p>
+                                            <div class="btnArea">
+                                                <button type="button" class="btn toggle layerView" title="보기"></button>
+                                                <button type="button" class="btn toggle layerBookmark" title="북마크"></button>
+                                                <button type="button" class="btn toggle layerInfo on" title="상세정보"></button>
+                                                <ul class="dep02">
+                                                    <li class="rule">
+                                                        <button type="button" class="btn">규제완화</button>
+                                                    </li>
+                                                    <li class="meta">
+                                                        <button type="button" class="btn">메타데이터</button>
+                                                    </li>
+                                                    <li class="down">
+                                                        <button type="button" class="btn">다운로드</button>
+                                                    </li>
+                                                    <li class="delete">
+                                                        <button type="button" class="btn">삭제</button>
+                                                    </li>
+                                                </ul>
+                                                
+                                            </div>
+                                        </li>
+                                        
+                                        <li>
+                                            <p class="name type01 elips"><i class="ico dot"></i>연속지적</p>
+                                            <div class="btnArea">
+                                                <button type="button" class="btn toggle layerView" title="보기"></button>
+                                                <button type="button" class="btn toggle layerBookmark" title="북마크"></button>
+                                                <button type="button" class="btn toggle layerInfo" title="상세정보"></button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p class="name type01 elips"><i class="ico rect"></i>행정구역시군구_경계 행정구역시군구_경계 행정구역시군구_경계 </p>
+                                            <div class="btnArea">
+                                                <button type="button" class="btn toggle layerView" title="보기"></button>
+                                                <button type="button" class="btn toggle layerBookmark" title="북마크"></button>
+                                                <button type="button" class="btn toggle layerInfo" title="상세정보"></button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p class="name type01 elips"><i class="ico line"></i>행정구역_읍면동(법정동) 행정구역_읍면동(법정동) 행정구역_읍면동(법정동)</p>
+                                            <div class="btnArea">
+                                                <button type="button" class="btn toggle layerView" title="보기"></button>
+                                                <button type="button" class="btn toggle layerBookmark" title="북마크"></button>
+                                                <button type="button" class="btn toggle layerInfo" title="상세정보"></button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p class="name type01 elips"><i class="ico dot"></i>연속지적 연속지적 연속지적 연속지적 연속지적 연속지적</p>
+                                            <div class="btnArea">
+                                                <button type="button" class="btn toggle layerView" title="보기"></button>
+                                                <button type="button" class="btn toggle layerBookmark" title="북마크"></button>
+                                                <button type="button" class="btn toggle layerInfo on" title="상세정보"></button>
+                                                <ul class="dep02">
+                                                    <li class="rule">
+                                                        <button type="button" class="btn">규제완화</button>
+                                                    </li>
+                                                    <li class="meta">
+                                                        <button type="button" class="btn">메타데이터</button>
+                                                    </li>
+                                                    <li class="down">
+                                                        <button type="button" class="btn">다운로드</button>
+                                                    </li>
+                                                    <li class="delete">
+                                                        <button type="button" class="btn">삭제</button>
+                                                    </li>
+                                                </ul>
+                                                
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- list -->
+                            </article>
+                            <!-- groupBox -->
+
+                            <!-- groupBox -->
+                            <article class="groupBox">
+                                <!-- label -->
+                                <div class="label single">
+                                    <div class="labelTitle">
+                                        <button type="button" class="btn title type05 elips">
+                                            <i class="ico rect"></i>
+                                            행정구역시군구_경계
+                                        </button>
+                                    </div>
+                                    <div class="btnArea">
+                                        <button type="button" class="btn toggle layerView" title="보기"></button>
+                                        <button type="button" class="btn toggle layerBookmark" title="지우기"></button>
+                                        <button type="button" class="btn toggle layerInfo" title="상세정보"></button>
+                                        <ul class="dep02">
+                                            <li class="rule">
+                                                <button type="button" class="btn">규제완화</button>
+                                            </li>
+                                            <li class="meta">
+                                                <button type="button" class="btn">메타데이터</button>
+                                            </li>
+                                            <li class="down">
+                                                <button type="button" class="btn">다운로드</button>
+                                            </li>
+                                            <li class="delete">
+                                                <button type="button" class="btn">삭제</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- //label -->
+                            </article>
+                            <!-- groupBox -->
+
+
+                            <!-- groupBox -->
+                            <article class="groupBox">
+                                <!-- label -->
+                                <div class="label active">
+                                    <!-- labelTitle -->
+                                    <div class="labelTitle">
+                                        <!-- inputArea -->
+                                        <div class="inputArea change">
+                                            <input type="text">
+                                        </div>
+                                        <!-- //inputArea -->
+                                        <!-- titleArea -->
+                                        <div class="titleArea">
+                                            <button type="button" class="btn title type05 elips">
+                                                기본그룹
+                                            </button>
+                                            
+                                            <button type="button" class="btn setting" title="설정"></button>
+                                        </div>
+                                        <!-- //titleArea -->
+                                    </div>
+                                    <!-- //labelTitle -->
+                                    <div class="btnArea">
+                                        <button type="button" class="btn toggle layerWrite" title="수정"></button>
+                                        <button type="button" class="btn toggle layerView" title="보기"></button>
+                                        <button type="button" class="btn toggle layerDelete" title="지우기"></button>
+                                    </div>
+                                </div>
+                                <!-- //label -->
+                                <!-- list -->
+                                <div class="list">
+                                    <ul>
+                                        <li>
+                                            <p class="name type01 elips"><i class="ico rect"></i>행정구역시군구_경계 </p>
+                                            <div class="btnArea">
+                                                <button type="button" class="btn toggle layerView" title="보기"></button>
+                                                <button type="button" class="btn toggle layerBoundary" title="경계편집"></button>
+                                                <button type="button" class="btn toggle layerMeta" title="메타데이터"></button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p class="name type01 elips"><i class="ico line"></i>행정구역_읍면동(법정동)</p>
+                                            <div class="btnArea">
+                                                <button type="button" class="btn toggle layerView" title="보기"></button>
+                                                <button type="button" class="btn toggle layerBookmark" title="북마크"></button>
+                                                <button type="button" class="btn toggle layerInfo on" title="상세정보"></button>
+                                                <ul class="dep02">
+                                                    <li class="rule">
+                                                        <button type="button" class="btn">규제완화</button>
+                                                    </li>
+                                                    <li class="meta">
+                                                        <button type="button" class="btn">메타데이터</button>
+                                                    </li>
+                                                    <li class="down">
+                                                        <button type="button" class="btn">다운로드</button>
+                                                    </li>
+                                                    <li class="delete">
+                                                        <button type="button" class="btn">삭제</button>
+                                                    </li>
+                                                </ul>
+                                                
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p class="name type01 elips"><i class="ico dot"></i>연속지적</p>
+                                            <div class="btnArea">
+                                                <button type="button" class="btn toggle layerView" title="보기"></button>
+                                                <button type="button" class="btn toggle layerBookmark" title="북마크"></button>
+                                                <button type="button" class="btn toggle layerInfo" title="상세정보"></button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p class="name type01 elips"><i class="ico rect"></i>행정구역시군구_경계 행정구역시군구_경계 행정구역시군구_경계 </p>
+                                            <div class="btnArea">
+                                                <button type="button" class="btn toggle layerView" title="보기"></button>
+                                                <button type="button" class="btn toggle layerBookmark" title="북마크"></button>
+                                                <button type="button" class="btn toggle layerInfo" title="상세정보"></button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p class="name type01 elips"><i class="ico line"></i>행정구역_읍면동(법정동) 행정구역_읍면동(법정동) 행정구역_읍면동(법정동)</p>
+                                            <div class="btnArea">
+                                                <button type="button" class="btn toggle layerView" title="보기"></button>
+                                                <button type="button" class="btn toggle layerBookmark" title="북마크"></button>
+                                                <button type="button" class="btn toggle layerInfo" title="상세정보"></button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p class="name type01 elips"><i class="ico dot"></i>연속지적 연속지적 연속지적 연속지적 연속지적 연속지적</p>
+                                            <div class="btnArea">
+                                                <button type="button" class="btn toggle layerView" title="보기"></button>
+                                                <button type="button" class="btn toggle layerBookmark" title="북마크"></button>
+                                                <button type="button" class="btn toggle layerInfo on" title="상세정보"></button>
+                                                <ul class="dep02">
+                                                    <li class="rule">
+                                                        <button type="button" class="btn">규제완화</button>
+                                                    </li>
+                                                    <li class="meta">
+                                                        <button type="button" class="btn">메타데이터</button>
+                                                    </li>
+                                                    <li class="down">
+                                                        <button type="button" class="btn">다운로드</button>
+                                                    </li>
+                                                    <li class="delete">
+                                                        <button type="button" class="btn">삭제</button>
+                                                    </li>
+                                                </ul>
+                                                
+                                            </div>
+                                        </li>
+
+                                        <li class="dep02">
+                                            <!-- groupBox -->
+                                            <article class="groupBox">
+                                                <!-- label -->
+                                                <div class="label active">
+                                                    <!-- labelTitle -->
+                                                    <div class="labelTitle">
+                                                        <!-- inputArea -->
+                                                        <div class="inputArea change">
+                                                            <input type="text">
+                                                        </div>
+                                                        <!-- //inputArea -->
+                                                        <!-- titleArea -->
+                                                        <div class="titleArea">
+                                                            <button type="button" class="btn title type05 elips">
+                                                                기본그룹
+                                                            </button>
+                                                            
+                                                            <button type="button" class="btn setting" title="설정"></button>
+                                                        </div>
+                                                        <!-- //titleArea -->
+                                                    </div>
+                                                    <!-- //labelTitle -->
+                                                    <div class="btnArea">
+                                                        <button type="button" class="btn toggle layerWrite" title="수정"></button>
+                                                        <button type="button" class="btn toggle layerView" title="보기"></button>
+                                                        <button type="button" class="btn toggle layerDelete" title="지우기"></button>
+                                                    </div>
+                                                </div>
+                                                <!-- //label -->
+                                                <!-- list -->
+                                                <div class="list">
+                                                    <ul>
+                                                        <li>
+                                                            <p class="name type01 elips"><i class="ico rect"></i>행정구역시군구_경계 </p>
+                                                            <div class="btnArea">
+                                                                <button type="button" class="btn toggle layerView" title="보기"></button>
+                                                                <button type="button" class="btn toggle layerBoundary" title="경계편집"></button>
+                                                                <button type="button" class="btn toggle layerMeta" title="메타데이터"></button>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <p class="name type01 elips"><i class="ico line"></i>행정구역_읍면동(법정동)</p>
+                                                            <div class="btnArea">
+                                                                <button type="button" class="btn toggle layerView" title="보기"></button>
+                                                                <button type="button" class="btn toggle layerBookmark" title="북마크"></button>
+                                                                <button type="button" class="btn toggle layerInfo on" title="상세정보"></button>
+                                                                <ul class="dep02">
+                                                                    <li class="rule">
+                                                                        <button type="button" class="btn">규제완화</button>
+                                                                    </li>
+                                                                    <li class="meta">
+                                                                        <button type="button" class="btn">메타데이터</button>
+                                                                    </li>
+                                                                    <li class="down">
+                                                                        <button type="button" class="btn">다운로드</button>
+                                                                    </li>
+                                                                    <li class="delete">
+                                                                        <button type="button" class="btn">삭제</button>
+                                                                    </li>
+                                                                </ul>
+                                                                
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <p class="name type01 elips"><i class="ico dot"></i>연속지적</p>
+                                                            <div class="btnArea">
+                                                                <button type="button" class="btn toggle layerView" title="보기"></button>
+                                                                <button type="button" class="btn toggle layerBookmark" title="북마크"></button>
+                                                                <button type="button" class="btn toggle layerInfo" title="상세정보"></button>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <p class="name type01 elips"><i class="ico rect"></i>행정구역시군구_경계 행정구역시군구_경계 행정구역시군구_경계 </p>
+                                                            <div class="btnArea">
+                                                                <button type="button" class="btn toggle layerView" title="보기"></button>
+                                                                <button type="button" class="btn toggle layerBookmark" title="북마크"></button>
+                                                                <button type="button" class="btn toggle layerInfo" title="상세정보"></button>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <p class="name type01 elips"><i class="ico line"></i>행정구역_읍면동(법정동) 행정구역_읍면동(법정동) 행정구역_읍면동(법정동)</p>
+                                                            <div class="btnArea">
+                                                                <button type="button" class="btn toggle layerView" title="보기"></button>
+                                                                <button type="button" class="btn toggle layerBookmark" title="북마크"></button>
+                                                                <button type="button" class="btn toggle layerInfo" title="상세정보"></button>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <p class="name type01 elips"><i class="ico dot"></i>연속지적 연속지적 연속지적 연속지적 연속지적 연속지적</p>
+                                                            <div class="btnArea">
+                                                                <button type="button" class="btn toggle layerView" title="보기"></button>
+                                                                <button type="button" class="btn toggle layerBookmark" title="북마크"></button>
+                                                                <button type="button" class="btn toggle layerInfo on" title="상세정보"></button>
+                                                                <ul class="dep02">
+                                                                    <li class="rule">
+                                                                        <button type="button" class="btn">규제완화</button>
+                                                                    </li>
+                                                                    <li class="meta">
+                                                                        <button type="button" class="btn">메타데이터</button>
+                                                                    </li>
+                                                                    <li class="down">
+                                                                        <button type="button" class="btn">다운로드</button>
+                                                                    </li>
+                                                                    <li class="delete">
+                                                                        <button type="button" class="btn">삭제</button>
+                                                                    </li>
+                                                                </ul>
+                                                                
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- list -->
+                                            </article>
+                                            <!-- groupBox -->
+
+                                        </li>
+                                        <li>
+                                            <p class="name type01 elips"><i class="ico dot"></i>연속지적 연속지적 연속지적 연속지적 연속지적 연속지적</p>
+                                            <div class="btnArea">
+                                                <button type="button" class="btn toggle layerView" title="보기"></button>
+                                                <button type="button" class="btn toggle layerBookmark" title="북마크"></button>
+                                                <button type="button" class="btn toggle layerInfo on" title="상세정보"></button>
+                                                <ul class="dep02">
+                                                    <li class="rule">
+                                                        <button type="button" class="btn">규제완화</button>
+                                                    </li>
+                                                    <li class="meta">
+                                                        <button type="button" class="btn">메타데이터</button>
+                                                    </li>
+                                                    <li class="down">
+                                                        <button type="button" class="btn">다운로드</button>
+                                                    </li>
+                                                    <li class="delete">
+                                                        <button type="button" class="btn">삭제</button>
+                                                    </li>
+                                                </ul>
+                                                
+                                            </div>
+                                    </ul>
+                                </div>
+                                <!-- list -->
+                            </article>
+                            <!-- groupBox -->
+
+
+
                         </article>
                         <!-- //listGroup -->
+
+
+
                     </div>
                     <!-- //cont -->
                 </div>
@@ -270,19 +713,47 @@
                                             <th scope="row"> 
                                                 레이어명
                                             </th>
-                                            <td>
+                                            <td class="padNone">
                                                 <!-- thsGroup -->
-                                                <div class="thsGroup">
+                                                <div class="thsGroup flex ac">
+                                                    <div class="inputArea change">
+                                                        <input type="text">
+                                                    </div>
                                                     <p class="elips">레이어 명 입니다 레이어 명 입니다레이어 명 입니다</p>
                                                     <!-- btnArea -->
                                                     <div class="btnArea">
-                                                        <button type="button" class="btn writeRect"></button>
+                                                        <button type="button" class="btn toggle writeRect"></button>
                                                     </div>
                                                     <!-- //btnArea -->
                                                 </div>
                                                 <!-- //thsGroup -->
                                             </td>
                                         </tr>
+
+                                        <!-- 레이어 설명 input으로 사용할경우 마크업 -->
+                                        <tr>
+                                            <th scope="row"> 
+                                                레이어 설명 
+                                            </th>
+                                            <td class="padNone">
+                                                <!-- thsGroup -->
+                                                <div class="thsGroup flex ac">
+                                                    <div class="inputArea change">
+                                                        <input type="text">
+                                                    </div>
+                                                    <p class="elips">레이어설명 input 레이어설명 input 레이어설명 input 레이어설명 input</p>
+                                                    <!-- btnArea -->
+                                                    <div class="btnArea">
+                                                        <button type="button" class="btn toggle writeRect"></button>
+                                                    </div>
+                                                    <!-- //btnArea -->
+                                                </div>
+                                                <!-- //thsGroup -->
+                                            </td>
+                                        </tr>
+                                        <!-- 레이어 설명 input으로 사용할경우 마크업 -->
+
+                                        <!-- 레이어 설명 textarea로 사용할경우 마크업 -->
                                         <tr>
                                             <th scope="row"> 
                                                 레이어 설명
@@ -290,16 +761,20 @@
                                             <td>
                                                 <!-- thsGroup -->
                                                 <div class="thsGroup">
-                                                    <p class="">레이어설명레이어설명레이어설명레이어설명레이어설명레이어설명레이어설명레이어설명레이어설명레이어설명레이어설명레이어설명레이어설명레이어설명레이어설명레이어설명</p>
+                                                    <div class="inputArea change">
+                                                        <textarea name="" id="" cols="30" rows="10" style="height: 100px;"></textarea>
+                                                    </div>
+                                                    <p class="">레이어설명 textarea 레이어설명 textarea 레이어설명 textarea 레이어설명 textarea 레이어설명 textarea 레이어설명 textarea 레이어설명 textarea</p>
                                                     <!-- btnArea -->
                                                     <div class="btnArea">
-                                                        <button type="button" class="btn writeRect"></button>
+                                                        <button type="button" class="btn toggle writeRect"></button>
                                                     </div>
                                                     <!-- //btnArea -->
                                                 </div>
                                                 <!-- //thsGroup -->
                                             </td>
                                         </tr>
+                                        <!-- 레이어 설명 textarea로 사용할경우 마크업 -->
                                         <tr>
                                             <th scope="row">
                                                 좌표계

@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="">
+<meta name="description" content="">
+<meta property="og:image" content="">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:url" content="">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="stylesheet" href="../lib/swiper/css/swiper.css">
+<link rel="stylesheet" href="../lib/jquery-ui.css">
+<link rel="stylesheet" href="../lib/jqGrid-4.7.1/css/ui.jqgrid.css">
+<link rel="stylesheet" href="../css/common.css">
+<script src="../lib/jquery-1.12.4.js"></script>
+<script src="../lib/jquery-ui.js"></script>
+<script src="../lib/jqGrid-4.7.1/js/minified/jquery.jqGrid.min.js"></script>
+<script src="../lib/swiper/js/swiper.js"></script>
+<script src="../js/ui.js"></script>
+<script src="../js/popup.js"></script>
+<script src="../js/jqGrid.js"></script>
+
+ 
+    <title>KLIS 부동산개발업</title>
+</head>
+<body>
+    <!-- wrap -->
+    <div id="wrap" class="">
+        <!-- container -->
+        <main class="container">
+            <!-- left -->
+            <div class="left">
+                <!-- leftInner -->
+                <div class="leftInner">
+                    <!-- logoArea -->
+                    <div class="logoArea">
+                        <h1>
+                            <a class="logo" href="#" title="K-Geo 플랫폼">
+                                <img src="../images/common/logo.png" alt="K-Geo 플랫폼 로고">
+                            </a>
+                            <a class="logo" href="#" title="KLIS">
+                                <img src="../images/common/logo-KLIS.png" alt="KLIS 로고">
+                            </a>
+                        </h1>
+                        <span class="logoTit">부동산개발업</span>
+                    </div>
+                    <!-- //logoArea -->
+                
+                    <!-- loginArea -->
+                    <article class="loginArea">
+                        <!-- inner -->
+                        <div class="inner">
+                            <div class="userInfoArea">
+                                <span class="userAuth">
+                                    <strong>부동산개발협회</strong>
+                                </span>
+                                <span class="areaName">부동산개발업_협회
+                                    <span>님</span>
+                                </span>
+                            </div>
+                            <div class="btnArea">
+                                <button type="button" class="btnLogin">
+                                    <span>로그아웃</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- //inner -->
+                    </article>
+                    <!-- //loginArea -->
+                </div>
+                <!-- //leftInner -->
+
+                <!-- lnb -->
+                <nav class="lnb">
+                    <ul class="dep1 overflow-y">
+                        <li class="registManage lnbIco01 active">
+                            <a href="javascript:void(0)">
+                                <span class="dep1Name">재무정보 관리</span>
+                            </a>
+                            <ul class="dep2" style="display: block;">
+                                <li class="active">
+                                    <a href="javascript:void(0)">통합 조회/등록</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">통합 업로드</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="registManage lnbIco02">
+                            <a href="javascript:void(0)">
+                                <span class="dep1Name">사업실적정보 관리</span>
+                            </a>
+                            <ul class="dep2">
+                                <li>
+                                    <a href="javascript:void(0)">통합 조회/등록</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">일괄 등록</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">통합 업로드</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="noDepth registManage lnbIco03">
+                            <a href="javascript:void(0)">
+                                <span class="dep1Name">사업실적보고 관리</span>
+                            </a>
+                            <!-- <ul class="dep2">
+                                <li>
+                                    <a href="javascript:void(0)">통합 조회/등록</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">일괄 등록</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">통합 업로드</a>
+                                </li>
+                            </ul> -->
+                        </li>
+                    </ul>
+                </nav>
+                <!-- //lnb -->
+            </div>
+            <!-- //left -->
+
+            <!-- right -->
+            <div class="right">
+                <!-- headWrap -->
+                <div class="headWrap">
+                    <!-- gnb -->
+                    <div class="gnb">
+                        <ul>
+                            <li>
+                                <a href="#">민원대행</a>
+                            </li>
+                            <li>
+                                <a href="#">신청신고</a>
+                            </li>
+                            <li>
+                                <a href="#">등록관리</a>
+                            </li>
+                            <li class="active">
+                                <a href="#">사업실적/재무정보</a>
+                            </li>
+                            <li>
+                                <a href="#">현황/통계</a>
+                            </li>
+                            <li>
+                                <a href="#">서식출력</a>
+                            </li>
+                            <li>
+                                <a href="#">업무관리</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //gnb -->
+
+                    <!-- util -->
+                    <article class="util">
+                        <ul class="menu">
+                            <li>
+                                <a href="javascript:void(0)">유지관리홈페이지</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">원격지원</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">사이트안내</a>
+                            </li>
+                        </ul>
+                        <div class="btnArea">
+                            <button type="button" class="scale btnScaleUp" title="크기 확대">
+                                <span class="hidden">크기 확대</span>
+                            </button>
+                            <button type="button" class="scale btnScaleDown" title="크기 축소">
+                                <span class="hidden">크기 축소</span>
+                            </button>
+                        </div>
+                    </article>
+                    <!-- //util -->
+                </div>
+                <!-- //headWrap -->
+                <!-- content -->
+                <div id="content">
+                    <h2 class="hidden">본문 영역</h2>
+
+                    <!-- contArea -->
+                    <div class="contArea">
+                        <!-- titArea -->
+                        <div class="titArea">
+                            <h3 class="titPage mrA">
+                                <strong>통합 조회/등록</strong>
+                            </h3>
+
+                            <div class="flex col acfe">
+                                <!-- breadCrumb -->
+                                <div class="breadCrumb">
+                                    <ul>
+                                        <li class="home">
+                                            <a href="javascript:void(0)">
+                                                <span class="hidden">홈</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">사업실적/재무정보</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">재무정보관리</a>
+                                        </li>
+                                        <li class="current">
+                                            <a href="javascript:void(0)">통합 조회/등록</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- //breadCrumb -->
+
+                                <!-- btnArea -->
+                                <div class="btnArea">
+                                    <button type="button" class="btn type01 bgPrimary btnHelp" title="도움말">
+                                        <span>도움말</span>
+                                    </button>
+                                </div>
+                                <!-- btnArea -->
+                            </div>
+                        </div>
+                        <!-- //titArea -->
+
+                        <!-- boardArea -->
+                        <article class="boardArea">
+                            <!-- inner -->
+                            <div class="inner">
+
+                                <!-- secContainer -->
+                                <section class="secContainer">
+                                    <!-- titSecBox -->
+                                    <div class="titSecBox">
+                                        <h4 class="tit arrowBullet">
+                                            <strong>재무정보관리 상세</strong>
+                                        </h4>
+                                        <!-- <p class="desc">※ 재무정보관리 상세</p> -->
+                                        <div class="btnArea">
+                                            <!-- <button type="button" class="btn type05 sm2 bgGray">
+                                                <span>엑셀저장</span>
+                                            </button> -->
+                                            <button type="button" class="btn type05 sm2 bgGray">
+                                                <span>목록</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- //titSecBox -->
+
+                                    <!-- tableContainer -->
+                                    <article class="tableContainer">
+                                        <!-- table -->
+                                        <div class="table type02">
+                                            <table>
+                                                <caption>재무정보관리 기본정보 테이블 : 부동산개발업등록번호 , 상호 , 대표자 , 국적/소속국가명 ,
+                                                법인구분 , 법인등록번호 , 전문인력수 , 자본금 , 출자금액 , 출자비율 , 담당자 , 전화번호 , 신청일/신청인 ,
+                                                등록일 , 등록상태 , 처리상태 , 실태조사 연도
+                                                </caption>
+                                                <colgroup>
+                                                    <col style="width:160px;">
+                                                    <col style="width:160px;">
+                                                    <col style="width:382px;">
+                                                    <col style="width:165px;">
+                                                    <col style="width:auto;">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row" rowspan="3">보고자</th>
+                                                        <th scope="row" class="type02 brl">상호</th>
+                                                        <td>개발회사</td>
+                                                        <th scope="row">법인구분</th>
+                                                        <td>일반법인</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row" class="type02 brl">부동산개발업 등록번호</th>
+                                                        <td colspan="3">경북</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row" class="type02 brl">대표자</th>
+                                                        <td colspan="3">홍길동</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- //table -->
+                                    </article>
+                                    <!-- //tableContainer -->
+                                </section>
+                                <!-- //secContainer -->
+
+                                <!-- secContainer -->
+                                <section class="secContainer" style="margin-top: 29px;">
+                                    <div class="resultContainer">
+                                        <div class="resultArea">
+                                            <span class="numOfCase">총<em>2775</em>건</span>
+                                            <p class="pages">(1 of 278 pages)</p>
+                                        </div> 
+                                    </div>
+
+                                    <!-- tableContainer -->
+                                    <article class="tableContainer">
+                                        <!-- table -->
+                                        <div class="table column hover">
+                                            <!-- gridTable -->
+                                            <table id="gridTable41-2">
+
+                                            </table>
+                                            <!-- //gridTable -->
+                                        </div>
+                                        <!-- //table -->
+                                    </article>
+                                    <!-- //tableContainer -->
+                                    <div class="pagination">
+                                        <button type="button" class="btnFirst" title="맨앞으로">
+                                            <span class="hidden">맨앞으로</span>
+                                            <svg width="13.121" height="13.414" viewBox="0 0 13.121 13.414">
+                                                <g id="icon" transform="translate(1.414 0.707)">
+                                                  <path id="arrow" d="M1206,1446l-6,6,6,6" transform="translate(-1195 -1446)" fill="none" stroke="#bbb" stroke-width="2"></path>
+                                                  <path id="arrow-2" data-name="arrow" d="M1206,1446l-6,6,6,6" transform="translate(-1200 -1446)" fill="none" stroke="#bbb" stroke-width="2"></path>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                        <button type="button" class="btnPrev" title="이전페이지">
+                                            <span class="hidden">이전페이지</span>
+                                            <svg width="8.121" height="13.414" viewBox="0 0 8.121 13.414">
+                                                <path id="arrow-3" d="M1206,1446l-6,6,6,6" transform="translate(-1198.586 -1445.293)" fill="none" stroke="#bbb" stroke-width="2"></path>
+                                            </svg>
+                                        </button>
+                                        <a href="#" class="active" title="1">1</a>
+                                        <a href="#" title="2">2</a>
+                                        <a href="#" title="3">3</a>
+                                        <a href="#" title="4">4</a>
+                                        <a href="#" title="5">5</a>
+                                        <a href="#" title="6">6</a>
+                                        <a href="#" title="7">7</a>
+                                        <a href="#" title="8">8</a>
+                                        <a href="#" title="9">9</a>
+                                        <a href="#" title="10">10</a>
+                                        <button type="button" class="btnNext" title="다음페이지">
+                                            <span class="hidden">다음페이지</span>
+                                            <svg width="8.121" height="13.414" viewBox="0 0 8.121 13.414">
+                                                <path id="arrow-4" d="M1200,1446l6,6-6,6" transform="translate(-1199.293 -1445.293)" fill="none" stroke="#bbb" stroke-width="2"></path>
+                                            </svg>
+                                        </button>
+                                        <button type="button" class="btnLast" title="맨뒤로">
+                                            <span class="hidden">맨뒤로</span>
+                                            <svg width="13.121" height="13.414" viewBox="0 0 13.121 13.414">
+                                                <g id="icon-2" transform="translate(-16.293 -13.293)">
+                                                  <path id="arrow-5" d="M1200,1446l6,6-6,6" transform="translate(-1183 -1432)" fill="none" stroke="#bbb" stroke-width="2"></path>
+                                                  <path id="arrow-6" data-name="arrow" d="M1200,1446l6,6-6,6" transform="translate(-1178 -1432)" fill="none" stroke="#bbb" stroke-width="2"></path>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                </section>
+                                <!-- //secContainer -->
+                                <!-- secContainer -->
+                                <section class="secContainer">
+                                    <div class="titSecBox">
+                                        <h4 class="tit arrowBullet">
+                                            <strong>상세정보</strong>
+                                        </h4>
+                                        <div class="btnArea">
+                                            <button type="button" class="btn type05 sm2 bgGray">
+                                                <span>삭제</span>
+                                            </button>
+                                            <button type="button" class="btn type05 sm2 bgGray">
+                                                <span>저장</span>
+                                            </button>
+                                            <button type="button" class="btn type05 sm2 bgGray4">
+                                                <span>재무정보(DART) 연게</span>
+                                            </button>
+                                            <button type="button" class="btn type05 sm2 bgGray">
+                                                <span>보고서 출력</span>
+                                            </button>
+                                            <button type="button" class="btn type05 sm2 bgGray">
+                                                <span>초기화</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- table -->
+                                    <div class="table">
+                                        <table>
+                                            <caption>상세정보 게시물로 회계연도, 자산, 부채, 자본금, 매출액, 매출원가, 매출총이익, 판관비, 영업이익, 그외이익, 그외비용,당기순이익 등의 정보를 제공합니다</caption>
+                                            <colgroup>
+                                                <col style="width:160px;">
+                                                <col style="width:382px;">
+                                                <col style="width:165px;">
+                                                <col style="width:382px;">
+                                                <col style="width:160px;">
+                                                <col style="width:auto;">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <label for="l01" class="dot red">회계연도</label>
+                                                    </th>
+                                                    <td colspan="5">
+                                                        <div class="inputBox">
+                                                            <input type="text" id="l01" style="width: 272px;" />
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <label for="l02" class="dot red">자산</label>
+                                                    </th>
+                                                    <td>
+                                                        <div class="inputGroup">
+                                                            <input type="text" id="l02"/>
+                                                            <span class="ea">(단위:백만원)</span>
+                                                        </div>
+                                                    </td>
+                                                    <th scope="row">
+                                                        <label for="l03" class="dot red">부채</label>
+                                                    </th>
+                                                    <td>
+                                                        <div class="inputGroup">
+                                                            <input type="text" id="l03"/>
+                                                            <span class="ea">(단위:백만원)</span>
+                                                        </div>
+                                                    </td>
+                                                    <th scope="row">
+                                                        <label for="l04" class="dot red">자본금</label>
+                                                    </th>
+                                                    <td>
+                                                        <div class="inputGroup">
+                                                            <input type="text" id="l04"/>
+                                                            <span class="ea">(단위:백만원)</span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <label for="l05" class="dot red">매출액</label>
+                                                    </th>
+                                                    <td>
+                                                        <div class="inputGroup">
+                                                            <input type="text" id="l05"/>
+                                                            <span class="ea">(단위:백만원)</span>
+                                                        </div>
+                                                    </td>
+                                                    <th scope="row">
+                                                        <label for="l06" class="dot red">매출원가</label>
+                                                    </th>
+                                                    <td>
+                                                        <div class="inputGroup">
+                                                            <input type="text" id="l06"/>
+                                                            <span class="ea">(단위:백만원)</span>
+                                                        </div>
+                                                    </td>
+                                                    <th scope="row">
+                                                        <label for="l07" class="dot red">매출총이익</label>
+                                                    </th>
+                                                    <td>
+                                                        <div class="inputGroup">
+                                                            <input type="text" id="l07"/>
+                                                            <span class="ea">(단위:백만원)</span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <label for="l08" class="dot red">판관비</label>
+                                                    </th>
+                                                    <td>
+                                                        <div class="inputGroup">
+                                                            <input type="text" id="l08"/>
+                                                            <span class="ea">(단위:백만원)</span>
+                                                        </div>
+                                                    </td>
+                                                    <th scope="row">
+                                                        <label for="l09" class="dot red">영업이익</label>
+                                                    </th>
+                                                    <td>
+                                                        <div class="inputGroup">
+                                                            <input type="text" id="l09"/>
+                                                            <span class="ea">(단위:백만원)</span>
+                                                        </div>
+                                                    </td>
+                                                    <th scope="row">
+                                                        <label for="l10" class="dot red">그 외 이익</label>
+                                                    </th>
+                                                    <td>
+                                                        <div class="inputGroup">
+                                                            <input type="text" id="l10"/>
+                                                            <span class="ea">(단위:백만원)</span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <label for="l11" class="dot red">그 외 비용</label>
+                                                    </th>
+                                                    <td>
+                                                        <div class="inputGroup">
+                                                            <input type="text" id="l11"/>
+                                                            <span class="ea">(단위:백만원)</span>
+                                                        </div>
+                                                    </td>
+                                                    <th scope="row">
+                                                        <label for="l12" class="dot red">당기순이익</label>
+                                                    </th>
+                                                    <td colspan="3">
+                                                        <div class="inputGroup">
+                                                            <div class="inputBox">
+                                                                <input type="text" id="l12" style="width: 272px;" />
+                                                                <span class="ea">(단위:백만원)</span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- //table -->
+                                </section>
+                                <!-- //secContainer -->
+                            </div>
+                            <!-- //inner -->
+                        </article>
+                        <!-- //boardArea -->
+                    </div>
+                    <!-- //contArea -->
+                </div>
+                <!-- //content -->
+            </div>
+            <!-- //right -->
+        </main>
+        <!-- //container -->
+        
+        
+
+        <div class="popup uiDrag" style="display:block; width: 1050px;">
+            <!-- head -->
+            <div class="head">
+                <p class="popTit">재무정보(DART) 연계</p>
+                <button type="button" class="btnClose">
+                    <span class="hidden">팝업 닫기</span>
+                </button>
+            </div>
+            <!-- //head -->
+            <!-- cont -->
+            <div class="cont dragCancel">
+                <!-- secContainer -->
+                <section class="secContainer">
+                    <div class="titSecBox">
+                        <h4 class="tit arrowBullet">
+                            <strong>재무정보(DART) 연계</strong>
+                        </h4>
+                        <div class="btnArea">
+                            <button type="button" class="btn type05 sm2 bgGray4">
+                                <span>초기화</span>
+                            </button>
+                            <!-- <button type="button" class="btn type05 sm2 bgGray">
+                                <span>삭제</span>
+                            </button> -->
+                        </div>
+                    </div>
+
+                    <!-- tableContainer -->
+                    <article class="tableContainer">
+                        <!-- table -->
+                        <div class="table">
+                            <table>
+                                <caption>재무정보(DART) 연계 테이블: 종목코드 , 보고서명 , 접수일자 , 검색여부 , 정렬기준</caption>
+                                <colgroup>
+                                    <col style="width: 100px">
+                                    <col style="width: 280px">
+                                    <col style="width: 100px">
+                                    <col style="width: 140px">
+                                    <col style="width: 100px">
+                                    <col style="width: auto">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="pl01">종목코드</label>
+                                        </th>
+                                        <td>
+                                            <div class="inputGroup">
+                                                <input type="text" id="pl01" title="종목코드 검색">
+                                                <button type="button" class="btn type03 bgPrimary" style="margin-left: 10px;">
+                                                    <span>검색</span>
+                                                </button>
+                                            </div>
+                                        </td>
+                                        <th scope="row">
+                                            <label for="pl02">보고서명</label>
+                                        </th>
+                                        <td colspan="3">
+                                            <div class="inputGroup">
+                                                <div class="inputBox">
+                                                    <select id="pl02" title="보고서명 앞" style="width: 160px;">
+                                                        <option selected>-</option>
+                                                    </select>
+                                                </div>
+                                                <select disabled class="disabled" title="보고서명 뒤" style="margin-left: 5px;">
+                                                    <option selected>-</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="pl03">접수일자</label>
+                                        </th>
+                                        <td>
+                                            <div class="inputGroup">
+                                                <input type="text" id="pl03" class="cal" title="등록일자 언제부터">
+                                                <span class="tilt">~</span>
+                                                <input type="text" class="cal" title="등록일자 언제까지">
+                                            </div>
+                                        </td>
+                                        <th scope="row">
+                                            <label>검색여부</label>
+                                        </th>
+                                        <td>
+                                            <div class="checkbox">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" id="case01"/>
+                                                    <label for="case01">
+                                                        <span class="labelName">최종보고서</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <th scope="row">
+                                            <label for="pl05">정렬기준</label>
+                                        </th>
+                                        <td>
+                                            <div class="inputGroup">
+                                                <select id="pl05" title="정렬기준 앞">
+                                                    <option selected>-</option>
+                                                </select>
+                                                <select disabled class="disabled" title="정렬기준 뒤" style="margin-left: 5px;">
+                                                    <option selected>-</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- //table -->
+                    </article>
+                    <!-- //tableContainer -->
+                </section>
+                <!-- //secContainer -->
+
+                <!-- secContainer -->
+                <section class="secContainer">
+                    <div class="resultContainer">
+                        <div class="resultArea">
+                            <span class="numOfCase">총<em>0</em>건</span>
+                        </div> 
+                        
+                        <div class="btnArea">
+                            <button type="button" class="btn type05 sm bgWhite ">
+                                <span>삭제</span>
+                            </button>
+                            <button type="button" class="btn type05 sm bgGray4">
+                                <span>저장</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- tableContainer -->
+                    <article class="tableContainer">
+                        <div class="table column hover overflow-auto hscroll_line5">
+                            <table id="gridTable42"></table>
+                        </div>
+                    </article>
+                    <!-- //tableContainer -->
+                    
+
+                    <div class="btnArea jc">
+                        <button type="button" class="btn type04 bgWhite wide btnCancel">
+                            <span>닫기</span>
+                        </button>
+                    </div>
+                </section>
+                <!-- //secContainer -->
+            </div>
+            <!-- //cont -->
+        </div>
+        <!-- //popup -->
+        <div class="dimmed" style="display: block;"></div>
+        
+    </div>
+    <!-- //wrap -->
+</body>
+</html>

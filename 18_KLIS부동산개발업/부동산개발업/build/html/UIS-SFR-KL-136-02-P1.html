@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="">
+<meta name="description" content="">
+<meta property="og:image" content="">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:url" content="">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="stylesheet" href="../lib/swiper/css/swiper.css">
+<link rel="stylesheet" href="../lib/jquery-ui.css">
+<link rel="stylesheet" href="../lib/jqGrid-4.7.1/css/ui.jqgrid.css">
+<link rel="stylesheet" href="../css/common.css">
+<script src="../lib/jquery-1.12.4.js"></script>
+<script src="../lib/jquery-ui.js"></script>
+<script src="../lib/jqGrid-4.7.1/js/minified/jquery.jqGrid.min.js"></script>
+<script src="../lib/swiper/js/swiper.js"></script>
+<script src="../js/ui.js"></script>
+<script src="../js/popup.js"></script>
+<script src="../js/jqGrid.js"></script>
+
+ 
+    <title>KLIS 부동산개발업</title>
+</head>
+<body>
+    <!-- wrap -->
+    <div id="wrap" class="">
+        <!-- container -->
+        <main class="container">
+            <!-- left -->
+            <div class="left">
+                <!-- leftInner -->
+                <div class="leftInner">
+                    <!-- logoArea -->
+                    <div class="logoArea">
+                        <h1>
+                            <a class="logo" href="#" title="K-Geo 플랫폼">
+                                <img src="../images/common/logo.png" alt="K-Geo 플랫폼 로고">
+                            </a>
+                            <a class="logo" href="#" title="KLIS">
+                                <img src="../images/common/logo-KLIS.png" alt="KLIS 로고">
+                            </a>
+                        </h1>
+                        <span class="logoTit">부동산개발업</span>
+                    </div>
+                    <!-- //logoArea -->
+                
+                    <!-- loginArea -->
+                    <article class="loginArea">
+                        <!-- inner -->
+                        <div class="inner">
+                            <div class="userInfoArea">
+                                <span class="userAuth">
+                                    <strong>부동산개발협회</strong>
+                                </span>
+                                <span class="areaName">부동산개발업_협회
+                                    <span>님</span>
+                                </span>
+                            </div>
+                            <div class="btnArea">
+                                <button type="button" class="btnLogin">
+                                    <span>로그아웃</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- //inner -->
+                    </article>
+                    <!-- //loginArea -->
+                </div>
+                <!-- //leftInner -->
+
+                <!-- lnb -->
+                <nav class="lnb">
+                    <ul class="dep1 overflow-y">
+                        <li class="new noDepth ">
+                            <a href="javascript:void(0)">
+                                <span class="dep1Name">신규등록관리</span>
+                            </a>
+                        </li>
+                        <li class="write noDepth active">
+                            <a href="javascript:void(0)">
+                                <span class="dep1Name">기재사항변경 관리</span>
+                            </a>
+                        </li>
+                        <li class="edit noDepth">
+                            <a href="javascript:void(0)">
+                                <span class="dep1Name">등록요건변경 관리</span>
+                            </a>
+                        </li>
+                        <li class="closing noDepth">
+                            <a href="javascript:void(0)">
+                                <span class="dep1Name">폐업신고 관리</span>
+                            </a>
+                        </li>
+                        <li class="parent noDepth">
+                            <a href="javascript:void(0)">
+                                <span class="dep1Name">상속신고 관리</span>
+                            </a>
+                        </li>
+                        <li class="assign noDepth">
+                            <a href="javascript:void(0)">
+                                <span class="dep1Name">양도신고 관리</span>
+                            </a>
+                        </li>
+                        <li class="merge noDepth">
+                            <a href="javascript:void(0)">
+                                <span class="dep1Name">법인합병신고 관리</span>
+                            </a>
+                        </li>
+                        <li class="trans noDepth">
+                            <a href="javascript:void(0)">
+                                <span class="dep1Name">전출신고 관리</span>
+                            </a>
+                        </li>
+                        <li class="regist noDepth">
+                            <a href="javascript:void(0)">
+                                <span class="dep1Name">등록증 재교부 관리</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- //lnb -->
+            </div>
+            <!-- //left -->
+
+            <!-- right -->
+            <div class="right">
+                <!-- headWrap -->
+                <div class="headWrap">
+                    <!-- gnb -->
+                    <div class="gnb">
+                        <ul>
+                            <li class="active">
+                                <a href="#">민원대행</a>
+                            </li>
+                            <li>
+                                <a href="#">신청신고</a>
+                            </li>
+                            <li>
+                                <a href="#">등록관리</a>
+                            </li>
+                            <li>
+                                <a href="#">사업실적/재무정보</a>
+                            </li>
+                            <li>
+                                <a href="#">현황/통계</a>
+                            </li>
+                            <li>
+                                <a href="#">서식출력</a>
+                            </li>
+                            <li>
+                                <a href="#">업무관리</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //gnb -->
+
+                    <!-- util -->
+                    <article class="util">
+                        <ul class="menu">
+                            <li>
+                                <a href="javascript:void(0)">유지관리홈페이지</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">원격지원</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">사이트안내</a>
+                            </li>
+                        </ul>
+                        <div class="btnArea">
+                            <button type="button" class="scale btnScaleUp" title="크기 확대">
+                                <span class="hidden">크기 확대</span>
+                            </button>
+                            <button type="button" class="scale btnScaleDown" title="크기 축소">
+                                <span class="hidden">크기 축소</span>
+                            </button>
+                        </div>
+                    </article>
+                    <!-- //util -->
+                </div>
+                <!-- //headWrap -->
+                <!-- content -->
+                <div id="content">
+                    <h2 class="hidden">본문 영역</h2>
+
+                    <!-- contArea -->
+                    <div class="contArea">
+                        <!-- titArea -->
+                        <div class="titArea">
+                            <h3 class="titPage mrA">
+                                <strong>기재사항변경관리</strong>
+                            </h3>
+
+                            <div class="flex col acfe">
+                                <!-- breadCrumb -->
+                                <div class="breadCrumb">
+                                    <ul>
+                                        <li class="home">
+                                            <a href="javascript:void(0)">
+                                                <span class="hidden">홈</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">민원대행</a>
+                                        </li>
+                                        <li class="current">
+                                            <a href="javascript:void(0)">기재사항변경 관리</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- //breadCrumb -->
+
+                                <!-- btnArea -->
+                                <div class="btnArea">
+                                    <button type="button" class="btn type01 bgPrimary btnHelp" title="도움말">
+                                        <span>도움말</span>
+                                    </button>
+                                </div>
+                                <!-- btnArea -->
+                            </div>
+                        </div>
+                        <!-- //titArea -->
+
+                        <!-- boardArea -->
+                        <article class="boardArea">
+                            <!-- inner -->
+                            <div class="inner">
+
+                                <!-- secContainer -->
+                                <section class="secContainer">
+                                    <!-- titSecBox -->
+                                    <div class="titSecBox type04">
+                                        <h4 class="tit arrowBullet">
+                                            <strong>(신고)기본정보</strong>
+                                        </h4>
+                                        <p class="desc">※ (신고)기본정보를 모두 입력하고 [저장]버튼을 클릭하여 (신고)기본정보를 저장합니다.</p>
+                                        
+                                        <!-- inner -->
+                                        <div class="inner">
+                                            <div class="btnArea">
+                                                <button type="button" class="btn type05 sm2 bgGray4">
+                                                    <span>처리현황 조회</span>
+                                                </button>
+                                                <button type="button" class="btn type05 sm2 bgGray4">
+                                                    <span>접수등록</span>
+                                                </button>
+                                                <button type="button" class="btn type05 sm2 bgGray4">
+                                                    <span>검토완료</span>
+                                                </button>
+                                            </div>
+                                            <div class="btnArea">
+                                                <button type="button" class="btn type05 sm2 bgGray">
+                                                    <span>초기화</span>
+                                                </button>
+                                                <button type="button" class="btn type05 sm2 bgGray">
+                                                    <span>삭제</span>
+                                                </button>
+                                                <button type="button" class="btn type05 sm bgPrimary2">
+                                                    <span>저장</span>
+                                                </button>
+                                                <button type="button" class="btn type05 sm2 bgGray">
+                                                    <span>목록</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!-- inner -->
+                                        
+                                    </div>
+                                    <!-- //titSecBox -->                                      
+
+                                    <!-- tableContainer -->
+                                    <article class="tableContainer">
+                                        <!-- table -->
+                                        <div class="table">
+                                            <table>
+                                                <caption>(신고)기본정보 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width:160px;"/>
+                                                    <col style="width:310px;"/>
+                                                    <col style="width:160px;"/>
+                                                    <col style="width:310px;"/>
+                                                    <col style="width:160px;"/>
+                                                    <col style="width:310px;"/>
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <label for="s01">민원관리번호</label>
+                                                        </th>
+                                                        <td colspan="2">
+                                                            <div class="inputGroup">
+                                                                <input type="text" disabled class="disabled" id="s01"  value="2021052400001" />
+                                                                <button type="button" class="btn type03 bgPrimary">
+                                                                    <span>조회</span>
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                        <th scope="row">
+                                                            <label for="s02" class="red dot">등록번호</label>
+                                                        </th>
+                                                        <td colspan="2">
+                                                            <div class="inputGroup">
+                                                                <input type="text" disabled class="disabled" id="s02" value="경북120005" />
+                                                                <button type="button" class="btn type03 bgPrimary">
+                                                                    <span>조회</span>
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <label for="s03" class="red dot">상호</label>
+                                                        </th>
+                                                        <td>
+                                                            <div class="inputGroup">
+                                                                <input type="text" disabled class="disabled" id="s03" value="테스트건설" />
+                                                                <button type="button" class="btn type03 bgPrimary">
+                                                                    <span>상호변경</span>
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                        <th scope="row">
+                                                            <label for="s04" class="red dot">대표자</label>
+                                                        </th>
+                                                        <td>
+                                                            <input type="text" id="s04" value="김현수" />
+                                                        </td>
+                                                        <th scope="row">
+                                                            <label for="s05" class="red dot">국적 / 소속국가명</label>
+                                                        </th>
+                                                        <td>
+                                                            <div class="inputGroup">
+                                                                <input type="text" disabled class="disabled" id="s05" value="대한민국" />
+                                                                <button type="button" class="btn type03 bgPrimary">
+                                                                    <span>국적변경</span>
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <label for="s06" class="red dot">법인구분</label>
+                                                        </th>
+                                                        <td>
+                                                            <div class="inputGroup">
+                                                                <input type="text" disabled class="disabled" id="s06" value="일반법인" />
+                                                                <button type="button" class="btn type03 bgPrimary "><!--btnInquiryShow-->
+                                                                    <span>법인변경</span>
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                        <th scope="row">
+                                                            <label for="s07" class="red dot">주민(법인)등록번호</label>
+                                                        </th>
+                                                        <td>
+                                                            <input type="text" id="s07" value="" disabled class="disabled" />
+                                                        </td>
+                                                        <th scope="row">
+                                                            <label for="s08">신청인 휴대폰번호</label>
+                                                        </th>
+                                                        <td>
+                                                            <div class="inputGroup gap10">
+                                                                <input type="text" disabled class="disabled" id="s08" value="" />
+                                                                <div class="checkbox">
+                                                                    <input type="checkbox" id="chk01"/>
+                                                                    <label for="chk01">
+                                                                        <span class="labelName">문자수신동의</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <label for="s09" class="red dot">자본금</label>
+                                                        </th>
+                                                        <td>
+                                                            <div class="inputGroup gap10">
+                                                                <input type="text" disabled class="disabled" id="s09" value="1,215,000" />
+                                                                <span>천원</span>
+                                                            </div>
+                                                        </td>
+                                                        <th scope="row">
+                                                            <label for="s10">출자금액</label>
+                                                        </th>
+                                                        <td>
+                                                            <div class="inputGroup gap10">
+                                                                <input type="text" disabled class="disabled" id="s10" value="0" />
+                                                                <span>천원</span>
+                                                            </div>
+                                                        </td>
+                                                        <th scope="row">
+                                                            <label for="s11">출자비율</label>
+                                                        </th>
+                                                        <td>
+                                                            <div class="inputGroup gap10">
+                                                                <input type="text" disabled class="disabled" id="s11" value="0" />
+                                                                <span>%</span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <label for="s12" class="red dot">신청일</label>
+                                                        </th>
+                                                        <td>
+                                                            <div class="inputGroup">
+                                                                <input type="text" class="cal" value="2021-05-24" id="s12" />
+                                                            </div>
+                                                        </td>
+                                                        <th scope="row">
+                                                            <label for="s13" class="red dot">신청일</label>
+                                                        </th>
+                                                        <td>
+                                                            <input type="text" value="홍길동" id="s13" />
+                                                        </td>
+                                                        <th scope="row">
+                                                            <label for="s14">담당자</label>
+                                                        </th>
+                                                        <td>
+                                                            <input type="text" value="임병선" id="s14" />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <label for="s15">접수일</label>
+                                                        </th>
+                                                        <td>
+                                                            <input type="text" id="s15" disabled class="disabled" />
+                                                        </td>
+                                                        <th scope="row">
+                                                            <label for="s16">접수번호</label>
+                                                        </th>
+                                                        <td>
+                                                            <input type="text" id="s16" disabled class="disabled" />
+                                                        </td>
+                                                        <th scope="row">
+                                                            <label for="s17">진행상태</label>
+                                                        </th>
+                                                        <td>
+                                                            <select id="s17" disabled class="disabled">
+                                                                <option>처리중</option>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <label for="s18">최초등록구분</label>
+                                                        </th>
+                                                        <td>
+                                                            <select id="s18" disabled class="disabled">
+                                                                <option>협회</option>
+                                                            </select>
+                                                        </td>
+                                                        <th scope="row">
+                                                            <label for="s19">최초등록IID/이름</label>
+                                                        </th>
+                                                        <td>
+                                                            <div class="inputGroup gap10">
+                                                                <input type="text" id="s19" disabled class="disabled" value="koda99" />
+                                                                <span>/</span>
+                                                                <input type="text" id="" disabled class="disabled"  value="부동산개발협회99" />
+                                                            </div>
+                                                        </td>
+                                                        <th scope="row">
+                                                            <label for="s20">처리구분</label>
+                                                        </th>
+                                                        <td>
+                                                            <select id="s20" disabled class="disabled">
+                                                                <option>처리중</option>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <label for="s21">비고</label>
+                                                        </th>
+                                                        <td colspan="5">
+                                                            <input type="text" id="s21" value="" />
+                                                        </td>
+                                                    </tr>
+                                                        
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- //table -->
+                                    </article>
+                                    <!-- //tableContainer -->
+                                    
+                                    <article class="descBottom">
+                                        <ul>
+                                            <li>
+                                                <p>※ 민원행정연계 서비스는 중단되었습니다.</p>
+                                            </li>
+                                        </ul>
+                                    </article>                                   
+                                </section>
+                                <!-- //secContainer -->
+                                
+                                <!-- secContainer -->
+                                <section class="secContainer">
+                                    <!-- tabWrap -->
+                                    <div class="tabWrap type01">
+                                        <!-- tabNav -->
+                                        <div class="tabNav">
+                                            <!-- tabList -->
+                                            <ul class="tabList">
+                                                <li class="active">
+                                                    <a href="javascript:void(0)">변경내용</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0)">사무실변경</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0)">대표자변경</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0)">(신고)사무실</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0)">(신고)첨부서류</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0)">자산관리회사</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0)">기존대표자변경</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0)">기존자산관리회사변경</a>
+                                                </li>
+                                            </ul>
+                                            <!-- //tabList -->
+                                        </div>
+                                        <!-- //tabNav -->
+
+                                        <!-- tabCont 변경내용 -->
+                                        <div class="tabCont active">
+                                            <h4 class="hidden">변경내용 테이블</h4>
+                                            <!-- table -->
+                                            <div class="table column hover overflow-x" >
+                                                <!-- gridTable -->
+                                                <table id="gridTable60" style="width: 2272px;">
+                                                    
+                                                </table>
+                                                <!-- //gridTable -->
+                                            </div>
+                                            <!-- //table -->
+
+                                        </div>
+                                        <!-- //tabCont -->
+
+                                        <!-- tabCont 사무실변경 -->
+                                        <div class="tabCont">
+                                            22
+                                        </div>
+                                        <!-- //tabCont -->
+
+                                        <!-- tabCont -->
+                                        <div class="tabCont">
+                                            33
+                                        </div>
+                                        <!-- //tabCont -->
+
+                                        <!-- tabCont -->
+                                        <div class="tabCont">
+                                            4
+                                        </div>
+                                        <!-- //tabCont -->
+
+                                        <!-- tabCont -->
+                                        <div class="tabCont">
+                                            5
+                                        </div>
+                                        <!-- //tabCont -->
+
+                                        <!-- tabCont -->
+                                        <div class="tabCont">
+                                            6
+                                        </div>
+                                        <!-- //tabCont -->
+
+                                        <!-- tabCont -->
+                                        <div class="tabCont">
+                                            7
+                                        </div>
+                                        <!-- //tabCont -->
+
+                                        <!-- tabCont -->
+                                        <div class="tabCont">
+                                            8
+                                        </div>
+                                        <!-- //tabCont -->
+                                    </div>
+                                    <!-- //tabWrap -->
+                                </section>
+                                <!-- //secContainer -->
+
+                                <section class="secContainer">
+                                    <!-- titSecBox -->
+                                    <div class="titSecBox">
+                                        <h4 class="tit arrowBullet">
+                                            <strong>등록요건심사</strong>
+                                        </h4>
+                                        <div class="btnArea">
+                                            <button type="button" class="btn type05 sm bgGray">
+                                                <span>전체적합</span>
+                                            </button>
+                                            <button type="button" class="btn type05 sm bgPrimary2">
+                                                <span>저장</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- //titSecBox -->
+
+                                    <!-- tableContainer -->
+                                    <article class="tableContainer">
+                                        <!-- table -->
+                                        <div class="table column">
+                                            <table>
+                                                <caption>등록요건심사 정보 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width:320px;"/>
+                                                    <col style="width:320px;"/>
+                                                    <col style="width:320px;"/>
+                                                    <col style="width:320px;"/>
+                                                    <col style="width:auto;"/>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">자본금</th>
+                                                        <th scope="col">전문인력</th>
+                                                        <th scope="col">임원</th>
+                                                        <th scope="col">사무실</th>
+                                                        <th scope="col">비고</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <select id="" disabled class="disabled">
+                                                                <option></option>
+                                                            </select>
+                                                                
+                                                        </td>
+                                                        <td>
+                                                            <select id="" disabled class="disabled">
+                                                                <option></option>
+                                                            </select>
+                                                                
+                                                        </td>
+                                                        <td>
+                                                            <select id="" disabled class="disabled">
+                                                                <option></option>
+                                                            </select>
+                                                                
+                                                        </td>
+                                                        <td>
+                                                            <select id="" disabled class="disabled">
+                                                                <option></option>
+                                                            </select>
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" disabled="" class="disabled" >
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- //table -->
+                                    </article>
+                                    <!-- //tableContainer -->
+                                </section>
+
+
+                            </div>
+                            <!-- //inner -->
+                        </article>
+                        <!-- //boardArea -->
+                    </div>
+                    <!-- //contArea -->
+                </div>
+                <!-- //content -->
+            </div>
+            <!-- //right -->
+        </main>
+        <!-- //container -->
+
+        <!-- popup -->
+        <div class="popup uiDrag" style="display: block; width: 1590px;">
+            <!-- head -->
+            <div class="head">
+                <p class="popTit">주사무소 변경</p>
+                <button type="button" class="btnClose">
+                    <span class="hidden">팝업 닫기</span>
+                </button>
+            </div>
+            <!-- //head -->
+            <!-- cont -->
+            <div class="cont dragCancel">
+                <!-- secContainer -->
+                <section class="secContainer">
+
+                    <div class="titSecBox">
+                        <h6 class="tit addressName">
+                            <strong>사무실변경</strong>
+                        </h6>
+                    </div>
+
+                    <!-- tableContainer -->
+                    <article class="tableContainer">
+                        <!-- table -->
+                        <div class="table">
+                            <table>
+                                <caption>사무실변경 테이블</caption>
+                                <colgroup>
+                                    <col style="width: 100px;" />
+                                    <col style="width: 250px;" />
+                                    <col style="width: 100px;" />
+                                    <col style="width: 250px;" />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" >
+                                            <label for="i41" class="red dot">영업소구분</label>
+                                        </th>
+                                        <td>
+                                            <select id="i41" disabled class="disabled">
+                                                <option>주사무소</option>
+                                            </select>
+                                        </td>
+                                        <th scope="row">
+                                            <label for="i42" class="red dot">변경일자</label>
+                                        </th>
+                                        <td>
+                                            <input type="text" id="i42" class="cal" value="2020-06-26"/>
+                                        </td>
+                                    </tr>                                  
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- //table -->
+                    
+                    </article>
+                    <!-- //tableContainer -->
+
+                </section>
+
+                <section class="secContainer">
+
+                    <div class="titSecBox">
+                        <h6 class="tit addressName">
+                            <strong>변경 전 내용</strong>
+                        </h6>
+                        <p class="desc">※ (신고)기본정보 등록번호의 주사무소가 기본으로 조회됩니다.</p>
+                        <div class="btnArea">
+                            <button type="button" class="btn type05 bgGray4" title="변경 전 사무실사진">
+                                <span>변경 전 사무실사진</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- tableContainer -->
+                    <article class="tableContainer">
+                        <!-- table -->
+                        <div class="table">
+                            <table>
+                                <caption>변경 전 내용 테이블</caption>
+                                <colgroup>
+                                    <col style="width: 120px;" />
+                                    <col style="width: 160px;" />
+                                    <col style="width: 120px;" />
+                                    <col style="width: 160px;" />
+                                    <col style="width: 120px;" />
+                                    <col style="width: 160px;" />
+                                    <col style="width: 120px;" />
+                                    <col style="width: 160px;" />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="i01">등록상태</label>
+                                        </th>
+                                        <td colspan="3">
+                                            <select id="i01" class="disabled" disabled>
+                                                <option>등록말소</option>
+                                            </select>
+                                        </td>
+                                        <th scope="row">
+                                            <label for="i02">전화번호</label>
+                                        </th>
+                                        <td colspan="3">
+                                            <div class="inputGroup">
+                                                <input type="text" id="i02" />
+                                                <button type="button" class="btn type03 bgPrimary" title="전화번호조회" style="margin-left:5px">
+                                                    <span>전화번호조회</span>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="i03" class="red dot">사무실소유형태</label>
+                                        </th>
+                                        <td>
+                                            <select id="i03">
+                                                <option>자기소유</option>
+                                            </select>
+                                        </td>
+                                        <th scope="row">
+                                            <label for="i04">임대시작일</label>
+                                        </th>
+                                        <td colspan="2">
+                                            <input type="text" id="i04" class="cal"/>
+                                        </td>
+                                        <th scope="row">
+                                            <label for="i05">임대종료일</label>
+                                        </th>
+                                        <td colspan="2">
+                                            <input type="text" id="i05" class="cal"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="i06" class="red dot">건물용도</label>
+                                        </th>
+                                        <td colspan="4">
+                                            <div class="inputGroup gap10">
+                                                <select id="i06">
+                                                    <option>제2종근린시설</option>
+                                                </select>
+                                                <input type="text" id="" title="관련 텍스트 입력란" />
+                                            </div>
+                                        </td>
+                                        <th scope="row">
+                                            <label for="i07">건물소유자</label>
+                                        </th>
+                                        <td colspan="2">
+                                            <input type="text" id="i07" class=""/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" rowspan="4">
+                                            <label class="red dot">영업지 소재지</label>
+                                        </th>
+                                        <th scope="row" rowspan="3">
+                                            <div class="radio">
+                                                <input type="radio" id="radioId01" name=""  />
+                                                <label for="radioId01">
+                                                    <svg class="radioShape" width="20" height="20" viewBox="0 0 20 24">
+                                                        <circle cx="11" cy="12" r="5"></circle>
+                                                    </svg>
+                                                    <span class="labelName">지번주소</span>
+                                                </label>
+                                            </div>
+                                        </th>
+                                        <th scope="row">
+                                            <label for="i08" class="red dot">시도</label>
+                                        </th>
+                                        <td>
+                                            <select id="i09" disabled class="disabled" >
+                                                <option>경상북도</option>
+                                            </select>
+                                        </td>
+                                        <th scope="row">
+                                            <label for="i10" class="red dot">시군구</label>
+                                        </th>
+                                        <td>
+                                            <select id="i10" disabled class="disabled" >
+                                                <option>포항시북구</option>
+                                            </select>
+                                        </td>
+                                        <th scope="row">
+                                            <label for="i11" class="red dot">법정동</label>
+                                        </th>
+                                        <td>
+                                            <select id="i11" disabled class="disabled" >
+                                                <option>신흥동</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="i12">리</label>
+                                        </th>
+                                        <td>
+                                            <select id="i12" disabled class="disabled" >
+                                                <option>전체</option>
+                                            </select>
+                                        </td>
+                                        <th scope="row">
+                                            <label for="i13" class="red dot">토지구분</label>
+                                        </th>
+                                        <td>
+                                            <select id="i13" disabled class="disabled" >
+                                                <option></option>
+                                            </select>
+                                        </td>
+                                        <th scope="row">
+                                            <label for="i14" class="red dot">번지</label>
+                                        </th>
+                                        <td>
+                                            <div class="inputGroup">
+                                                <input type="text" class="disabled" id="i14" disabled value="825"/>
+                                                <span class="dash">-</span>
+                                                <input type="text" class="disabled" id="" disabled value="17"/>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="i15">기타주소</label>
+                                        </th>
+                                        <td colspan="5">
+                                            <input type="text" class="disabled" id="i15" disabled />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <div class="radio">
+                                                <input type="radio" id="radioId02" name="" checked />
+                                                <label for="radioId02">
+                                                    <svg class="radioShape" width="20" height="20" viewBox="0 0 20 24">
+                                                        <circle cx="11" cy="12" r="5"></circle>
+                                                    </svg>
+                                                    <span class="labelName">도로명주소</span>
+                                                </label>
+                                            </div>
+                                        </th>
+                                        <td colspan="6">
+                                            <input type="text" id="i16" title="주소입력" />
+                                        </td>
+                                    </tr>                                 
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- //table -->
+                    
+                    </article>
+                    <!-- //tableContainer -->
+
+                </section>
+                <section class="secContainer">
+
+                    <div class="titSecBox">
+                        <h6 class="tit addressName">
+                            <strong>변경 후 내용</strong>
+                        </h6>
+                        <div class="btnArea">
+                            <button type="button" class="btn type05 bgGray4" title="변경 전 사무실사진">
+                                <span>변경 후 사무실사진</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- tableContainer -->
+                    <article class="tableContainer">
+                        <!-- table -->
+                        <div class="table">
+                            <table>
+                                <caption>변경 전 내용 테이블</caption>
+                                <colgroup>
+                                    <col style="width: 120px;" />
+                                    <col style="width: 160px;" />
+                                    <col style="width: 120px;" />
+                                    <col style="width: 160px;" />
+                                    <col style="width: 120px;" />
+                                    <col style="width: 160px;" />
+                                    <col style="width: 120px;" />
+                                    <col style="width: 160px;" />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="i17" class="red dot">등록상태</label>
+                                        </th>
+                                        <td colspan="7">
+                                            <select id="i17">
+                                                <option>등록말소</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="i19" class="red dot">사무실소유형태</label>
+                                        </th>
+                                        <td>
+                                            <select id="i19">
+                                                <option>자기소유</option>
+                                            </select>
+                                        </td>
+                                        <th scope="row">
+                                            <label for="i20">임대시작일</label>
+                                        </th>
+                                        <td colspan="2">
+                                            <input type="text" id="i20" class="cal"/>
+                                        </td>
+                                        <th scope="row">
+                                            <label for="i21">임대종료일</label>
+                                        </th>
+                                        <td colspan="2">
+                                            <input type="text" id="i21" class="cal"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="i22" class="red dot">건물용도</label>
+                                        </th>
+                                        <td colspan="4">
+                                            <div class="inputGroup gap10">
+                                                <select id="i22">
+                                                    <option>판매시설</option>
+                                                </select>
+                                                <input type="text" id="" title="관련 텍스트 입력란" />
+                                            </div>
+                                        </td>
+                                        <th scope="row">
+                                            <label for="i23">건물소유자</label>
+                                        </th>
+                                        <td colspan="2">
+                                            <input type="text" id="i23" class=""/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" rowspan="4">
+                                            <label class="red dot">영업지 소재지</label>
+                                        </th>
+                                        <th scope="row" rowspan="3">
+                                            <div class="radio">
+                                                <input type="radio" id="radioId01" name=""  />
+                                                <label for="radioId01">
+                                                    <svg class="radioShape" width="20" height="20" viewBox="0 0 20 24">
+                                                        <circle cx="11" cy="12" r="5"></circle>
+                                                    </svg>
+                                                    <span class="labelName">지번주소</span>
+                                                </label>
+                                            </div>
+                                        </th>
+                                        <th scope="row">
+                                            <label for="i24" class="red dot">시도</label>
+                                        </th>
+                                        <td>
+                                            <select id="i24" disabled class="disabled" >
+                                                <option>경상북도</option>
+                                            </select>
+                                        </td>
+                                        <th scope="row">
+                                            <label for="i25" class="red dot">시군구</label>
+                                        </th>
+                                        <td>
+                                            <select id="i25" disabled class="disabled" >
+                                                <option>포항시북구</option>
+                                            </select>
+                                        </td>
+                                        <th scope="row">
+                                            <label for="i26" class="red dot">법정동</label>
+                                        </th>
+                                        <td>
+                                            <select id="i26" disabled class="disabled" >
+                                                <option>신흥동</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="i27">리</label>
+                                        </th>
+                                        <td>
+                                            <select id="i27" disabled class="disabled" >
+                                                <option>전체</option>
+                                            </select>
+                                        </td>
+                                        <th scope="row">
+                                            <label for="i28" class="red dot">토지구분</label>
+                                        </th>
+                                        <td>
+                                            <select id="i28" disabled class="disabled" >
+                                                <option>산번지</option>
+                                            </select>
+                                        </td>
+                                        <th scope="row">
+                                            <label for="i29" class="red dot">번지</label>
+                                        </th>
+                                        <td>
+                                            <div class="inputGroup">
+                                                <input type="text" class="disabled" id="i29" disabled value="825"/>
+                                                <span class="dash">-</span>
+                                                <input type="text" class="disabled" id="" disabled value="17"/>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="i30">기타주소</label>
+                                        </th>
+                                        <td colspan="5">
+                                            <input type="text" class="disabled" id="i30" disabled />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <div class="radio">
+                                                <input type="radio" id="radioId02" name="" checked />
+                                                <label for="radioId02">
+                                                    <svg class="radioShape" width="20" height="20" viewBox="0 0 20 24">
+                                                        <circle cx="11" cy="12" r="5"></circle>
+                                                    </svg>
+                                                    <span class="labelName">도로명주소</span>
+                                                </label>
+                                            </div>
+                                        </th>
+                                        <td colspan="6">
+                                            <div class="inputGroup">
+                                                <input type="text" id="i31" title="주소입력란"/>
+                                                <button type="button" class="btn type03 bgPrimary" title="도로명" style="margin-left:5px">
+                                                    <span>도로명</span>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>                                 
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- //table -->
+                    
+                    </article>
+                    <!-- //tableContainer -->
+
+                    <!-- tableContainer -->
+                    <article class="tableContainer">
+                        <!-- table -->
+                        <div class="table">
+                            <table>
+                                <caption>변경 후 영업소 전화번호 관련 정보</caption>
+                                <colgroup>
+                                    <col style="width: 200px;" />
+                                    <col style="width: auto;" />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" >
+                                            <label for="i32">변경 후 영업소 전화번호</label>
+                                        </th>
+                                        <td>
+                                            <div class="inputGroup">
+                                                <input type="text" id="i32" title="전화번호관리"/>
+                                                <button type="button" class="btn type03 bgPrimary" title="전화번호관리" style="margin-left:5px">
+                                                    <span>전화번호관리</span>
+                                                </button>
+                                                <p class="desc colorType red">※ 영업소 전화번호 중 대표번호 포함 기타 전화번호를 입력하고 관리합니다.</p>
+                                            </div>
+                                        </td>
+                                    </tr>                                  
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- //table -->
+                    
+                    </article>
+                    <!-- //tableContainer -->
+
+                    <div class="btnArea jc">
+                        <button type="button" class="btn type04 bgWhite wide" title="삭제">
+                            <span>삭제</span>
+                        </button>
+                        <button type="button" class="btn type04 bgPrimary2 wide" title="저장">
+                            <span>저장</span>
+                        </button>
+                        <button type="button" class="btn type04 bgWhite wide" title="닫기">
+                            <span>닫기</span>
+                        </button>
+                    </div>
+
+                </section>
+                <!-- //secContainer -->
+
+            </div>
+            <!-- //cont -->
+        </div>
+        <!-- //popup -->
+        <div class="dimmed" style="display: block;"></div>
+
+    </div>
+    <!-- //wrap -->
+</body>
+</html>

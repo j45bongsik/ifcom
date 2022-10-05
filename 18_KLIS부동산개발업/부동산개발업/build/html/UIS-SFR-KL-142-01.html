@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="">
+<meta name="description" content="">
+<meta property="og:image" content="">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:url" content="">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="stylesheet" href="../lib/swiper/css/swiper.css">
+<link rel="stylesheet" href="../lib/jquery-ui.css">
+<link rel="stylesheet" href="../lib/jqGrid-4.7.1/css/ui.jqgrid.css">
+<link rel="stylesheet" href="../css/common.css">
+<script src="../lib/jquery-1.12.4.js"></script>
+<script src="../lib/jquery-ui.js"></script>
+<script src="../lib/jqGrid-4.7.1/js/minified/jquery.jqGrid.min.js"></script>
+<script src="../lib/swiper/js/swiper.js"></script>
+<script src="../js/ui.js"></script>
+<script src="../js/popup.js"></script>
+<script src="../js/jqGrid.js"></script>
+
+ 
+    <title>KLIS 부동산개발업</title>
+</head>
+<body class="hid">
+    <!-- wrap -->
+    <div id="wrap">
+        <!-- container -->
+        <main class="container">
+            <!-- left -->
+            <div class="left">
+                <!-- leftInner -->
+                <div class="leftInner">
+                    <!-- logoArea -->
+                    <div class="logoArea">
+                        <h1>
+                            <a class="logo" href="#" title="K-Geo 플랫폼">
+                                <img src="../images/common/logo.png" alt="K-Geo 플랫폼 로고">
+                            </a>
+                            <a class="logo" href="#" title="KLIS">
+                                <img src="../images/common/logo-KLIS.png" alt="KLIS 로고">
+                            </a>
+                        </h1>
+                        <span class="logoTit">부동산개발업</span>
+                    </div>
+                    <!-- //logoArea -->
+                
+                    <!-- loginArea -->
+                    <article class="loginArea">
+                        <!-- inner -->
+                        <div class="inner">
+                            <div class="userInfoArea">
+                                <span class="userAuth">
+                                    <strong>부동산개발협회</strong>
+                                </span>
+                                <span class="areaName">부동산개발업_협회
+                                    <span>님</span>
+                                </span>
+                            </div>
+                            <div class="btnArea">
+                                <button type="button" class="btnLogin">
+                                    <span>로그아웃</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- //inner -->
+                    </article>
+                    <!-- //loginArea -->
+                </div>
+                <!-- //leftInner -->
+
+                <!-- lnb -->
+                <nav class="lnb">
+                    <ul class="dep1 overflow-y">
+                        <li class="new noDepth">
+                            <a href="javascript:void(0)">
+                                <span class="dep1Name">신규등록관리</span>
+                            </a>
+                            <!-- <ul class="dep2">
+                                <li>
+                                    <a href="javascript:void(0)">토지거래허가</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">허가증교부내역관리</a>
+                                </li>
+                            </ul> -->
+                        </li>
+                        <li class="write noDepth">
+                            <a href="javascript:void(0)">
+                                <span class="dep1Name">기재사항변경 관리</span>
+                            </a>
+                        </li>
+                        <li class="edit noDepth">
+                            <a href="javascript:void(0)">
+                                <span class="dep1Name">등록요건변경 관리</span>
+                            </a>
+                        </li>
+                        <li class="closing noDepth">
+                            <a href="javascript:void(0)">
+                                <span class="dep1Name">폐업신고 관리</span>
+                            </a>
+                        </li>
+                        <li class="parent noDepth">
+                            <a href="javascript:void(0)">
+                                <span class="dep1Name">상속신고 관리</span>
+                            </a>
+                        </li>
+                        <li class="assign noDepth">
+                            <a href="javascript:void(0)">
+                                <span class="dep1Name">양도신고 관리</span>
+                            </a>
+                        </li>
+                        <li class="merge noDepth">
+                            <a href="javascript:void(0)">
+                                <span class="dep1Name">법인합병신고 관리</span>
+                            </a>
+                        </li>
+                        <li class="trans noDepth">
+                            <a href="javascript:void(0)">
+                                <span class="dep1Name">전출신고 관리</span>
+                            </a>
+                        </li>
+                        <li class="regist noDepth">
+                            <a href="javascript:void(0)">
+                                <span class="dep1Name">등록증 재교부 관리</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- //lnb -->
+            </div>
+            <!-- //left -->
+
+            <!-- right -->
+            <div class="right">
+                <!-- headWrap -->
+                <div class="headWrap">
+                    <!-- gnb -->
+                    <div class="gnb">
+                        <ul>
+                            <li class="active">
+                                <a href="#">민원대행</a>
+                            </li>
+                            <li>
+                                <a href="#">신청신고</a>
+                            </li>
+                            <li>
+                                <a href="#">등록관리</a>
+                            </li>
+                            <li>
+                                <a href="#">사업실적/재무정보</a>
+                            </li>
+                            <li>
+                                <a href="#">현황/통계</a>
+                            </li>
+                            <li>
+                                <a href="#">서식출력</a>
+                            </li>
+                            <li>
+                                <a href="#">업무관리</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //gnb -->
+
+                    <!-- util -->
+                    <article class="util">
+                        <ul class="menu">
+                            <li>
+                                <a href="javascript:void(0)">유지관리홈페이지</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">원격지원</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">사이트안내</a>
+                            </li>
+                        </ul>
+                        <div class="btnArea">
+                            <button type="button" class="scale btnScaleUp" title="크기 확대">
+                                <span class="hidden">크기 확대</span>
+                            </button>
+                            <button type="button" class="scale btnScaleDown" title="크기 축소">
+                                <span class="hidden">크기 축소</span>
+                            </button>
+                        </div>
+                    </article>
+                    <!-- //util -->
+                </div>
+                <!-- //headWrap -->
+                <!-- content -->
+                <div id="content">
+                    <h2 class="hidden">본문 영역</h2>
+
+                    <!-- contArea -->
+                    <div class="contArea">
+                        <!-- titArea -->
+                        <div class="titArea">
+                            <h3 class="titPage mrA">
+                                <strong>민원대행(공통)</strong>
+                            </h3>
+
+                            <div class="flex col acfe">
+                                <!-- breadCrumb -->
+                                <div class="breadCrumb">
+                                    <ul>
+                                        <li class="home">
+                                            <a href="javascript:void(0)">
+                                                <span class="hidden">홈</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">민원대행</a>
+                                        </li>
+                                        <li class="current">
+                                            <a href="javascript:void(0)"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- //breadCrumb -->
+
+                                <!-- btnArea -->
+                                <div class="btnArea">
+                                    <button type="button" class="btn type01 bgPrimary btnHelp" title="도움말">
+                                        <span>도움말</span>
+                                    </button>
+                                </div>
+                                <!-- btnArea -->
+                            </div>
+                        </div>
+                        <!-- //titArea -->
+
+                        <!-- boardArea -->
+                        <article class="boardArea">
+                            <!-- inner -->
+                            <div class="inner">
+
+
+                            </div>
+                            <!-- //inner -->
+                        </article>
+                        <!-- //boardArea -->
+                    </div>
+                    <!-- //contArea -->
+                </div>
+                <!-- //content -->
+            </div>
+            <!-- //right -->
+        </main>
+        <!-- //container -->
+
+
+        <!-- popup -->
+        <div class="popup uiDrag" style="display: block; width: 1050px;">
+            <!-- head -->
+            <div class="head">
+                <p class="popTit">업무알림</p>
+                <button type="button" class="btnClose">
+                    <span class="hidden">팝업 닫기</span>
+                </button>
+            </div>
+            <!-- //head -->
+            <!-- cont -->
+            <div class="cont dragCancel">
+                
+                <!-- secContainer -->
+                <section class="secContainer">
+                    <!-- tabWrap -->
+                    <div class="tabWrap type01">
+                        <!-- tabNav -->
+                        <div class="tabNav">
+                            <!-- tabList -->
+                            <ul class="tabList">
+                                <li class="active">
+                                    <a href="javascript:void(0)">전문인력 퇴사처리 업무알림</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">민원대행 시도 업무알림</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">과태료 부과(예정)대상 알림</a>
+                                </li>
+                            </ul>
+                            <!-- //tabList -->
+                        </div>
+                        <!-- //tabNav -->
+
+                        <!-- tabCont -->
+                        <div class="tabCont active">
+                            <!-- secContainer -->
+                            <section class="secContainer">
+                                <!-- resultContainer -->
+                                <div class="resultContainer">
+                                    <div class="resultArea">
+                                        <span class="numOfCase">총<em>2775</em>건</span>
+                                        <p class="pages">(1 of 278 pages)</p>
+                                    </div>
+                                    <p class="desc cRed mrA ml10">※ 검색 된 부동산개발업 등록업체는 전문인력이 1명 또는 존재하지 않는 업체입니다.</p>
+                                    <div class="btnArea">
+                                        <button type="button" class="btn type05 sm2 bgGray" title="파일저장">
+                                            <span>파일저장</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- //resultContainer -->
+    
+                                <!-- tableContainer -->
+                                <article class="tableContainer">
+                                    <!-- table -->
+                                    <div class="table column hover hscroll_line5">
+                                        <!-- gridTable -->
+                                        <table id="gridTable106">
+        
+                                        </table>
+                                        <!-- //gridTable -->
+                                        <!-- PAGER:그리드자동생성(개발소스동기화) -->
+                                        <div class="ui-jqgrid">
+   <div id="conPermInfoListPager" class="ui-state-default ui-jqgrid-pager ui-corner-bottom" dir="ltr">
+      <div id="pg_conPermInfoListPager" class="ui-pager-control" role="group">
+         <table cellspacing="0" cellpadding="0" border="0" class="ui-pg-table" style="width:100%;table-layout:fixed;height:100%;">
+            <tbody>
+               <tr>
+                  <td id="conPermInfoListPager_left" align="left"></td>
+                  <td id="conPermInfoListPager_center" align="center" style="white-space: pre; width: 268px;">
+                     <table cellspacing="0" cellpadding="0" border="0" style="table-layout:auto;" class="ui-pg-table">
+                        <tbody>
+                           <tr>
+                              <td id="first_conPermInfoListPager" class="ui-pg-button ui-corner-all ui-state-disabled" title="First Page" style="cursor: default;"><span class="ui-icon ui-icon-seek-first"></span></td>
+                              <td id="prev_conPermInfoListPager" class="ui-pg-button ui-corner-all ui-state-disabled" title="Previous Page"><span class="ui-icon ui-icon-seek-prev"></span></td>
+                              <td class="ui-pg-button ui-state-disabled" style="width:4px;"><span class="ui-separator"></span></td>
+                              <td dir="ltr">페이지 <input class="ui-pg-input ui-corner-all" type="text" size="2" maxlength="7" value="0" role="textbox"> / <span id="sp_1_conPermInfoListPager">713</span></td>
+                              <td class="ui-pg-button ui-state-disabled" style="width:4px;"><span class="ui-separator"></span></td>
+                              <td id="next_conPermInfoListPager" class="ui-pg-button ui-corner-all" title="Next Page"><span class="ui-icon ui-icon-seek-next"></span></td>
+                              <td id="last_conPermInfoListPager" class="ui-pg-button ui-corner-all" title="Last Page"><span class="ui-icon ui-icon-seek-end"></span></td>
+                              <td dir="ltr">
+                                 <select class="ui-pg-selbox ui-widget-content ui-corner-all" role="listbox" title="Records per Page">
+                                    <option role="option" value="5">5</option>
+                                    <option role="option" value="10" selected="selected">10</option>
+                                    <option role="option" value="20">20</option>
+                                    <option role="option" value="30">30</option>
+                                    <option role="option" value="50">50</option>
+                                 </select>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </td>
+                  <td id="conPermInfoListPager_right" align="right"></td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+   </div>
+</div>
+                                        <!-- //PAGER:그리드자동생성(개발소스동기화) -->
+                                    </div>
+                                    <!-- //table -->
+                                    
+                                </article>
+                                <!-- //tableContainer -->
+
+                            </section>
+                            <!-- //secContainer -->
+
+                             <!-- secContainer -->
+                             <section class="secContainer">
+                                <div class="titSecBox">
+                                    <h4 class="tit arrowBullet">
+                                        <strong>인력상세정보</strong>
+                                    </h4>
+                                </div>
+                                
+                                <!-- tableContainer -->
+                                <article class="tableContainer">
+                                    <!-- table -->
+                                    <div class="table column hover overflow-x hscroll_line5">
+                                        <!-- gridTable -->
+                                        <table id="gridTable107">
+        
+                                        </table>
+                                        <!-- //gridTable -->
+                                        
+                                    </div>
+                                    <!-- //table -->
+                                    
+                                </article>
+                                <!-- //tableContainer -->
+                                
+                            </section>
+                            <!-- //secContainer -->
+
+                           
+
+                            
+                        </div>
+                        <!-- //tabCont -->
+
+                        <!-- tabCont -->
+                        <div class="tabCont">
+                            <!-- secContainer -->
+                            <section class="secContainer">
+                                <!-- resultContainer -->
+                                <div class="resultContainer">
+                                    <div class="resultArea">
+                                        <span class="numOfCase">총<em>2775</em>건</span>
+                                        <p class="pages">(1 of 278 pages)</p>
+                                    </div>
+                                </div>
+                                <!-- //resultContainer -->
+    
+                                <!-- tableContainer -->
+                                <article class="tableContainer">
+                                    <!-- table -->
+                                    <div class="table column hover overflow-x">
+                                        <!-- gridTable -->
+                                        <table id="gridTable108">
+        
+                                        </table>
+                                        <!-- //gridTable -->
+                                    </div>
+                                    <!-- //table -->
+                                </article>
+                                <!-- //tableContainer -->
+                                <!-- PAGER:그리드자동생성(개발소스동기화) -->
+                                <div class="ui-jqgrid">
+   <div id="conPermInfoListPager" class="ui-state-default ui-jqgrid-pager ui-corner-bottom" dir="ltr">
+      <div id="pg_conPermInfoListPager" class="ui-pager-control" role="group">
+         <table cellspacing="0" cellpadding="0" border="0" class="ui-pg-table" style="width:100%;table-layout:fixed;height:100%;">
+            <tbody>
+               <tr>
+                  <td id="conPermInfoListPager_left" align="left"></td>
+                  <td id="conPermInfoListPager_center" align="center" style="white-space: pre; width: 268px;">
+                     <table cellspacing="0" cellpadding="0" border="0" style="table-layout:auto;" class="ui-pg-table">
+                        <tbody>
+                           <tr>
+                              <td id="first_conPermInfoListPager" class="ui-pg-button ui-corner-all ui-state-disabled" title="First Page" style="cursor: default;"><span class="ui-icon ui-icon-seek-first"></span></td>
+                              <td id="prev_conPermInfoListPager" class="ui-pg-button ui-corner-all ui-state-disabled" title="Previous Page"><span class="ui-icon ui-icon-seek-prev"></span></td>
+                              <td class="ui-pg-button ui-state-disabled" style="width:4px;"><span class="ui-separator"></span></td>
+                              <td dir="ltr">페이지 <input class="ui-pg-input ui-corner-all" type="text" size="2" maxlength="7" value="0" role="textbox"> / <span id="sp_1_conPermInfoListPager">713</span></td>
+                              <td class="ui-pg-button ui-state-disabled" style="width:4px;"><span class="ui-separator"></span></td>
+                              <td id="next_conPermInfoListPager" class="ui-pg-button ui-corner-all" title="Next Page"><span class="ui-icon ui-icon-seek-next"></span></td>
+                              <td id="last_conPermInfoListPager" class="ui-pg-button ui-corner-all" title="Last Page"><span class="ui-icon ui-icon-seek-end"></span></td>
+                              <td dir="ltr">
+                                 <select class="ui-pg-selbox ui-widget-content ui-corner-all" role="listbox" title="Records per Page">
+                                    <option role="option" value="5">5</option>
+                                    <option role="option" value="10" selected="selected">10</option>
+                                    <option role="option" value="20">20</option>
+                                    <option role="option" value="30">30</option>
+                                    <option role="option" value="50">50</option>
+                                 </select>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </td>
+                  <td id="conPermInfoListPager_right" align="right"></td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+   </div>
+</div>
+                                <!-- //PAGER:그리드자동생성(개발소스동기화) -->
+
+                            </section>
+                            <!-- //secContainer -->
+                        </div>
+                        <!-- //tabCont -->
+
+                        <!-- tabCont -->
+                        <div class="tabCont">
+                             <!-- secContainer -->
+                             <section class="secContainer">
+                                <!-- resultContainer -->
+                                <div class="resultContainer">
+                                    <div class="resultArea">
+                                        <span class="numOfCase">총<em>2775</em>건</span>
+                                        <p class="pages">(1 of 278 pages)</p>
+                                    </div>
+                                </div>
+                                <!-- //resultContainer -->
+    
+                                <!-- tableContainer -->
+                                <article class="tableContainer">
+                                    <!-- table -->
+                                    <div class="table column hover hscroll_line10">
+                                        <!-- gridTable -->
+                                        <table id="gridTable109">
+        
+                                        </table>
+                                        <!-- //gridTable -->
+                                        <!-- PAGER:그리드자동생성(개발소스동기화) -->
+                                        <div class="ui-jqgrid">
+   <div id="conPermInfoListPager" class="ui-state-default ui-jqgrid-pager ui-corner-bottom" dir="ltr">
+      <div id="pg_conPermInfoListPager" class="ui-pager-control" role="group">
+         <table cellspacing="0" cellpadding="0" border="0" class="ui-pg-table" style="width:100%;table-layout:fixed;height:100%;">
+            <tbody>
+               <tr>
+                  <td id="conPermInfoListPager_left" align="left"></td>
+                  <td id="conPermInfoListPager_center" align="center" style="white-space: pre; width: 268px;">
+                     <table cellspacing="0" cellpadding="0" border="0" style="table-layout:auto;" class="ui-pg-table">
+                        <tbody>
+                           <tr>
+                              <td id="first_conPermInfoListPager" class="ui-pg-button ui-corner-all ui-state-disabled" title="First Page" style="cursor: default;"><span class="ui-icon ui-icon-seek-first"></span></td>
+                              <td id="prev_conPermInfoListPager" class="ui-pg-button ui-corner-all ui-state-disabled" title="Previous Page"><span class="ui-icon ui-icon-seek-prev"></span></td>
+                              <td class="ui-pg-button ui-state-disabled" style="width:4px;"><span class="ui-separator"></span></td>
+                              <td dir="ltr">페이지 <input class="ui-pg-input ui-corner-all" type="text" size="2" maxlength="7" value="0" role="textbox"> / <span id="sp_1_conPermInfoListPager">713</span></td>
+                              <td class="ui-pg-button ui-state-disabled" style="width:4px;"><span class="ui-separator"></span></td>
+                              <td id="next_conPermInfoListPager" class="ui-pg-button ui-corner-all" title="Next Page"><span class="ui-icon ui-icon-seek-next"></span></td>
+                              <td id="last_conPermInfoListPager" class="ui-pg-button ui-corner-all" title="Last Page"><span class="ui-icon ui-icon-seek-end"></span></td>
+                              <td dir="ltr">
+                                 <select class="ui-pg-selbox ui-widget-content ui-corner-all" role="listbox" title="Records per Page">
+                                    <option role="option" value="5">5</option>
+                                    <option role="option" value="10" selected="selected">10</option>
+                                    <option role="option" value="20">20</option>
+                                    <option role="option" value="30">30</option>
+                                    <option role="option" value="50">50</option>
+                                 </select>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </td>
+                  <td id="conPermInfoListPager_right" align="right"></td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+   </div>
+</div>
+                                        <!-- //PAGER:그리드자동생성(개발소스동기화) -->
+                                    </div>
+                                    <!-- //table -->
+                                </article>
+                                <!-- //tableContainer -->
+                            </section>
+                            <!-- //secContainer -->
+
+                        </div>
+                        <!-- //tabCont -->
+                
+                    </div>
+                    <!-- //tabWrap -->
+
+                    
+                </section>
+                <!-- //secContainer -->
+
+                <div class="btnArea jc" style="margin-top: 16px;">
+                    <button type="button" class="btn type02 bgWhite btnCancel wide">
+                        <span>닫기</span>
+                    </button>
+                </div>
+            </div>
+            <!-- //cont -->
+        </div>
+        <!-- //popup -->
+        <div class="dimmed" style="display: block;"></div>
+
+        
+
+    </div>
+    <!-- //wrap -->
+</body>
+</html>

@@ -150,7 +150,7 @@ $(document).ready(function(){
 
     // toc acco
     $(".labelTitle .title").on('click', function(){
-        $(this).closest(".label").toggleClass("active");
+        $(this).closest(".label:not(.single)").toggleClass("active");
     })
 
     //toc on/off 
@@ -159,12 +159,39 @@ $(document).ready(function(){
         $('.tooltipArea').toggleClass("left");
     })
 
+    //toc dep01 label wirteBtn input on&off
+    $('.label .btnArea .layerWrite').on('click', function(){
+        if($(this).hasClass("on")) {
+            $(this).closest(".btnArea").siblings('.labelTitle').children('.inputArea').addClass('on')
+        } else {
+            $(this).closest(".btnArea").siblings('.labelTitle').children('.inputArea').removeClass('on')
+        }
+    });
+
+    //toc dep02 table wirteBtn input,textarea on&off
+    $('.thsGroup .writeRect').on('click', function(){
+        if($(this).hasClass("on")) {
+            $(this).closest(".btnArea").siblings('.inputArea').addClass('on')
+        } else {
+            $(this).closest(".btnArea").siblings('.inputArea').removeClass('on')
+        }
+    });
+
     // location
     $(".location .dep01 > li > a").on('click', function(){
         if ($(this).hasClass("active")) {
             $(this).removeClass("active");
         } else {
             $(this).addClass("active").closest("li").siblings().children("a").removeClass("active")
+        }
+    })
+
+    // alert on&off
+    $('.alertArea .alert').on('click', function(){
+        if($(this).siblings('.outputArea').hasClass('active')) {
+            $(this).siblings(".outputArea").removeClass('active');
+        } else {
+            $(this).siblings(".outputArea").addClass('active');
         }
     })
 
@@ -286,6 +313,7 @@ $(document).ready(function(){
     $(".toolTip").on('mouseleave', function(){
         $(".tooltipArea").removeClass("active")
     })
+
     
     /* 서규영 추가 */
     /* file path */

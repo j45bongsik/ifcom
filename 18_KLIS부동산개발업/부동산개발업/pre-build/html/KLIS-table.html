@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html') 
+    <title>KLIS 테이블 가이드</title>
+    <style>
+        #wrap{padding:10px}
+        #wrap h1{width:100%;padding-bottom:10px;background-color: #777f88;font-size: 30px;font-weight: bold;color:#fff;text-align: center;}
+        .item{padding-bottom: 20px;}
+        .item .desc{font-size: 18px;}
+        .item .desc h2{padding:10px;background-color: #F4F4F4;font-size: 22px;font-weight: bold;}
+        .item .desc b{color:red}
+    </style>
+</head>
+<body>
+    <!-- wrap -->
+    <div id="wrap">
+        <h1>가이드</h1>
+        <!-- item -->
+        <div class="item">
+            <div class="desc">
+                <h2>그리드 테이블 (페이지넘 없는 경우)</h2>
+                - 5개 이상 조회될 경우 세로 스크롤 적용 : <b>hscroll_line5</b> css 추가<br />
+                - 페이지넘 있는 경우는 10개 노출로 제외<br />
+                css 적용 예시 : <strong>class="table column hover hscroll_line5"</strong><br />
+                jqGrid.js 기본값 : hoverrows: false, multiselect: true, multiselectWidth: 52, <b>autowidth:true, shrinkToFit : false,</b> cmTemplate: {resizable: <b>true</b>}
+                <br /><strong>(빨간색 텍스트 부분 누락시 추가 및 수정바랍니다.)</strong>
+            </div>
+            <!-- table -->
+            <div class="table column hover hscroll_line5">
+                <!-- gridTable -->
+                <table id="gridTable01">
+
+                </table>
+                <!-- //gridTable -->
+            </div>
+            <!-- //table -->
+        </div>
+        <!-- //item -->
+        <!-- item -->
+        <div class="item">
+            <div class="desc">
+                <h2>그리드 테이블 (페이지넘 있는 경우)</h2>
+                css 적용 예시 : <strong>class="table column hover"</strong><br />
+                jqGrid.js 기본값 : hoverrows: false, multiselect: true, multiselectWidth: 52, <b>autowidth:true, shrinkToFit : false,</b> cmTemplate: {resizable: <b>true</b>}
+                <br /><strong>(빨간색 텍스트 부분 누락시 추가 및 수정바랍니다.)</strong>
+            </div>
+            <!-- table -->
+            <div class="table column hover">
+                <!-- gridTable -->
+                <table id="gridTable01_2">
+
+                </table>
+                <!-- //gridTable -->
+                <!-- PAGER:그리드자동생성(개발소스동기화) -->
+                @@include('include/pager.html')
+                <!-- //PAGER:그리드자동생성(개발소스동기화) -->
+            </div>
+            <!-- //table -->
+        </div>
+        <!-- //item -->
+    </div>
+    <!-- //wrap -->
+</body>
+</html>
