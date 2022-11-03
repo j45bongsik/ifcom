@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="icon_격자" data-name="icon / 격자" transform="translate(-570 -866)">
+    <rect id="사각형_9554" data-name="사각형 9554" width="24" height="24" rx="12" transform="translate(570 866)" fill="#353990"/>
+    <g id="그룹_3742" data-name="그룹 3742" transform="translate(586.805 871.258) rotate(90)">
+      <line id="선_53" data-name="선 53" x2="13.484" transform="translate(0 1)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.3"/>
+      <path id="패스_63820" data-name="패스 63820" d="M0,0H13.484" transform="translate(0 8.864)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.3"/>
+      <path id="패스_63824" data-name="패스 63824" d="M0,0H13.484" transform="translate(0 4.864)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.3"/>
+    </g>
+    <g id="그룹_3746" data-name="그룹 3746" transform="translate(588.615 882.932) rotate(180)">
+      <line id="선_53-2" data-name="선 53" x2="13.484" transform="translate(0 1)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.3"/>
+      <line id="선_56" data-name="선 56" x2="13.484" transform="translate(0 5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.3"/>
+      <path id="패스_63820-2" data-name="패스 63820" d="M0,0H13.484" transform="translate(0 8.864)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.3"/>
+    </g>
+  </g>
+</svg>

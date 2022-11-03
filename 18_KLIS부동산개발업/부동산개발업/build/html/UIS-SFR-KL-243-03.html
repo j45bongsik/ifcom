@@ -25,7 +25,8 @@
 <script src="../js/popup.js"></script>
 <script src="../js/jqGrid.js"></script>
 
- 
+
+    <link rel="stylesheet" href="../css/help.css"> 
     <title>KLIS 부동산개발업</title>
 </head>
 <body class="winPop">
@@ -42,112 +43,126 @@
                     <h2 class="hidden">본문 영역</h2>
 
                     <!-- contArea -->
-                    <div class="contArea">
-                        <!-- titArea -->
-                        <div class="titArea">
-                            <h3 class="titPage mrA">
-                                <strong>업무별 커뮤니티 게시판</strong>
-                            </h3>
+                    <div class="contArea margenta"><!-- 테마별 css 적용 margenta(부동산개발업) blue(개발부담금) purple(토지개발허가) green(부동산중개업, 공인중개사) orange(운영관리) -->
+                        <!-- head -->
+                        <div class="head">
+                            <p class="popTit">도움말</p>
+                            <button type="button" class="btnClose" onclick="window.close();">
+                                <span class="hidden">팝업 닫기</span>
+                            </button>
                         </div>
-                        <!-- //titArea -->
+                        <!-- //head -->
 
-                        <!-- boardArea -->
-                        <article class="boardArea">
-                            <!-- inner -->
-                            <div class="inner">
-                                <div class="innerContainer">
-                                    <div class="imageArea" >
-                                        <div class="imgArea" style="height: 600px;">
-                                            <img src="../images/common/img-area.png" alt="이미지">
-                                            <img src="../images/common/img-area.png" alt="이미지">
-                                            <img src="../images/common/img-area.png" alt="이미지">
-                                            <img src="../images/common/img-area.png" alt="이미지">
-                                            <img src="../images/common/img-area.png" alt="이미지">
-                                            <img src="../images/common/img-area.png" alt="이미지">
-                                        </div>
-                                    </div>
-                                    <!-- tableArea -->
-                                    <div class="tableArea">
-                                        <!-- secContainer -->
-                                        <section class="secContainer">
-                                            <!-- titSecBox -->
-                                            <div class="titSecBox">
-                                                <h4 class="tit arrowBullet">
-                                                    <strong>게시글 등록</strong>
-                                                </h4>
-                                            </div>
-                                            <!-- //titSecBox -->
-
-                                            <!-- table -->
-                                            <div class="table">
-                                                <table>
-                                                    <caption>업무별 커뮤니티 게시판 테이블로 제목, 작성자, 내용, 첨부파일을 제공합니다</caption>
-                                                    <colgroup>
-                                                        <col style="width:160px;"/>
-                                                        <col style="width:auto;"/>
-                                                    </colgroup>
-                                                    <tbody>
-                                                        <tr>
-                                                            <th scope="row">
-                                                                <label for="l01">제목</label>
-                                                            </th>
-                                                            <td>
-                                                                <input type="text" id="l01">
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row">
-                                                                <label>작성자</label>
-                                                            </th>
-                                                            <td>
-                                                                <span>경상북도(ED)</span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row">
-                                                                <label for="l02">내용</label>
-                                                            </th>
-                                                            <td>
-                                                                <textarea name="l02" id="l02" cols="30" rows="10" style="height: 165px;" placeholder="내용입력"></textarea>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row">
-                                                                <label>첨부파일</label>
-                                                            </th>
-                                                            <td class="filetdBox type02">
-                                                                <div class="fileListArea">
-                                                                    <input type="file" id="fileElem" multiple  accept="image/*" style="display:none" title="file" />
-                                                                    <a href="#" id="fileSelect" class="my_button">파일선택</a><label class="desc">※ 최대 첨부파일 크기는 파일별 <span>20MB</span>, 총 <span>100MB</span>입니다.</label>
-                                                                    <div id="file-list" class="file-list">
-                                                                        <p><span>마우스로 파일을 끌어오세요.</span> <i class="ico addFile"></i></p>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                            <!-- //table -->
-                                            <div class="btnArea jc" style="margin-top: 71px;">
-                                                <button type="button" class="btn type04 bgWhite wide">
-                                                    <span>취소</span>
-                                                </button>
-                                                <button type="button" class="btn type04 bgPrimary2 wide">
-                                                    <span>저장</span>
-                                                </button>
-                                            </div>
-                                        </section>
-                                        <!-- //secContainer -->
-                                    </div>
-                                    <!-- //tableArea -->
-                                </div>
-                                <!-- //tableContainer -->
-                                
+                        <!-- body -->
+                        <div class="body">
+                            <!-- titArea -->
+                            <div class="titArea">
+                                <h3 class="titPage mrA">
+                                    <strong>업무별 커뮤니티 게시판</strong>
+                                </h3>
                             </div>
-                            <!-- //inner -->
-                        </article>
-                        <!-- //boardArea -->
+                            <!-- //titArea -->
+
+                            <!-- boardArea -->
+                            <article class="boardArea">
+                                <!-- inner -->
+                                <div class="inner">
+                                    <div class="innerContainer">
+                                        <div class="imageArea" >
+                                            <div class="imgArea" style="height: 600px;">
+                                                <img src="../images/common/img-area.png" alt="이미지">
+                                                <img src="../images/common/img-area.png" alt="이미지">
+                                                <img src="../images/common/img-area.png" alt="이미지">
+                                                <img src="../images/common/img-area.png" alt="이미지">
+                                                <img src="../images/common/img-area.png" alt="이미지">
+                                                <img src="../images/common/img-area.png" alt="이미지">
+                                            </div>
+                                        </div>
+                                        <!-- tableArea -->
+                                        <div class="tableArea">
+                                            <!-- secContainer -->
+                                            <section class="secContainer">
+                                                <!-- titSecBox -->
+                                                <div class="titSecBox">
+                                                    <h4 class="tit arrowBullet">
+                                                        <strong>게시글 등록</strong>
+                                                    </h4>
+                                                </div>
+                                                <!-- //titSecBox -->
+
+                                                <!-- table -->
+                                                <div class="table">
+                                                    <table>
+                                                        <caption>업무별 커뮤니티 게시판 테이블로 제목, 작성자, 내용, 첨부파일을 제공합니다</caption>
+                                                        <colgroup>
+                                                            <col style="width:160px;"/>
+                                                            <col style="width:auto;"/>
+                                                        </colgroup>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th scope="row">
+                                                                    <label for="l01">제목</label>
+                                                                </th>
+                                                                <td>
+                                                                    <input type="text" id="l01">
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">
+                                                                    <label>작성자</label>
+                                                                </th>
+                                                                <td>
+                                                                    <span>경상북도(ED)</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">
+                                                                    <label for="l02">내용</label>
+                                                                </th>
+                                                                <td>
+                                                                    <textarea name="l02" id="l02" cols="30" rows="10" style="height: 165px;" placeholder="내용입력"></textarea>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">
+                                                                    <label>첨부파일</label>
+                                                                </th>
+                                                                <td class="filetdBox type02">
+                                                                    <div class="fileListArea">
+                                                                        <input type="file" id="fileElem" multiple  accept="image/*" style="display:none" title="file" />
+                                                                        <a href="#" id="fileSelect" class="my_button">파일선택</a><label class="desc">※ 최대 첨부파일 크기는 파일별 <span>20MB</span>, 총 <span>100MB</span>입니다.</label>
+                                                                        <div id="file-list" class="file-list">
+                                                                            <p><span>마우스로 파일을 끌어오세요.</span> <i class="ico addFile"></i></p>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- //table -->
+                                                <div class="btnArea jc" style="margin-top: 71px;">
+                                                    <button type="button" class="btn type04 bgWhite wide">
+                                                        <span>취소</span>
+                                                    </button>
+                                                    <button type="button" class="btn type04 bgPrimary2 wide">
+                                                        <span>저장</span>
+                                                    </button>
+                                                </div>
+                                            </section>
+                                            <!-- //secContainer -->
+                                        </div>
+                                        <!-- //tableArea -->
+                                    </div>
+                                    <!-- //tableContainer -->
+                                    
+                                </div>
+                                <!-- //inner -->
+                            </article>
+                            <!-- //boardArea -->
+                        </div>
+                        <!-- //body -->
+                        
                     </div>
                     <!-- //contArea -->
                 </div>

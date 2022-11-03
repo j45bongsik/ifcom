@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ko" >
+
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="kgeo플랫폼">
+<meta name="description" content="kgeop플랫폼 입지 분석 시스템">
+
+<!-- 오픈그래프 이미지의 경우 최소한 600 x 315 px은 되어야 하며, 1200 x 630 px을 권장함 -->
+<meta property="og:image" content="">
+<meta property="og:title" content="kgeo플랫폼">
+<meta property="og:description" content="kgeo플랫폼 입지 분석 시스템">
+<meta property="og:url" content="">
+<!-- 다음의 태그는 필수는 아니지만, 포함하는 것을 추천함 -->
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<link rel="stylesheet" href="../lib/swiper/css/swiper.css">
+<link rel="stylesheet" href="../lib/jquery-ui.css">
+<link rel="stylesheet" href="../lib/fullPage.js-2.9.7/fullpage.css" />
+<link rel="stylesheet" href="../css/common.css">
+<script src="../lib/jquery-1.12.4.js"></script>
+<script src="../lib/jquery-ui.js"></script>
+<script src="../lib/swiper/js/swiper.js"></script>
+<script src="../lib/fullPage.js-2.9.7/jquery.fullpage.min.js"></script>
+<!-- amchart4 -->
+<script src="../lib/amchart/core.js"></script>
+<script src="../lib/amchart/charts.js"></script>
+<!-- //amchart4 -->
+<script src="../js/ui.js"></script>
+<script src="../js/amchart.js"></script>
+
+
+
+
+<title>K-Geo플랫폼 입지 분석 시스템</title>
+
+
+</head>
+
+<body class="winPop">
+
+    <div id="wrap" >
+
+
+        <!-- mapContainer -->
+        <section class="mapContainer">
+
+            <!-- mapInfo -->
+            <article class="mapInfo type02">
+                <!-- imgArea -->
+                <div class="imgArea">
+                    <div class="inner">
+                        <img src="../images/img/img-map02.jpg" alt="맵 이미지">
+
+                        <!-- control -->
+                        <div class="control">
+                            <!-- btnArea -->
+                            <div class="btnArea edit">
+                                <button type="button" class="btn whiteSmall02">
+                                    <span>
+                                        불러오기
+                                    </span>
+                                </button>
+                                <button type="button" class="btn toggle navySmall">
+                                    <span>
+                                        편집
+                                    </span>
+                                </button>
+
+                                <!-- btnArea -->
+                                <div class="btnArea save">
+                                    <button type="button" class="btn whiteSmall">라벨</button>
+                                    <button type="button" class="btn whiteSmall">그리기</button>
+                                    <button type="button" class="btn graySmall close">저장</button>
+                                </div>
+                                <!-- //btnArea -->
+
+                            </div>
+                            <!-- //btnArea -->
+
+                        </div>
+                        <!-- //control -->
+
+                        <!-- legendArea -->
+                        <div class="legendArea">
+                            <!-- legendHead -->
+                            <div class="legendHead">
+                                <h3 class="title type08">범례</h3>
+                                <button type="button" class="btn minMax type02" title="범례 축소"></button>
+                            </div>
+                            <!-- legendHead -->
+                            <!-- legendCont -->
+                            <div class="legendCont cScroll">
+                                <ul>
+                                    <li>
+                                        <span></span>
+                                        <p class="elips02">
+                                            주거지역
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        <p class="elips02">
+                                            자연노지지역
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        <p class="elips02">
+                                            그외주거지역그외주거지역그외주거지역그외주거지역그외주거지역그외주거지역그외주거지역그외주거지역그외주거지역그외주거지역
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        <p class="elips02">
+                                            기타주거
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        <p class="elips02">
+                                            기타주거
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        <p class="elips02">
+                                            기타주거
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        <p class="elips02">
+                                            기타주거
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        <p class="elips02">
+                                            기타주거
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        <p class="elips02">
+                                            기타주거
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        <p class="elips02">
+                                            기타주거
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        <p class="elips02">
+                                            기타주거
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- legendCont -->
+                        </div>
+                        <!-- //legendArea -->
+
+                        <!-- layerArea -->
+                        <div class="layerArea">
+                            <!-- layerHead -->
+                            <div class="layerHead">
+                                <h3 class="title type08">레이어 목록</h3>
+                                <button type="button" class="btn minMax type02" title="목록 축소"></button>
+                            </div>
+                            <!-- //layerHead -->
+
+                            <!-- layerCont -->
+                            <div class="layerCont cScroll">
+                                <ul>
+                                    <li>
+                                        <p class="elips">
+                                            <i class="ico rect"></i>
+                                            지하철 연장라벨 지하철 연장라벨 지하철 연장라벨
+                                        </p>
+                                        <div class="btnArea">
+                                            <button type="button" class="btn toggle layerView" title="on/off"></button>
+                                            <button type="button" class="btn popMinus" title="삭제"></button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="elips">
+                                            <i class="ico rect"></i>
+                                            지하철 연장라벨
+                                        </p>
+                                        <div class="btnArea">
+                                            <button type="button" class="btn toggle layerView" title="on/off"></button>
+                                            <button type="button" class="btn popMinus" title="삭제"></button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="elips">
+                                            <i class="ico rect"></i>
+                                            지하철 연장라벨
+                                        </p>
+                                        <div class="btnArea">
+                                            <button type="button" class="btn toggle layerView" title="on/off"></button>
+                                            <button type="button" class="btn popMinus" title="삭제"></button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="elips">
+                                            <i class="ico rect"></i>
+                                            지하철 연장라벨
+                                        </p>
+                                        <div class="btnArea">
+                                            <button type="button" class="btn toggle layerView" title="on/off"></button>
+                                            <button type="button" class="btn popMinus" title="삭제"></button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="elips">
+                                            <i class="ico rect"></i>
+                                            지하철 연장라벨
+                                        </p>
+                                        <div class="btnArea">
+                                            <button type="button" class="btn toggle layerView" title="on/off"></button>
+                                            <button type="button" class="btn popMinus" title="삭제"></button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="elips">
+                                            <i class="ico rect"></i>
+                                            지하철 연장라벨
+                                        </p>
+                                        <div class="btnArea">
+                                            <button type="button" class="btn toggle layerView" title="on/off"></button>
+                                            <button type="button" class="btn popMinus" title="삭제"></button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="elips">
+                                            <i class="ico rect"></i>
+                                            지하철 연장라벨
+                                        </p>
+                                        <div class="btnArea">
+                                            <button type="button" class="btn toggle layerView" title="on/off"></button>
+                                            <button type="button" class="btn popMinus" title="삭제"></button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="elips">
+                                            <i class="ico rect"></i>
+                                            지하철 연장라벨
+                                        </p>
+                                        <div class="btnArea">
+                                            <button type="button" class="btn toggle layerView" title="on/off"></button>
+                                            <button type="button" class="btn popMinus" title="삭제"></button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="elips">
+                                            <i class="ico rect"></i>
+                                            지하철 연장라벨
+                                        </p>
+                                        <div class="btnArea">
+                                            <button type="button" class="btn toggle layerView" title="on/off"></button>
+                                            <button type="button" class="btn popMinus" title="삭제"></button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="elips">
+                                            <i class="ico rect"></i>
+                                            지하철 연장라벨
+                                        </p>
+                                        <div class="btnArea">
+                                            <button type="button" class="btn toggle layerView" title="on/off"></button>
+                                            <button type="button" class="btn popMinus" title="삭제"></button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //layerCont -->
+                        </div>
+                        <!-- //layerArea -->
+
+                        
+                    </div>
+
+                </div>
+                <!-- //imgArea -->
+
+            </article>
+            <!-- //mapInfo -->
+
+        </section>
+        <!-- //mapContainer -->
+    </div>
+</body>
+
+</html>

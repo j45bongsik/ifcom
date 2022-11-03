@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+  <g id="icon" transform="translate(-51 -414)">
+    <rect id="area" width="28" height="28" transform="translate(51 414)" fill="none"/>
+    <g id="icon-2" data-name="icon" transform="translate(-275.255 230.938)">
+      <path id="패스_63840" data-name="패스 63840" d="M350.255,207.647l-10,4.88-10-4.88" transform="translate(0 -10.754)" fill="none" stroke="#fff" stroke-width="1.4"/>
+      <path id="패스_63841" data-name="패스 63841" d="M340.849,197.18l9.494-4.721-9.494-4.722-9.494,4.722Z" transform="translate(-0.594)" fill="none" stroke="#fff" stroke-width="1.4"/>
+      <path id="패스_63842" data-name="패스 63842" d="M350.255,217.679l-10,4.88-10-4.88" transform="translate(0 -16.173)" fill="none" stroke="#fff" stroke-width="1.4"/>
+    </g>
+  </g>
+</svg>

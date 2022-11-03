@@ -36,7 +36,8 @@
 /* reset */
 html, body, div, span, object,h1, h2, h3, h4, h5, h6, p, blockquote, a, button, abbr, address, img, q,dl, dt, dd, ol, ul, li,fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,article, aside, footer, header, section, summary{margin:0;padding:0;border:0;font:inherit;}
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display: block;}/* HTML5 display-role reset for older browsers */
-body,html{width: 1920px; height: 100%; margin: 0; padding: 0; font-family:'Noto Sans DemLight', "맑은 고딕", "Malgun Gothic", Dotum, sans-serif;font-size:13px;color: #333;letter-spacing:-0.045em !important;}
+body,html{width: 100%; height: 100%; margin: 0; padding: 0; font-family:'Noto Sans DemLight', "맑은 고딕", "Malgun Gothic", Dotum, sans-serif;font-size:13px;color: #333;letter-spacing:-0.045em !important;}
+body {width: 1920px;}
 
 ol, ul{list-style: none;}
 table{border-collapse: collapse;border-spacing: 0;}
@@ -113,7 +114,6 @@ a {
   color: #C73E3E;
   font-weight: bold;
 }
-
 .cBlue {
   color: #487EEB;
   font-weight: bold;
@@ -137,6 +137,23 @@ a {
   border-left: 1px solid #ddd;
 }
 
+.overflow-x {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  // &::-webkit-scrollbar {
+  //   height: 8px;
+  // }
+  // &::-webkit-scrollbar-thumb {
+  //   background: #404040;
+  //   border-radius: 10px;
+  //   transition: 0.3s;
+
+  // }
+  // &::-webkit-scrollbar-track {
+  //   background: #c2c2c2;
+  //   border-radius: 10px;
+  // }
+}
 
 .logoArea {
   text-align: center;
@@ -165,6 +182,18 @@ a {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    
+  }
+  &.type03 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .btn {
+      &:not(:first-child) {
+        margin-left: 20px;
+      }
+    }
   }
 
   //서규영 추가
@@ -950,7 +979,6 @@ a {
       background: url("../images/map/ico-layer-on.svg") no-repeat bottom center;
     }
   }
-
   &.listAdd {
     width: 46px; height: 46px;
     border: 1px solid #487EEB;
@@ -969,7 +997,35 @@ a {
       animation: delete 0.4s ease-in infinite alternate;
     }
   }
-
+  &.minMax {
+    width: 23px; height: 23px;
+    background: url("../images/map/ico-min.svg") no-repeat center;
+    &.type02 {
+      width: 20px; height: 20px;
+      background: url("../images/map/ico-min02.svg") no-repeat center;
+    }
+  }
+  &.preview {
+    width: 24px; height: 24px;
+    background: url("../images/map/ico-preview.svg") no-repeat center;
+    transition: 0.3s;
+    &:hover {
+      background: url("../images/map/ico-preview-hover.svg") no-repeat center;
+    }
+    &.on {
+      background: url("../images/map/ico-preview-hover.svg") no-repeat center;
+    }
+  }
+  &.grid {
+    width: 24px; height: 24px;
+    background: url("../images/map/ico-grid.svg") no-repeat center;
+    &:hover {
+      background: url("../images/map/ico-grid-hover.svg") no-repeat center;
+    }
+    &.on {
+      background: url("../images/map/ico-grid-hover.svg") no-repeat center;
+    }
+  }
 
 
   //서규영 추가
@@ -992,7 +1048,9 @@ a {
 
 .tooltipBox {
   position: relative;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   > p{ 
     position: relative;
     // display: inline-block;
@@ -1004,16 +1062,16 @@ a {
       right: -15px;
     }
   }
-
+  .grid {
+    margin-left: 5px;
+  }
 }
 
 .toolTip {
   display: inline-block;
   cursor: pointer;
   &.question {
-    position: absolute;
-    top: -4px;
-    right: -16px;
+    margin: -17px 0px 0px 5px;
     width: 14px; height: 15px;
     background: url("../images/map/ico-tooltip-question.svg") no-repeat center;
     &:hover {
@@ -1070,7 +1128,7 @@ a {
     background: url("../images/map/img-triangle.svg") no-repeat center;
   }
   &.type02 {
-    left: 73px;
+    left: 155px;
     &:before {
       left: 4px;
     }
@@ -1423,6 +1481,7 @@ p {
 
 .gradeTower {
   padding: 10px;
+  margin-top: 20px;
   background: #fff;
   border: 1px solid #D8DEE3;
   border-radius: 5px;
@@ -1456,6 +1515,17 @@ p {
       }
     }
     
+  }
+}
+
+.essential {
+  position: relative;
+  &:after {
+    content: '*';
+    position: absolute;
+    right: -10px;
+    top: 0;
+    color: #E9635B;
   }
 }
 
@@ -1605,7 +1675,7 @@ input[type="number"]::-webkit-inner-spin-button {
     font-family: 'Noto Sans';
     font-size: 14px;
     border-radius: 10px;
-    transition: 0.3s;
+    transition: color border 0.3s;
     color: #222;
     &::placeholder{
       color:#999;
@@ -1616,6 +1686,10 @@ input[type="number"]::-webkit-inner-spin-button {
     }
     &.disabled {
       background: #eee;
+    }
+    &.validation {
+      border: 1px solid #C73E3E;
+      background: #fff url("../images/ico/ico-validation.svg") no-repeat right 20px center;
     }
   }
   &.type02 {
@@ -2043,6 +2117,7 @@ textarea {
             &:not(:first-child) {
               border-left: 1px solid #D8DEE3;
             }
+            
           }
           &:not(:first-child) {
             th {
@@ -2051,6 +2126,7 @@ textarea {
             }
           }
         }
+        
       }
       tbody {
         tr {
@@ -2062,7 +2138,20 @@ textarea {
               background: #f5f5f5;
               font-weight: bold;
               text-align: left;
-              
+              &.thNone {
+                background: none;
+                text-align: center;
+                height: 48px;
+                padding: 0px 10px;
+                font-weight: normal;
+                text-align: center;
+                &:not(:first-child) {
+                  border-left: 1px solid #D8DEE3;
+                }
+              }
+            }
+            &[rowspan] {
+              border-right: 1px solid #d8dee3;
             }
           }
           td {
@@ -2085,6 +2174,25 @@ textarea {
               
             }
           }
+          &.total {
+            background: #F5F5F5;
+            th,td {
+              height: 48px;
+              padding: 0px 10px;
+              text-align: center;
+              &:not(:last-child) {
+                border-right: 1px solid #D8DEE3;
+              }
+            }
+            &:hover {
+              background: #F5F5F5;
+            }
+            &+tr {
+              th, td {
+                border-top: 1px solid #253258;
+              }
+            }
+          }
         }
       }
     }
@@ -2097,6 +2205,9 @@ textarea {
             td {}
             &:hover {
               background: #fff;
+              &.total {
+                background: #F5F5F5;
+              }
             }
           }
         }
@@ -2149,6 +2260,7 @@ textarea {
           &:hover {
             background: #F5F9FC;
           }
+          
           &:first-child {
             td {
               
@@ -2207,6 +2319,122 @@ textarea {
             td {
               border-top: 1px solid #253258;
             }
+          }
+        }
+      }
+    }
+  }
+  &.type02_3 {
+    table {
+      text-align: center;
+      border-top: 2px solid #253258;
+      font-family: 'Noto Sans';
+      font-size: 14px;
+      color: #222;
+      thead {
+        border-bottom: 1px solid #253258;
+        tr {
+          background: #F4F4F9;
+          th {
+            height: 40px;
+            padding: 0px 5px;
+            font-weight: bold;
+            &:not(:first-child) {
+              border-left: 1px solid #D8DEE3;
+            }
+            
+          }
+          &:not(:first-child) {
+            th {
+              border-top: 1px solid #D8DEE3;
+              border-left: 1px solid #D8DEE3;
+            }
+          }
+        }
+        
+      }
+      tbody {
+        tr {
+          transition: 0.3s;
+          border-bottom: 1px solid #D8DEE3;
+          th {
+            &[scope="row"] {
+              padding: 0px 20px;
+              background: #f5f5f5;
+              font-weight: bold;
+              text-align: left;
+              &.thNone {
+                background: none;
+                text-align: center;
+                height: 48px;
+                padding: 0px 10px;
+                font-weight: normal;
+                text-align: center;
+                &:not(:first-child) {
+                  border-left: 1px solid #D8DEE3;
+                }
+              }
+            }
+            &[rowspan] {
+              border-right: 1px solid #d8dee3;
+            }
+          }
+          td {
+            height: 48px;
+            padding: 0px 10px;
+            a {
+              &:hover, &:focus {
+                  &.underline {text-decoration: underline;}
+              }
+            }
+            &:not(:first-child) {
+              border-left: 1px solid #D8DEE3;
+            }
+          }
+          &:hover {
+            background: #F5F9FC;
+          }
+          &:first-child {
+            td {
+              
+            }
+          }
+          &.total {
+            background: #F5F5F5;
+            th,td {
+              height: 48px;
+              padding: 0px 10px;
+              text-align: center;
+              &:not(:last-child) {
+                border-right: 1px solid #D8DEE3;
+              }
+            }
+            &:hover {
+              background: #F5F5F5;
+            }
+            &+tr {
+              th, td {
+                border-top: 1px solid #253258;
+              }
+            }
+          }
+        }
+      }
+    }
+    &.notHover {
+      table {
+        thead {}
+        tbody {
+          tr {
+            th,td {}
+            td {}
+            &:hover {
+              background: #fff;
+              &.total {
+                background: #F5F5F5;
+              }
+            }
+            
           }
         }
       }
@@ -2644,6 +2872,14 @@ textarea {
             background: #F4F4F9;
             &:not(:first-child) {
               border-left: 1px solid #D8DEE3;
+            }
+            &[rowspan] {
+              border-right: 1px solid #D8DEE3;
+            }
+          }
+          &:not(:first-child) {
+            th, td {
+              border-top: 1px solid #D8DEE3;
             }
           }
         }
@@ -3428,6 +3664,7 @@ textarea {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  height: 100%;
   .imgArea {
     width: 100%;
     height: 100%;
@@ -3484,14 +3721,52 @@ textarea {
     overflow: hidden;
     .imgArea {
       width: 100%;
-      height: 525px;
-      max-height: 525px;
+      height: 580px;
+      max-height: 580px;
       overflow: hidden;
       .inner {
         width: 100%;
         height: 100%;
         overflow: hidden;
-        img {}
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+  &.type03 {
+    display: flex; justify-content: space-between; align-items: flex-start;
+    .imgArea {
+      width: 820px;
+      max-height: 100%;
+      img {}
+    }
+    .legendArea {
+      position: static;
+      width: 140px;
+      max-height: 100%;
+      margin-left: auto; 
+      margin-right: 0;
+      border-radius: 0;
+      box-shadow: none;
+      border-bottom: 1px solid #D8DEE3;
+      .legendCont {
+        max-height: calc(512px - 37px);
+      }
+    }
+  }
+}
+
+.winPop {
+  width: 100%;
+  #wrap {
+    height: 100%;
+    .mapInfo {
+      height: 100%;
+      margin-top: 0;
+      .imgArea {
+        height: 100%; max-height: 100%;
       }
     }
   }
@@ -3499,22 +3774,29 @@ textarea {
 
 .legendArea {
   position: absolute;
-  left: 0;
-  bottom: 0;
+  right: 10px;
+  bottom: 10px;
   width: 142px;
-  max-height: 525px;
+  max-height: 337px;
   border-top: 2px solid #253258;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 3px 6px rgba($color: #000, $alpha: 0.16);
   cursor: default;
   .legendHead {
-    display: flex; justify-content: center; align-items: center;
-    height: 48px;
+    display: flex; justify-content: flex-start; align-items: center;
+    height: 37px;
+    padding: 0px 10px;
     background: #F4F4F9;
-    border-bottom: 1px solid #253258;
+    // border-bottom: 1px solid #253258;
     .title {}
+    .btn {
+      margin-left: auto; margin-right: 0;
+    }
   }
   .legendCont {
     
-    max-height: calc(525px - 48px);
+    max-height: calc(337px - 37px);
     ul {
       background: #FFFFFF;
       li {
@@ -3523,7 +3805,7 @@ textarea {
         font-family: 'Noto Sans';
         font-size: 14px;
         color: #222222;
-        border-bottom: 1px solid #D8DEE3;
+        // border-bottom: 1px solid #D8DEE3;
         span {
           display: inline-block;
           width: 18px;
@@ -3534,6 +3816,9 @@ textarea {
         }
         p {
           width: calc(100% - 24px);
+        }
+        &:not(:first-child) {
+          padding-top: 0;
         }
       }
     }
@@ -3576,17 +3861,102 @@ textarea {
       }
     }
   }
+  &.min {
+    width: 140px; height: 35px;
+    border-top: none;
+    .legendHead {
+      width: 100%; height: 100%;
+      background: #253258;
+      border-bottom: none;
+      .title {
+        color: #fff;  
+      }
+      .btn {
+        &.minMax {
+          background: url("../images/map/ico-max02.svg") no-repeat center;
+        }
+      }
+    }
+    .legendCont {
+      display: none;
+    }
+  }
 }
 
 .layerArea {
   position: absolute;
-  bottom: 0;
-  right: 25px;
-  height: 0;
-  transition: 0.5s;
+  left: 10px;
+  bottom: 10px;
+  width: 290px;
+  max-height: 337px;
+  border-top: 2px solid #253258;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 3px 6px rgba($color: #000, $alpha: 0.16);
   cursor: default;
-  &.on {
-    height: 200px;
+
+  .layerHead {
+    display: flex; justify-content: space-between; align-items: center;
+    height: 37px;
+    padding: 0px 10px;
+    background: #F4F4F9;
+    .title {
+      position: relative;
+      padding-left: 22px;
+      &:before {
+        content: ''; position: absolute; left: 0; top: 0;
+        width: 20px; height: 20px;
+        background: url("../images/map/ico-layer.svg") no-repeat center;
+      }
+    }
+    .btn {}
+  }
+  .layerCont {
+    max-height: calc(337px - 37px);
+    background: #fff;
+    ul {
+      li {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px 10px;
+        font-family: 'Noto Sans';
+        font-size: 14px;
+        color: #222222;
+        p {
+          .ico {}
+          width: calc(100% - 62px);
+        }
+        .btnArea {
+          display: flex; justify-content: flex-end; align-items: center;
+          margin-left: auto; margin-right: 0;
+          .btn {
+            &:not(:first-child) {
+              margin-left: 10px;
+            }
+          }
+        }
+        &:not(:first-child) {
+          padding-top: 0;
+        }
+      }
+    }
+  }
+  &.min {
+    border-top: none;
+    width: 150px;
+    .layerHead {
+      background: #253258;
+      .title {
+        color: #fff;
+      }
+      .minMax {
+        background: url("../images/map/ico-max02.svg") no-repeat center;
+      }
+    }
+    .layerCont {
+      display: none;
+    }
   }
 }
 
@@ -3648,6 +4018,11 @@ textarea {
   padding: 20px;
   border-radius: 8px;
   background: #F5F9FC;
+  >.desc {
+    font-family: 'Noto Sans';
+    font-size: 16px;
+    color: #222;
+  }
   .address {
     li {
       display: flex; justify-content: flex-start; align-items: flex-start;
@@ -3687,6 +4062,7 @@ textarea {
         margin-top: 10px;
       }
     }
+    
   }
   &.type02 {
     display: flex;
@@ -3872,6 +4248,7 @@ textarea {
       }
       .popBody {
         position: relative;
+        height: calc(100% - 86px);
         margin-top: 30px;
         padding: 0px 40px;
         .cont {
@@ -4199,6 +4576,60 @@ textarea {
         display: flex;
       }
     }
+    &.dep02 {
+      position: static;
+      width: auto;
+      padding: 0;
+      margin-left: 10px;
+      background: none;
+      overflow: visible;
+    }
+  }
+  &.min {
+    position: absolute; right: 90px; bottom: 0;
+    width: 300px; height: 60px;
+    box-shadow: 3px 3px 4px rgba($color: #000, $alpha: 0.15);
+    .popup {
+      overflow: visible;
+      position: static;
+      width: 100%; height: 100%;
+      padding: 0;
+      background: none;
+      .inner {
+        width: 100% !important; min-width: 100% !important; 
+        left: 0 !important; top: 0 !important;
+        height: 100%;
+        padding: 15px 20px;
+        background: #253258;
+        border-radius: 10px 10px 0px 0px;
+        .popHead {
+          width: 100%;
+          padding-bottom: 0;
+          border-bottom: none;
+          cursor: default;
+          .title {
+            font-size: 20px;
+            color: #fff;
+          }
+          .btnArea {
+            margin-top: 0;
+            .btn {
+              &.minMax {
+                background: url("../images/map/ico-max.svg") no-repeat center;
+              }
+              &.popClose {
+                background: url("../images/ico/ico-close-white.svg") no-repeat center;
+              }
+            }
+          }
+        }
+        .popBody {
+          display: none;
+        }
+      }
+    }
+    
+    
   }
 }
 
@@ -4428,6 +4859,7 @@ textarea {
                   &.active {
                     a {
                       color: #222;
+                      font-weight: normal;
                       &:before {
                         background: #222;
                       }
@@ -4436,7 +4868,7 @@ textarea {
                 }
               }
               &.active {
-                a {
+                >a {
                   color: #353990;
                   font-weight: bold;
                   &:before {
@@ -4445,6 +4877,7 @@ textarea {
                 }
                 .dep02 {
                   display: block;
+
                 }
               }
             }
@@ -4591,6 +5024,16 @@ textarea {
       
     }
   }
+  &.type02 {
+    margin-top: auto; margin-bottom: 0;
+    font-size: 12px;
+    color: #999;
+    ul {
+      li {
+        p {}
+      }
+    }
+  }
 }
 
 .treeArea {
@@ -4601,13 +5044,16 @@ textarea {
   border: 1px solid #D8DEE3;
   .treeLayer {
     width: calc(100% / 2);
-    padding-left: 30px;
+    padding: 0px 30px;
     >ul {
       >li {
         p {
-          display: inline-block;
+          display: flex;
+          justify-content: space-between; align-items: center;
           &.checkbox {
-            input {}
+            input {
+              width: inherit;
+            }
             label {padding-left: 25px;}
           }
         }
@@ -4649,7 +5095,7 @@ textarea {
       position: relative;
       &:before {
         content: ''; position: absolute; left: 0; top: 0;
-        width: 1px; height: 290px;
+        width: 1px; height: 100%;
         background: url("../images/common/img-dashline.svg") no-repeat center;
       }
     }
@@ -4999,6 +5445,7 @@ textarea {
       }
     }
     .cont {
+      display: flex; flex-direction: column;
       height: calc(100% - 70px);
       padding: 14px 10px;
       .tocTool {
@@ -5013,9 +5460,10 @@ textarea {
       }
       .listGroup {
         margin-top: 14px;
+        margin-bottom: 20px;
         .groupBox {
           width: 100%;
-          padding: 0px 15px;
+          padding: 15px 15px 15px 15px;
           // overflow: hidden;
           border: 1px solid #D8DEE3;
           border-radius: 10px;
@@ -5023,7 +5471,7 @@ textarea {
           .label {
             display: flex; justify-content: space-between; align-items: center;
             width: 100%;
-            height: 60px;
+            // height: 60px;
             .labelTitle {
               position: relative;
               display: flex; justify-content: flex-start; align-items: center;
@@ -5031,7 +5479,7 @@ textarea {
               height: 100%;
               padding-left: 24px;
               &:before {
-                content: ''; position: absolute; left: 0; top: 21px; width: 18px; height: 18px;
+                content: ''; position: absolute; left: 0; top: 5px; width: 18px; height: 18px;
                 background: #999 url("../images/map/ico-toctriangle.svg") no-repeat center;
                 border-radius: 50%; 
               }
@@ -5046,7 +5494,7 @@ textarea {
               }
               .btn {
                 &.title {
-                  line-height: 60px;
+                  // line-height: 60px;
                   color: #222;
                   transition: color 0.3s;
                   cursor: pointer;
@@ -5093,7 +5541,7 @@ textarea {
                   }
                 }
               }
-              &+.list{display: block;}
+              &~.list{display: block;}
             }
             &.single {
               .labelTitle {
@@ -5113,7 +5561,7 @@ textarea {
                 .btn {
                   display: flex; align-items: center;
                   &.title {
-                    line-height: 60px;
+                    // line-height: 60px;
                     color: #222;
                     transition: color 0.3s;
                     cursor: pointer;
@@ -5153,7 +5601,7 @@ textarea {
                   width: 123px; padding: 15px;
                   background: #EEE;
                   box-shadow: 3px 3px 4px rgba($color: #000, $alpha: 0.15);
-                  z-index: 2;
+                  z-index: 3;
                   &:before {
                     content: '';
                     position: absolute;
@@ -5233,10 +5681,17 @@ textarea {
           .list {
             display: none;
             >ul {
-              padding-bottom: 10px;
+              // padding-bottom: 10px;
+              >li {
+                padding: 13px 0px 13px 15px;
+                &:first-child {
+                  padding-top: 30px;
+                }
+              }
               li {
                 display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;
-                height: 53px; padding-left: 15px;
+                // padding-left: 15px;
+
                 p {
                   width: calc(100% - 105px);
                 }
@@ -5257,7 +5712,7 @@ textarea {
                     width: 123px; padding: 15px;
                     background: #EEE;
                     box-shadow: 3px 3px 4px rgba($color: #000, $alpha: 0.15);
-                    z-index: 2;
+                    z-index: 3;
                     &:before {
                       content: '';
                       position: absolute;
@@ -5335,6 +5790,10 @@ textarea {
                 &:not(:last-child) {
                   border-bottom: 1px solid #D8DEE3;
                 }
+                &:last-child {
+                  padding-bottom: 0;
+                }
+
                 // 버튼1개
                 &.type02 {
                   justify-content: flex-start;
@@ -5367,7 +5826,7 @@ textarea {
                   padding: 0;
                   height: auto;
                   .groupBox {
-                    // padding: 0;
+                    padding-right: 0;
                     border: none;
                     background: #F5F5F5;
                     .label {
@@ -5397,7 +5856,10 @@ textarea {
                     }
                   }
                 }
-                
+                .rangeArea {
+                  margin-left: auto; margin-right: 0; margin-top: 6px;
+                }
+
               }
             }
             &.active {
@@ -5498,7 +5960,7 @@ textarea {
                   width: 100%;
                   padding-left: 0px;
                   &:before {
-                    content: ''; position: absolute; left: inherit; right: 0px; top: 21px; width: 18px; height: 18px;
+                    content: ''; position: absolute; left: inherit; right: 0px; top: 5px; width: 18px; height: 18px;
                     background: #999 url("../images/map/ico-toctriangle.svg") no-repeat center;
                     border-radius: 50%; 
                   }
@@ -5550,11 +6012,11 @@ textarea {
               }
               .list {
                 .stepFunc {
-                  margin-top: 10px;
+                  margin-top: 20px;
                 }
                 >ul {
                   margin-top: 20px;
-                  padding-bottom: 10px;
+                  // padding-bottom: 10px;
                   li {
                     p {
                     }
@@ -6629,6 +7091,7 @@ textarea {
 .loadArea {
   width: 100%;
   padding-bottom: 20px;
+  margin-top: 20px;
   .load {
     width: 100%;
     background: #F5F9FC;
@@ -6660,6 +7123,7 @@ textarea {
 
 .playArea {
   padding: 20px 0px;
+  margin-top: 20px;
   background: #F5F9FC;
   margin-bottom: 20px;
   .btnArea {
@@ -7196,6 +7660,55 @@ textarea {
   }
 }
 
+.dateArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+  .btn {
+    width: 26px; height: 26px;
+    border: 1px solid #D8DEE3;
+    border-radius: 50px;
+    background: #fff url("../images/ico/ico-datearrow.svg") no-repeat center ;
+    &.prev {}
+    &.next {
+      transform: rotate(180deg);
+    }
+    &:hover {
+      animation: date 0.4s ease-in infinite alternate;
+    }
+  }
+  .date {
+    display: flex; justify-content: center; align-items: center;
+    margin: 0px 10px;
+    p {
+      font-family: 'Noto Sans';
+      font-weight: bold;
+      font-size: 22px;
+      color: #222;
+      &.year {}
+      &.month {
+        margin-left: 5px;
+      }
+    }
+  } 
+  
+}
+
+.rangeArea {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 8px;
+  // margin: -12px 0px 10px 0px;
+  label {
+    margin-right: 10px;
+    font-family: 'Noto Sans';
+    font-size: 12px;
+    color: #666;
+  }
+}
+
 
 
 
@@ -7263,10 +7776,35 @@ textarea {
   
 }
 
+.rangeArea {
+  .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    border: 1px solid #666666;
+    background: #fff;
+  }
+  .ui-slider-horizontal {
+    height: 4px;
+  }
+  .ui-slider .ui-slider-handle {
+    width: 14px; height: 14px;
+    top: -5px;
+    border-radius: 50%;
+  }
+  .ui-widget-header {
+    background: #5775E9;
+  }
+  
+  .ui-widget-content {
+    border: none;
+    background: #D8DEE3;
+
+  }
+  
+
+}
+
+
 
 // amchart custom
-
-
 .amchart {
   font-family: 'Noto Sans';
   font-size: 14px;
@@ -7289,8 +7827,6 @@ textarea {
 
 
 // animation
-
-
 @keyframes bar-1 {
   0% { top: 14px; height: 72px }
   50% { top: 30px; height: 40px }
@@ -7321,3 +7857,12 @@ textarea {
     background: url("../images/map/ico-listdelete.svg") no-repeat left 5px center;
   }
 }
+
+@keyframes date {
+  from {
+  }
+  to {
+    background: url("../images/ico/ico-datearrow.svg") no-repeat left 5px center;
+  }
+}
+

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="">
+<meta name="description" content="">
+
+<!-- 오픈그래프 이미지의 경우 최소한 600 x 315 px은 되어야 하며, 1200 x 630 px을 권장함 -->
+<meta property="og:image" content="">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:url" content="">
+<!-- 다음의 태그는 필수는 아니지만, 포함하는 것을 추천함 -->
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<link rel="stylesheet" href="../lib/swiper/css/swiper.css">
+<link rel="stylesheet" href="../lib/jquery-ui.css">
+<link rel="stylesheet" href="../lib/splitter/jquery.splitter.css">
+
+<!-- RealGrid -->
+<script src="../lib/realgrid-lic.js"></script>
+<link href="../lib/realgrid.2.5.3/realgrid-style.css" rel="stylesheet" />
+<script src="../lib/realgrid.2.5.3/realgrid.2.5.3.min.js"></script>
+<script src="../lib/realgrid.2.5.3/libs/jszip.min.js"></script>
+
+
+<link rel="stylesheet" href="../css/common.css">
+<script src="../lib/jquery-1.12.4.js"></script>
+<script src="../lib/jquery-ui.js"></script>
+<script src="../lib/swiper/js/swiper.js"></script>
+<script src="../lib/splitter/jquery.splitter.js"></script>
+<script src="../lib/mychart/chart.js"></script>
+<script src="../js/chartdata.js"></script>
+<script src="../js/ui.js"></script>
+
+<title>Title</title>
+
+ 
+</head>
+
+<style>
+    #wrap {
+        padding-bottom: 100px;
+    }
+    #wrap > section {
+        padding: 0px 100px;
+    }
+    #wrap > section h1 {
+        padding-top: 100px;
+        font-size: 22px; color: #222;
+        font-weight: bold;
+    }
+    .flex {
+        display: flex; justify-content: center; align-items: center;
+    }
+</style>
+
+<body>
+    <!-- wrap -->
+    <div id="wrap" style="overflow-y: visible;">
+        <!--header-->
+        <header id="header">
+            <!-- mapHeader -->
+<section class="mapHeader">
+
+    <!-- formArea -->
+    <article class="formArea">
+        <p >시계열 조회</p>
+        <!-- selectArea -->
+        <div class="selectArea">
+            <select name="" id="">
+                <option value="">2019년</option>
+            </select>
+            <select name="" id="">
+                <option value="">1월 1일 기준</option>
+            </select>
+        </div>
+        <!-- //selectArea -->
+    </article>
+    <!-- //formArea -->
+
+    <!-- toggleArea -->
+    <article class="toggleArea">
+        <!-- bg -->
+        <div class="bg">
+            <input type="checkbox" id="s-chk" class="switch">
+            <div class="key"></div>
+            <div class="name">
+                <span>토지</span>
+                <span>주택</span>
+            </div>
+        </div>
+        <!-- //bg -->
+
+    </article>
+    <!-- //toggleArea -->
+
+    <!-- locationArea -->
+    <article class="locationArea">
+        <!-- location -->
+        <div class="location">
+            <button type="button" class="btn">
+                <span class="loca01">시도</span>
+                <span class="loca02">시/군/구</span>
+                <span class="loca03">읍/면/동</span>
+            </button>
+            <!-- <ul>
+                <li>
+                    <p>시도</p>
+                </li>
+                <li>
+                    <p>시/군/구</p>
+                </li>
+                <li>
+                    <p>읍/면/동</p>
+                </li>
+            </ul> -->
+        </div>
+        <!-- //location -->
+
+        <!-- locationList -->
+        <div class="locationList">
+
+            <div class="listCont">
+                <ul>
+                    <li>
+                        <button type="button" class="btn">작업중</button>
+                    </li>
+                    <li>
+                        <button type="button" class="btn">작업중</button>
+                    </li>
+                    <li>
+                        <button type="button" class="btn">작업중</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- //locationList -->
+        
+    </article>
+    <!-- //locationArea -->
+
+</section>
+<!-- //mapHeader -->
+        </header>
+
+        <section>
+            <h1>type01</h1>
+
+            <article class="tableArea">
+                <!-- table -->
+                <div class="table">
+                    <table>
+                        <caption></caption>
+                        <colgroup>
+                            <col style="width: 58px;">
+                            <col style="width: 58px;">
+                            <col style="width: 59px;">
+                            <col style="width: 59px;">
+                            <col style="width: 54px;">
+                            <col style="width: 54px;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col" colspan="4">일반</th>
+                                <th scope="col" rowspan="2">이의신청</th>
+                                <th scope="col" rowspan="2">기준월</th>
+                            </tr>
+                            <tr>
+                                <th scope="col">일련번호</th>
+                                <th scope="col">읍면동</th>
+                                <th scope="col">지번</th>
+                                <th scope="col">동구분</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1442</td>
+                                <td>서구1동</td>
+                                <td>1-1668</td>
+                                <td>10</td>
+                                <td></td>
+                                <td>1.1</td>
+                            </tr>
+                            <tr>
+                                <td>1442</td>
+                                <td>서구1동</td>
+                                <td>1-1668</td>
+                                <td>10</td>
+                                <td></td>
+                                <td>1.1</td>
+                            </tr>
+                            <tr>
+                                <td>1442</td>
+                                <td>서구1동</td>
+                                <td>1-1668</td>
+                                <td>10</td>
+                                <td></td>
+                                <td>1.1</td>
+                            </tr>
+                            <tr>
+                                <td>1442</td>
+                                <td>서구1동</td>
+                                <td>1-1668</td>
+                                <td>10</td>
+                                <td></td>
+                                <td>1.1</td>
+                            </tr>
+                            <tr>
+                                <td>1442</td>
+                                <td>서구1동</td>
+                                <td>1-1668</td>
+                                <td>10</td>
+                                <td></td>
+                                <td>1.1</td>
+                            </tr>
+                            <tr>
+                                <td>1442</td>
+                                <td>서구1동</td>
+                                <td>1-1668</td>
+                                <td>10</td>
+                                <td></td>
+                                <td>1.1</td>
+                            </tr>
+                            <tr>
+                                <td>1442</td>
+                                <td>서구1동</td>
+                                <td>1-1668</td>
+                                <td>10</td>
+                                <td></td>
+                                <td>1.1</td>
+                            </tr>
+                            <tr>
+                                <td>1442</td>
+                                <td>서구1동</td>
+                                <td>1-1668</td>
+                                <td>10</td>
+                                <td></td>
+                                <td>1.1</td>
+                            </tr>
+                            <tr>
+                                <td>1442</td>
+                                <td>서구1동</td>
+                                <td>1-1668</td>
+                                <td>10</td>
+                                <td></td>
+                                <td>1.1</td>
+                            </tr>
+                            <tr>
+                                <td>1442</td>
+                                <td>서구1동</td>
+                                <td>1-1668</td>
+                                <td>10</td>
+                                <td></td>
+                                <td>1.1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+        </section>
+
+        <section>
+            <h1>type01 - .cScroll</h1>
+
+            <article class="tableArea">
+                <!-- table -->
+                <div class="table cScroll" style="width: 250px; height: 250px;">
+                    <table>
+                        <caption></caption>
+                        <colgroup>
+                            <col style="width: 58px;">
+                            <col style="width: 58px;">
+                            <col style="width: 59px;">
+                            <col style="width: 59px;">
+                            <col style="width: 54px;">
+                            <col style="width: 54px;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col" colspan="4">일반</th>
+                                <th scope="col" rowspan="2">이의신청</th>
+                                <th scope="col" rowspan="2">기준월</th>
+                            </tr>
+                            <tr>
+                                <th scope="col">일련번호</th>
+                                <th scope="col">읍면동</th>
+                                <th scope="col">지번</th>
+                                <th scope="col">동구분</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1442</td>
+                                <td>서구1동</td>
+                                <td>1-1668</td>
+                                <td>10</td>
+                                <td></td>
+                                <td>1.1</td>
+                            </tr>
+                            <tr>
+                                <td>1442</td>
+                                <td>서구1동</td>
+                                <td>1-1668</td>
+                                <td>10</td>
+                                <td></td>
+                                <td>1.1</td>
+                            </tr>
+                            <tr>
+                                <td>1442</td>
+                                <td>서구1동</td>
+                                <td>1-1668</td>
+                                <td>10</td>
+                                <td></td>
+                                <td>1.1</td>
+                            </tr>
+                            <tr>
+                                <td>1442</td>
+                                <td>서구1동</td>
+                                <td>1-1668</td>
+                                <td>10</td>
+                                <td></td>
+                                <td>1.1</td>
+                            </tr>
+                            <tr>
+                                <td>1442</td>
+                                <td>서구1동</td>
+                                <td>1-1668</td>
+                                <td>10</td>
+                                <td></td>
+                                <td>1.1</td>
+                            </tr>
+                            <tr>
+                                <td>1442</td>
+                                <td>서구1동</td>
+                                <td>1-1668</td>
+                                <td>10</td>
+                                <td></td>
+                                <td>1.1</td>
+                            </tr>
+                            <tr>
+                                <td>1442</td>
+                                <td>서구1동</td>
+                                <td>1-1668</td>
+                                <td>10</td>
+                                <td></td>
+                                <td>1.1</td>
+                            </tr>
+                            <tr>
+                                <td>1442</td>
+                                <td>서구1동</td>
+                                <td>1-1668</td>
+                                <td>10</td>
+                                <td></td>
+                                <td>1.1</td>
+                            </tr>
+                            <tr>
+                                <td>1442</td>
+                                <td>서구1동</td>
+                                <td>1-1668</td>
+                                <td>10</td>
+                                <td></td>
+                                <td>1.1</td>
+                            </tr>
+                            <tr>
+                                <td>1442</td>
+                                <td>서구1동</td>
+                                <td>1-1668</td>
+                                <td>10</td>
+                                <td></td>
+                                <td>1.1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+        </section>
+
+        
+    </div>
+    <!-- //wrap -->
+</body>
+</html>

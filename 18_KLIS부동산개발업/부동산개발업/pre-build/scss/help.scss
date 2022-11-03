@@ -1,0 +1,174 @@
+@charset "utf-8";
+body{
+    &.winPop {
+        background-color: #F4F4F4;
+        #content {
+          padding: 0;
+        } 
+        #wrap {
+            width: 1280px;
+            // width: 100%;
+            margin: 0px auto;
+        }
+        .contArea{
+            &.margenta{
+                // 부동산개발업
+                >.head{
+                    position : relative; display : flex; align-items : center;justify-content:space-between; width:100%;height:50px;padding:0 10px 0 20px;
+                    background-color: #B84271 !important;
+                    &:after{
+                        content: '';
+                        width: 420px;
+                        height: 50px;
+                        position: absolute;
+                        right: 0;
+                        background: url('../images/bg/bg-margenta.png') no-repeat right !important;
+                        background-size: 420px 50px;
+                    }
+                }
+                .titArea .titPage{color: #842048 !important;}
+                .table{border-color: #842048 !important;}
+                .table{border-top: 2px solid #842048 !important;}
+                .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active{
+                    background-color: #FFEFF8 !important;
+                }
+                .titSecBox .arrowBullet:before{background: url("../images/ico/common/ico-right-arrow-fill-margenta.png") no-repeat center !important;}
+                .bgPrimary2{background-color: #9c315c !important;}
+                .table table th{background-color: #FFEFF8 !important;}
+                .fileListArea.type02 .head{background-color: #fff !important;}
+                .fileListArea .my_button{background-color:#B84271 !important;}
+                .ui-jqgrid .ui-jqgrid-pager{background-color:#ffffff !important;}
+                .resultContainer .resultArea .numOfCase.type02 em, .resultContainer .resultArea .pages.type02 em, .resultContainer .resultArea .unit.type02 em{color: #D64404;}
+                .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{color:#842048;}
+                .fileListArea .desc span{color:#B84271 !important;}
+            }
+            &.blue{
+                //개발부담금
+                >.head{
+                    position : relative; display : flex; align-items : center;justify-content:space-between; width:100%;height:50px;padding:0 10px 0 20px;
+                    background-color: #577BB5 !important;
+                    &:after{
+                        content: '';
+                        width: 420px;
+                        height: 50px;
+                        position: absolute;
+                        right: 0;
+                        background: url('../images/bg/bg-blue.png') no-repeat right !important;
+                        background-size: 420px 50px;
+                    }
+                }
+                .titArea .titPage{color: #345284 !important;}
+                .table{border-color: #345284 !important;}
+                .table{border-top: 2px solid #345284 !important;}
+                .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active{
+                    background-color: #F5F8FC !important;
+                }
+                .titSecBox .arrowBullet:before{background: url("../images/ico/common/ico-right-arrow-fill-blue.png") no-repeat center !important;}
+                .bgPrimary2{background-color: #345284 !important;}
+                .table table th{background-color: #F5F8FC !important;}
+                .fileListArea.type02 .head{background-color: #fff !important;}
+                .fileListArea .my_button{background-color:#577BB5 !important;}
+                .ui-jqgrid .ui-jqgrid-pager{background-color:#ffffff !important;}
+                .resultContainer .resultArea .numOfCase.type02 em, .resultContainer .resultArea .pages.type02 em, .resultContainer .resultArea .unit.type02 em{color: #D64404;}
+                .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{color:#345284;}
+                .fileListArea .desc span{color:#345284 !important;}
+            }
+
+            &.purple{
+                //토지개발허가
+                >.head{
+                    position : relative; display : flex; align-items : center;justify-content:space-between; width:100%;height:50px;padding:0 10px 0 20px;
+                    background-color: #974DCF !important;
+                    &:after{
+                        content: '';
+                        width: 420px;
+                        height: 50px;
+                        position: absolute;
+                        right: 0;
+                        background: url('../images/bg/bg-purple.png') no-repeat right !important;
+                        background-size: 420px 50px;
+                    }
+                }
+                .titArea .titPage{color: #4E3484 !important;}
+                .table{border-color: #4E3484 !important;}
+                .table{border-top: 2px solid #4E3484 !important;}
+                .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active{
+                    background-color: #F7F1FF !important;
+                }
+                .titSecBox .arrowBullet:before{background: url("../images/ico/common/ico-right-arrow-fill-purple.png") no-repeat center !important;}
+                .bgPrimary2{background-color: #4E3484 !important;}
+                .table table th{background-color: #F7F1FF !important;}
+                .fileListArea.type02 .head{background-color: #fff !important;}
+                .fileListArea .my_button{background-color:#4E3484 !important;}
+                .ui-jqgrid .ui-jqgrid-pager{background-color:#ffffff !important;}
+                .resultContainer .resultArea .numOfCase.type02 em, .resultContainer .resultArea .pages.type02 em, .resultContainer .resultArea .unit.type02 em{color: #D64404;}
+                .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{color:#4E3484;}
+                .fileListArea .desc span{color:#4E3484 !important;}
+            }
+            &.green{
+                //부동산중개업, 공인중개사
+                >.head{
+                    position : relative; display : flex; align-items : center;justify-content:space-between; width:100%;height:50px;padding:0 10px 0 20px;
+                    background-color: #33943C !important;
+                    &:after{
+                        content: '';
+                        width: 420px;
+                        height: 50px;
+                        position: absolute;
+                        right: 0;
+                        background: url('../images/bg/bg-green.png') no-repeat right !important;
+                        background-size: 420px 50px;
+                    }
+                }
+                .titArea .titPage{color: #1F5A2F !important;}
+                .table{border-color: #1F5A2F !important;}
+                .table{border-top: 2px solid #1F5A2F !important;}
+                .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active{
+                    background-color: #EFFCF3 !important;
+                }
+                .titSecBox .arrowBullet:before{background: url("../images/ico/common/ico-right-arrow-fill-green.png") no-repeat center !important;}
+                .bgPrimary2{background-color: #1F5A2F !important;}
+                .table table th{background-color: #EFFCF3 !important;}
+                .fileListArea.type02 .head{background-color: #fff !important;}
+                .fileListArea .my_button{background-color:#2A8338 !important;}
+                .ui-jqgrid .ui-jqgrid-pager{background-color:#ffffff !important;}
+                .resultContainer .resultArea .numOfCase.type02 em, .resultContainer .resultArea .pages.type02 em, .resultContainer .resultArea .unit.type02 em{color: #D64404;}
+                .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{color:#1F5A2F;}
+                .fileListArea .desc span{color:#1F5A2F !important;}
+
+            }
+            &.orange{
+                //운영관리
+                >.head{
+                    position : relative; display : flex; align-items : center;justify-content:space-between; width:100%;height:50px;padding:0 10px 0 20px;
+                    background-color: #e6700a !important;
+                    &:after{
+                        content: ''; 
+                        width: 420px;
+                        height: 50px;
+                        position: absolute;
+                        right: 0;
+                        background: url('../images/bg/bg-orange.png') no-repeat right !important;
+                        background-size: 420px 50px;
+                    }
+                }
+                .titArea .titPage{color: #C94907 !important;}
+                .table{border-color: #C94907 !important;}
+                .table{border-top: 2px solid #C94907 !important;}
+                .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active{
+                    background-color: #fcf7ef !important;
+                }
+                .titSecBox .arrowBullet:before{background: url("../images/ico/common/ico-right-arrow-fill-orange.png") no-repeat center !important;}
+                .bgPrimary2{background-color: #C94907 !important;}
+                .table table th{background-color: #fcf7ef !important;}
+                .fileListArea.type02 .head{background-color: #fff !important;}
+                .fileListArea .my_button{background-color:#E6700A !important;}
+                .ui-jqgrid .ui-jqgrid-pager{background-color:#ffffff !important;}
+                .resultContainer .resultArea .numOfCase.type02 em, .resultContainer .resultArea .pages.type02 em, .resultContainer .resultArea .unit.type02 em{color: #D64404;}
+                .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{color:#C94907;}
+                .fileListArea .desc span{color:#E6700A !important;}
+
+            }
+        }
+    }
+}

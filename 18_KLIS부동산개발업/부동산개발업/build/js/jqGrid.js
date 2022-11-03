@@ -8221,7 +8221,7 @@ $(function(){
         colNames:['번호','제목','등록일'],
         colModel:[
             {name:'num157',index:'num157', width: 70, align: 'center'},
-            {name:'dataCell02_gt157',index:'dataCell02_gt157', width: 543, align: 'center'},
+            {name:'dataCell02_gt157',index:'dataCell02_gt157', width: 557, align: 'center'},
             {name:'dataCell03_gt157',index:'dataCell03_gt157', width: 120, align: 'center'},
         ],
         hoverrows: false,
@@ -8580,6 +8580,254 @@ $(function(){
     for(var i= 0; i <= gridTableData164.length; i++)
     $('#gridTable164').jqGrid('addRowData',i + 1, gridTableData164[i]);
 
+
+    /* 현황/통계 - 현황 조회 - 건축물인허가 조회 - 건축물인허가 정보상세 win팝업 - 사업시행자 정보*/
+    $('#gridTable165').jqGrid({
+        datatype: "local",
+        height: "auto",
+        colNames:['순번','대표여부','시행자구분','상호<br />(법인명)','성명<br />(대표자명)','주민등록번호<br />(법인등록번호)','주소','전화번호','이동전화','이메일'],
+        colModel:[
+            {name:'num165',index:'num165', width: 70, align: 'center'},
+            {name:'dataCell02_gt165',index:'dataCell02_gt165', width: 100, align: 'center'},
+            {name:'dataCell03_gt165',index:'dataCell03_gt165', width: 150, align: 'center'},
+            {name:'dataCell04_gt165',index:'dataCell04_gt165', width: 220, align: 'center'},
+            {name:'dataCell05_gt165',index:'dataCell05_gt165', width: 130, align: 'center'},
+            {name:'dataCell06_gt165',index:'dataCell06_gt165', width: 160, align: 'center'},
+            {name:'dataCell07_gt165',index:'dataCell07_gt165', width: 400, align: 'center'},
+            {name:'dataCell08_gt165',index:'dataCell08_gt165', width: 150, align: 'center'},
+            {name:'dataCell09_gt165',index:'dataCell09_gt165', width: 150, align: 'center'},
+            {name:'dataCell10_gt165',index:'dataCell10_gt165', width: 250, align: 'center'},
+        ],
+        hoverrows: false,
+        cmTemplate: {
+            resizable: false
+        }
+    });
+    
+    var gridTableData165 = [ 
+        {
+            num165:'1',
+            dataCell02_gt165:'대표여부',
+            dataCell03_gt165:'시행자구분',
+            dataCell04_gt165:'(주)상호명또는법인명',
+            dataCell05_gt165:'여덟글자이름있냐',
+            dataCell06_gt165:'123456-1234567',
+            dataCell07_gt165:'서울시 강남구 청담동 청담번지 청담빌라 1123호',
+            dataCell08_gt165:'02-123-4567',
+            dataCell09_gt165:'010-1234-5678',
+            dataCell10_gt165:'이메일@naver.com',
+        },
+    ];
+
+    for (var i = 0; i < 9; i++) {
+        gridTableData165.push({
+            num165:i+2,
+            dataCell02_gt165:'대표여부',
+            dataCell03_gt165:'시행자구분',
+            dataCell04_gt165:'(주)상호명또는법인명',
+            dataCell05_gt165:'홍길동',
+            dataCell06_gt165:'123456-1234567',
+            dataCell07_gt165:'서울시 강남구 청담동 청담번지 청담빌라 1123호',
+            dataCell08_gt165:'02-123-4567',
+            dataCell09_gt165:'010-1234-5678',
+            dataCell10_gt165:'이메일@naver.com',
+        });
+    }
+
+    for(var i= 0; i <= gridTableData165.length; i++)
+    $('#gridTable165').jqGrid('addRowData',i + 1, gridTableData165[i]);
+
+
+    /* 현황/통계 - 현황 조회 - 건축물인허가 조회 - 건축물인허가 정보상세 win팝업 - 대상토지*/
+    $('#gridTable166').jqGrid({
+        datatype: "local",
+        height: "auto",
+        colNames:['순번','대표여부','개발제한<br />구역여부','토지소재지','관련지번','소유구분','소유자명','주민등록번호<br />(법인등록번호)','토지면적(㎡)','지목'],
+        colModel:[
+            {name:'num166',index:'num166', width: 70, align: 'center'},
+            {name:'dataCell02_gt106',index:'dataCell02_gt166', width: 100, align: 'center'},
+            {name:'dataCell03_gt166',index:'dataCell03_gt166', width: 150, align: 'center'},
+            {name:'dataCell04_gt166',index:'dataCell04_gt166', width: 400, align: 'center'},
+            {name:'dataCell05_gt166',index:'dataCell05_gt166', width: 100, align: 'center'},
+            {name:'dataCell06_gt166',index:'dataCell06_gt166', width: 100, align: 'center'},
+            {name:'dataCell07_gt166',index:'dataCell07_gt166', width: 130, align: 'center'},
+            {name:'dataCell08_gt166',index:'dataCell08_gt166', width: 160, align: 'center'},
+            {name:'dataCell09_gt166',index:'dataCell09_gt166', width: 120, align: 'center'},
+            {name:'dataCell10_gt166',index:'dataCell10_gt166', width: 150, align: 'center'},
+        ],
+        hoverrows: false,
+        cmTemplate: {
+            resizable: false
+        }
+    });
+    
+    var gridTableData166 = [ 
+        {
+            num166:'1',
+            dataCell02_gt166:'대표여부',
+            dataCell03_gt166:'개발제한',
+            dataCell04_gt166:'서울시 강남구 청담동 청담번지 청담빌라 1123호',
+            dataCell05_gt166:'1248-23',
+            dataCell06_gt166:'소유',
+            dataCell07_gt166:'여덟글자이름있냐',
+            dataCell08_gt166:'123456-1234567',
+            dataCell09_gt166:'2,000',
+            dataCell10_gt166:'지목명',
+        },
+    ];
+
+    for (var i = 0; i < 9; i++) {
+        gridTableData166.push({
+            num166:i+2,
+            dataCell02_gt166:'대표여부',
+            dataCell03_gt166:'개발제한',
+            dataCell04_gt166:'서울시 강남구 청담동 청담번지 청담빌라 1123호',
+            dataCell05_gt166:'1248-23',
+            dataCell06_gt166:'소유',
+            dataCell07_gt166:'여덟글자이름있냐',
+            dataCell08_gt166:'123456-1234567',
+            dataCell09_gt166:'2,000',
+            dataCell10_gt166:'지목명',
+        });
+    }
+
+    for(var i= 0; i <= gridTableData166.length; i++)
+    $('#gridTable166').jqGrid('addRowData',i + 1, gridTableData166[i]);
+
+
+    /* 현황/통계 - 현황 조회 - 건축물인허가 조회 - 건축물인허가 정보상세 win팝업 - 허가사항변경 정보 이력*/
+    $('#gridTable167').jqGrid({
+        datatype: "local",
+        height: "auto",
+        colNames:['민원구분','건축구분','접수일자','처리일자','주용도','토지면적(㎡)'],
+        colModel:[
+            // {name:'num166',index:'num166', width: 70, align: 'center'},
+            {name:'dataCell01_gt167',index:'dataCell02_gt167', width: 280, align: 'center'},
+            {name:'dataCell02_gt167',index:'dataCell03_gt167', width: 280, align: 'center'},
+            {name:'dataCell03_gt167',index:'dataCell04_gt167', width: 100, align: 'center'},
+            {name:'dataCell04_gt167',index:'dataCell05_gt167', width: 100, align: 'center'},
+            {name:'dataCell05_gt167',index:'dataCell06_gt167', width: 130, align: 'center'},
+            {name:'dataCell06_gt167',index:'dataCell07_gt167', width: 130, align: 'center'},
+        ],
+        hoverrows: false,
+        cmTemplate: {
+            resizable: false
+        }
+    });
+    
+    var gridTableData167 = [ 
+        {
+            // num166:'1',
+            dataCell01_gt167:'민원구분명 ',
+            dataCell02_gt167:'건축구분명 ',
+            dataCell03_gt167:'2022-12-31',
+            dataCell04_gt167:'2022-12-31',
+            dataCell05_gt167:'용도명',
+            dataCell06_gt167:'2,000',
+        },
+    ];
+
+    for (var i = 0; i < 9; i++) {
+        gridTableData167.push({
+            // num166:i+2,
+            dataCell01_gt167:'민원구분명 ',
+            dataCell02_gt167:'건축구분명 ',
+            dataCell03_gt167:'2022-12-31',
+            dataCell04_gt167:'2022-12-31',
+            dataCell05_gt167:'용도명',
+            dataCell06_gt167:'2,000',
+        });
+    }
+
+    for(var i= 0; i <= gridTableData167.length; i++)
+    $('#gridTable167').jqGrid('addRowData',i + 1, gridTableData167[i]);
+
+
+    /* 현황/통계 - 현황 조회 - 건축물인허가 조회 - 토지정보 win팝업 - 토지소유자 정보 이력*/
+    $('#gridTable168').jqGrid({
+        datatype: "local",
+        height: "auto",
+        colNames:['변동일자','소유자명','소유구분','주민등록번호<br />법인등록번호','소유자주소','변동원인'],
+        colModel:[
+            // {name:'num166',index:'num166', width: 70, align: 'center'},
+            {name:'dataCell01_gt168',index:'dataCell02_gt168', width: 100, align: 'center'},
+            {name:'dataCell02_gt168',index:'dataCell03_gt168', width: 130, align: 'center'},
+            {name:'dataCell03_gt168',index:'dataCell04_gt168', width: 130, align: 'center'},
+            {name:'dataCell04_gt168',index:'dataCell05_gt168', width: 150, align: 'center'},
+            {name:'dataCell05_gt168',index:'dataCell06_gt168', width: 400, align: 'center'},
+            {name:'dataCell06_gt168',index:'dataCell07_gt168', width: 150, align: 'center'},
+        ],
+        hoverrows: false,
+        cmTemplate: {
+            resizable: false
+        }
+    });
+    
+    var gridTableData168 = [ 
+        {
+            // num166:'1',
+            dataCell01_gt168:'2022-12-31 ',
+            dataCell02_gt168:'여덟글자이름있냐',
+            dataCell03_gt168:'소유구분명',
+            dataCell04_gt168:'123456-1234567',
+            dataCell05_gt168:'서울시 강남구 청담동 청담번지 청담빌라 1123호',
+            dataCell06_gt168:'변동원인명',
+        },
+    ];
+
+    for (var i = 0; i < 9; i++) {
+        gridTableData168.push({
+            // num166:i+2,
+            dataCell01_gt168:'2022-12-31 ',
+            dataCell02_gt168:'여덟글자이름있냐',
+            dataCell03_gt168:'소유구분명',
+            dataCell04_gt168:'123456-1234567',
+            dataCell05_gt168:'서울시 강남구 청담동 청담번지 청담빌라 1123호',
+            dataCell06_gt168:'변동원인명',
+        });
+    }
+
+    for(var i= 0; i <= gridTableData168.length; i++)
+    $('#gridTable168').jqGrid('addRowData',i + 1, gridTableData168[i]);
+
+
+    /* 현황/통계 - 현황 조회 - 건축물인허가 조회 - 토지정보 win팝업 - 토지이용현황*/
+    $('#gridTable169').jqGrid({
+        datatype: "local",
+        height: "auto",
+        colNames:['용도지구구역명','저촉여부','기타'],
+        colModel:[
+            // {name:'num166',index:'num166', width: 70, align: 'center'},
+            {name:'dataCell01_gt169',index:'dataCell02_gt169', width: 180, align: 'center'},
+            {name:'dataCell02_gt169',index:'dataCell03_gt169', width: 100, align: 'center'},
+            {name:'dataCell03_gt169',index:'dataCell04_gt169', width: 478, align: 'center'},
+        ],
+        hoverrows: false,
+        cmTemplate: {
+            resizable: false
+        }
+    });
+    
+    var gridTableData169 = [ 
+        {
+            // num166:'1',
+            dataCell01_gt169:'강남지구 3구역',
+            dataCell02_gt169:'저촉 됩니다',
+            dataCell03_gt169:'기타',
+        },
+    ];
+
+    for (var i = 0; i < 9; i++) {
+        gridTableData169.push({
+            // num166:i+2,
+            dataCell01_gt169:'강남지구 3구역',
+            dataCell02_gt169:'저촉 됩니다',
+            dataCell03_gt169:'기타',
+        });
+    }
+
+    for(var i= 0; i <= gridTableData169.length; i++)
+    $('#gridTable169').jqGrid('addRowData',i + 1, gridTableData169[i]);
 
 
 

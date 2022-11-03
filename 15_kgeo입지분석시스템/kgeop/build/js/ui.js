@@ -76,6 +76,7 @@ $(document).ready(function(){
 		handle : '.popHead', // drag 대상 안 특정 요소에 제한 (여러개 사용 가능)
     });//drag
 
+
     // statute draggable
     $('.popBasic').draggable({
         scroll : false,
@@ -196,23 +197,36 @@ $(document).ready(function(){
     })
 
     //slider 라이브러리(scalebar)
-    $( function() {
-        $( "#slider-vertical" ).slider({
-          orientation: "vertical",
-          range: "min",
-          min: 0,
-          step: 10,
-          max: 100,
-          value: 50,
-          slide: function( event, ui ) {
-            $( "#amount" ).val( ui.value );
-            $(".scalePlus").on('click', function(){
-                
-            })
-          }
+    $(function() {
+        $("#slider-vertical").slider({
+            orientation: "vertical",
+            range: "min",
+            min: 0,
+            step: 10,
+            max: 100,
+            value: 50,
+            slide: function(event, ui) {
+                $("#amount").val(ui.value);
+                $(".scalePlus").on('click', function() {
+    
+                })
+            }
         });
-        $( "#amount" ).val( $( "#slider-vertical" ).slider( "value" ) );
-      });
+        $("#amount").val($("#slider-vertical").slider("value"));
+    });
+    
+    $(function() {
+        $("#slider-range-min01, #slider-range-min02, #slider-range-min03, #slider-range-min04, #slider-range-min05, #slider-range-min06, #slider-range-min07, #slider-range-min08, #slider-range-min09, #slider-range-min10, #slider-range-min11, #slider-range-min12, #slider-range-min13, #slider-range-min14").slider({
+            range: "min",
+            value: 50,
+            min: 0,
+            max: 100,
+            slide: function(event, ui) {
+                $("#amount").val("$" + ui.value);
+            }
+        });
+        $("#amount").val("$" + $("#slider-range-min").slider("value"));
+    });
 
     // toc dep02닫기
     $(".widgetClose").on('click', function(){
@@ -312,6 +326,54 @@ $(document).ready(function(){
 
     $(".toolTip").on('mouseleave', function(){
         $(".tooltipArea").removeClass("active")
+    })
+
+    //팝업 확대 축소
+    $('.popHead .minMax').on('click', function(){
+        if($(this).hasClass('off')) {
+            $(this).removeClass('off').attr('title','창 축소').closest('.popupArea').removeClass('min');
+            $(this).closest('.inner').draggable('option','disabled',false)
+            $('body, html').css({'overflow':'hidden'})
+        } else {
+            $(this).addClass('off').attr('title','창 확대').closest('.popupArea').addClass('min');
+            $(this).closest('.inner').draggable('option','disabled',true)
+            $('body, html').css({'overflow-x':'auto'})
+        }
+    })
+
+    //범례 확대 축소
+    $('.legendHead .minMax').on('click', function(){
+        if($(this).hasClass('off')) {
+            $(this).removeClass('off').attr('title','범례 축소').closest('.legendArea').removeClass('min');
+        } else {
+            $(this).addClass('off').attr('title','범례 확대').closest('.legendArea').addClass('min');
+            $(this).closest('.inner').draggable('disable')
+        }
+    })
+
+    //레이어목록 축소
+    $('.layerHead .minMax').on('click', function(){
+        if($(this).hasClass('off')) {
+            $(this).removeClass('off').attr('title','목록 축소').closest('.layerArea').removeClass('min');
+        } else {
+            $(this).addClass('off').attr('title','목록 확대').closest('.layerArea').addClass('min');
+            $(this).closest('.inner').draggable('disable')
+        }
+    })
+
+    //layerpop 2dep 
+    $('.treeLayer .preview').on('click', function(){
+        if ($(this).hasClass('on')) {
+            $(this).removeClass('on').closest('.inner').siblings('.popup.dep02').removeClass('active');
+        }else {
+            $(this).closest('.inner').siblings('.popup.dep02').addClass('active');
+            $(".treeLayer .preview").removeClass('on');
+            $(this).addClass('on')
+        }
+    })
+
+    $('.popup.dep02 .popClose').on('click', function(){
+        $(this).closest('.popup.dep02').removeClass('active').siblings('.inner').find('.preview').removeClass('on')
     })
 
     

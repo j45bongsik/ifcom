@@ -1,0 +1,707 @@
+<!-- dataArea -->
+<article class="dataArea">
+
+    <ul>
+        <li>
+            <button type="button" class="btn data active" title="데이터보드">
+                <span>DATA</span>
+            </button>
+            <!-- dep02 -->
+            <div class="dep02">
+                <div class="subArea before">
+                    <article class="layerPop sub active" style="width: 500px; ">
+                        <!-- head -->
+                        <div class="head">
+                            <h3 class="title type01">사진 상세보기</h3>
+                            <div class="btnArea">
+                                <button type="button" class="btn close" title="닫기"></button>
+                            </div>
+                        </div>
+                        <!-- //head -->
+                        <!-- body -->
+                        <div class="body type02">
+                            <div class="contList ">
+                                <img src="../images/map/common/img-picture01.jpg" alt="이미지01">
+
+                                <!-- tableArea -->
+                                <div class="tableArea">
+                                    <!-- table -->
+                                    <div class="table type02">
+                                        <table>
+                                            <caption>사진 상세보기 게시물로 토지코드, 일련번호, 등록일자, 변경일자 등의 정보를 제공합니다.</caption>
+                                            <colgroup>
+                                                <col style="width: 70px;">
+                                                <col style="width: 160px;">
+                                                <col style="width: 70px;">
+                                                <col style="width: auto;">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">토지코드</th>
+                                                    <td>4783025327102460005</td>
+                                                    <th scope="row">일련번호</th>
+                                                    <td>3</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">등록일자</th>
+                                                    <td>20211206</td>
+                                                    <th scope="row">변경일자</th>
+                                                    <td>20211206</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- //table -->
+                                </div>
+                                <!-- //tableArea -->
+                            </div>
+                            
+                        </div>
+                        <!-- //body -->
+                        
+                    </article>
+                </div>
+
+                <!-- layerPop -->
+                <article class="layerPop active" style="width: 596px; height: 600px;">
+                    <!-- head -->
+                    <div class="head">
+                        <h3 class="title type01">데이터보드</h3>
+                        <div class="btnArea">
+                            <button type="button" class="btn close" title="닫기"></button>
+                        </div>
+                    </div>
+                    <!-- //head -->
+                    <!-- body -->
+                    <div class="body type02 cScroll" style="height: 550px">
+                        <!-- address -->
+                        <div class="address">
+                            <p>서울특별시 중구 을지로 6 (을지로 1가 192-11)</p>
+                        </div>
+                        <!-- address -->
+
+                        <!-- btnArea -->
+                        <div class="btnArea flex left">
+                            <button type="button" class="btn lineBlue subPop">조회년도</button>
+                            <button type="button" class="btn lineBlue ml10 subPop">조회항목</button>
+                            <button type="button" class="btn navyRectSm mr subPop">상세보기</button>
+                        </div>
+                        <!-- //btnArea -->
+
+                        <!-- tabNav -->
+                        <div class="tabNav scrollX">
+                            <button type="button" class="btn scrollArrow prev off" title="앞으로"></button>
+                            <button type="button" class="btn scrollArrow next" title="뒤로"></button>
+                            <ul class="tabList" style="width: 622px;">
+                                <li>
+                                    <button type="button" class="btn active">
+                                        <span>일반정보</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn ">
+                                        <span>토지특성</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn">
+                                        <span>산정배율</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn">
+                                        <span>토지(임야)대장</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn">
+                                        <span>토지이용현황</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn">
+                                        <span>성과품</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn">
+                                        <span>사진정보</span>
+                                    </button>
+                                </li>
+                            </ul>
+
+                            <!-- tabCont -->
+                            <div class="tabCont active">
+
+                                <!-- contHead -->
+                                <div class="contHead">
+                                    <p class="checkbox type02">
+                                        <input type="checkbox" id="d-ckd01" class="ckdChage">
+                                        <label for="d-ckd01">
+                                            <span>표준지</span>
+                                        </label>
+                                    </p>
+                                </div>
+                                <!-- //contHead -->
+                                
+                                <!-- contList -->
+                                <div class="contList">
+                                    <!-- gridWrap -->
+                                    <article class="gridWrap type02" style="height: 200px;">
+                                        <div id="realgrid02" class="realGrid"></div>
+                                    </article>
+                                    <!-- //gridWrap -->
+                                </div>
+                                <!-- //contList -->
+                            </div>
+                            <!-- //tabCont -->
+
+                            <!-- tabCont -->
+                            <div class="tabCont">
+                                <!-- contHead -->
+                                <div class="contHead">
+                                    <p class="checkbox type02">
+                                        <input type="checkbox" id="d-ckd06" class="ckdChage">
+                                        <label for="d-ckd06">
+                                            <span>표준지</span>
+                                        </label>
+                                    </p>
+                                </div>
+                                <!-- //contHead -->
+                                
+                                <!-- contList -->
+                                <div class="contList">
+                                    <!-- gridWrap -->
+                                    <article class="gridWrap type02" style="height: 305px;">
+                                        <div id="realgrid04" class="realGrid"></div>
+                                    </article>
+                                    <!-- //gridWrap -->
+                                </div>
+                                <!-- //contList -->
+                            </div>
+                            <!-- //tabCont -->
+
+                            <!-- tabCont -->
+                            <div class="tabCont">
+                                <!-- contHead -->
+                                <div class="contHead">
+                                    <p class="checkbox type02">
+                                        <input type="checkbox" id="d-ckd07" class="ckdChage">
+                                        <label for="d-ckd07">
+                                            <span>표준지</span>
+                                        </label>
+                                    </p>
+                                </div>
+                                <!-- //contHead -->
+                                
+                                <!-- contList -->
+                                <div class="contList">
+                                    <!-- gridWrap -->
+                                    <article class="gridWrap type02" style="height: 305px;">
+                                        <div id="realgrid05" class="realGrid"></div>
+                                    </article>
+                                    <!-- //gridWrap -->
+                                </div>
+                                <!-- //contList -->
+                            </div>
+                            <!-- //tabCont -->
+
+                            <!-- tabCont -->
+                            <div class="tabCont">
+                                <!-- contHead -->
+                                <div class="contHead empty">
+                                    <!-- <p class="checkbox type02">
+                                        <input type="checkbox" id="ckd01" class="ckdChage">
+                                        <label for="ckd01">
+                                            <span>표준지</span>
+                                        </label>
+                                    </p> -->
+                                </div>
+                                <!-- //contHead -->
+                                
+                                <!-- contList -->
+                                <div class="contList">
+                                    <!-- gridWrap -->
+                                    <article class="gridWrap type02" style="height: 305px;">
+                                        <div id="realgrid06" class="realGrid"></div>
+                                    </article>
+                                    <!-- //gridWrap -->
+                                </div>
+                                <!-- //contList -->
+                            </div>
+                            <!-- //tabCont -->
+
+                            <!-- tabCont -->
+                            <div class="tabCont">
+                                <!-- contHead -->
+                                <div class="contHead empty">
+                                    <!-- <p class="checkbox type02">
+                                        <input type="checkbox" id="ckd01" class="ckdChage">
+                                        <label for="ckd01">
+                                            <span>표준지</span>
+                                        </label>
+                                    </p> -->
+                                </div>
+                                <!-- //contHead -->
+                                
+                                <!-- contList -->
+                                <div class="contList">
+                                    <!-- gridWrap -->
+                                    <article class="gridWrap type02" style="height: 305px;">
+                                        <div id="realgrid07" class="realGrid"></div>
+                                    </article>
+                                    <!-- //gridWrap -->
+                                </div>
+                                <!-- //contList -->
+                            </div>
+                            <!-- //tabCont -->
+
+                            <!-- tabCont -->
+                            <div class="tabCont">
+                                <!-- contHead -->
+                                <div class="contHead empty">
+                                    <!-- <p class="checkbox type02">
+                                        <input type="checkbox" id="ckd01" class="ckdChage">
+                                        <label for="ckd01">
+                                            <span>표준지</span>
+                                        </label>
+                                    </p> -->
+                                </div>
+                                <!-- //contHead -->
+                                
+                                <!-- contList -->
+                                <div class="contList">
+                                    <!-- gridWrap -->
+                                    <article class="gridWrap type02" style="height: 305px;">
+                                        <div id="realgrid08" class="realGrid"></div>
+                                    </article>
+                                    <!-- //gridWrap -->
+                                </div>
+                                <!-- //contList -->
+                            </div>
+                            <!-- //tabCont -->
+
+                            <!-- tabCont -->
+                            <div class="tabCont">
+                                <!-- accoArea -->
+                                <article class="accoArea">
+                                    <ul>
+                                        <li>
+                                            <button type="button" class="btn accoLabel active">2022년</button>
+                                            <!-- accoCont -->
+                                            <div class="accoCont">
+                                                <div class="imgArea">
+                                                    <!-- box -->
+                                                    <div class="box">
+                                                        <img src="../images/map/common/img-thumb02.jpg" alt="썸네일01">
+                                                        <p class="imgDesc">20221206_1</p>
+                                                    </div>
+                                                    <!-- //box -->
+                                                    <!-- box -->
+                                                    <div class="box">
+                                                        <img src="../images/map/common/img-thumb02.jpg" alt="썸네일02">
+                                                        <p class="imgDesc">20221206_2</p>
+                                                    </div>
+                                                    <!-- //box -->
+                                                    <div class="box active">
+                                                        <img src="../images/map/common/img-thumb01.jpg" alt="썸네일03">
+                                                        <p class="imgDesc">20221206_3</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- //accoCont -->
+                                        </li>
+                                        <li>
+                                            <button type="button" class="btn accoLabel">2021년</button>
+                                            <!-- accoCont -->
+                                            <div class="accoCont">
+                                                <div class="imgArea">
+                                                    <!-- box -->
+                                                    <div class="box">
+                                                        <img src="../images/map/common/img-thumb02.jpg" alt="썸네일01">
+                                                        <p class="imgDesc">20221206_1</p>
+                                                    </div>
+                                                    <!-- //box -->
+                                                    <!-- box -->
+                                                    <div class="box">
+                                                        <img src="../images/map/common/img-thumb02.jpg" alt="썸네일02">
+                                                        <p class="imgDesc">20221206_2</p>
+                                                    </div>
+                                                    <!-- //box -->
+                                                    <div class="box">
+                                                        <img src="../images/map/common/img-thumb01.jpg" alt="썸네일03">
+                                                        <p class="imgDesc">20221206_3</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- //accoCont -->
+                                        </li>
+                                        <li>
+                                            <button type="button" class="btn accoLabel">2020년</button>
+                                            <!-- accoCont -->
+                                            <div class="accoCont">
+                                                <div class="imgArea">
+                                                    <!-- box -->
+                                                    <div class="box">
+                                                        <img src="../images/map/common/img-thumb02.jpg" alt="썸네일01">
+                                                        <p class="imgDesc">20221206_1</p>
+                                                    </div>
+                                                    <!-- //box -->
+                                                    <!-- box -->
+                                                    <div class="box">
+                                                        <img src="../images/map/common/img-thumb02.jpg" alt="썸네일02">
+                                                        <p class="imgDesc">20221206_2</p>
+                                                    </div>
+                                                    <!-- //box -->
+                                                    <div class="box">
+                                                        <img src="../images/map/common/img-thumb01.jpg" alt="썸네일03">
+                                                        <p class="imgDesc">20221206_3</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- //accoCont -->
+                                        </li>
+                                        <li>
+                                            <button type="button" class="btn accoLabel">2019년</button>
+                                            <!-- accoCont -->
+                                            <div class="accoCont">
+                                                <div class="imgArea">
+                                                    <!-- box -->
+                                                    <div class="box">
+                                                        <img src="../images/map/common/img-thumb02.jpg" alt="썸네일01">
+                                                        <p class="imgDesc">20221206_1</p>
+                                                    </div>
+                                                    <!-- //box -->
+                                                    <!-- box -->
+                                                    <div class="box">
+                                                        <img src="../images/map/common/img-thumb02.jpg" alt="썸네일02">
+                                                        <p class="imgDesc">20221206_2</p>
+                                                    </div>
+                                                    <!-- //box -->
+                                                    <div class="box">
+                                                        <img src="../images/map/common/img-thumb01.jpg" alt="썸네일03">
+                                                        <p class="imgDesc">20221206_3</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- //accoCont -->
+                                        </li>
+                                    </ul>
+
+                                </article>
+                                <!-- //accoArea -->
+
+                            </div>
+                            <!-- //tabCont -->
+
+
+                            <!-- chartArea -->
+                            <div class="chartArea">
+                                <!-- listHead -->
+                                <div class="listHead">
+                                    <h4 class="title type02">시점별 지가정보</h4>
+                                    <!-- toggleArea -->
+                                    <article class="toggleArea type02">
+                                        <!-- bg -->
+                                        <div class="bg">
+                                            <input type="checkbox" class="switch change">
+                                            <div class="key"></div>
+                                            <div class="name">
+                                                <span>차트</span>
+                                                <span>표</span>
+                                            </div>
+                                        </div>
+                                        <!-- //bg -->
+                                    </article>
+                                    <!-- //toggleArea -->
+                                    
+                                    <!-- selectArea -->
+                                    <div class="selectArea unChecked type03 active">
+                                        <label for="l001">표출항목</label>
+                                        <select name="l001" id="l001">
+                                            <option value="">산정지가</option>
+                                        </select>
+                                    </div>
+                                    <!-- //selectArea -->
+
+                                    <!-- inputArea -->
+                                    <div class="inputArea mr checked">
+                                        <p class="checkbox type04">
+                                            <input type="checkbox" id="d-ckd02" >
+                                            <label for="d-ckd02">
+                                                <span>토지특성</span>
+                                            </label>
+                                        </p>
+                                        <p class="checkbox type04">
+                                            <input type="checkbox" id="d-ckd03" >
+                                            <label for="d-ckd03">
+                                                <span>확인서</span>
+                                            </label>
+                                        </p>
+                                        <p class="checkbox type04">
+                                            <input type="checkbox" id="d-ckd04" >
+                                            <label for="d-ckd04">
+                                                <span>표준지</span>
+                                            </label>
+                                        </p>
+                                        <p class="checkbox type04">
+                                            <input type="checkbox" id="d-ckd05" >
+                                            <label for="d-ckd05">
+                                                <span>성과품</span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                    <!-- //inputArea -->
+                                    
+                                </div>
+                                <!-- //listHead -->
+
+                                <!-- listCont -->
+                                <div class="listCont unChecked active">
+                                    <!-- chartArea -->
+                                    <article class="chartArea">
+                                        <canvas id="myChart01" style="height: 282px;"></canvas>
+                                    </article>
+                                    <!-- //chartArea -->
+                                </div>
+                                <!-- //listCont -->
+
+                                <!-- listCont -->
+                                <div class="listCont checked">
+                                    <!-- gridWrap -->
+                                <article class="gridWrap type02" style="height: 275px;">
+                                    <div id="realgrid03" class="realGrid"></div>
+                                </article>
+                                <!-- //gridWrap -->
+                                </div>
+                                <!-- //listCont -->
+                            </div>
+                            <!-- //chartArea -->
+
+
+
+                        </div>
+                        <!-- //tabNav -->
+
+                    </div>
+                    <!-- //body -->
+                </article>
+                <!-- //layerPop -->
+
+                <!-- subArea -->
+                <div class="subArea after">
+                    <!-- layerPop sub -->
+                    <article class="layerPop sub active" style="width: 223px; height: 396px;">
+                        <!-- head -->
+                        <div class="head">
+                            <h3 class="title type01">조회년도 설정</h3>
+                            <div class="btnArea">
+                                <button type="button" class="btn close" title="닫기"></button>
+                            </div>
+                        </div>
+                        <!-- //head -->
+                        <!-- body -->
+                        <div class="body type02 check cScroll" style="height: 210px;">
+                            <div class="contList ">
+                                <ul>
+                                    <li class="checkAll">
+                                        <p class="checkbox type03">
+                                            <input type="checkbox" id="ckdAll">
+                                            <label for="ckdAll">
+                                                <span>전체선택</span>
+                                            </label>
+                                        </p>
+                                    <li>
+                                        <p class="checkbox type03">
+                                            <input type="checkbox" id="d-ckd08">
+                                            <label for="d-ckd08">
+                                                <span>2022년</span>
+                                            </label>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="checkbox type03">
+                                            <input type="checkbox" id="d-ckd10">
+                                            <label for="d-ckd10">
+                                                <span>2021년</span>
+                                            </label>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="checkbox type03">
+                                            <input type="checkbox" id="d-ckd11">
+                                            <label for="d-ckd11">
+                                                <span>2020년</span>
+                                            </label>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="checkbox type03">
+                                            <input type="checkbox" id="d-ckd12">
+                                            <label for="d-ckd12">
+                                                <span>2019년</span>
+                                            </label>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="checkbox type03">
+                                            <input type="checkbox" id="d-ckd13">
+                                            <label for="d-ckd13">
+                                                <span>2018년</span>
+                                            </label>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="checkbox type03">
+                                            <input type="checkbox" id="d-ckd14">
+                                            <label for="d-ckd14">
+                                                <span>2017년</span>
+                                            </label>
+                                        </p>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                            
+                        </div>
+                        <!-- //body -->
+                        <!-- foot -->
+                        <div class="foot">
+                            <!-- desc -->
+                            <article class="desc">
+                                <ul>
+                                    <li>
+                                        <p>
+                                            *통계 표출 : 통계표에 표출할 년도 선택(다중선택)
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            *최대 7개(년도) 선택 가능, 기준년도는 필수 포함
+                                        </p>
+                                    </li>
+                                </ul>
+                            </article>
+                            <!-- //desc -->
+                            <div class="btnArea flex sc">
+                                <button type="button" class="btn navyRect">적용</button>
+                            </div>
+                        </div>
+                        <!-- //foot -->
+                    </article>
+                    <!-- //layerPop sub -->
+
+                    <!-- layerPop sub -->
+                    <article class="layerPop sub active" style="width: 223px; height: 396px;">
+                        <!-- head -->
+                        <div class="head">
+                            <h3 class="title type01">조회항목 설정</h3>
+                            <div class="btnArea">
+                                <button type="button" class="btn close" title="닫기"></button>
+                            </div>
+                        </div>
+                        <!-- //head -->
+                        <!-- body -->
+                        <div class="body type02 check cScroll" style="height: 225px;">
+                            <div class="contList ">
+                                <div class="selectArea type03">
+                                    <label for="l03">구분</label>
+                                    <select name="l033" id="l033" style="flex:1">
+                                        <option value="">토지특성</option>
+                                    </select>
+                                </div>
+                                <ul>
+                                    <li class="checkAll">
+                                        <p class="checkbox type03">
+                                            <input type="checkbox" id="ckdAll02">
+                                            <label for="ckdAll02">
+                                                <span>전체선택</span>
+                                            </label>
+                                        </p>
+                                    <li>
+                                        <p class="checkbox type03">
+                                            <input type="checkbox" id="d-ckd15">
+                                            <label for="d-ckd15">
+                                                <span>공부지목</span>
+                                            </label>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="checkbox type03">
+                                            <input type="checkbox" id="d-ckd16">
+                                            <label for="d-ckd16">
+                                                <span>실제지목</span>
+                                            </label>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="checkbox type03">
+                                            <input type="checkbox" id="d-ckd17">
+                                            <label for="d-ckd17">
+                                                <span>용도지역1</span>
+                                            </label>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="checkbox type03">
+                                            <input type="checkbox" id="d-ckd18">
+                                            <label for="d-ckd18">
+                                                <span>용도지역2</span>
+                                            </label>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="checkbox type03">
+                                            <input type="checkbox" id="d-ckd19">
+                                            <label for="d-ckd19">
+                                                <span>비옥도</span>
+                                            </label>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="checkbox type03">
+                                            <input type="checkbox" id="d-ckd20">
+                                            <label for="d-ckd20">
+                                                <span>도로접면</span>
+                                            </label>
+                                        </p>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                            
+                        </div>
+                        <!-- //body -->
+                        <!-- foot -->
+                        <div class="foot">
+                            <!-- desc -->
+                            <article class="desc">
+                                <ul>
+                                    <li>
+                                        <p>
+                                            * 통계표에 표출할 항목 선택(최대 5개)
+                                        </p>
+                                    </li>
+                                </ul>
+                            </article>
+                            <!-- //desc -->
+                            <div class="btnArea flex sc">
+                                <button type="button" class="btn navyRect">적용</button>
+                            </div>
+                        </div>
+                        <!-- //foot -->
+                    </article>
+                    <!-- //layerPop sub -->
+
+                </div>
+                <!-- //subArea -->
+            </div>
+            <!-- //dep02 -->
+
+            
+
+        </li>
+    </ul>
+
+</article>
+<!-- //dataArea -->

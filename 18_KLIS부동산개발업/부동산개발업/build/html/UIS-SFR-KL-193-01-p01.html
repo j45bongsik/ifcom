@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="">
+<meta name="description" content="">
+<meta property="og:image" content="">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:url" content="">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="stylesheet" href="../lib/swiper/css/swiper.css">
+<link rel="stylesheet" href="../lib/jquery-ui.css">
+<link rel="stylesheet" href="../lib/jqGrid-4.7.1/css/ui.jqgrid.css">
+<link rel="stylesheet" href="../css/common.css">
+<script src="../lib/jquery-1.12.4.js"></script>
+<script src="../lib/jquery-ui.js"></script>
+<script src="../lib/jqGrid-4.7.1/js/minified/jquery.jqGrid.min.js"></script>
+<script src="../lib/swiper/js/swiper.js"></script>
+<script src="../js/ui.js"></script>
+<script src="../js/popup.js"></script>
+<script src="../js/jqGrid.js"></script>
+
+ 
+    <link rel="stylesheet" href="../css/help.css">
+    <title>KLIS 부동산개발업</title>
+</head>
+<body class="winPop">
+    <!-- wrap -->
+    <div id="wrap" style="width: 1050px;">
+        <!-- container -->
+        <main class="container">
+            <!-- right -->
+            <div class="right">
+               
+                <!-- content -->
+                <div id="content">
+                    <h2 class="hidden">본문 영역</h2>
+                    <!-- contArea -->
+                    <div class="contArea margenta"> <!-- 테마별 css 적용 margenta(부동산개발업) blue(개발부담금) purple(토지개발허가) green(부동산중개업, 공인중개사) orange(운영관리) -->
+                        <!-- head -->
+                        <div class="head">
+                            <p class="popTit">건축물 인허가 정보 상세</p>
+                            <button type="button" class="btnClose" onclick="window.close();">
+                                <span class="hidden">팝업 닫기</span>
+                            </button>
+                        </div>
+                        <!-- //head -->
+                        
+                        <!-- body -->
+                        <div class="body type02">
+                            <!-- boardArea -->
+                            <article class="boardArea">
+                                <!-- inner -->
+                                <div class="inner">
+                                    <!-- cont -->
+                                    <div class="cont">
+                                        <!-- secContainer -->
+                                        <section class="secContainer">
+                                            <div class="titSecBox">
+                                                <h4 class="tit arrowBullet">
+                                                    <strong>건축행정 연계 정보 상세</strong>
+                                                </h4>
+                                            </div>
+                                            
+                                            <!-- tableContainer -->
+                                            <article class="tableContainer">
+                                                <!-- table -->
+                                                <div class="table">
+                                                    <table>
+                                                        <caption>건축행정 연계 정보 상세 게시물로 시군구, 인허가구분, 접수번호, 신청일 등의 정보를 제공합니다.</caption>
+                                                        <colgroup>
+                                                            <col style="width: 100px;">
+                                                            <col style="width: 146px;">
+                                                            <col style="width: 100px;">
+                                                            <col style="width: 146px;">
+                                                            <col style="width: 100px;">
+                                                            <col style="width: 146px;">
+                                                            <col style="width: 100px;">
+                                                            <col style="width: auto;">
+                                                        </colgroup>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th scope="row">
+                                                                    <label for="pl02">시군구</label>
+                                                                </th>
+                                                                <td>
+                                                                    <select name="pl02" id="pl02" disabled class="disabled">
+                                                                        <option value="">-</option>
+                                                                    </select>
+                                                                </td>
+                                                                <th scope="row">
+                                                                    <label for="pl03">인허가구분</label>
+                                                                </th>
+                                                                <td>
+                                                                    <select name="pl03" id="pl03" disabled class="disabled">
+                                                                        <option value="">-</option>
+                                                                    </select>
+                                                                </td>
+                                                                <th scope="row">
+                                                                    <label for="pl04">접수번호</label>
+                                                                </th>
+                                                                <td>
+                                                                    <input type="text" id="pl04" disabled class="disabled">
+                                                                </td>
+                                                                <th scope="row">
+                                                                    <label for="pl05">신청일</label>
+                                                                </th>
+                                                                <td>
+                                                                    <input type="text" id="pl05" disabled class="disabled">
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </article>
+                                            <!-- //tableContainer -->                    
+                                        </section>
+                                        <!-- //secContainer -->
+
+                                        <!-- secContainer -->
+                                        <section class="secContainer">
+                                            <div class="titSecBox">
+                                                <h4 class="tit arrowBullet">
+                                                    <strong>기본정보</strong>
+                                                </h4>
+                                            </div>
+                                            
+                                            <!-- tableContainer -->
+                                            <article class="tableContainer">
+                                                <!-- table -->
+                                                <div class="table">
+                                                    <table>
+                                                        <caption>기본정보 게시물로 민원구분, 인허가번호, 토지면적(㎡), 인허가일, 착공일, 준공일, 주용도, 기타용도, 용도지역, 용도지구, 용도구역 등의 정보를 제공합니다.</caption>
+                                                        <colgroup>
+                                                            <col style="width: 126px;">
+                                                            <col style="width: 213px;">
+                                                            <col style="width: 126px;">
+                                                            <col style="width: 213px;">
+                                                            <col style="width: 126px;">
+                                                            <col style="width: auto;">
+                                                        </colgroup>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th scope="row">
+                                                                    민원구분
+                                                                </th>
+                                                                <td>
+                                                                    
+                                                                </td>
+                                                                <th scope="row">
+                                                                    인허가번호
+                                                                </th>
+                                                                <td>
+                                                                    
+                                                                </td>
+                                                                <th scope="row">
+                                                                    토지면적(㎡)
+                                                                </th>
+                                                                <td>
+
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">
+                                                                    인허가일
+                                                                </th>
+                                                                <td>
+
+                                                                </td>
+                                                                <th scope="row">
+                                                                    착공일
+                                                                </th>
+                                                                <td>
+                                                                    
+                                                                </td>
+                                                                <th scope="row">
+                                                                    준공일
+                                                                </th>
+                                                                <td>
+                                                                    
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">
+                                                                    주용도
+                                                                </th>
+                                                                <td>
+                                                                    
+                                                                </td>
+                                                                <th scope="row">
+                                                                    기타용도
+                                                                </th>
+                                                                <td colspan="3">
+                                                                    
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">
+                                                                    용도지역
+                                                                </th>
+                                                                <td>
+                                                                    
+                                                                </td>
+                                                                <th scope="row">
+                                                                    용도지구
+                                                                </th>
+                                                                <td>
+                                                                    
+                                                                </td>
+                                                                <th scope="row">
+                                                                    용도구역
+                                                                </th>
+                                                                <td>
+                                                                    
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </article>
+                                            <!-- //tableContainer -->                    
+                                        </section>
+                                        <!-- //secContainer -->
+
+                                        <!-- secContainer -->
+                                        <section class="secContainer">
+                                            <!-- <div class="resultContainer">
+                                                <div class="resultArea">
+                                                    <span class="numOfCase">총<em>2775</em>건</span>
+                                                    <p class="pages">(1 of 278 pages)</p>
+                                                </div> 
+                                            </div> -->
+                                            <div class="titSecBox">
+                                                <h4 class="tit arrowBullet">
+                                                    <strong>사업시행자 정보</strong>
+                                                </h4>
+                                            </div>
+                                            <!-- tableContainer -->
+                                            <article class="tableContainer">
+                                                <!-- table -->
+                                                <div class="table column hover overflow-x hscroll_line5">
+                                                    <table id="gridTable165"></table>
+                                                </div>
+                                                <!-- //table -->
+                                            </article>
+                                            <!-- //tableContainer -->
+                                            
+                                        </section>
+                                        <!-- //secContainer -->
+
+                                        <!-- secContainer -->
+                                        <section class="secContainer">
+                                            <div class="titSecBox type05">
+                                                <h4 class="tit arrowBullet">
+                                                    <strong>대상토지</strong>
+                                                </h4>
+                                                <p class="desc">※ 토지소유자 정보는 인허가일이 기준입니다.</p>
+                                            </div>                    
+                                            
+                                            <!-- tableContainer -->
+                                            <article class="tableContainer">
+                                                <!-- table -->
+                                                <div class="table column hover overflow-x hscroll_line5">
+                                                    <table id="gridTable166"></table>
+                                                </div>
+                                                <!-- //table -->
+                                            </article>
+                                            <!-- //tableContainer -->
+                                            
+                                        </section>
+                                        <!-- //secContainer -->
+
+                                        <!-- secContainer -->
+                                        <section class="secContainer">
+                                            <div class="titSecBox">
+                                                <h4 class="tit arrowBullet">
+                                                    <strong>허가사항변경 정보 이력</strong>
+                                                </h4>
+                                            </div>                    
+                                            
+                                            <!-- tableContainer -->
+                                            <article class="tableContainer">
+                                                <!-- table -->
+                                                <div class="table column hover hscroll_line5">
+                                                    <table id="gridTable167"></table>
+                                                </div>
+                                                <!-- //table -->
+                                            </article>
+                                            <!-- //tableContainer -->
+                                            
+                                        </section>
+                                        <!-- //secContainer -->
+
+                                        <div class="btnArea jc" style="margin-top: 16px;">
+                                            <button type="button" class="btn type02 bgWhite btnCancel wide">
+                                                <span>닫기</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- //cont -->
+                                </div>
+                                <!-- //inner -->
+                            </article>
+                            <!-- //boardArea -->
+                        </div>
+                        <!-- //body -->
+                    </div>
+                    <!-- //contArea -->
+
+
+                    
+                </div>
+                <!-- //content -->
+            </div>
+            <!-- //right -->
+        </main>
+        <!-- //container -->
+
+    </div>
+    <!-- //wrap -->
+</body>
+</html>

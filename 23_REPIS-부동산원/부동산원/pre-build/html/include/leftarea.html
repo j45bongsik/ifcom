@@ -1,0 +1,921 @@
+<!-- leftArea -->
+<article class="leftArea">
+    <ul>
+        <li>
+            <button type="button" class="btn top search">
+                <span>검색</span>
+            </button>
+            <!-- dep02 -->
+            <div class="dep02">
+                <!-- layerPop -->
+                <article class="layerPop" style="height: 442px;">
+                    <!-- head -->
+                    <div class="head">
+                        <h3 class="title type01">필지검색</h3>
+                        <div class="btnArea">
+                            <button type="button" class="btn close" title="닫기"></button>
+                        </div>
+                    </div>
+                    <!-- //head -->
+                    <!-- body -->
+                    <div class="body">
+                        <!-- cont -->
+                        <div class="cont">
+                            <p>지번선택</p>
+                            <!-- selectArea -->
+                            <div class="selectArea type02">
+                                <select name="" id="">
+                                    <option value="">시도</option>
+                                </select>
+                                <select name="" id="">
+                                    <option value="">시군구</option>
+                                </select>
+                                <select name="" id="">
+                                    <option value="">읍면동</option>
+                                </select>
+                                <select name="" id="">
+                                    <option value="">리</option>
+                                </select>
+                                <select name="" id="">
+                                    <option value="">구분</option>
+                                </select>
+                            </div>
+                            <!-- //selectArea -->
+                            <!-- inputArea -->
+                            <div class="inputArea">
+                                <input type="text">
+                                <span class="dash"></span>
+                                <input type="text">
+                                <span class="dash02"></span>
+                                <input type="text">
+                                <span class="dash"></span>
+                                <input type="text">
+                            </div>
+                            <!-- //inputArea -->
+                        </div>
+                        <!-- //cont -->
+                        <!-- cont -->
+                        <div class="cont">
+                            <p>기타선택</p>
+                            <!-- selectArea -->
+                            <div class="selectArea type02">
+                                <!-- box -->
+                                <div class="box">
+                                    <select name="" id="">
+                                        <option value="">1차 특성(조건1)</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="">조건1 특성 값</option>
+                                    </select>
+                                </div>
+                                <!-- box -->
+                                <!-- box -->
+                                <div class="box">
+                                    <select name="" id="">
+                                        <option value="">1차 특성(조건2)</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="">조건2 특성 값</option>
+                                    </select>
+                                </div>
+                                <!-- box -->
+                                <!-- box -->
+                                <div class="box">
+                                    <select name="" id="">
+                                        <option value="">1차 특성(조건3)</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="">조건3 특성 값</option>
+                                    </select>
+                                </div>
+                                <!-- box -->
+                                
+                            </div>
+                            <!-- //selectArea -->
+                        </div>
+                        <!-- //cont -->
+
+                        <!-- btnArea -->
+                        <div class="btnArea flex sc">
+                            <button type="button" class="btn navyRect">
+                                <span>조회</span>
+                            </button>
+                        </div>
+                        <!-- //btnArea -->
+
+                    </div>
+                    <!-- //body -->
+                </article>
+                <!-- //layerPop -->
+            </div>
+            <!-- //dep02 -->
+        </li>
+
+        <li>
+            <button type="button" class="btn top layer">
+                <span>레이어</span>
+            </button>
+            <!-- dep02 -->
+            <div class="dep02">
+                <!-- layerPop -->
+                <article class="layerPop" style="height: 400px;">
+                    <!-- head -->
+                    <div class="head">
+                        <h3 class="title type01">레이어</h3>
+                        <div class="btnArea">
+                            <button type="button" class="btn close" title="닫기"></button>
+                        </div>
+                    </div>
+                    <!-- //head -->
+                    <!-- body -->
+                    <div class="body type02">
+                        
+                        <!-- tabNav -->
+                        <div class="tabNav">
+                            <ul class="tabList">
+                                <li>
+                                    <button type="button" class="btn">
+                                        <span>행정구역</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn active">
+                                        <span>연속지적도</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn">
+                                        <span>용도지역지구</span>
+                                    </button>
+                                </li>
+                            </ul>
+
+                            <!-- tabCont -->
+                            <div class="tabCont">
+                                
+                                <div class="contList cScroll">
+                                    <ul>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk01-01" checked>
+                                                <label for="chk01-01">
+                                                    <span>행정구역 시군구 경계</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk01-02">
+                                                <label for="chk01-02">
+                                                    <span>행정구역 읍면동(법정동) 경계</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk01-03">
+                                                <label for="chk01-03">
+                                                    <span>행정구역 리(법정동) 경계</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- //tabCont -->
+
+                            <!-- tabCont -->
+                            <div class="tabCont active">
+                                <div class="contList cScroll">
+                                    <ul>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk02-01" checked>
+                                                <label for="chk02-01">
+                                                    <span>(연속도) 지적/필지중심점</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk02-02">
+                                                <label for="chk02-02">
+                                                    <span>(연속도) 1/500 지적인덱스</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk02-03">
+                                                <label for="chk02-03">
+                                                    <span>(연속도) 1/600 지적인덱스</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk02-04">
+                                                <label for="chk02-04">
+                                                    <span>(연속도) 1/1000 지적인덱스</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk02-05">
+                                                <label for="chk02-05">
+                                                    <span>(연속도) 1/2400 지적인덱스</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk02-06">
+                                                <label for="chk02-06">
+                                                    <span>(연속도) 1/3000 지적인덱스</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk07">
+                                                <label for="chk07">
+                                                    <span>(연속도) 1/5000 지적인덱스</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- //tabCont -->
+                            <!-- tabCont -->
+                            <div class="tabCont">
+                                <div class="contList cScroll">
+                                    <ul>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-01" checked>
+                                                <label for="chk03-01">
+                                                    <span>국토계획/도시지역</span>
+                                                </label>
+                                            </p>
+                                           
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-02">
+                                                <label for="chk03-02">
+                                                    <span>국토계획/관리지역</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-03">
+                                                <label for="chk03-03">
+                                                    <span>국토계획/농림지역</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-04">
+                                                <label for="chk03-04">
+                                                    <span>국토계획/자연환경보전지역</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-05">
+                                                <label for="chk03-05">
+                                                    <span>국토계획/고도지구</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-06">
+                                                <label for="chk03-06">
+                                                    <span>국토계획/보호지구</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-07">
+                                                <label for="chk03-07">
+                                                    <span>국토계획/취락지구</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-08">
+                                                <label for="chk03-08">
+                                                    <span>국토계획/개발진흥지구</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-09">
+                                                <label for="chk03-09">
+                                                    <span>국토계획/구역</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-10">
+                                                <label for="chk03-10">
+                                                    <span>국토계획/교통시설</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-11">
+                                                <label for="chk03-11">
+                                                    <span>국토계획/공간시설</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-12">
+                                                <label for="chk03-12">
+                                                    <span>국토계획/유통및공급시설</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-13">
+                                                <label for="chk03-13">
+                                                    <span>국토계획/공공문화체육시설</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-14">
+                                                <label for="chk03-14">
+                                                    <span>국토계획/방재시설</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-15">
+                                                <label for="chk03-15">
+                                                    <span>국토계획/환경기초시설</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-16">
+                                                <label for="chk03-16">
+                                                    <span>지역/지역균형개발및중소기업육성</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-17">
+                                                <label for="chk03-17">
+                                                    <span>개발제한구역지관리/개발제한구역</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-18">
+                                                <label for="chk03-18">
+                                                    <span>농지/농업진흥지역</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-19">
+                                                <label for="chk03-19">
+                                                    <span>농어촌정비/농어촌정비</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-20">
+                                                <label for="chk03-20">
+                                                    <span>축산/가축보호지역</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-21">
+                                                <label for="chk03-21">
+                                                    <span>사방사업/사방지</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-22">
+                                                <label for="chk03-22">
+                                                    <span>초지/초지</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-23">
+                                                <label for="chk03-23">
+                                                    <span>산업입지/산업단지</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-24">
+                                                <label for="chk03-24">
+                                                    <span>도로/용도구역</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-25">
+                                                <label for="chk03-25">
+                                                    <span>하천/용도구역</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-26">
+                                                <label for="chk03-26">
+                                                    <span>전원개발/용도구역</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-27">
+                                                <label for="chk03-27">
+                                                    <span>폐기물처리시설설치지역</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-28">
+                                                <label for="chk03-28">
+                                                    <span>수도/상수원보호</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-29">
+                                                <label for="chk03-29">
+                                                    <span>수질환경보전/공공수역</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-30">
+                                                <label for="chk03-30">
+                                                    <span>가축분뇨의관리및이용/가축사육제한구역</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-31">
+                                                <label for="chk03-31">
+                                                    <span>학교환경위생정화구역</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-32">
+                                                <label for="chk03-32">
+                                                    <span>문화재/문화재보호</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-33">
+                                                <label for="chk03-33">
+                                                    <span>관광진흥/관광지</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-34">
+                                                <label for="chk03-34">
+                                                    <span>자연재해/재해위험지구</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-35">
+                                                <label for="chk03-35">
+                                                    <span>산림/이용형태에따른산림</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-36">
+                                                <label for="chk03-36">
+                                                    <span>산지관리/보전준보전산지</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-37">
+                                                <label for="chk03-37">
+                                                    <span>산지관리/기타용도지역</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-38">
+                                                <label for="chk03-38">
+                                                    <span>야생동식물보호/용도구역</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-39">
+                                                <label for="chk03-39">
+                                                    <span>국토계획/도시지역경계</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-40">
+                                                <label for="chk03-40">
+                                                    <span>산림자원/산림자원조성관리</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-41">
+                                                <label for="chk03-41">
+                                                    <span>산업집적활성화및공장설립/용도구역</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-42">
+                                                <label for="chk03-42">
+                                                    <span>군사기지/군사시설보호</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-43">
+                                                <label for="chk03-43">
+                                                    <span>산림보호/산림보호</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-44">
+                                                <label for="chk03-44">
+                                                    <span>영농여건불리농지/영농여건불리농지</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-45">
+                                                <label for="chk03-45">
+                                                    <span>수도/공장설립제한지역</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-46">
+                                                <label for="chk03-46">
+                                                    <span>수도/공장설립승인지역</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-47">
+                                                <label for="chk03-47">
+                                                    <span>민간임대주택/용도지구</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="checkbox">
+                                                <input type="checkbox" id="chk03-48">
+                                                <label for="chk03-48">
+                                                    <span>국토계획/복합용도지구</span>
+                                                </label>
+                                            </p>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- //tabCont -->
+                        </div>
+                        <!-- //tabNav -->
+
+                        <!-- btnArea -->
+                        <div class="btnArea flex sc">
+                            <button type="button" class="btn navyRect">
+                                <span>조회</span>
+                            </button>
+                        </div>
+                        <!-- //btnArea -->
+
+                    </div>
+                    <!-- //body -->
+                </article>
+                <!-- //layerPop -->
+            </div>
+            <!-- //dep02 -->
+        </li>
+
+        <li>
+            <button type="button" class="btn top setting">
+                <span>시점설정</span>
+            </button>
+            <!-- dep02 -->
+            <div class="dep02">
+                <!-- layerPop -->
+                <article class="layerPop" style="width: 150px;">
+                    <!-- head -->
+                    <div class="head">
+                        <h3 class="title type01">시점설정</h3>
+                        <div class="btnArea">
+                            <button type="button" class="btn close" title="닫기"></button>
+                        </div>
+                    </div>
+                    <!-- //head -->
+                    <!-- body -->
+                    <div class="body radio">
+                        <div class="contList">
+                            <ul>
+                                <li>
+                                    <p class="radio">
+                                        <input type="radio" name="r01" id="l01">
+                                        <label for="l01">연속지적</label>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="radio">
+                                        <input type="radio" name="r01" id="l02">
+                                        <label for="l02">1월 1일</label>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="radio">
+                                        <input type="radio" name="r01" id="l03">
+                                        <label for="l03">6월 1일</label>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="radio">
+                                        <input type="radio" name="r01" id="l04">
+                                        <label for="l04">7월 1일</label>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <!-- //body -->
+                </article>
+                <!-- //layerPop -->
+            </div>
+            <!-- //dep02 -->
+        </li>
+
+        <li>
+            <button type="button" class="btn top table active">
+                <span>비준표</span>
+            </button>
+            <!-- dep02 -->
+            <div class="dep02">
+                <!-- layerPop -->
+                <article class="layerPop active" style="width: 596px;">
+                    <!-- head -->
+                    <div class="head">
+                        <h3 class="title type01">비준표 관리</h3>
+                        <div class="btnArea">
+                            <button type="button" class="btn close" title="닫기"></button>
+                        </div>
+                    </div>
+                    <!-- //head -->
+                    <!-- body -->
+                    <div class="body">
+                        
+                        <!-- cont -->
+                        <div class="cont">
+                            <!-- contHead -->
+                            <div class="contHead type02">
+                                <h4 class="title type02">비준표 정보</h4>
+                                <!-- headDesc -->
+                                <div class="headDesc">
+                                    <ul>
+                                        <li>
+                                            <p>읍면동 비준표 불러오기 작업 시 비준표 파일을 복수 선택하여 작업 진행하실 수 있습니다</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- headDesc -->
+                            </div>
+                            <!-- //contHead -->
+                            <!-- contList -->
+                            <div class="contList" style="margin-top: 10px;">
+                                <!-- tableArea -->
+                                <div class="tableArea">
+                                    <!-- table -->
+                                    <div class="table type03">
+                                        <table>
+                                            <caption>비준표 정보 게시물로 년도선택, 시군구, 비준표선택, 용도지역, 특성 등의 정보를 제공합니다.</caption>
+                                            <colgroup>
+                                                <col style="width: 100px;">
+                                                <col style="width: 140px;">
+                                                <col style="width: 100px;">
+                                                <col style="width: auto;">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <label for="l05">년도선택</label>
+                                                    </th>
+                                                    <td>
+                                                        <div class="selectArea type03">
+                                                            <select name="l05" id="l05">
+                                                                <option value="">2019년</option>
+                                                            </select>
+                                                        </div>
+                                                    </td>
+                                                    <th scope="row">
+                                                        <label for="l06">시군구/법정동</label>
+                                                    </th>
+                                                    <td>
+                                                        <div class="inputGroup">
+                                                            <div class="selectArea type03">
+                                                                <select name="l06" id="l06" title="시구">
+                                                                    <option value="">시구</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="selectArea type03" style="margin-left: 6px;">
+                                                                <select name="" id="" title="법정동">
+                                                                    <option value="">내당동</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        비준표선택
+                                                    </th>
+                                                    <td colspan="3">
+                                                        <div class="inputGroup">
+                                                            <p class="radio">
+                                                                <input type="radio" name="r02" id="l07">
+                                                                <label for="l07">용도지역 총괄표</label>
+                                                            </p>
+                                                            <p class="radio">
+                                                                <input type="radio" name="r02" id="l08">
+                                                                <label for="l08">읍면동별 비준표</label>
+                                                            </p>
+                                                            <div class="btnArea" style="margin-left: 20px;">
+                                                                <button type="button" class="btn grayRect">비준표 불러오기</button>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <label for="l09">용도지역</label>
+                                                    </th>
+                                                    <td>
+                                                        <div class="selectArea type03">
+                                                            <select name="l09" id="l09">
+                                                                <option value="">주거지역</option>
+                                                            </select>
+                                                        </div>
+                                                    </td>
+                                                    <th scope="row">
+                                                        <label for="l10">특성</label>
+                                                    </th>
+                                                    <td>
+                                                        <div class="selectArea type03">
+                                                            <select name="l10" id="l10" >
+                                                                <option value="">지목</option>
+                                                            </select>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- //table -->
+                                </div>
+                                <!-- //tableArea -->
+                                <!-- btnArea -->
+                                <div class="btnArea flex sc" style="margin-top: 10px;">
+                                    <button type="button" class="btn navyRectSm">조회</button>
+                                </div>
+                                <!-- //btnArea -->
+                            </div>
+                            <!-- //contList -->
+                        </div>
+                        <!-- //cont -->
+
+                        <!-- cont -->
+                        <div class="cont">
+                            <!-- inner -->
+                            <div class="inner">
+                                <!-- contHead -->
+                                <div class="contHead type02">
+                                    <h4 class="title type02">비준표 정보 조회 결과</h4>
+                                    <!-- headDesc -->
+                                    <div class="headDesc">
+                                        <ul>
+                                            <li>
+                                                <p>작업 중 [응답없음] 등의 메시지 발생 시에도 시스템상에서는 정상적으로 업데이트 중이므로<br />
+                                                    프로그램을 강제 종료하지 마십시오.
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- headDesc -->
+                                </div>
+                                <!-- //contHead -->
+                                <!-- contList -->
+                                <div class="contList">
+                                    <div class="listHead type03">
+                                        <p class="resultNum">
+                                            결과 
+                                            <span>3</span>
+                                            건
+                                        </p>
+                                        <div class="btnArea mr">
+                                            <button type="button" class="btn lineBlue sm">인쇄</button>
+                                        </div>
+                                    </div>
+
+                                    <article class="gridWrap type02" style="height: 224px">
+                                        <div id="realgrid09" class="realGrid"></div>
+                                    </article>
+                                </div>
+                                <!-- //contList -->
+                            </div>
+                            <!-- //inner -->
+                        </div>
+                        <!-- //cont -->
+
+                        <!-- btnArea -->
+                        <div class="btnArea flex sc">
+                            <button type="button" class="btn whiteRect">
+                                <span>취소</span>
+                            </button>
+                            <button type="button" class="btn navyRect" style="margin-left: 10px;">
+                                <span>조회</span>
+                            </button>
+                        </div>
+                        <!-- //btnArea -->
+
+                    </div>
+                    <!-- //body -->
+                </article>
+                <!-- //layerPop -->
+            </div>
+            <!-- //dep02 -->
+        </li>
+    </ul>
+
+</article>
+<!-- //leftArea -->

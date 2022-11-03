@@ -1221,7 +1221,8 @@
                         <div class="popHead">
                             <h3 class="title type02">현황 분석</h3>
                             <!-- btnArea -->
-                            <div class="btnArea">
+                            <div class="btnArea type03">
+                                <button type="button" class="btn minMax" title="창 축소"></button>
                                 <button type="button" class="btn popClose">
                                     <span class="hidden">창 닫기</span>
                                 </button>
@@ -1666,23 +1667,23 @@
                                                         <div class="control">
                                                             <!-- btnArea -->
                                                             <div class="btnArea edit">
-                                                                <button type="button" class="btn whiteSmall02">
+                                                                <!-- <button type="button" class="btn whiteSmall02">
                                                                     <span>
                                                                         불러오기
                                                                     </span>
-                                                                </button>
-                                                                <button type="button" class="btn toggle navySmall">
+                                                                </button> -->
+                                                                <button type="button" class="btn toggle navySmall winPop" onClick="window.open('map-분석현황-winpop.html','window','width='+ screen.width +',height='+ screen.height +',menubar=no,scrollbars=yes,status=no,resizable=no, fullscreen=yes')">
                                                                     <span>
                                                                         편집
                                                                     </span>
                                                                 </button>
 
                                                                 <!-- btnArea -->
-                                                                <div class="btnArea save">
+                                                                <!-- <div class="btnArea save">
                                                                     <button type="button" class="btn whiteSmall">라벨</button>
                                                                     <button type="button" class="btn whiteSmall">그리기</button>
                                                                     <button type="button" class="btn graySmall close">저장</button>
-                                                                </div>
+                                                                </div> -->
                                                                 <!-- //btnArea -->
 
                                                             </div>
@@ -1696,6 +1697,7 @@
                                                             <!-- legendHead -->
                                                             <div class="legendHead">
                                                                 <h3 class="title type08">범례</h3>
+                                                                <button type="button" class="btn minMax type02" title="범례 축소"></button>
                                                             </div>
                                                             <!-- legendHead -->
                                                             <!-- legendCont -->
@@ -1725,135 +1727,55 @@
                                                                             기타주거
                                                                         </p>
                                                                     </li>
+                                                                    <li>
+                                                                        <span></span>
+                                                                        <p class="elips02">
+                                                                            기타주거
+                                                                        </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span></span>
+                                                                        <p class="elips02">
+                                                                            기타주거
+                                                                        </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span></span>
+                                                                        <p class="elips02">
+                                                                            기타주거
+                                                                        </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span></span>
+                                                                        <p class="elips02">
+                                                                            기타주거
+                                                                        </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span></span>
+                                                                        <p class="elips02">
+                                                                            기타주거
+                                                                        </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span></span>
+                                                                        <p class="elips02">
+                                                                            기타주거
+                                                                        </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span></span>
+                                                                        <p class="elips02">
+                                                                            기타주거
+                                                                        </p>
+                                                                    </li>
                                                                 </ul>
                                                             </div>
                                                             <!-- legendCont -->
                                                         </div>
                                                         <!-- //legendArea -->
 
-                                                        <!-- layerArea -->
-                                                        <div class="layerArea on">
-                                                            <button type="button" class="btn layerSwitch on"></button>
-                                                            <!-- table -->
-                                                            <div class="table type10">
-                                                                <table>
-                                                                    <caption>입지규제사항 레이어 게시물로 구분, 레이어명, on/off, 삭제 등의 정보를 제공합니다.</caption>
-                                                                    <colgroup>
-                                                                        <col style="width: 129px;">
-                                                                        <col style="width: 350px;">
-                                                                        <col style="width: 115px;">
-                                                                        <col style="width: 128px;">
-                                                                    </colgroup>
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th scope="col" class="taL">구분</th>
-                                                                            <th scope="col">레이어명</th>
-                                                                            <th scope="col">On/Off</th>
-                                                                            <th scope="col">삭제</th>
-                                                                        </tr>
-                                                                    </thead>
-                                                                    <tbody class="cScroll">
-                                                                        <tr>
-                                                                            <td class="taL">
-                                                                                라벨
-                                                                            </td>
-                                                                            <td class="elips taL">지하철 연장라벨 지하철 연장라벨 지하철 연장라벨 지하철 연장라벨 </td>
-                                                                            <td>
-                                                                                <div class="btnArea">
-                                                                                    <button type="button" class="btn toggle layerView" title="on/off"></button>
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
-                                                                                <div class="btnArea">
-                                                                                    <button type="button" class="btn popMinus" title="삭제"></button>
-                                                                                </div>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td class="taL">
-                                                                                라벨
-                                                                            </td>
-                                                                            <td class="elips taL">지하철 연장라벨</td>
-                                                                            <td>
-                                                                                <div class="btnArea">
-                                                                                    <button type="button" class="btn toggle layerView" title="on/off"></button>
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
-                                                                                <div class="btnArea">
-                                                                                    <button type="button" class="btn popMinus" title="삭제"></button>
-                                                                                </div>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td class="taL">
-                                                                                라벨
-                                                                            </td>
-                                                                            <td class="elips taL">지하철 연장라벨</td>
-                                                                            <td>
-                                                                                <div class="btnArea">
-                                                                                    <button type="button" class="btn toggle layerView" title="on/off"></button>
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
-                                                                                <div class="btnArea">
-                                                                                    <button type="button" class="btn popMinus" title="삭제"></button>
-                                                                                </div>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td class="taL">
-                                                                                라벨
-                                                                            </td>
-                                                                            <td class="elips taL">지하철 연장라벨</td>
-                                                                            <td>
-                                                                                <div class="btnArea">
-                                                                                    <button type="button" class="btn toggle layerView" title="on/off"></button>
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
-                                                                                <div class="btnArea">
-                                                                                    <button type="button" class="btn popMinus" title="삭제"></button>
-                                                                                </div>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td class="taL">
-                                                                                라벨
-                                                                            </td>
-                                                                            <td class="elips taL">지하철 연장라벨</td>
-                                                                            <td>
-                                                                                <div class="btnArea">
-                                                                                    <button type="button" class="btn toggle layerView" title="on/off"></button>
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
-                                                                                <div class="btnArea">
-                                                                                    <button type="button" class="btn popMinus" title="삭제"></button>
-                                                                                </div>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td class="taL">
-                                                                                라벨
-                                                                            </td>
-                                                                            <td class="elips taL">지하철 연장라벨</td>
-                                                                            <td>
-                                                                                <div class="btnArea">
-                                                                                    <button type="button" class="btn toggle layerView" title="on/off"></button>
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
-                                                                                <div class="btnArea">
-                                                                                    <button type="button" class="btn popMinus" title="삭제"></button>
-                                                                                </div>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>
-                                                        </div>
-                                                        <!-- //layerArea -->
+                                                        
                                                     </div>
 
                                                 </div>
@@ -1913,6 +1835,17 @@
                                                         </li>
                                                         <li>
                                                             <a href="javascript:void(0)">편입필지 현황</a>
+                                                            <ul class="dep dep02">
+                                                                <li>
+                                                                    <a href="javascript:void(0)">지목현황</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0)">토지이용현황</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0)">소유자현황</a>
+                                                                </li>
+                                                            </ul>
                                                         </li>
                                                         <li>
                                                             <a href="javascript:void(0)">지가 현황</a>
@@ -2001,28 +1934,27 @@
                                                         <div class="control">
                                                             <!-- btnArea -->
                                                             <div class="btnArea edit">
-                                                                <button type="button" class="btn whiteSmall02">
+                                                                <!-- <button type="button" class="btn whiteSmall02">
                                                                     <span>
                                                                         불러오기
                                                                     </span>
-                                                                </button>
-                                                                <button type="button" class="btn toggle navySmall">
+                                                                </button> -->
+                                                                <button type="button" class="btn toggle navySmall winPop" onClick="window.open('map-분석현황-winpop.html','window','width='+ screen.width +',height='+ screen.height +',menubar=no,scrollbars=yes,status=no,resizable=no, fullscreen=yes')">
                                                                     <span>
                                                                         편집
                                                                     </span>
                                                                 </button>
 
                                                                 <!-- btnArea -->
-                                                                <div class="btnArea save">
+                                                                <!-- <div class="btnArea save">
                                                                     <button type="button" class="btn whiteSmall">라벨</button>
                                                                     <button type="button" class="btn whiteSmall">그리기</button>
                                                                     <button type="button" class="btn graySmall close">저장</button>
-                                                                </div>
+                                                                </div> -->
                                                                 <!-- //btnArea -->
 
                                                             </div>
                                                             <!-- //btnArea -->
-
 
                                                         </div>
                                                         <!-- //control -->
@@ -2032,6 +1964,7 @@
                                                             <!-- legendHead -->
                                                             <div class="legendHead">
                                                                 <h3 class="title type08">범례</h3>
+                                                                <button type="button" class="btn minMax type02" title="범례 축소"></button>
                                                             </div>
                                                             <!-- legendHead -->
                                                             <!-- legendCont -->
@@ -2103,147 +2036,13 @@
                                                                             기타주거
                                                                         </p>
                                                                     </li>
-                                                                    <li>
-                                                                        <span></span>
-                                                                        <p class="elips02">
-                                                                            기타주거
-                                                                        </p>
-                                                                    </li>
-                                                                    <li>
-                                                                        <span></span>
-                                                                        <p class="elips02">
-                                                                            Rmt
-                                                                        </p>
-                                                                    </li>
                                                                 </ul>
                                                             </div>
                                                             <!-- legendCont -->
                                                         </div>
                                                         <!-- //legendArea -->
 
-                                                        <!-- layerArea -->
-                                                        <div class="layerArea">
-                                                            <button type="button" class="btn layerSwitch"></button>
-                                                            <!-- table -->
-                                                            <div class="table type10">
-                                                                <table>
-                                                                    <caption>입지규제사항 레이어 게시물로 구분, 레이어명, on/off, 삭제 등의 정보를 제공합니다.</caption>
-                                                                    <colgroup>
-                                                                        <col style="width: 129px;">
-                                                                        <col style="width: 350px;">
-                                                                        <col style="width: 115px;">
-                                                                        <col style="width: 128px;">
-                                                                    </colgroup>
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th scope="col" class="taL">구분</th>
-                                                                            <th scope="col">레이어명</th>
-                                                                            <th scope="col">On/Off</th>
-                                                                            <th scope="col">삭제</th>
-                                                                        </tr>
-                                                                    </thead>
-                                                                    <tbody class="cScroll">
-                                                                        <tr>
-                                                                            <td class="taL">
-                                                                                라벨
-                                                                            </td>
-                                                                            <td class="elips taL">지하철 연장라벨 지하철 연장라벨 지하철 연장라벨 지하철 연장라벨 </td>
-                                                                            <td>
-                                                                                <div class="btnArea">
-                                                                                    <button type="button" class="btn toggle layerView" title="on/off"></button>
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
-                                                                                <div class="btnArea">
-                                                                                    <button type="button" class="btn popMinus" title="삭제"></button>
-                                                                                </div>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td class="taL">
-                                                                                라벨
-                                                                            </td>
-                                                                            <td class="elips taL">지하철 연장라벨</td>
-                                                                            <td>
-                                                                                <div class="btnArea">
-                                                                                    <button type="button" class="btn toggle layerView" title="on/off"></button>
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
-                                                                                <div class="btnArea">
-                                                                                    <button type="button" class="btn popMinus" title="삭제"></button>
-                                                                                </div>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td class="taL">
-                                                                                라벨
-                                                                            </td>
-                                                                            <td class="elips taL">지하철 연장라벨</td>
-                                                                            <td>
-                                                                                <div class="btnArea">
-                                                                                    <button type="button" class="btn toggle layerView" title="on/off"></button>
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
-                                                                                <div class="btnArea">
-                                                                                    <button type="button" class="btn popMinus" title="삭제"></button>
-                                                                                </div>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td class="taL">
-                                                                                라벨
-                                                                            </td>
-                                                                            <td class="elips taL">지하철 연장라벨</td>
-                                                                            <td>
-                                                                                <div class="btnArea">
-                                                                                    <button type="button" class="btn toggle layerView" title="on/off"></button>
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
-                                                                                <div class="btnArea">
-                                                                                    <button type="button" class="btn popMinus" title="삭제"></button>
-                                                                                </div>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td class="taL">
-                                                                                라벨
-                                                                            </td>
-                                                                            <td class="elips taL">지하철 연장라벨</td>
-                                                                            <td>
-                                                                                <div class="btnArea">
-                                                                                    <button type="button" class="btn toggle layerView" title="on/off"></button>
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
-                                                                                <div class="btnArea">
-                                                                                    <button type="button" class="btn popMinus" title="삭제"></button>
-                                                                                </div>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td class="taL">
-                                                                                라벨
-                                                                            </td>
-                                                                            <td class="elips taL">지하철 연장라벨</td>
-                                                                            <td>
-                                                                                <div class="btnArea">
-                                                                                    <button type="button" class="btn toggle layerView" title="on/off"></button>
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
-                                                                                <div class="btnArea">
-                                                                                    <button type="button" class="btn popMinus" title="삭제"></button>
-                                                                                </div>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>
-                                                        </div>
-                                                        <!-- //layerArea -->
+                                                        
                                                     </div>
 
                                                 </div>
@@ -2668,9 +2467,9 @@
                 <!-- //popup -->
 
                 <!-- popup -->
-                <article class="popup active">
+                <article class="popup type03 active">
                     <!-- inner -->
-                    <div class="inner" style="width: 1020px; min-width: 1020px;">
+                    <div class="inner" style="width: 700px; min-width: 700px; height: 680px;">
                         <!-- popHead -->
                         <div class="popHead">
                             <h3 class="title type02">리포트 출력</h3>
@@ -2698,6 +2497,7 @@
                                                 <label for="ckd08" class="elips">
                                                     사업개요
                                                 </label>
+                                                <button type="button" class="btn preview on" title="미리보기"></button>
                                             </p>
                                         </li>
                                         <li>
@@ -2706,6 +2506,7 @@
                                                 <label for="ckd09" class="elips">
                                                     입지규제사항 검토
                                                 </label>
+                                                <button type="button" class="btn preview" title="미리보기"></button>
                                             </p>
                                             <ul class="dep01">
                                                 <li>
@@ -2714,6 +2515,7 @@
                                                         <label for="ckd09_1" class="elips">
                                                             자연환경
                                                         </label>
+                                                        <button type="button" class="btn preview" title="미리보기"></button>
                                                     </p>
                                                     <ul class="dep02">
                                                         <li>
@@ -2722,8 +2524,8 @@
                                                                 <label for="ckd09_1_1" class="elips">
                                                                     가나다라마바사
                                                                 </label>
+                                                                <button type="button" class="btn preview" title="미리보기"></button>
                                                             </p>
-                                                            
                                                         </li>
                                                         <li>
                                                             <p class="name type01 checkbox">
@@ -2731,6 +2533,7 @@
                                                                 <label for="ckd09_1_2" class="elips">
                                                                     가나다라마바사
                                                                 </label>
+                                                                <button type="button" class="btn preview" title="미리보기"></button>
                                                             </p>
                                                         </li>
                                                         <li>
@@ -2739,6 +2542,7 @@
                                                                 <label for="ckd09_1_3" class="elips">
                                                                     가나다라마바사
                                                                 </label>
+                                                                <button type="button" class="btn preview" title="미리보기"></button>
                                                             </p>
                                                         </li>
                                                     </ul>
@@ -2751,6 +2555,7 @@
                                                         <label for="ckd09_2" class="elips">
                                                             인문환경
                                                         </label>
+                                                        <button type="button" class="btn preview" title="미리보기"></button>
                                                     </p>
                                                     <ul class="dep02">
                                                         <li>
@@ -2759,6 +2564,7 @@
                                                                 <label for="ckd09_2_1" class="elips">
                                                                     가나다라마바사
                                                                 </label>
+                                                                <button type="button" class="btn preview" title="미리보기"></button>
                                                             </p>
                                                         </li>
                                                         <li>
@@ -2767,6 +2573,7 @@
                                                                 <label for="ckd09_2_2" class="elips">
                                                                     가나다라마바사
                                                                 </label>
+                                                                <button type="button" class="btn preview" title="미리보기"></button>
                                                             </p>
                                                         </li>
                                                         <li>
@@ -2775,6 +2582,7 @@
                                                                 <label for="ckd09_2_3" class="elips">
                                                                     가나다라마바사
                                                                 </label>
+                                                                <button type="button" class="btn preview" title="미리보기"></button>
                                                             </p>
                                                         </li>
                                                     </ul>
@@ -2794,6 +2602,8 @@
                                                 <label for="ckd10" class="elips">
                                                     사업개요
                                                 </label>
+                                                <button type="button" class="btn preview" title="미리보기"></button>
+
                                             </p>
                                         </li>
                                         <li>
@@ -2802,6 +2612,7 @@
                                                 <label for="ckd11" class="elips">
                                                     입지규제사항 검토
                                                 </label>
+                                                <button type="button" class="btn preview" title="미리보기"></button>
                                             </p>
                                             <ul class="dep01">
                                                 <li>
@@ -2810,6 +2621,7 @@
                                                         <label for="ckd11_1" class="elips">
                                                             자연환경
                                                         </label>
+                                                        <button type="button" class="btn preview" title="미리보기"></button>
                                                     </p>
                                                     <ul class="dep02">
                                                         <li>
@@ -2818,6 +2630,7 @@
                                                                 <label for="ckd11_1_1" class="elips">
                                                                     가나다라마바사
                                                                 </label>
+                                                                <button type="button" class="btn preview" title="미리보기"></button>
                                                             </p>
                                                         </li>
                                                         <li>
@@ -2826,6 +2639,7 @@
                                                                 <label for="ckd11_1_2" class="elips">
                                                                     가나다라마바사
                                                                 </label>
+                                                                <button type="button" class="btn preview" title="미리보기"></button>
                                                             </p>
                                                         </li>
                                                         <li>
@@ -2834,6 +2648,7 @@
                                                                 <label for="ckd11_1_3" class="elips">
                                                                     가나다라마바사
                                                                 </label>
+                                                                <button type="button" class="btn preview" title="미리보기"></button>
                                                             </p>
                                                         </li>
                                                     </ul>
@@ -2846,6 +2661,7 @@
                                                         <label for="ckd11_2" class="elips">
                                                             인문환경
                                                         </label>
+                                                        <button type="button" class="btn preview" title="미리보기"></button>
                                                     </p>
                                                     <ul class="dep02">
                                                         <li>
@@ -2854,6 +2670,7 @@
                                                                 <label for="ckd11_2_1" class="elips">
                                                                     가나다라마바사
                                                                 </label>
+                                                                <button type="button" class="btn preview" title="미리보기"></button>
                                                             </p>
                                                         </li>
                                                         <li>
@@ -2862,6 +2679,7 @@
                                                                 <label for="ckd11_2_2" class="elips">
                                                                     가나다라마바사
                                                                 </label>
+                                                                <button type="button" class="btn preview" title="미리보기"></button>
                                                             </p>
                                                         </li>
                                                         <li>
@@ -2870,6 +2688,7 @@
                                                                 <label for="ckd11_2_3" class="elips">
                                                                     가나다라마바사
                                                                 </label>
+                                                                <button type="button" class="btn preview" title="미리보기"></button>
                                                             </p>
                                                         </li>
                                                     </ul>
@@ -2881,7 +2700,7 @@
                                 <!-- //treeLayer -->
 
                             </article>
-                            <!-- //treeArea     -->
+                            <!-- //treeArea  -->
 
                             <!-- btnArea -->
                             <div class="btnArea">
@@ -2893,6 +2712,153 @@
                         <!-- //popBody -->
                     </div>
                     <!-- //inner -->
+
+
+                    <article class="popup dep02 active">
+                        <!-- inner -->
+                        <div class="inner" style="width: 1050px; min-width: 1050px; height: 680px;">
+                            <!-- popHead -->
+                            <div class="popHead">
+                                <h3 class="title type02">미리보기</h3>
+                                <!-- btnArea -->
+                                <div class="btnArea">
+                                    <button type="button" class="btn popClose">
+                                        <span class="hidden">창 닫기</span>
+                                    </button>
+                                </div>
+                                <!-- //btnArea -->
+                            </div>
+                            <!-- //popHead -->
+                            <!-- popBody -->
+                            <div class="popBody">
+
+                                <article class="mapInfo type03">
+                                    <!-- imgArea -->
+                                    <div class="imgArea">
+                                        <img src="../images/img/img-map02.jpg" alt="맵 이미지">
+                                    </div>
+                                    <!-- //imgArea -->
+                                    <!-- legendArea -->
+                                    <div class="legendArea">
+                                        <!-- legendHead -->
+                                        <div class="legendHead">
+                                            <h3 class="title type08">범례</h3>
+                                        </div>
+                                        <!-- legendHead -->
+                                        <!-- legendCont -->
+                                        <div class="legendCont cScroll">
+                                            <ul>
+                                                <li>
+                                                    <span></span>
+                                                    <p class="elips02" title="주거지역">
+                                                        주거지역
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                    <p class="elips02" title="자연노지지역">
+                                                        자연노지지역
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                    <p class="elips02" title="그외주거지역그외주거지역그외주거지역그외주거지역그외주거지역그외주거지역그외주거지역그외주거지역그외주거지역그외주거지역">
+                                                        그외주거지역그외주거지역그외주거지역그외주거지역그외주거지역그외주거지역그외주거지역그외주거지역그외주거지역그외주거지역
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                    <p class="elips02" title="기타주거">
+                                                        기타주거
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                    <p class="elips02" title="기타주거">
+                                                        기타주거
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                    <p class="elips02" title="기타주거">
+                                                        기타주거
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                    <p class="elips02" title="기타주거">
+                                                        기타주거
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                    <p class="elips02" title="기타주거">
+                                                        기타주거
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                    <p class="elips02" title="기타주거">
+                                                        기타주거
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                    <p class="elips02" title="기타주거">
+                                                        기타주거
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                    <p class="elips02" title="기타주거">
+                                                        기타주거
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                    <p class="elips02" title="기타주거">
+                                                        기타주거
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                    <p class="elips02" title="기타주거">
+                                                        기타주거
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                    <p class="elips02" title="기타주거">
+                                                        기타주거
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                    <p class="elips02" title="기타주거">
+                                                        기타주거
+                                                    </p>
+                                                </li>
+                                                
+                                            </ul>
+                                        </div>
+                                        <!-- legendCont -->
+                                    </div>
+                                    <!-- //legendArea -->
+
+                                </article>
+                            
+                            </div>
+                            <!-- //popBody -->
+                        </div>
+                        <!-- //inner -->
+
+                    </article>
+
+                    
+
+                    
+
+                    
                 </article>
                 <!-- //popup -->
             </section>

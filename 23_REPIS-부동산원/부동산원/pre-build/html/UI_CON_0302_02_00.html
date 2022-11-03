@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html') 
+</head>
+
+
+<body>
+    <!-- wrap -->
+    <div id="wrap">
+
+        <!--header-->
+        <header id="header">
+            @@include('include/mapheader.html')
+        </header>
+        <!--header-->
+
+        <!-- #toc -->
+        <!-- <section id="toc">
+            <article class="toc dep01"></article>
+            <article class="toc dep02"></article>
+        </section> -->
+        <!-- //toc -->
+
+        <!-- resultArea -->
+        <section class="resultArea">
+            
+            <!-- result -->
+            <article class="result off resize dep01">
+                <!-- inner -->
+                <div class="inner">
+
+                    <!-- head -->
+                    <div class="head">
+                        <!-- resultNum -->
+                        <p class="resultNum">
+                            결과 
+                            <span>167</span>
+                        </p>
+                        <!-- //resultNum -->
+                    </div>
+                    <!-- //head -->
+                    <!-- cont -->
+                    <div class="cont">
+                        <!-- gridWrap -->
+                        <article class="gridWrap">
+                            <div id="realgrid01" class="realGrid"></div>
+                        </article>
+                        <!-- //gridWrap -->
+                    </div>
+                    <!-- //cont -->
+                </div>
+                <!-- //inner -->
+
+                <div class="switchArea">
+                    <button type="button" class="btn switch" title="열기"></button>
+                </div>
+
+            </article>
+            <!-- //result -->
+
+            @@include('include/leftarea.html')
+        </section>
+        <!-- //resultArea -->
+
+        <!-- mapContainer -->
+        <section class="mapContainer">
+            <!-- mapArea -->
+            <article class="mapArea">
+                
+                <!-- #map -->
+                <article id="map">
+                    <div class="left">
+                        <div class="mapBox" style="background: url('../images/map/common/bg-sample01.png') no-repeat center;"></div>
+                        <div class="btnArea">
+                            <button type="button" class="btn panel">
+                                <span>2019년</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="mapBox" style="background: url('../images/map/common/bg-sample02.png') no-repeat center;"></div>
+                        <div class="btnArea">
+                            <button type="button" class="btn panel close">
+                                <span>현재</span>
+                            </button>
+                        </div>
+                    </div>
+
+                </article>
+                <!-- //map -->
+
+                @@include('include/dataArea.html')
+
+                @@include('include/utilarea.html')
+                
+            </article>
+            <!-- //mapArea -->
+        </section>
+        <!-- //mapContainer -->
+    </div>
+
+    <script src="../js/realgrid/UI_CON_0302_02_00.js"></script>
+
+    <!-- //wrap -->
+</body>
+</html>

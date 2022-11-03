@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="">
+<meta name="description" content="">
+
+<!-- 오픈그래프 이미지의 경우 최소한 600 x 315 px은 되어야 하며, 1200 x 630 px을 권장함 -->
+<meta property="og:image" content="">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:url" content="">
+<!-- 다음의 태그는 필수는 아니지만, 포함하는 것을 추천함 -->
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<link rel="stylesheet" href="../lib/swiper/css/swiper.css">
+<link rel="stylesheet" href="../lib/jquery-ui.css">
+<link rel="stylesheet" href="../lib/splitter/jquery.splitter.css">
+
+<!-- RealGrid -->
+<script src="../lib/realgrid-lic.js"></script>
+<link href="../lib/realgrid.2.5.3/realgrid-style.css" rel="stylesheet" />
+<script src="../lib/realgrid.2.5.3/realgrid.2.5.3.min.js"></script>
+<script src="../lib/realgrid.2.5.3/libs/jszip.min.js"></script>
+
+
+<link rel="stylesheet" href="../css/common.css">
+<script src="../lib/jquery-1.12.4.js"></script>
+<script src="../lib/jquery-ui.js"></script>
+<script src="../lib/swiper/js/swiper.js"></script>
+<script src="../lib/splitter/jquery.splitter.js"></script>
+<script src="../lib/mychart/chart.js"></script>
+<script src="../js/chartdata.js"></script>
+<script src="../js/ui.js"></script>
+
+<title>Title</title>
+
+ 
+</head>
+
+<style>
+    #wrap {padding-bottom: 100px;}
+    #wrap > section {
+        padding: 0px 100px;
+    }
+    #wrap > section:not(:first-child) {
+        padding-top: 100px;
+    }
+    #wrap > section h1 {
+        position: relative;
+        font-size: 22px; color: #222;
+        font-weight: bold;
+    }
+    #wrap > section h1:after {
+        content: ''; position: absolute; right: 0; top: 0;
+        width: 100%; height: 1px; background: #ddd;
+    }
+
+    #wrap > section > article {
+        margin-top: 20px;
+    }
+    .flex {
+        display: flex; justify-content: center; align-items: center; flex-wrap: wrap;
+    }
+</style>
+
+<body>
+    <!-- wrap -->
+    <div id="wrap" style="overflow-y: visible;">
+        <!--header-->
+        <header id="header">
+            <!-- mapHeader -->
+<section class="mapHeader">
+
+    <!-- formArea -->
+    <article class="formArea">
+        <p >시계열 조회</p>
+        <!-- selectArea -->
+        <div class="selectArea">
+            <select name="" id="">
+                <option value="">2019년</option>
+            </select>
+            <select name="" id="">
+                <option value="">1월 1일 기준</option>
+            </select>
+        </div>
+        <!-- //selectArea -->
+    </article>
+    <!-- //formArea -->
+
+    <!-- toggleArea -->
+    <article class="toggleArea">
+        <!-- bg -->
+        <div class="bg">
+            <input type="checkbox" id="s-chk" class="switch">
+            <div class="key"></div>
+            <div class="name">
+                <span>토지</span>
+                <span>주택</span>
+            </div>
+        </div>
+        <!-- //bg -->
+
+    </article>
+    <!-- //toggleArea -->
+
+    <!-- locationArea -->
+    <article class="locationArea">
+        <!-- location -->
+        <div class="location">
+            <button type="button" class="btn">
+                <span class="loca01">시도</span>
+                <span class="loca02">시/군/구</span>
+                <span class="loca03">읍/면/동</span>
+            </button>
+            <!-- <ul>
+                <li>
+                    <p>시도</p>
+                </li>
+                <li>
+                    <p>시/군/구</p>
+                </li>
+                <li>
+                    <p>읍/면/동</p>
+                </li>
+            </ul> -->
+        </div>
+        <!-- //location -->
+
+        <!-- locationList -->
+        <div class="locationList">
+
+            <div class="listCont">
+                <ul>
+                    <li>
+                        <button type="button" class="btn">작업중</button>
+                    </li>
+                    <li>
+                        <button type="button" class="btn">작업중</button>
+                    </li>
+                    <li>
+                        <button type="button" class="btn">작업중</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- //locationList -->
+        
+    </article>
+    <!-- //locationArea -->
+
+</section>
+<!-- //mapHeader -->
+        </header>
+
+        <section>
+            <h1>title</h1>
+
+            <article>
+                <h3 class="title type01">.type01 / Noto Sans Medium / 16px / color: #007FFF; </h3>
+                <h3 class="title type02">.type02 / Noto Sans / font-weight: bold / 16px / color: #103F57; </h3>
+            </article>
+        </section>
+
+        <section>
+            <h1>toggle</h1>
+            <article class="toggleArea" style="z-index: 2;">
+                <!-- bg -->
+                <div class="bg">
+                    <input type="checkbox" class="switch">
+                    <div class="key"></div>
+                    <div class="name">
+                        <span>토지</span>
+                        <span>주택</span>
+                    </div>
+                </div>
+                <!-- //bg -->
+        
+            </article>
+            <article class="toggleArea type02">
+                <!-- bg -->
+                <div class="bg">
+                    <input type="checkbox" class="switch">
+                    <div class="key"></div>
+                    <div class="name">
+                        <span>토지</span>
+                        <span>주택</span>
+                    </div>
+                </div>
+                <!-- //bg -->
+        
+            </article>
+            <article class="toggleArea type03" style="margin-top: 50px;">
+                <!-- bg -->
+                <div class="bg">
+                    <input type="checkbox" class="switch">
+                    <div class="key"></div>
+                    <div class="name">
+                        <span>토지</span>
+                        <span>주택</span>
+                    </div>
+                </div>
+                <!-- //bg -->
+        
+            </article>
+        </section>
+
+        <section>
+            <h1>button</h1>
+            <article class="flex">
+                <button type="button" class="btn top search">
+                    <span>검색</span>
+                </button>
+                <button type="button" class="btn top layer">
+                    <span>레이어</span>
+                </button>
+                <button type="button" class="btn top setting">
+                    <span>시점설정</span>
+                </button>
+                <button type="button" class="btn top table">
+                    <span>비준표</span>
+                </button>
+                <button type="button" class="btn panel">
+                    <span>2019년</span>
+                </button>
+                <button type="button" class="btn panel close">
+                    <span>현재</span>
+                </button>
+
+                <button type="button" class="btn switch" title="열기"></button>
+            
+                <button type="button" class="btn navyRect">
+                    <span>조회</span>
+                </button>
+
+                <button type="button" class="btn whiteRect">
+                    <span>취소</span>
+                </button>
+
+                <button type="button" class="btn data active" title="데이터보드">
+                    <span>DATA</span>
+                </button>
+                <div class="btnArea mr">
+                    <button type="button" class="btn lineBlue sm">인쇄</button>
+                </div>
+                <button type="button" class="btn navyRectSm">조회</button>
+                <button type="button" class="btn scrollArrow prev off" title="앞으로"></button>
+                <button type="button" class="btn scrollArrow next" title="뒤로"></button>
+                <button type="button" class="btn accoLabel">2021년</button>
+                <div class="btnArea" style="margin-left: 20px;">
+                    <button type="button" class="btn grayRect">비준표 불러오기</button>
+                </div>
+            
+            </article>
+
+            <article class="widget">
+                <ul>
+                    <li>
+                        <button type="button" class="btn widgetBtn airplane" title="항공영상">
+                            <span>항공영상</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="btn widgetBtn bgMap" title="배경지도">
+                            <span>배경지도</span>
+                        </button>
+                    </li>
+                </ul>
+            </article>
+
+            <article class="scale" style="margin-top: 50px;">
+                <ul>
+                    <li>
+                        <button type="button" class="btn widgetBtn plus" title="확대"></button>
+                    </li>
+                    <li>
+                        <!-- 선택불가일때 disable 클래스 추가 -->
+                        <button type="button" class="btn widgetBtn minus disable" title="축소"></button>
+                    </li>
+                </ul>
+            </article>
+
+            
+        </section>
+
+        <section class="flex">
+            <h1 style="width: 100%;">layerpopup</h1>
+            <article class="layerPop active" style="height: 442px;">
+                <!-- head -->
+                <div class="head">
+                    <h3 class="title type01">필지검색</h3>
+                    <div class="btnArea">
+                        <button type="button" class="btn close" title="닫기"></button>
+                    </div>
+                </div>
+                <!-- //head -->
+                <!-- body -->
+                <div class="body">
+                    <!-- cont -->
+                    <div class="cont">
+                        <p>지번선택</p>
+                        <!-- selectArea -->
+                        <div class="selectArea type02">
+                            <select name="" id="">
+                                <option value="">시도</option>
+                            </select>
+                            <select name="" id="">
+                                <option value="">시군구</option>
+                            </select>
+                            <select name="" id="">
+                                <option value="">읍면동</option>
+                            </select>
+                            <select name="" id="">
+                                <option value="">리</option>
+                            </select>
+                            <select name="" id="">
+                                <option value="">구분</option>
+                            </select>
+                        </div>
+                        <!-- //selectArea -->
+                        <!-- inputArea -->
+                        <div class="inputArea">
+                            <input type="text">
+                            <span class="dash"></span>
+                            <input type="text">
+                            <span class="dash02"></span>
+                            <input type="text">
+                            <span class="dash"></span>
+                            <input type="text">
+                        </div>
+                        <!-- //inputArea -->
+                    </div>
+                    <!-- //cont -->
+                    <!-- cont -->
+                    <div class="cont">
+                        <p>기타선택</p>
+                        <!-- selectArea -->
+                        <div class="selectArea type02">
+                            <!-- box -->
+                            <div class="box">
+                                <select name="" id="">
+                                    <option value="">1차 특성(조건1)</option>
+                                </select>
+                                <select name="" id="">
+                                    <option value="">조건1 특성 값</option>
+                                </select>
+                            </div>
+                            <!-- box -->
+                            <!-- box -->
+                            <div class="box">
+                                <select name="" id="">
+                                    <option value="">1차 특성(조건2)</option>
+                                </select>
+                                <select name="" id="">
+                                    <option value="">조건2 특성 값</option>
+                                </select>
+                            </div>
+                            <!-- box -->
+                            <!-- box -->
+                            <div class="box">
+                                <select name="" id="">
+                                    <option value="">1차 특성(조건3)</option>
+                                </select>
+                                <select name="" id="">
+                                    <option value="">조건3 특성 값</option>
+                                </select>
+                            </div>
+                            <!-- box -->
+                            
+                        </div>
+                        <!-- //selectArea -->
+                    </div>
+                    <!-- //cont -->
+
+                    <!-- btnArea -->
+                    <div class="btnArea flex sc">
+                        <button type="button" class="btn navyRect" title="조회">
+                            <span>조회</span>
+                        </button>
+                    </div>
+                    <!-- //btnArea -->
+
+                </div>
+                <!-- //body -->
+            </article>
+
+            <article class="layerPop" style="height: 400px;">
+                <!-- head -->
+                <div class="head">
+                    <h3 class="title type01">레이어</h3>
+                    <div class="btnArea">
+                        <button type="button" class="btn close" title="닫기"></button>
+                    </div>
+                </div>
+                <!-- //head -->
+                <!-- body -->
+                <div class="body type02">
+                    
+                    <!-- tabNav -->
+                    <div class="tabNav">
+                        <ul class="tabList">
+                            <li>
+                                <button type="button" class="btn" title="행정구역">
+                                    <span>행정구역</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn active" title="연속지적도">
+                                    <span>연속지적도</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn" title="용도비역지구">
+                                    <span>용도비역지구</span>
+                                </button>
+                            </li>
+                        </ul>
+
+                        <!-- tabCont -->
+                        <div class="tabCont">
+                            11
+                        </div>
+                        <!-- //tabCont -->
+
+                        <!-- tabCont -->
+                        <div class="tabCont active">
+                            <div class="contList">
+                                <ul>
+                                    <li>
+                                        <p class="checkbox">
+                                            <input type="checkbox" id="chk01" checked="" aria-checked="true">
+                                            <label for="chk01">
+                                                <span>행정구역 시군구 경계</span>
+                                            </label>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="checkbox">
+                                            <input type="checkbox" id="chk02" aria-checked="false">
+                                            <label for="chk02">
+                                                <span>행정구역 읍면동(법정동) 경계</span>
+                                            </label>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="checkbox">
+                                            <input type="checkbox" id="chk03" aria-checked="false">
+                                            <label for="chk03">
+                                                <span>행정구역 리(법정동) 경계</span>
+                                            </label>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- //tabCont -->
+                        <!-- tabCont -->
+                        <div class="tabCont">
+                            33
+                        </div>
+                        <!-- //tabCont -->
+                    </div>
+                    <!-- //tabNav -->
+
+                    <!-- btnArea -->
+                    <div class="btnArea flex sc">
+                        <button type="button" class="btn navyRect" title="조회">
+                            <span>조회</span>
+                        </button>
+                    </div>
+                    <!-- //btnArea -->
+
+                </div>
+                <!-- //body -->
+            </article>
+        </section>
+
+        <section>
+            <h1>form</h1>
+
+            <!-- selectArea -->
+            <div class="selectArea">
+                <select name="" id="">
+                    <option value="">2019년</option>
+                </select>
+                <select name="" id="">
+                    <option value="">1월 1일 기준</option>
+                </select>
+            </div>
+            <!-- //selectArea -->
+
+            <!-- selectArea -->
+            <div class="selectArea type02">
+                <select name="" id="">
+                    <option value="">시도</option>
+                </select>
+            </div>
+            <!-- //selectArea -->
+
+            <div class="selectArea type03">
+                <select name="l06" id="l06" title="시구">
+                    <option value="">시구</option>
+                </select>
+            </div>
+
+            <article class="selectArea scaleSelect">
+                <select name="" id="">
+                    <option value="">1:1,000,000</option>
+                    <option value="">1:1,000,000</option>
+                    <option value="">1:1,000,000</option>
+                    <option value="">1:1,000,000</option>
+                    <option value="">1:1,000,000</option>
+                    <option value="">1:1,000,000</option>
+                </select>
+            </article>
+
+            <!-- inputArea -->
+            <div class="inputArea">
+                <input type="text">
+                <span class="dash"></span>
+                <input type="text">
+                <span class="dash02"></span>
+                <input type="text">
+                <span class="dash"></span>
+                <input type="text">
+            </div>
+            <!-- //inputArea -->
+
+            <p class="checkbox">
+                <input type="checkbox" id="chk01-02">
+                <label for="chk01-02">
+                    <span>행정구역 읍면동(법정동) 경계</span>
+                </label>
+            </p>
+
+            <p class="checkbox type02">
+                <input type="checkbox" id="d-ckd01" class="ckdChage">
+                <label for="d-ckd01">
+                    <span>표준지</span>
+                </label>
+            </p>
+
+            <p class="checkbox type03">
+                <input type="checkbox" id="d-ckd15">
+                <label for="d-ckd15">
+                    <span>공부지목</span>
+                </label>
+            </p>
+
+            <p class="checkbox type04">
+                <input type="checkbox" id="d-ckd04" >
+                <label for="d-ckd04">
+                    <span>표준지</span>
+                </label>
+            </p>
+
+            <p class="radio">
+                <input type="radio" name="r01" id="l01">
+                <label for="l01">연속지적</label>
+            </p>
+            <p class="radio">
+                <input type="radio" name="r01" id="l02">
+                <label for="l02">연속지적</label>
+            </p>
+        </section>
+
+        <section>
+            <h1>etc.</h1>
+
+            <p class="resultNum">
+                결과 
+                <span>167</span>
+            </p>
+
+            
+        </section>
+        
+    </div>
+    <!-- //wrap -->
+</body>
+</html>
