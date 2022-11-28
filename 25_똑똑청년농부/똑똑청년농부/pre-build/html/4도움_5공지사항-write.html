@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    @@include('include/head.html')
+</head>
+
+<body>
+    <div id="wrap" class="sub">
+        <!--header-->
+        <header id="header">
+            @@include('include/header.html')
+            <!-- headerArea -->
+            <section class="headerArea subType">
+                <!-- logoArea -->
+                <article class="logoArea">
+                    <h2 class="logo">
+                        <a href="#">
+                            <img src="../images/common/logo-pc.svg" alt="똑똑!청년농부" class="pc">
+                            <img src="../images/common/logo-mo.svg" alt="똑똑!청년농부" class="mo">
+                        </a>
+                    </h2>
+                </article>
+                <!-- //logoArea -->
+
+                <!-- gnb -->
+                <nav id="gnb">
+                    <ul>
+                        <li>
+                            <a href="#">사업</a>
+                            <ul class="dep02">
+                                <li>
+                                    <a href="#">지원사업</a>
+                                </li>
+                                <li>
+                                    <a href="#">청년정책</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">경영</a>
+                            <ul class="dep02">
+                                <li>
+                                    <a href="#">경영모의계산</a>
+                                </li>
+                                <li>
+                                    <a href="#">맞춤귀농서비스</a>
+                                </li>
+                                <li>
+                                    <a href="#">창업솔루션</a>
+                                </li>
+                                <li>
+                                    <a href="#">기술창업</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">사례</a>
+                            <ul class="dep02">
+                                <li>
+                                    <a href="#">청년농영상</a>
+                                </li>
+                                <li>
+                                    <a href="#">청년농소개</a>
+                                </li>
+                                <li>
+                                    <a href="#">기술우수사례</a>
+                                </li>
+                                <li>
+                                    <a href="#">실패ㆍ극복사례</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">도움</a>
+                            <ul class="dep02">
+                                <li>
+                                    <a href="#">귀농귀촌팁</a>
+                                </li>
+                                <li>
+                                    <a href="#">세금이야기</a>
+                                </li>
+                                <li>
+                                    <a href="#">주요사이트안내</a>
+                                </li>
+                                <li>
+                                    <a href="#">전문가네트워크</a>
+                                </li>
+                                <li>
+                                    <a href="#">공지사항</a>
+                                </li>
+                                <li>
+                                    <a href="#">자주묻는질문</a>
+                                </li>
+                                <li>
+                                    <a href="#">자료실</a>
+                                </li>
+                                <li>
+                                    <a href="#">Q&A</a>
+                                </li>
+                                <li>
+                                    <a href="#">소통공간</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn mobileSubSearch">
+                        <span class="hidden">검색</span>
+                    </button>
+                    <button type="button" class="btn mobileSubSearchClose">
+                        <span class="hidden">검색닫기</span>
+                    </button>
+                    <button type="button" class="btn drawer">
+                        <span class="line line01"></span>
+                        <span class="line line02"></span>
+                        <span class="line line03"></span>
+                    </button>
+                    <!-- mobile -->
+                    <div class="mobile">
+                        <div class="inner">
+                            <!-- moUtil -->
+                            <div class="moUtil">
+                                <article class="btnArea">
+                                    <button type="button" class="btn user mo">
+                                        <em>홍길동</em>
+                                        님
+                                    </button>
+                                    <button type="button" class="btn log logOut mo" title="로그아웃">로그아웃</button>
+                                    <!-- <button type="button" class="btn log mo logIn">로그인</button> -->
+                                </article>
+                            </div>
+                            <!-- //moUtil -->
+                            <ul class="cScroll">
+                                <li>
+                                    <a href="javascript:void(0)" class="dep01">사업</a>
+                                    <ul class="dep02">
+                                        <li>
+                                            <a href="#">지원사업</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">청년정책</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="dep01">경영</a>
+                                    <ul class="dep02">
+                                        <li>
+                                            <a href="#">경영모의계산</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">맞춤귀농서비스</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">창업솔루션</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">기술창업</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="dep01">사례</a>
+                                    <ul class="dep02">
+                                        <li>
+                                            <a href="#">청년농영상</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">청년농소개</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">기술우수사례</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">실패ㆍ극복사례</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="dep01">도움</a>
+                                    <ul class="dep02">
+                                        <li>
+                                            <a href="#">귀농귀촌팁</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">세금이야기</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">주요사이트안내</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">전문가네트워크</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">공지사항</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">자주묻는질문</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">자료실</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Q&A</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">소통공간</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!-- // mobile -->
+                    <!-- subSearchArea -->
+                    <div class="subSearchArea">
+                        <!-- inner -->
+                        <div class="inner">
+                            <div class="searchArea">
+                                <label for="search">
+                                    <input type="text" placeholder="검색어를 입력하세요." spellcheck="false">
+                                </label>
+                                <button type="button" class="btn search" title="검색하기">검색하기</button>
+                            </div>
+                        </div>
+                        <!-- //inner -->
+                    </div>
+                    <!-- //subSearchArea -->
+                </nav>
+                <!-- //gnb -->
+
+                <!-- utilArea -->
+                <article class="utilArea">
+                    <!-- btnArea -->
+                    <article class="btnArea">
+                        <button type="button" class="btn user">
+                            <em>홍길동</em>
+                            님
+                        </button>
+                        <button type="button" class="btn log logOut">로그아웃</button>
+                        <!-- <button type="button" class="btn log logIn">로그인</button> -->
+                        <button type="button" class="btn subSearch">
+                            <span class="hidden">검색</span>
+                        </button>
+                        <button type="button" class="btn subSearchClose">
+                            <span class="hidden">검색닫기</span>
+                        </button>
+                        <!-- <button type="button" class="btn drawer">
+                            <span class="line line01"></span>
+                            <span class="line line02"></span>
+                            <span class="line line03"></span>
+                        </button> -->
+
+                    </article>
+                    <!-- //btnArea -->
+
+
+                </article>
+                <!-- //utilArea -->
+            </section>
+            <!-- //headerArea -->
+
+            <!-- breadCrumb -->
+            <div class="breadCrumb">
+                <ul>
+                    <li class="home">
+                        <a href="#">
+                            <span class="hidden">홈</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">도움</a>
+                    </li>
+                    <li class="hasDepth">
+                        <a href="#">공지사항</a>
+                        <button type="button" class="btnDepthMore" aria-expanded="false">
+                            <span class="hidden">메뉴 더보기 펼치기</span>
+                        </button>
+                        <!-- dep2 -->
+                        <ul class="dep2">
+                            <li>
+                                <a href="#">귀농귀촌팁</a>
+                            </li>
+                            <li>
+                                <a href="#">세금이야기</a>
+                            </li>
+                            <li>
+                                <a href="#">주요사이트안내</a>
+                            </li>
+                            <li>
+                                <a href="#">전문가네트워크</a>
+                            </li>
+                            <li>
+                                <a href="#">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="#">자주묻는질문</a>
+                            </li>
+                            <li>
+                                <a href="#">자료실</a>
+                            </li>
+                            <li>
+                                <a href="#">Q&A</a>
+                            </li>
+                            <li>
+                                <a href="#">소통공간</a>
+                            </li>
+                        </ul>
+                        <!-- //dep2 -->
+                    </li>
+                </ul>
+            </div>
+            <!-- //breadCrumb -->
+
+            <!-- subSearchArea -->
+            <div class="subSearchArea">
+                <!-- inner -->
+                <div class="inner">
+                    <div class="searchArea">
+                        <label for="search">
+                            <input type="text" placeholder="검색어를 입력하세요.">
+                        </label>
+                        <button type="button" class="btn search">검색하기</button>
+                    </div>
+                </div>
+                <!-- //inner -->
+            </div>
+            <!-- //subSearchArea -->
+        </header>
+        <!--header-->
+
+        <!--container-->
+        <main id="container">
+            <!-- contents -->
+            <div id="contents">
+                <!-- content -->
+                <div id="content">
+                    <h2 class="hidden">본문 영역</h2>
+                    <!-- sectionTitArea -->
+                    <section class="sectionTitArea">
+                        <!-- inner -->
+                        <div class="inner">
+                            <h3 class="titPage">
+                                <strong>공지사항</strong>
+                            </h3>
+                        </div>
+                        <!-- //inner -->
+                    </section>
+                    <!-- //sectionTitArea -->
+
+                    <!-- secContainer -->
+                    <article class="secContainer type02">
+                        <!-- inner -->
+                        <div class="inner">
+
+                            <!-- secGroup -->
+                            <section class="secGroup right">
+                                
+                                <!-- cardContainer -->
+                                <div class="cardContainer active">
+
+                                    <!-- tableArea -->
+                                    <article class="tableArea">
+                                        <!-- table -->
+                                        <div class="table type06">
+                                            <table>
+                                                <caption>공지사항 게시물로 제목, 내용, 작성자, 첨부파일 등의 정보를 제공합니다.</caption>
+                                                <colgroup>
+                                                    <col style="width: 170px;">
+                                                    <col style="width: auto;">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <label for="l01">
+                                                                제목
+                                                            </label>
+                                                        </th>
+                                                        <td>
+                                                            <input type="text" id="l01">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <label for="l02" class="top">
+                                                                내용
+                                                            </label>
+                                                        </th>
+                                                        <td>
+                                                            <!-- editArea -->
+                                                            <div class="editArea" style="background: #ddd">
+                                                                에디터 영역
+                                                            </div>
+                                                            <!-- editArea -->
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            작성자
+                                                        </th>
+                                                        <td>
+                                                            이승은
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>
+                                                            <label for="l07" class="top">
+                                                                첨부파일
+                                                            </label>
+                                                        </th>
+                                                        <td>
+                                                            <!-- fileArea -->
+                                                            <div class='fileArea'>
+                                                                <input type='file' id='fileSelect01'>
+                                                                <label for='fileSelect01'>파일선택</label>
+
+                                                                <!-- fileList -->
+                                                                <ul class="fileList">
+                                                                    <li>
+                                                                        <p>
+                                                                            2022년도 청년 농산업 아이디어 경진대회 추진계획.pdf
+                                                                            <button type="button" class="btn delete" title="삭제"></button>
+                                                                        </p>
+                                                                    </li>
+                                                                </ul>
+                                                                <!-- //fileList -->
+                                                            </div>
+                                                            <!-- //fileArea -->
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- //table -->
+                                    </article>
+                                    <!-- //tableArea -->
+
+                                    <!-- btnArea -->
+                                    <div class="btnArea flex jcC">
+                                        <button type="button" class="btn grayRect">목록</button>
+                                        <button type="button" class="btn deepBlueRect">등록</button>
+                                    </div>
+                                    <!-- //btnArea -->
+                                    
+                                </div>
+                                <!-- //cardContainer -->
+
+                            </section>
+                            <!-- //secGroup -->
+                            
+                        </div>
+                        <!-- //inner -->
+                    </article>
+                    <!-- //secContainer -->
+                </div>
+                <!-- content -->
+            </div>
+            <!-- //contents -->
+        </main>
+        <!--//container-->
+
+        <button type="button" class="btn switch">
+            <span class="open">QUICK<br />MENU</span>
+            <span class="close"></span>
+        </button>
+        <!-- quickMenu -->
+        <aside class="quickMenu">
+            <ul>
+                <li>
+                    <a href="#" class="busi">지원사업</a>
+                </li>
+                <li>
+                    <a href="#" class="cafe">청창농<br class="pc" />카페</a>
+                </li>
+                <li>
+                    <a href="#" class="tv">청년농업인<br class="pc" />TV</a>
+                </li>
+                <li>
+                    <a href="#" class="calc">경영<br class="pc" />모의계산</a>
+                </li>
+                <li>
+                    <a href="#" class="exhi">제철장터<br class="pc" />기획전</a>
+                </li>
+            </ul>
+        </aside>
+        <!-- //quickMenu -->
+
+        <!--footer-->
+        <footer id="footer">
+            @@include('include/footer.html')
+        </footer>
+        <!--//footer-->
+
+    </div>
+</body>
+
+</html>

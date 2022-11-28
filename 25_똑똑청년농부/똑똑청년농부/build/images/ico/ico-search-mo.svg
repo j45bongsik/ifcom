@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16.097" viewBox="0 0 16 16.097">
+  <g id="icon" transform="translate(-534 -566)">
+    <rect id="area" width="16" height="16" transform="translate(534 566)" fill="none"/>
+    <g id="icon-2" data-name="icon" transform="translate(534.728 566.728)">
+      <g id="타원_1" data-name="타원 1" fill="none" stroke="#000" stroke-width="2">
+        <ellipse cx="5.819" cy="6.059" rx="5.819" ry="6.059" stroke="none"/>
+        <ellipse cx="5.819" cy="6.059" rx="4.819" ry="5.059" fill="none"/>
+      </g>
+      <path id="패스_23" data-name="패스 23" d="M792,698l5.089,5.089" transform="translate(-782.906 -688.427)" fill="none" stroke="#000" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

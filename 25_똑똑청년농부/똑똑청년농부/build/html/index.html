@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="똑똑청년농부">
+<meta name="description" content="똑똑청년농부">
+
+<!-- 오픈그래프 이미지의 경우 최소한 600 x 315 px은 되어야 하며, 1200 x 630 px을 권장함 -->
+<meta property="og:image" content="">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:url" content="">
+<!-- 다음의 태그는 필수는 아니지만, 포함하는 것을 추천함 -->
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<link rel="stylesheet" href="../lib/swiper/css/swiper.css">
+<link rel="stylesheet" href="../lib/jquery-ui.css">
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/mobile.css">
+<script src="../lib/jquery-1.12.4.js"></script>
+<script src="../lib/jquery-ui.js"></script>
+<script src="../lib/swiper/js/swiper.js"></script>
+<script src="../js/ui.js"></script>
+<script src="../js/swiper.js"></script>
+
+<title>Title</title>
+
+ 
+</head>
+<script type="text/javascript">
+    $(document).ready(function(){
+
+        //헤더 type01
+        $("#header.type01 #gnb > ul > li").on('mouseenter focusin',function(){
+            if ($(this).children(".depth02").length > 0) {
+                $(this).children(".depth02").stop().slideDown(200);
+            }
+        })
+        $("#header.type01 #gnb > ul >li").on('mouseleave focusout',function(){
+            $(this).children(".depth02").stop().slideUp(200);
+        })
+
+        //헤더 type02
+        $("#header.type02 #gnb > ul > li").on('mouseenter focusin',function(){
+            if ($(this).children(".depth02").length > 0) {
+                $(this).closest("#header").addClass("open")
+                $(this).children(".depth02").stop().slideDown(200);
+            }
+        })
+        $("#header.type02 #gnb > ul >li").on('mouseleave focusout',function(){
+            $(this).children(".depth02").stop().slideUp(200).closest("#header").removeClass("open");
+        })
+
+        //헤더 type03
+        $("#header.type03 #gnb > ul > li").on('mouseenter focusin',function(){
+            if ($(this).children(".depth02").length > 0) {
+                $(this).closest("#header").addClass("open")
+                $(this).children(".depth02").stop().slideDown(200);
+            }
+        })
+        $("#header.type03 #gnb > ul >li").on('mouseleave focusout',function(){
+            $(this).children(".depth02").stop().slideUp(200).closest("#header").removeClass("open");
+        })
+
+        //버튼 토글
+        $('.button').on({
+            'click': function (){
+                $(this).text() === '열기'
+                ? $(this).attr('title','토글 닫기').text('닫기')
+                : $(this).attr('title','토글 열기').text('열기');
+            }
+        })
+
+    });//
+
+</script>
+<body>
+
+    <div id="wrap">
+        <!--header-->
+        <header id="header">
+            <!--accNav-->
+<div id="accNav">
+    <a href="#container">본문 바로가기</a>
+</div>
+<!--//accNav-->
+
+
+
+        </header>
+        <!--header-->
+
+        <!--container-->
+        <main id="container">
+            <div class="box" style="text-align: center;">
+
+                <h3 class="headerExamTitle">Type 01</h3>
+                <!-- //header type01    -->
+                <div id="header" class="type01">
+                    <!-- inner -->
+                    <div class="inner">
+                        <!-- logo -->
+                        <a href="#" title="" class="logo">
+                            <img src="" alt="">
+                        </a>
+                        <!-- //logo -->
+                        <!-- gnb -->
+                        <nav id="gnb">
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)" title="">depth01</a>
+                                    <ul class="depth02">
+                                        <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                        <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                        <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                        <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="">depth01-2</a>
+                                    <!-- <ul class="depth02">
+                                        <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                        <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                        <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                        <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                    </ul> -->
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="">depth01-3</a>
+                                    <ul class="depth02">
+                                        <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                        <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                        <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                        <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="">depth01</a>
+                                    <ul class="depth02">
+                                        <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                        <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                        <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                        <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="">depth01</a>
+                                    <ul class="depth02">
+                                        <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                        <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                        <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                        <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </nav>
+                        <!-- //gnb -->
+                        <!-- utilArea -->
+                        <div class="utilArea">
+                            <div class="headerUtil">
+                                <p>util 영역</p>
+                            </div>
+                            <div class="sitemap">
+                                <p>drawer&other 영역</p>
+                            </div>
+                        </div>
+                        <!-- //utilArea -->
+                    </div>
+                    <!-- //inner -->
+                </div>
+                <!-- //header type01    -->
+
+                <br /><br /> <br />
+
+                <h3 class="headerExamTitle">Type 02</h3>
+                <!-- //header type02    -->
+                <div id="header" class="type02">
+                    <!-- inner -->
+                    <div class="inner">
+                        <!-- logo -->
+                        <a href="#" title="" class="logo">
+                            <img src="" alt="">
+                        </a>
+                        <!-- //logo -->
+                        <!-- gnb -->
+                        <nav id="gnb">
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)" title="">depth01</a>
+                                    <ul class="depth02">
+                                        <div class="inner">
+                                            <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                            <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                            <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                            <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="">depth01-2</a>
+                                    <!-- <ul class="depth02">
+                                        <div class="inner">
+                                            <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                            <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                            <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                            <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                        </div>
+                                    </ul> -->
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="">depth01-3</a>
+                                    <ul class="depth02">
+                                        <div class="inner">
+                                            <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                            <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                            <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                            <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="">depth01</a>
+                                    <ul class="depth02">
+                                        <div class="inner">
+                                            <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                            <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                            <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                            <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="">depth01</a>
+                                    <ul class="depth02">
+                                        <div class="inner">
+                                            <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                            <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                            <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                            <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                        </div>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </nav>
+                        <!-- //gnb -->
+                        <!-- utilArea -->
+                        <div class="utilArea">
+                            <div class="headerUtil">
+                                <p>util 영역</p>
+                            </div>
+                            <div class="sitemap">
+                                <p>drawer&other 영역</p>
+                            </div>
+                        </div>
+                        <!-- //utilArea -->
+                    </div>
+                    <!-- //inner -->
+                </div>
+                <!-- //header type02    -->
+
+                <br /><br /> <br />
+
+                <h3 class="headerExamTitle">Type 03</h3>
+                <!-- //header type03 -->
+                <div id="header" class="type03">
+                    <!-- inner -->
+                    <div class="inner">
+                        <!-- logo -->
+                        <a href="#" title="" class="logo">
+                            <img src="" alt="">
+                        </a>
+                        <!-- //logo -->
+                        <!-- gnb -->
+                        <nav id="gnb">
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)" title="">depth01</a>
+                                    <ul class="depth02">
+                                        <div class="inner">
+                                            <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                            <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                            <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                            <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="">depth01-2</a>
+                                    <!-- <ul class="depth02">
+                                        <div class="inner">
+                                            <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                            <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                            <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                            <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                        </div>
+                                    </ul> -->
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="">depth01-3</a>
+                                    <ul class="depth02">
+                                        <div class="inner">
+                                            <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                            <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                            <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                            <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="">depth01</a>
+                                    <ul class="depth02">
+                                        <div class="inner">
+                                            <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                            <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                            <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                            <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="">depth01</a>
+                                    <ul class="depth02">
+                                        <div class="inner">
+                                            <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                            <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                            <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                            <li><a href="#" target="_blank" title="새창 열림">depth02</a></li>
+                                        </div>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- //gnb -->
+                        <!-- utilArea -->
+                        <div class="utilArea">
+                            <div class="headerUtil">
+                                <p>util 영역</p>
+                            </div>
+                            <div class="sitemap">
+                                <p>drawer&other 영역</p>
+                            </div>
+                        </div>
+                        <!-- //utilArea -->
+                    </div>
+                    <!-- //inner -->
+                </div>
+                <!-- //header type03 -->
+
+                <br /><br /> <br />
+
+
+                <!--기본적으로 라디오는 좌우 화살표방향키로, 체크박스는 탭키와 스페이스바로 이동한다.-->
+                <p class="checkbox">
+                    <input type="checkbox" id="chk">
+                    <label for="chk">체크박스</label>
+                </p>
+
+                <br /><br /> <br />
+
+                <div class="radioGroup">
+                    <div class="radio">
+                        <input type="radio" id="radio01" name="radio">
+                        <label for="radio01">라디오01</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" id="radio02" name="radio">
+                        <label for="radio02">라디오02</label>
+                    </div>
+                </div>
+
+                <br /><br /> <br />
+
+                <button type="button" class="button" title="토글 열기" style="width: 100px;height: 50px;background: gray;">열기</button>
+            </div>
+        </main>
+        <!--//container-->
+
+        <!--footer-->
+        <footer id="footer">
+            <!-- inner -->
+<div class="inner">
+    <!-- box -->
+    <div class="box type02">
+        <!-- ciArea -->
+        <article class="ciArea">
+            <h2 class="logo">
+                <a href="#">
+                    <img src="../images/common/logo-foot01-pc.svg" alt="농촌진흥청" class="pc">
+                    <img src="../images/common/logo-foot01-mo.svg" alt="농촌진흥청" class="mo">
+                </a>
+            </h2>
+            <h2 class="logo">
+                <a href="#">
+                    <img src="../images/common/logo-foot02-pc.svg" alt="똑똑!청년농부" class="pc">
+                    <img src="../images/common/logo-foot02-mo.svg" alt="똑똑!청년농부" class="mo">
+                </a>
+            </h2>
+        </article>
+        <!-- //ciArea -->
+
+        <!-- policyArea -->
+        <article class="policyArea">
+            <ul>
+                <li>
+                    <a href="#">개선의견요청</a>
+                </li>
+                <li>
+                    <a href="#">서비스이용안내</a>
+                </li>
+                <li>
+                    <a href="#">공공데이터신청</a>
+                </li>
+                <li>
+                    <a href="#">개인정보처리방침</a>
+                </li>
+                <li>
+                    <a href="#">사이트맵</a>
+                </li>
+            </ul>
+        </article>
+        <!-- //policyArea -->
+    </div>
+    <!-- //box -->
+    <!-- box -->
+    <div class="box">
+        <!-- addressArea -->
+        <div class="addressArea">
+            <address>54875 전라북도 전주시 덕진구 농생명로 300</address>
+            <p class="call">대표전화 063-238-1000 (월~금 9:00~18:00, 공휴일 제외, 야간 0005~7) </p>
+            <p class="call">팩스 063-238-1766 (야간1785)</p>
+        </div>
+        <!-- addressArea -->
+        <p class="copy">COPYRIGHT ©. ALL RIGHTS RESERVED</p>
+    </div>
+    <!-- //box -->
+</div>
+<!-- //inner -->
+        </footer>
+        <!--//footer-->
+    </div>
+</body>
+</html>

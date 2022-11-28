@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+  <g id="icon_새창열기" data-name="icon / 새창열기" transform="translate(-169 -218)">
+    <rect id="사각형_347" data-name="사각형 347" width="10" height="10" transform="translate(169 218)" fill="none"/>
+    <path id="Icon_material-open-in-new" data-name="Icon material-open-in-new" d="M13.187,13.187h-7.6v-7.6h3.8V4.5h-3.8A1.086,1.086,0,0,0,4.5,5.586v7.6a1.086,1.086,0,0,0,1.086,1.086h7.6a1.089,1.089,0,0,0,1.086-1.086v-3.8H13.187ZM10.473,4.5V5.586h1.949L7.085,10.923l.766.766,5.337-5.337V8.3h1.086V4.5Z" transform="translate(164.5 213.5)" fill="#fff"/>
+  </g>
+</svg>

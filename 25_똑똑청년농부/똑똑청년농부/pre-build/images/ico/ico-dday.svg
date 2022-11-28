@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <g id="icon_달력" data-name="icon / 달력" transform="translate(-1733 -678)">
+    <rect id="area" width="18" height="18" transform="translate(1733 678)" fill="none"/>
+    <g id="타원_33" data-name="타원 33" transform="translate(1735 680)" fill="#fff" stroke="#666" stroke-width="1">
+      <circle cx="7" cy="7" r="7" stroke="none"/>
+      <circle cx="7" cy="7" r="6.5" fill="none"/>
+    </g>
+    <path id="패스_1923" data-name="패스 1923" d="M1741.5,682.707v5.078h3.571" fill="none" stroke="#666" stroke-width="1"/>
+  </g>
+</svg>

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+    <div id="wrap" class="sub">
+        <!--header-->
+        <header id="header">
+            @@include('include/header.html')
+            <!-- headerArea -->
+            <section class="headerArea subType">
+                <!-- logoArea -->
+                <article class="logoArea">
+                    <h2 class="logo">
+                        <a href="#">
+                            <img src="../images/common/logo-pc.svg" alt="똑똑!청년농부" class="pc">
+                            <img src="../images/common/logo-mo.svg" alt="똑똑!청년농부" class="mo">
+                        </a>
+                    </h2>
+                </article>
+                <!-- //logoArea -->
+
+                <!-- gnb -->
+                <nav id="gnb">
+                    <ul>
+                        <li>
+                            <a href="#">사업</a>
+                            <ul class="dep02">
+                                <li>
+                                    <a href="#" >지원사업</a>
+                                </li>
+                                <li>
+                                    <a href="#">청년정책</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">경영</a>
+                            <ul class="dep02">
+                                <li>
+                                    <a href="#">경영모의계산</a>
+                                </li>
+                                <li>
+                                    <a href="#">맞춤귀농서비스</a>
+                                </li>
+                                <li>
+                                    <a href="#">창업솔루션</a>
+                                </li>
+                                <li>
+                                    <a href="#">기술창업</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">사례</a>
+                            <ul class="dep02">
+                                <li>
+                                    <a href="#">청년농영상</a>
+                                </li>
+                                <li>
+                                    <a href="#">청년농소개</a>
+                                </li>
+                                <li>
+                                    <a href="#">기술우수사례</a>
+                                </li>
+                                <li>
+                                    <a href="#">실패ㆍ극복사례</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">도움</a>
+                            <ul class="dep02">
+                                <li>
+                                    <a href="#">귀농귀촌팁</a>
+                                </li>
+                                <li>
+                                    <a href="#">세금이야기</a>
+                                </li>
+                                <li>
+                                    <a href="#">주요사이트안내</a>
+                                </li>
+                                <li>
+                                    <a href="#">전문가네트워크</a>
+                                </li>
+                                <li>
+                                    <a href="#">공지사항</a>
+                                </li>
+                                <li>
+                                    <a href="#">자주묻는질문</a>
+                                </li>
+                                <li>
+                                    <a href="#">자료실</a>
+                                </li>
+                                <li>
+                                    <a href="#">Q&A</a>
+                                </li>
+                                <li>
+                                    <a href="#">소통공간</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn mobileSubSearch">
+                        <span class="hidden">검색</span>
+                    </button>
+                    <button type="button" class="btn mobileSubSearchClose">
+                        <span class="hidden">검색닫기</span>
+                    </button>
+                    <button type="button" class="btn drawer">
+                        <span class="line line01"></span>
+                        <span class="line line02"></span>
+                        <span class="line line03"></span>
+                    </button>
+                    <!-- mobile -->
+                    <div class="mobile">
+                        <div class="inner">
+                            <!-- moUtil -->
+                            <div class="moUtil">
+                                <article class="btnArea">
+                                    <button type="button" class="btn user mo">
+                                        <em>홍길동</em>
+                                        님
+                                    </button>
+                                    <button type="button" class="btn log logOut mo" title="로그아웃">로그아웃</button>
+                                    <!-- <button type="button" class="btn log mo logIn">로그인</button> -->
+                                </article>
+                            </div>
+                            <!-- //moUtil -->
+                            <ul class="cScroll">
+                                <li>
+                                    <a href="javascript:void(0)" class="dep01">사업</a>
+                                    <ul class="dep02">
+                                        <li>
+                                            <a href="#" >지원사업</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">청년정책</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="dep01">경영</a>
+                                    <ul class="dep02">
+                                        <li>
+                                            <a href="#">경영모의계산</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">맞춤귀농서비스</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">창업솔루션</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">기술창업</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="dep01">사례</a>
+                                    <ul class="dep02">
+                                        <li>
+                                            <a href="#">청년농영상</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">청년농소개</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">기술우수사례</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">실패ㆍ극복사례</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="dep01">도움</a>
+                                    <ul class="dep02">
+                                        <li>
+                                            <a href="#">귀농귀촌팁</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">세금이야기</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">주요사이트안내</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">전문가네트워크</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">공지사항</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">자주묻는질문</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">자료실</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Q&A</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">소통공간</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <!-- // mobile -->
+
+
+                    <!-- subSearchArea -->
+                    <div class="subSearchArea">
+                        <!-- inner -->
+                        <div class="inner">
+                            <div class="searchArea">
+                                <label for="search">
+                                    <input type="text" placeholder="검색어를 입력하세요." spellcheck="false">
+                                </label>
+                                <button type="button" class="btn search" title="검색하기">검색하기</button>
+                            </div>
+                        </div>
+                        <!-- //inner -->
+                    </div>
+                    <!-- //subSearchArea -->
+                </nav>
+                <!-- //gnb -->
+
+                <!-- utilArea -->
+                <article class="utilArea">
+                    <!-- btnArea -->
+                    <article class="btnArea">
+                        <button type="button" class="btn user">
+                            <em>홍길동</em>
+                            님
+                        </button>
+                        <button type="button" class="btn log logOut">로그아웃</button>
+                        <!-- <button type="button" class="btn log logIn">로그인</button> -->
+                        <button type="button" class="btn subSearch">
+                            <span class="hidden">검색</span>
+                        </button>
+                        <button type="button" class="btn subSearchClose">
+                            <span class="hidden">검색닫기</span>
+                        </button>
+                        <!-- <button type="button" class="btn drawer">
+                            <span class="line line01"></span>
+                            <span class="line line02"></span>
+                            <span class="line line03"></span>
+                        </button> -->
+                        
+                    </article>
+                    <!-- //btnArea -->
+
+                    
+                </article>
+                <!-- //utilArea -->
+            </section>
+            <!-- //headerArea -->
+
+            <!-- breadCrumb -->
+            <div class="breadCrumb">
+                <ul>
+                    <li class="home">
+                        <a href="#">
+                            <span class="hidden">홈</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">마이페이지</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- //breadCrumb -->
+
+            <!-- subSearchArea -->
+            <div class="subSearchArea">
+                <!-- inner -->
+                <div class="inner">
+                    <div class="searchArea">
+                        <label for="search">
+                            <input type="text" placeholder="검색어를 입력하세요.">
+                        </label>
+                        <button type="button" class="btn search">검색하기</button>
+                    </div>
+                </div>
+                <!-- //inner -->
+            </div>
+            <!-- //subSearchArea -->
+        </header>
+        <!--header-->
+
+        <!--container-->
+        <main id="container">
+            <!-- contents -->
+            <div id="contents">
+                <!-- content -->
+                <div id="content">
+                    <h2 class="hidden">본문 영역</h2>
+                    <!-- sectionTitArea -->
+                    <section class="sectionTitArea">
+                        <!-- inner -->
+                        <div class="inner">
+                            <h3 class="titPage">
+                                <strong>마이페이지</strong>
+                            </h3>
+                        </div>
+                        <!-- //inner -->
+                    </section>
+                    <!-- //sectionTitArea -->
+
+                    <!-- secContainer -->
+                    <article class="secContainer type02 type04 col">
+                        <!-- inner -->
+                        <div class="inner">
+                            <h4 class="subTit">
+                                <strong>회원 정보 수정</strong>
+                            </h4>
+                            <div class="secGroup type03">
+                                <div class="topArea type02 mtb">
+                                    <p class="tit">기본 정보 설정</p>
+                                </div>
+                                <!-- tableArea -->
+                                <article class="tableArea">
+                                    <!-- table -->
+                                    <div class="table type04 tdLeft">
+                                        <table>
+                                            <caption>마이페이지 정보수정 테이블 : 아이디 , 비밀번호 , 비밀번호 확인 , 이름 , 이메일 , 가입형태</caption>
+                                            <colgroup>
+                                                <col style="width: 170px">
+                                                <col style="width: auto">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <p class="mark type01">아이디(전화번호)</p>
+                                                    </th>
+                                                    <td>01077777777</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <label for="l01" class="mark type01">비밀번호</label>
+                                                    </th>
+                                                    <td>
+                                                        <div class="inputGroup">
+                                                            <input type="password" id="l01" placeholder=""
+                                                            title="비밀번호 입력창">
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <label for="l02" class="mark type01">비밀번호 확인</label>
+                                                    </th>
+                                                    <td class="type03">
+                                                        <div class="inputGroup">
+                                                            <input type="password" id="l02" placeholder="" title="비밀번호 확인 입력창">
+                                                        </div>
+                                                        <div class="noSame">
+                                                            <p>비밀번호가 일치하지 않습니다.</p>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <p class="mark type01">이름 (실명)</p>
+                                                    </th>
+                                                    <td>
+                                                        홍길동
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <label for="l03" class="mark type01">E-MAIL</label>
+                                                    </th>
+                                                    <td>
+                                                        <!-- inputGroup -->
+                                                        <div class="inputGroup col">
+                                                            <div class="inputBox double">
+                                                                <input type="email" id="l03" title="앞자리 이메일 입력" value="abcd">
+                                                                <span class="at">@</span>
+                                                                <input type="email" title="뒷자리 이메일 입력" value="asdbcd.co.kr">
+                                                            </div>  
+                                                            <div class="inputBox">
+                                                                <select>
+                                                                    <option selected>직접입력</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <!-- //inputGroup -->
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- //table -->
+                                </article>
+                                <!-- //tableArea -->
+                            </div>
+
+                            <div class="secGroup type03">
+                                <div class="topArea type02 mtb">
+                                    <p class="tit">추가 정보 설정</p>
+                                </div>
+                                <!-- tableArea -->
+                                <article class="tableArea">
+                                    <!-- table -->
+                                    <div class="table type04 tdLeft">
+                                        <table>
+                                            <caption>마이페이지 회원정보수정 추가정보설정 테이블 :
+                                            지역 , 주요생산품목</caption>
+                                            <colgroup>
+                                                <col style="width: 170px">
+                                                <col style="width: auto">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <label for="l06">지역</label>
+                                                    </th>
+                                                    <td>
+                                                        <div class="selectGroup type02">
+                                                            <select id="l06">
+                                                                <option selected>전북</option>
+                                                            </select>
+
+                                                            <select>
+                                                                <option selected>전주</option>
+                                                            </select>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <label for="l07">주요생산품목</label>
+                                                    </th>
+                                                    <td>
+                                                        <div class="selectGroup type02">
+                                                            <select id="l07">
+                                                                <option selected>가을배추</option>
+                                                            </select>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- //table -->
+                                </article>
+                                <!-- //tableArea -->
+                            </div>
+
+                            <div class="secGroup type02 type03">
+                                <div class="topArea type02 mtb">
+                                    <p class="tit">지원사업 알림 설정</p>
+                                </div>
+                                <!-- checkList -->
+                                <div class="checkList">
+                                    <ul>
+                                        <li>
+                                            <!-- accTitArea -->
+                                            <div class="chkTitArea">
+                                                <!-- checkArea -->
+                                                <div class="checkArea">
+                                                    <!-- checkbox -->
+                                                    <div class="checkbox type02">
+                                                        <input type="checkbox" name="chk1" id="l09">
+                                                        <label for="l09">
+                                                            <span class="labelTxt">
+                                                                <span class="colorType orange">사업</span>과 관련된 지원사업이 등록될 경우 카카오톡 알림을 받습니다.
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                    <!-- //checkbox -->
+                                                </div>
+                                                <!-- //checkArea -->
+                                            </div>
+                                            <!-- //accTitArea -->
+                                        </li>
+                                        <li>
+                                            <!-- accTitArea -->
+                                            <div class="chkTitArea">
+                                                <!-- checkArea -->
+                                                <div class="checkArea">
+                                                    <!-- checkbox -->
+                                                    <div class="checkbox type02">
+                                                        <input type="checkbox" name="chk1" id="l10">
+                                                        <label for="l10">
+                                                            <span class="labelTxt">
+                                                                <span class="colorType orange">교육</span>과 관련된 지원사업이 등록될 경우 카카오톡 알림을 받습니다.
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                    <!-- //checkbox -->
+                                                </div>
+                                                <!-- //checkArea -->
+                                            </div>
+                                            <!-- //accTitArea -->
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- //checkList -->
+                            </div>
+
+                            <div class="btnArea flex jcC cg10">
+                                <button type="button" class="btn grayRect type02">취소</button>
+                                <button type="button" class="btn deepBlueRect">정보 수정</button>
+                            </div>
+                        </div>
+                        <!-- //inner -->
+                    </article>
+                    <!-- //secContainer -->
+                </div>
+                <!-- content -->
+            </div>
+            <!-- //contents -->
+        </main>
+        <!--//container-->
+
+        <button type="button" class="btn switch">
+            <span class="open">QUICK<br />MENU</span>
+            <span class="close"></span>
+        </button>
+        <!-- quickMenu -->
+        <aside class="quickMenu">
+            <ul>
+                <li>
+                    <a href="#" class="busi">지원사업</a>
+                </li>
+                <li>
+                    <a href="#" class="cafe">청창농<br class="pc" />카페</a>
+                </li>
+                <li>
+                    <a href="#" class="tv">청년농업인<br class="pc" />TV</a>
+                </li>
+                <li>
+                    <a href="#" class="calc">경영<br class="pc" />모의계산</a>
+                </li>
+                <li>
+                    <a href="#" class="exhi">제철장터<br class="pc" />기획전</a>
+                </li>
+            </ul>
+        </aside>
+        <!-- //quickMenu -->
+
+        <!--footer-->
+        <footer id="footer">
+            @@include('include/footer.html')
+        </footer>
+        <!--//footer-->
+
+    </div>
+</body>
+
+</html>

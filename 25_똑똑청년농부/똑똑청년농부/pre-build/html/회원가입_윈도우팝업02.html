@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+    <div id="wrap" class="sub window">
+        <!--container-->
+        <main id="container">
+            <!-- contents -->
+            <div id="contents">
+                <!-- content -->
+                <div id="content">
+                    <h2 class="hidden">본문 영역</h2>
+                    <!-- sectionTitArea -->
+                    <section class="sectionTitArea">
+                        <!-- inner -->
+                        <div class="inner col">
+                            <h3 class="titPage lock">
+                                <strong>비밀번호 변경</strong>
+                            </h3>
+                            <p class="hintTxt">새 비밀번호를 입력해주세요.</p>
+                            
+                            <!-- inputArea -->
+                            <article class="inputArea">
+                                <!-- inputGroup -->
+                                <div class="inputGroup col">
+                                    <div class="labelArea">
+                                        <strong class="inputLabel">
+                                            <label for="l01">새 비밀번호</label>
+                                        </strong>
+                                    </div>
+
+                                    <!-- row -->
+                                    <div class="row">
+                                        <input type="password" id="l01" placeholder="비밀번호를 다시 입력해주세요." class="full">
+                                    </div>
+                                    <!-- //row -->
+                                </div>
+                                <!-- //inputGroup -->
+
+                                <!-- inputGroup -->
+                                <div class="inputGroup col">
+                                    <div class="labelArea">
+                                        <strong class="inputLabel">
+                                            <label for="l02">새 비밀번호 확인</label>
+                                        </strong>
+                                    </div>
+
+                                    <!-- row -->
+                                    <div class="row">
+                                        <input type="password" placeholder="비밀번호를 다시 입력해주세요." id="l02" class="full">
+                                    </div>
+                                    <!-- //row -->
+                                </div>
+                                <!-- //inputGroup -->
+                            </article>
+                            <!-- //inputArea -->
+
+                            <div class="btnArea flex jcC cg10">
+                                <button type="button" class="btn grayRect type02">취소</button>
+                                <button type="button" class="btn deepBlueRect">비밀번호 변경</button>
+                            </div>
+                        </div>
+                        <!-- //inner -->
+                    </section>
+                    <!-- //sectionTitArea -->
+                </div>
+                <!-- content -->
+            </div>
+            <!-- //contents -->
+        </main>
+        <!--//container-->
+    </div>
+</body>
+</html>

@@ -155,6 +155,13 @@ a {
   // }
 }
 
+input {
+  &.validation {
+    border: 1px solid #C73E3E !important;
+    background: #fff url("../images/ico/ico-validation.svg") no-repeat right 20px center;
+  }
+}
+
 .logoArea {
   text-align: center;
   h3 {
@@ -1263,6 +1270,11 @@ a {
     font-weight: bold;
     font-size: 28px;
     color: #222222;
+  }
+  &.type13 {
+    font-family: 'Noto Sans';
+    font-size: 18px;
+    color: #666;
   }
 }
 
@@ -3828,6 +3840,7 @@ textarea {
     border-top: none;
     width: 100%;
     max-height: 100%;
+    box-shadow: none;
     ul {
       li {
         font-family: 'Noto Sans';
@@ -5692,7 +5705,7 @@ textarea {
                 display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;
                 // padding-left: 15px;
 
-                p {
+                >p {
                   width: calc(100% - 105px);
                 }
                 .btnArea {
@@ -7199,6 +7212,9 @@ textarea {
             &.rightOcta {
               background: url("../images/map/ico-rightocta.svg") no-repeat left 20px center;
             }
+            &.rightLine {
+              background: url("../images/map/ico-rightline.svg") no-repeat left 20px center;
+            }
             
           }
           &:nth-last-child(2) {
@@ -7255,16 +7271,18 @@ textarea {
 }
 
 .clustering {
-  padding: 40px 0px;
+  padding: 40px;
   background: #F4F4F9;
   border-top: 2px solid #253258;
   ul {
     display: flex; justify-content: center; align-items: center;
+    flex-wrap: wrap;
     li {
-      display: flex; justify-content: center; align-items: center;
+      width: calc(100% / 2 - 30px);
+      display: flex; justify-content: flex-end; align-items: center;
       label {
         position: relative;
-        width: 112px;
+        width: 120px;
         height: 60px;
         padding: 20px;
         font-family: 'Noto Sans';
@@ -7284,11 +7302,13 @@ textarea {
         }
       }
       .textArea {
+        flex: 1;
+        max-width : 300px;
         position: relative;
         border-radius: 0px 10px 10px 0px;
         overflow: hidden;
         input {
-          width: 227px;
+          width: 100%;
           height: 60px;
           padding: 0px 45px 0px 20px;
           font-family: 'Noto Sans';
@@ -7314,7 +7334,13 @@ textarea {
           transform: translateY(-50%);
         }
       }
-      &:not(:first-child) {margin-left: 30px;}
+      &:nth-child(2n) {
+        justify-content: flex-start;
+        margin-left: 30px;
+      }
+      &:nth-child(n+3) {
+        margin-top: 15px;
+      }
     }
   }
   &+.descBottom {
@@ -7701,7 +7727,7 @@ textarea {
   align-items: center;
   margin-top: 8px;
   // margin: -12px 0px 10px 0px;
-  label {
+  p {
     margin-right: 10px;
     font-family: 'Noto Sans';
     font-size: 12px;
@@ -7709,6 +7735,88 @@ textarea {
   }
 }
 
+.bubbleArea {
+  position: absolute;
+  min-width: 300px;
+  padding: 15px;
+  background: #fff;
+  border: 1px solid #D8DEE3;
+  border-radius: 10px;
+  box-shadow: 3px 3px 4px rgba($color: #000, $alpha: 0.15);
+  .cont {
+    .nameArea {
+      display: flex; justify-content: flex-start; align-items: center;
+      p {
+        font-family: 'Noto Sans';
+        font-weight: bold;
+        &.name {
+          
+          font-size: 18px;
+          color: #353990;
+        }
+        +.what {
+          margin-left: 5px;
+          font-size: 13px;
+          color: #666;
+        }
+      }
+      a {
+        font-family: 'Noto Sans';
+        font-weight: bold;
+        &.name {
+          
+          font-size: 18px;
+          color: #353990;
+          +.what {
+            margin-left: 5px;
+            font-size: 13px;
+            color: #666;
+          }
+        }
+      }
+      .btn {
+        font-family: 'Noto Sans';
+        font-weight: bold;
+        font-size: 18px;
+        color: #353990;
+        &.name {
+          +.what {
+            margin-left: 5px;
+            font-size: 13px;
+            color: #666;
+          }
+        }
+      }
+    }
+    .address {
+      margin-top: 6px;
+      p {
+        font-family: 'Noto Sans';
+        font-size: 14px;
+        color: #222;
+      }
+    }
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 12px; height: 10px;
+    background: url("../images/ico/ico-bubble-tri.svg") no-repeat center center;
+  }
+}
+
+.blankArea {
+  display: flex; justify-content: center; align-items: center;
+  min-height: 350px;
+  border: 1px solid #D8DEE3;
+  .title {
+    padding-top: 90px;
+    background: url("../images/ico/ico-blank.svg") no-repeat center top;
+  }
+}
 
 
 

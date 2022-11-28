@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html') 
+</head>
+<body>
+    <div id="wrap" class="sub">
+        <!--header-->
+        <header id="header">
+            @@include('include/header.html')
+            <!-- headerArea -->
+            <section class="headerArea subType">
+                <!-- logoArea -->
+                <article class="logoArea">
+                    <h2 class="logo">
+                        <a href="#">
+                            <img src="../images/common/logo-pc.svg" alt="똑똑!청년농부" class="pc">
+                            <img src="../images/common/logo-mo.svg" alt="똑똑!청년농부" class="mo">
+                        </a>
+                    </h2>
+                </article>
+                <!-- //logoArea -->
+
+                <!-- gnb -->
+                <nav id="gnb">
+                    <ul>
+                        <li>
+                            <a href="#">사업</a>
+                            <ul class="dep02">
+                                <li>
+                                    <a href="#" >지원사업</a>
+                                </li>
+                                <li>
+                                    <a href="#">청년정책</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">경영</a>
+                            <ul class="dep02">
+                                <li>
+                                    <a href="#">경영모의계산</a>
+                                </li>
+                                <li>
+                                    <a href="#">맞춤귀농서비스</a>
+                                </li>
+                                <li>
+                                    <a href="#">창업솔루션</a>
+                                </li>
+                                <li>
+                                    <a href="#">기술창업</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">사례</a>
+                            <ul class="dep02">
+                                <li>
+                                    <a href="#">청년농영상</a>
+                                </li>
+                                <li>
+                                    <a href="#">청년농소개</a>
+                                </li>
+                                <li>
+                                    <a href="#">기술우수사례</a>
+                                </li>
+                                <li>
+                                    <a href="#">실패ㆍ극복사례</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">도움</a>
+                            <ul class="dep02">
+                                <li>
+                                    <a href="#">귀농귀촌팁</a>
+                                </li>
+                                <li>
+                                    <a href="#">세금이야기</a>
+                                </li>
+                                <li>
+                                    <a href="#">주요사이트안내</a>
+                                </li>
+                                <li>
+                                    <a href="#">전문가네트워크</a>
+                                </li>
+                                <li>
+                                    <a href="#">공지사항</a>
+                                </li>
+                                <li>
+                                    <a href="#">자주묻는질문</a>
+                                </li>
+                                <li>
+                                    <a href="#">자료실</a>
+                                </li>
+                                <li>
+                                    <a href="#">Q&A</a>
+                                </li>
+                                <li>
+                                    <a href="#">소통공간</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn mobileSubSearch">
+                        <span class="hidden">검색</span>
+                    </button>
+                    <button type="button" class="btn mobileSubSearchClose">
+                        <span class="hidden">검색닫기</span>
+                    </button>
+                    <button type="button" class="btn drawer">
+                        <span class="line line01"></span>
+                        <span class="line line02"></span>
+                        <span class="line line03"></span>
+                    </button>
+                    <!-- mobile -->
+                    <div class="mobile">
+                        <div class="inner">
+                            <!-- moUtil -->
+                            <div class="moUtil">
+                                <article class="btnArea">
+                                    <button type="button" class="btn user mo">
+                                        <em>홍길동</em>
+                                        님
+                                    </button>
+                                    <button type="button" class="btn log logOut mo" title="로그아웃">로그아웃</button>
+                                    <!-- <button type="button" class="btn log mo logIn">로그인</button> -->
+                                </article>
+                            </div>
+                            <!-- //moUtil -->
+                            <ul class="cScroll">
+                                <li>
+                                    <a href="javascript:void(0)" class="dep01">사업</a>
+                                    <ul class="dep02">
+                                        <li>
+                                            <a href="#" >지원사업</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">청년정책</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="dep01">경영</a>
+                                    <ul class="dep02">
+                                        <li>
+                                            <a href="#">경영모의계산</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">맞춤귀농서비스</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">창업솔루션</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">기술창업</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="dep01">사례</a>
+                                    <ul class="dep02">
+                                        <li>
+                                            <a href="#">청년농영상</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">청년농소개</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">기술우수사례</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">실패ㆍ극복사례</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="dep01">도움</a>
+                                    <ul class="dep02">
+                                        <li>
+                                            <a href="#">귀농귀촌팁</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">세금이야기</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">주요사이트안내</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">전문가네트워크</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">공지사항</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">자주묻는질문</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">자료실</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Q&A</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">소통공간</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <!-- // mobile -->
+                    <!-- subSearchArea -->
+                    <div class="subSearchArea">
+                        <!-- inner -->
+                        <div class="inner">
+                            <div class="searchArea">
+                                <label for="search">
+                                    <input type="text" placeholder="검색어를 입력하세요." spellcheck="false">
+                                </label>
+                                <button type="button" class="btn search" title="검색하기">검색하기</button>
+                            </div>
+                        </div>
+                        <!-- //inner -->
+                    </div>
+                    <!-- //subSearchArea -->
+                </nav>
+                <!-- //gnb -->
+
+                <!-- utilArea -->
+                <article class="utilArea">
+                    <!-- btnArea -->
+                    <article class="btnArea">
+                        <button type="button" class="btn user">
+                            <em>홍길동</em>
+                            님
+                        </button>
+                        <button type="button" class="btn log logOut">로그아웃</button>
+                        <!-- <button type="button" class="btn log logIn">로그인</button> -->
+                        <button type="button" class="btn subSearch">
+                            <span class="hidden">검색</span>
+                        </button>
+                        <button type="button" class="btn subSearchClose">
+                            <span class="hidden">검색닫기</span>
+                        </button>
+                        <!-- <button type="button" class="btn drawer">
+                            <span class="line line01"></span>
+                            <span class="line line02"></span>
+                            <span class="line line03"></span>
+                        </button> -->
+                        
+                    </article>
+                    <!-- //btnArea -->
+
+                    
+                </article>
+                <!-- //utilArea -->
+            </section>
+            <!-- //headerArea -->
+
+            <!-- breadCrumb -->
+            <div class="breadCrumb">
+                <ul>
+                    <li class="home">
+                        <a href="#">
+                            <span class="hidden">홈</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">알림존</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- //breadCrumb -->
+
+            <!-- subSearchArea -->
+            <div class="subSearchArea">
+                <!-- inner -->
+                <div class="inner">
+                    <div class="searchArea">
+                        <label for="search">
+                            <input type="text" placeholder="검색어를 입력하세요.">
+                        </label>
+                        <button type="button" class="btn search">검색하기</button>
+                    </div>
+                </div>
+                <!-- //inner -->
+            </div>
+            <!-- //subSearchArea -->
+        </header>
+        <!--header-->
+
+        <!--container-->
+        <main id="container">
+            <!-- contents -->
+            <div id="contents">
+                <!-- content -->
+                <div id="content">
+                    <h2 class="hidden">본문 영역</h2>
+                    <!-- sectionTitArea -->
+                    <section class="sectionTitArea">
+                        <!-- inner -->
+                        <div class="inner">
+                            <h3 class="titPage">
+                                <strong>알림존</strong>
+                            </h3>
+                        </div>
+                        <!-- //inner -->
+                    </section>
+                    <!-- //sectionTitArea -->
+
+                    <!-- secContainer -->
+                    <article class="secContainer type02">
+                        <!-- inner -->
+                        <div class="inner">
+
+                            <!-- secGroup -->
+                            <section class="secGroup right">
+                                <!-- topArea -->
+                                <div class="topArea">
+                                    <!-- resultBox -->
+                                    <div class="resultBox mtA">
+                                        <p class="resTxt">
+                                            총
+                                            <strong class="resCount colorType deepBlue">24건</strong>
+                                        </p>
+                                    </div>
+                                    <!-- //resultBox -->
+
+                                    <!-- rightGroup -->
+                                    <div class="rightGroup">
+
+                                        <article class="searchArea type02">
+                                            <label for="search">
+                                                <input type="text" placeholder="검색어를 입력하세요">
+                                            </label>
+                                        </article>
+
+                                        <!-- menuViewArea -->
+                                        <div class="menuViewArea">
+                                            <button type="button" class="btn btnAlbum active">
+                                                <span class="hidden">앨범형으로 보기</span>
+                                            </button>
+                                            <button type="button" class="btn btnList">
+                                                <span class="hidden">리스트형으로 보기</span>
+                                            </button>
+                                        </div>
+                                        <!-- //menuViewArea -->
+                                    </div>
+                                    <!-- //rightGroup -->
+                                </div>
+                                <!-- //topArea -->
+
+                                <!-- cardContainer -->
+                                <div class="cardContainer active">
+                                    <div class="introBox type02">
+                                        <!-- listBox -->
+                                        <div class="listBox ">
+                                            <ul>
+                                                <li>
+                                                    <div class="box naming">
+                                                        <!-- imgArea -->
+                                                        <article class="imgArea">
+                                                            <img src="../images/common/img-alert01.png" alt="알림 배너">
+                                                            <span class="nMing card">
+                                                                카드뉴스
+                                                            </span>
+                                                            <!-- checkbox -->
+                                                            <div class="checkbox type03">
+                                                                <input type="checkbox" name="ckd01" id="l01" checked>
+                                                                <label for="l01"></label>
+                                                            </div>
+                                                            <!-- //checkbox -->
+                                                        </article>
+                                                        <!-- //imgArea -->
+                                                        <article class="cont">
+                                                            
+                                                            <p class="desc elips02">카드뉴스 게시글 카드뉴스 게시글 게시글 카드뉴스 게시글</p>
+                                                            <div class="textGroup">
+                                                                <p class="people02">2020-10-31</p>
+                                                                <div class="spanGroup">
+                                                                    <span class="docu han"></span>
+                                                                    <span class="docu pdf"></span>
+                                                                    <span class="docu xls"></span>
+                                                                </div>
+                                                            </div>
+                                                            <a href="#" class="type02">자세히 보기</a>
+                                                        </article>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="box naming">
+                                                        <!-- imgArea -->
+                                                        <article class="imgArea">
+                                                            <img src="../images/common/img-alert02.png" alt="알림 배너">
+                                                            <span class="nMing video">
+                                                                동영상
+                                                            </span>
+                                                            <!-- checkbox -->
+                                                            <div class="checkbox type03">
+                                                                <input type="checkbox" name="ckd02" id="l02">
+                                                                <label for="l02"></label>
+                                                            </div>
+                                                            <!-- //checkbox -->
+                                                        </article>
+                                                        <!-- //imgArea -->
+                                                        <article class="cont">
+                                                            
+                                                            <p class="desc elips02">이미지 게시글 이미지 게시글 이미지 게시글 이미지 게시글 </p>
+                                                            <div class="textGroup">
+                                                                <p class="people02">2020-10-31</p>
+                                                                <div class="spanGroup">
+                                                                    <span class="docu han"></span>
+                                                                    <span class="docu pdf"></span>
+                                                                    <span class="docu xls"></span>
+                                                                </div>
+                                                            </div>
+                                                            <a href="#" class="type02">자세히 보기</a>
+                                                        </article>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="box naming">
+                                                        <!-- imgArea -->
+                                                        <article class="imgArea">
+                                                            <img src="../images/common/img-alert03.png" alt="알림 배너">
+                                                            <span class="nMing img">
+                                                                이미지
+                                                            </span>
+                                                            <!-- checkbox -->
+                                                            <div class="checkbox type03">
+                                                                <input type="checkbox" name="ckd03" id="l03">
+                                                                <label for="l03"></label>
+                                                            </div>
+                                                            <!-- //checkbox -->
+                                                        </article>
+                                                        <!-- //imgArea -->
+                                                        <article class="cont">
+                                                            
+                                                            <p class="desc elips02">이미지 게시글 이미지 게시글 이미지 게시글 이미지 게시글 </p>
+                                                            <div class="textGroup">
+                                                                <p class="people02">2020-10-31</p>
+                                                                <div class="spanGroup">
+                                                                    <span class="docu han"></span>
+                                                                    <span class="docu pdf"></span>
+                                                                    <span class="docu xls"></span>
+                                                                </div>
+                                                            </div>
+                                                            <a href="#" class="type02">자세히 보기</a>
+                                                        </article>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="box naming">
+                                                        <!-- imgArea -->
+                                                        <article class="imgArea">
+                                                            <img src="../images/common/img-alert04.png" alt="알림 배너">
+                                                            <span class="nMing text">
+                                                                텍스트
+                                                            </span>
+                                                            <!-- checkbox -->
+                                                            <div class="checkbox type03">
+                                                                <input type="checkbox" name="ckd04" id="l04">
+                                                                <label for="l04"></label>
+                                                            </div>
+                                                            <!-- //checkbox -->
+                                                        </article>
+                                                        <!-- //imgArea -->
+                                                        <article class="cont">
+                                                            
+                                                            <p class="desc elips02">텍스트 게시글 </p>
+                                                            <div class="textGroup">
+                                                                <p class="people02">2020-10-31</p>
+                                                                <!-- <span class="docu han"></span> -->
+                                                                <span class="docu pdf"></span>
+                                                                <!-- <span class="docu xls"></span> -->
+                                                            </div>
+                                                            <a href="#" class="type02">자세히 보기</a>
+                                                        </article>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div class="box naming">
+                                                        <!-- imgArea -->
+                                                        <article class="imgArea">
+                                                            <img src="../images/common/img-alert01.png" alt="알림 배너">
+                                                            <span class="nMing card">
+                                                                카드뉴스
+                                                            </span>
+                                                            <!-- checkbox -->
+                                                            <div class="checkbox type03">
+                                                                <input type="checkbox" name="ckd05" id="l05">
+                                                                <label for="l05"></label>
+                                                            </div>
+                                                            <!-- //checkbox -->
+                                                        </article>
+                                                        <!-- //imgArea -->
+                                                        <article class="cont">
+                                                            
+                                                            <p class="desc elips02">카드뉴스 게시글 카드뉴스 게시글 게시글 카드뉴스 게시글</p>
+                                                            <div class="textGroup">
+                                                                <p class="people02">2020-10-31</p>
+                                                                <div class="spanGroup">
+                                                                    <span class="docu han"></span>
+                                                                    <span class="docu pdf"></span>
+                                                                    <span class="docu xls"></span>
+                                                                </div>
+                                                            </div>
+                                                            <a href="#" class="type02">자세히 보기</a>
+                                                        </article>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="box naming">
+                                                        <!-- imgArea -->
+                                                        <article class="imgArea">
+                                                            <img src="../images/common/img-alert02.png" alt="알림 배너">
+                                                            <span class="nMing video">
+                                                                동영상
+                                                            </span>
+                                                            <!-- checkbox -->
+                                                            <div class="checkbox type03">
+                                                                <input type="checkbox" name="ckd06" id="l06">
+                                                                <label for="l06"></label>
+                                                            </div>
+                                                            <!-- //checkbox -->
+                                                        </article>
+                                                        <!-- //imgArea -->
+                                                        <article class="cont">
+                                                            
+                                                            <p class="desc elips02">이미지 게시글 이미지 게시글 이미지 게시글 이미지 게시글 </p>
+                                                            <div class="textGroup">
+                                                                <p class="people02">2020-10-31</p>
+                                                                <div class="spanGroup">
+                                                                    <span class="docu han"></span>
+                                                                    <span class="docu pdf"></span>
+                                                                    <span class="docu xls"></span>
+                                                                </div>
+                                                            </div>
+                                                            <a href="#" class="type02">자세히 보기</a>
+                                                        </article>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="box naming">
+                                                        <!-- imgArea -->
+                                                        <article class="imgArea">
+                                                            <img src="../images/common/img-alert03.png" alt="알림 배너">
+                                                            <span class="nMing img">
+                                                                이미지
+                                                            </span>
+                                                            <!-- checkbox -->
+                                                            <div class="checkbox type03">
+                                                                <input type="checkbox" name="ckd07" id="l07">
+                                                                <label for="l07"></label>
+                                                            </div>
+                                                            <!-- //checkbox -->
+                                                        </article>
+                                                        <!-- //imgArea -->
+                                                        <article class="cont">
+                                                            
+                                                            <p class="desc elips02">이미지 게시글 이미지 게시글 이미지 게시글 이미지 게시글 </p>
+                                                            <div class="textGroup">
+                                                                <p class="people02">2020-10-31</p>
+                                                                <div class="spanGroup">
+                                                                    <span class="docu han"></span>
+                                                                    <span class="docu pdf"></span>
+                                                                    <span class="docu xls"></span>
+                                                                </div>
+                                                            </div>
+                                                            <a href="#" class="type02">자세히 보기</a>
+                                                        </article>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="box naming">
+                                                        <!-- imgArea -->
+                                                        <article class="imgArea">
+                                                            <img src="../images/common/img-alert04.png" alt="알림 배너">
+                                                            <span class="nMing text">
+                                                                텍스트
+                                                            </span>
+                                                            <!-- checkbox -->
+                                                            <div class="checkbox type03">
+                                                                <input type="checkbox" name="ckd08" id="l08">
+                                                                <label for="l08"></label>
+                                                            </div>
+                                                            <!-- //checkbox -->
+                                                        </article>
+                                                        <!-- //imgArea -->
+                                                        <article class="cont">
+                                                            
+                                                            <p class="desc elips02">텍스트 게시글 </p>
+                                                            <div class="textGroup">
+                                                                <p class="people02">2020-10-31</p>
+                                                                <!-- <span class="docu han"></span> -->
+                                                                <span class="docu pdf"></span>
+                                                                <!-- <span class="docu xls"></span> -->
+                                                            </div>
+                                                            <a href="#" class="type02">자세히 보기</a>
+                                                        </article>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div class="box naming">
+                                                        <!-- imgArea -->
+                                                        <article class="imgArea">
+                                                            <img src="../images/common/img-alert01.png" alt="알림 배너">
+                                                            <span class="nMing card">
+                                                                카드뉴스
+                                                            </span>
+                                                            <!-- checkbox -->
+                                                            <div class="checkbox type03">
+                                                                <input type="checkbox" name="ckd09" id="l09">
+                                                                <label for="l09"></label>
+                                                            </div>
+                                                            <!-- //checkbox -->
+                                                        </article>
+                                                        <!-- //imgArea -->
+                                                        <article class="cont">
+                                                            
+                                                            <p class="desc elips02">카드뉴스 게시글 카드뉴스 게시글 게시글 카드뉴스 게시글</p>
+                                                            <div class="textGroup">
+                                                                <p class="people02">2020-10-31</p>
+                                                                <div class="spanGroup">
+                                                                    <span class="docu han"></span>
+                                                                    <span class="docu pdf"></span>
+                                                                    <span class="docu xls"></span>
+                                                                </div>
+                                                            </div>
+                                                            <a href="#" class="type02">자세히 보기</a>
+                                                        </article>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="box naming">
+                                                        <!-- imgArea -->
+                                                        <article class="imgArea">
+                                                            <img src="../images/common/img-alert02.png" alt="알림 배너">
+                                                            <span class="nMing video">
+                                                                동영상
+                                                            </span>
+                                                            <!-- checkbox -->
+                                                            <div class="checkbox type03">
+                                                                <input type="checkbox" name="ckd10" id="l10">
+                                                                <label for="l10"></label>
+                                                            </div>
+                                                            <!-- //checkbox -->
+                                                        </article>
+                                                        <!-- //imgArea -->
+                                                        <article class="cont">
+                                                            
+                                                            <p class="desc elips02">이미지 게시글 이미지 게시글 이미지 게시글 이미지 게시글 </p>
+                                                            <div class="textGroup">
+                                                                <p class="people02">2020-10-31</p>
+                                                                <div class="spanGroup">
+                                                                    <span class="docu han"></span>
+                                                                    <span class="docu pdf"></span>
+                                                                    <span class="docu xls"></span>
+                                                                </div>
+                                                            </div>
+                                                            <a href="#" class="type02">자세히 보기</a>
+                                                        </article>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="box naming">
+                                                        <!-- imgArea -->
+                                                        <article class="imgArea">
+                                                            <img src="../images/common/img-alert03.png" alt="알림 배너">
+                                                            <span class="nMing img">
+                                                                이미지
+                                                            </span>
+                                                            <!-- checkbox -->
+                                                            <div class="checkbox type03">
+                                                                <input type="checkbox" name="ckd11" id="l11">
+                                                                <label for="l11"></label>
+                                                            </div>
+                                                            <!-- //checkbox -->
+                                                        </article>
+                                                        <!-- //imgArea -->
+                                                        <article class="cont">
+                                                            
+                                                            <p class="desc elips02">이미지 게시글 이미지 게시글 이미지 게시글 이미지 게시글 </p>
+                                                            <div class="textGroup">
+                                                                <p class="people02">2020-10-31</p>
+                                                                <div class="spanGroup">
+                                                                    <span class="docu han"></span>
+                                                                    <span class="docu pdf"></span>
+                                                                    <span class="docu xls"></span>
+                                                                </div>
+                                                            </div>
+                                                            <a href="#" class="type02">자세히 보기</a>
+                                                        </article>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="box naming">
+                                                        <!-- imgArea -->
+                                                        <article class="imgArea">
+                                                            <img src="../images/common/img-alert04.png" alt="알림 배너">
+                                                            <span class="nMing text">
+                                                                텍스트
+                                                            </span>
+                                                            <!-- checkbox -->
+                                                            <div class="checkbox type03">
+                                                                <input type="checkbox" name="ckd12" id="l12">
+                                                                <label for="l12"></label>
+                                                            </div>
+                                                            <!-- //checkbox -->
+                                                        </article>
+                                                        <!-- //imgArea -->
+                                                        <article class="cont">
+                                                            
+                                                            <p class="desc elips02">텍스트 게시글 </p>
+                                                            <div class="textGroup">
+                                                                <p class="people02">2020-10-31</p>
+                                                                <!-- <span class="docu han"></span> -->
+                                                                <span class="docu pdf"></span>
+                                                                <!-- <span class="docu xls"></span> -->
+                                                            </div>
+                                                            <a href="#" class="type02">자세히 보기</a>
+                                                        </article>
+                                                    </div>
+                                                </li>
+                                                
+                                            </ul>
+                                        </div>
+                                        <!-- //listBox -->
+                                    </div>
+                                    <!-- //introBox -->
+                                    
+                                    <div class="btnArea type02">
+                                        <button type="button" class="btn whiteRect">선택 삭제</button>
+                                        <button type="button" class="btn deepBlueRect">등록</button>
+                                    </div>
+
+                                    <!-- pagination -->
+                                    <div class="pagination">
+                                        <button type="button" class="btnFirst">
+                                            <span class="hidden">처음으로</span>
+                                        </button>
+                                        <button type="button" class="btnPrev">
+                                            <span class="hidden">이전으로</span>
+                                        </button>
+                                        <a href="#" class="active">1</a>
+                                        <a href="#">2</a>
+                                        <a href="#">3</a>
+                                        <a href="#">4</a>
+                                        <a href="#">5</a>
+                                        <a href="#" class="pc">6</a>
+                                        <a href="#" class="pc">7</a>
+                                        <a href="#" class="pc">8</a>
+                                        <a href="#" class="pc">9</a>
+                                        <a href="#" class="pc">10</a>
+                                        <button type="button" class="btnNext">
+                                            <span class="hidden">다음으로</span>
+                                        </button>
+                                        <button type="button" class="btnLast">
+                                            <span class="hidden">마지막으로</span>
+                                        </button>
+                                    </div>
+                                    <!-- //pagination -->
+                                </div>
+                                <!-- //cardContainer -->
+
+                                <!-- cardContainer -->
+                                <div class="listContainer">
+                                    <!-- tableArea -->
+                                    <article class="tableArea">
+                                        <div class="table">
+                                            <table style="table-layout: fixed;">
+                                                <caption>알림존 게시물로 NO, 제목, 첨부파일, 등록일시 등의 정보를 제공합니다.</caption>
+                                                <colgroup>
+                                                    <col style="width: 80px;">
+                                                    <col style="width: 80px;">
+                                                    <col style="width: auto;">
+                                                    <col style="width: 120px;">
+                                                    <col style="width: 120px;">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">
+                                                            <p class="checkbox type02">
+                                                                <input type="checkbox" name="ckdAll" id="ckdAll" class="ckdAll">
+                                                                <label for="ckdAll"></label>
+                                                            </p>
+                                                        </th>
+                                                        <th scope="col">NO</th>
+                                                        <th scope="col">제목</th>
+                                                        <th scope="col">첨부파일</th>
+                                                        <th scope="col">등록일시</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="ckd">
+                                                            <p class="checkbox type02">
+                                                                <input type="checkbox" name="ckd01" id="ckd01">
+                                                                <label for="ckd01"></label>
+                                                            </p>
+                                                        </td>
+                                                        <td class="no">30</td>
+                                                        <td class="tit type02">
+                                                            <span class="nMing card">카드뉴스</span>
+                                                            <a href="#" class="underline elips taL">카드뉴스 게시글 카드뉴스 게시글 게시글 카드뉴스 게시글 카드뉴스 게시글 카드뉴스 게시글 게시글 카드뉴스 게시글 카드뉴스 게시글 카드뉴스 게시글 게시글 카드뉴스 게시글</a>
+                                                        </td>
+                                                        <td class="file">
+                                                            <!-- spanGroup -->
+                                                            <div class="spanGroup">
+                                                                <span class="docu han"></span>
+                                                                <span class="docu pdf"></span>
+                                                                <span class="docu xls"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="date">2022-12-29</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="ckd">
+                                                            <p class="checkbox type02">
+                                                                <input type="checkbox" name="ckd02" id="ckd02">
+                                                                <label for="ckd02"></label>
+                                                            </p>
+                                                        </td>
+                                                        <td class="no">30</td>
+                                                        <td class="tit type02">
+                                                            <span class="nMing video">동영상</span>
+                                                            <a href="#" class="underline elips taL">동영상 게시글</a>
+                                                        </td>
+                                                        <td class="file">
+                                                            <!-- spanGroup -->
+                                                            <div class="spanGroup">
+                                                                <!-- <span class="docu han"></span> -->
+                                                                <span class="docu pdf"></span>
+                                                                <!-- <span class="docu xls"></span> -->
+                                                            </div>
+                                                        </td>
+                                                        <td class="date">2022-12-29</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="ckd">
+                                                            <p class="checkbox type02">
+                                                                <input type="checkbox" name="ckd03" id="ckd03">
+                                                                <label for="ckd03"></label>
+                                                            </p>
+                                                        </td>
+                                                        <td class="no">30</td>
+                                                        <td class="tit type02">
+                                                            <span class="nMing img">이미지</span>
+                                                            <a href="#" class="underline elips taL">이미지 게시글 이미지 게시글 이미지 게시글 </a>
+                                                        </td>
+                                                        <td class="file">
+                                                            <!-- spanGroup -->
+                                                            <div class="spanGroup">
+                                                                <span class="docu han"></span>
+                                                                <span class="docu pdf"></span>
+                                                                <span class="docu xls"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="date">2022-12-29</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="ckd">
+                                                            <p class="checkbox type02">
+                                                                <input type="checkbox" name="ckd04" id="ckd04">
+                                                                <label for="ckd04"></label>
+                                                            </p>
+                                                        </td>
+                                                        <td class="no">30</td>
+                                                        <td class="tit type02">
+                                                            <span class="nMing text">텍스트</span>
+                                                            <a href="#" class="underline elips taL">텍스트 게시글 텍스트 게시글 텍스트 게시글 </a>
+                                                        </td>
+                                                        <td class="file">
+                                                            <!-- spanGroup -->
+                                                            <div class="spanGroup">
+                                                                <span class="docu han"></span>
+                                                                <span class="docu pdf"></span>
+                                                                <span class="docu xls"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="date">2022-12-29</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="ckd">
+                                                            <p class="checkbox type02">
+                                                                <input type="checkbox" name="ckd05" id="ckd05">
+                                                                <label for="ckd05"></label>
+                                                            </p>
+                                                        </td>
+                                                        <td class="no">30</td>
+                                                        <td class="tit type02">
+                                                            <span class="nMing text">텍스트</span>
+                                                            <a href="#" class="underline elips taL">텍스트 게시글 텍스트 게시글 텍스트 게시글 </a>
+                                                        </td>
+                                                        <td class="file">
+                                                            <!-- spanGroup -->
+                                                            <div class="spanGroup">
+                                                                <span class="docu han"></span>
+                                                                <span class="docu pdf"></span>
+                                                                <span class="docu xls"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="date">2022-12-29</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="ckd">
+                                                            <p class="checkbox type02">
+                                                                <input type="checkbox" name="ckd06" id="ckd06">
+                                                                <label for="ckd06"></label>
+                                                            </p>
+                                                        </td>
+                                                        <td class="no">30</td>
+                                                        <td class="tit type02">
+                                                            <span class="nMing text">텍스트</span>
+                                                            <a href="#" class="underline elips taL">텍스트 게시글 텍스트 게시글 텍스트 게시글 </a>
+                                                        </td>
+                                                        <td class="file">
+                                                            <!-- spanGroup -->
+                                                            <div class="spanGroup">
+                                                                <span class="docu han"></span>
+                                                                <span class="docu pdf"></span>
+                                                                <span class="docu xls"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="date">2022-12-29</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="ckd">
+                                                            <p class="checkbox type02">
+                                                                <input type="checkbox" name="ckd07" id="ckd07">
+                                                                <label for="ckd07"></label>
+                                                            </p>
+                                                        </td>
+                                                        <td class="no">30</td>
+                                                        <td class="tit type02">
+                                                            <span class="nMing text">텍스트</span>
+                                                            <a href="#" class="underline elips taL">텍스트 게시글 텍스트 게시글 텍스트 게시글 </a>
+                                                        </td>
+                                                        <td class="file">
+                                                            <!-- spanGroup -->
+                                                            <div class="spanGroup">
+                                                                <span class="docu han"></span>
+                                                                <span class="docu pdf"></span>
+                                                                <span class="docu xls"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="date">2022-12-29</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="ckd">
+                                                            <p class="checkbox type02">
+                                                                <input type="checkbox" name="ckd08" id="ckd08">
+                                                                <label for="ckd08"></label>
+                                                            </p>
+                                                        </td>
+                                                        <td class="no">30</td>
+                                                        <td class="tit type02">
+                                                            <span class="nMing text">텍스트</span>
+                                                            <a href="#" class="underline elips taL">텍스트 게시글 텍스트 게시글 텍스트 게시글 </a>
+                                                        </td>
+                                                        <td class="file">
+                                                            <!-- spanGroup -->
+                                                            <div class="spanGroup">
+                                                                <span class="docu han"></span>
+                                                                <span class="docu pdf"></span>
+                                                                <span class="docu xls"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="date">2022-12-29</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="ckd">
+                                                            <p class="checkbox type02">
+                                                                <input type="checkbox" name="ckd09" id="ckd09">
+                                                                <label for="ckd09"></label>
+                                                            </p>
+                                                        </td>
+                                                        <td class="no">30</td>
+                                                        <td class="tit type02">
+                                                            <span class="nMing text">텍스트</span>
+                                                            <a href="#" class="underline elips taL">텍스트 게시글 텍스트 게시글 텍스트 게시글 </a>
+                                                        </td>
+                                                        <td class="file">
+                                                            <!-- spanGroup -->
+                                                            <div class="spanGroup">
+                                                                <span class="docu han"></span>
+                                                                <span class="docu pdf"></span>
+                                                                <span class="docu xls"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="date">2022-12-29</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="ckd">
+                                                            <p class="checkbox type02">
+                                                                <input type="checkbox" name="ckd10" id="ckd10">
+                                                                <label for="ckd10"></label>
+                                                            </p>
+                                                        </td>
+                                                        <td class="no">30</td>
+                                                        <td class="tit type02">
+                                                            <span class="nMing text">텍스트</span>
+                                                            <a href="#" class="underline elips taL">텍스트 게시글 텍스트 게시글 텍스트 게시글 </a>
+                                                        </td>
+                                                        <td class="file">
+                                                            <!-- spanGroup -->
+                                                            <div class="spanGroup">
+                                                                <span class="docu han"></span>
+                                                                <span class="docu pdf"></span>
+                                                                <span class="docu xls"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="date">2022-12-29</td>
+                                                    </tr>
+                                                    
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </article>
+                                    <!-- //tableArea -->
+
+                                    <div class="btnArea type02">
+                                        <button type="button" class="btn whiteRect">선택 삭제</button>
+                                        <button type="button" class="btn deepBlueRect">등록</button>
+                                    </div>
+
+                                    <!-- pagination -->
+                                    <div class="pagination">
+                                        <button type="button" class="btnFirst">
+                                            <span class="hidden">처음으로</span>
+                                        </button>
+                                        <button type="button" class="btnPrev">
+                                            <span class="hidden">이전으로</span>
+                                        </button>
+                                        <a href="#" class="active">1</a>
+                                        <a href="#">2</a>
+                                        <a href="#">3</a>
+                                        <a href="#">4</a>
+                                        <a href="#">5</a>
+                                        <a href="#" class="pc">6</a>
+                                        <a href="#" class="pc">7</a>
+                                        <a href="#" class="pc">8</a>
+                                        <a href="#" class="pc">9</a>
+                                        <a href="#" class="pc">10</a>
+                                        <button type="button" class="btnNext">
+                                            <span class="hidden">다음으로</span>
+                                        </button>
+                                        <button type="button" class="btnLast">
+                                            <span class="hidden">마지막으로</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- //cardContainer -->
+
+                            </section>
+                            <!-- //secGroup -->
+                        </div>
+                        <!-- //inner -->
+                    </article>
+                    <!-- //secContainer -->
+                </div>
+                <!-- content -->
+            </div>
+            <!-- //contents -->
+        </main>
+        <!--//container-->
+
+        <button type="button" class="btn switch">
+            <span class="open">QUICK<br />MENU</span>
+            <span class="close"></span>
+        </button>
+        <!-- quickMenu -->
+        <aside class="quickMenu">
+            <ul>
+                <li>
+                    <a href="#" class="busi">지원사업</a>
+                </li>
+                <li>
+                    <a href="#" class="cafe">청창농<br class="pc"/>카페</a>
+                </li>
+                <li>
+                    <a href="#" class="tv">청년농업인<br class="pc"/>TV</a>
+                </li>
+                <li>
+                    <a href="#" class="calc">경영<br class="pc"/>모의계산</a>
+                </li>
+                <li>
+                    <a href="#" class="exhi">제철장터<br class="pc"/>기획전</a>
+                </li>
+            </ul>
+        </aside>
+        <!-- //quickMenu -->
+
+        <!--footer-->
+        <footer id="footer">
+            @@include('include/footer.html')
+        </footer>
+        <!--//footer-->
+    </div>
+</body>
+</html>

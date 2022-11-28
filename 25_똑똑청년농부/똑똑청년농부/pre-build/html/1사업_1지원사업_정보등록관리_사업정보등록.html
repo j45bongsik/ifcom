@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html') 
+</head>
+<body>
+    <div id="wrap" class="sub">
+
+        <!--header-->
+        <header id="header">
+            @@include('include/header.html')
+            <!-- headerArea -->
+            <section class="headerArea subType">
+                <!-- logoArea -->
+                <article class="logoArea">
+                    <h2 class="logo">
+                        <a href="#">
+                            <img src="../images/common/logo-pc.svg" alt="똑똑!청년농부" class="pc">
+                            <img src="../images/common/logo-mo.svg" alt="똑똑!청년농부" class="mo">
+                        </a>
+                    </h2>
+                </article>
+                <!-- //logoArea -->
+
+                <!-- gnb -->
+                <nav id="gnb">
+                    <ul>
+                        <li>
+                            <a href="#">사업</a>
+                            <ul class="dep02">
+                                <li>
+                                    <a href="#" >지원사업</a>
+                                </li>
+                                <li>
+                                    <a href="#">청년정책</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">경영</a>
+                            <ul class="dep02">
+                                <li>
+                                    <a href="#">경영모의계산</a>
+                                </li>
+                                <li>
+                                    <a href="#">맞춤귀농서비스</a>
+                                </li>
+                                <li>
+                                    <a href="#">창업솔루션</a>
+                                </li>
+                                <li>
+                                    <a href="#">기술창업</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">사례</a>
+                            <ul class="dep02">
+                                <li>
+                                    <a href="#">청년농영상</a>
+                                </li>
+                                <li>
+                                    <a href="#">청년농소개</a>
+                                </li>
+                                <li>
+                                    <a href="#">기술우수사례</a>
+                                </li>
+                                <li>
+                                    <a href="#">실패ㆍ극복사례</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">도움</a>
+                            <ul class="dep02">
+                                <li>
+                                    <a href="#">귀농귀촌팁</a>
+                                </li>
+                                <li>
+                                    <a href="#">세금이야기</a>
+                                </li>
+                                <li>
+                                    <a href="#">주요사이트안내</a>
+                                </li>
+                                <li>
+                                    <a href="#">전문가네트워크</a>
+                                </li>
+                                <li>
+                                    <a href="#">공지사항</a>
+                                </li>
+                                <li>
+                                    <a href="#">자주묻는질문</a>
+                                </li>
+                                <li>
+                                    <a href="#">자료실</a>
+                                </li>
+                                <li>
+                                    <a href="#">Q&A</a>
+                                </li>
+                                <li>
+                                    <a href="#">소통공간</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn mobileSubSearch">
+                        <span class="hidden">검색</span>
+                    </button>
+                    <button type="button" class="btn mobileSubSearchClose">
+                        <span class="hidden">검색닫기</span>
+                    </button>
+                    <button type="button" class="btn drawer">
+                        <span class="line line01"></span>
+                        <span class="line line02"></span>
+                        <span class="line line03"></span>
+                    </button>
+                    <!-- mobile -->
+                    <div class="mobile">
+                        <div class="inner">
+                            <!-- moUtil -->
+                            <div class="moUtil">
+                                <article class="btnArea">
+                                    <button type="button" class="btn user mo">
+                                        <em>홍길동</em>
+                                        님
+                                    </button>
+                                    <button type="button" class="btn log logOut mo" title="로그아웃">로그아웃</button>
+                                    <!-- <button type="button" class="btn log mo logIn">로그인</button> -->
+                                </article>
+                            </div>
+                            <!-- //moUtil -->
+                            <ul class="cScroll">
+                                <li>
+                                    <a href="javascript:void(0)" class="dep01">사업</a>
+                                    <ul class="dep02">
+                                        <li>
+                                            <a href="#" >지원사업</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">청년정책</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="dep01">경영</a>
+                                    <ul class="dep02">
+                                        <li>
+                                            <a href="#">경영모의계산</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">맞춤귀농서비스</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">창업솔루션</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">기술창업</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="dep01">사례</a>
+                                    <ul class="dep02">
+                                        <li>
+                                            <a href="#">청년농영상</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">청년농소개</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">기술우수사례</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">실패ㆍ극복사례</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="dep01">도움</a>
+                                    <ul class="dep02">
+                                        <li>
+                                            <a href="#">귀농귀촌팁</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">세금이야기</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">주요사이트안내</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">전문가네트워크</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">공지사항</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">자주묻는질문</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">자료실</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Q&A</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">소통공간</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <!-- // mobile -->
+
+
+                    <!-- subSearchArea -->
+                    <div class="subSearchArea">
+                        <!-- inner -->
+                        <div class="inner">
+                            <div class="searchArea">
+                                <label for="search">
+                                    <input type="text" placeholder="검색어를 입력하세요." spellcheck="false">
+                                </label>
+                                <button type="button" class="btn search" title="검색하기">검색하기</button>
+                            </div>
+                        </div>
+                        <!-- //inner -->
+                    </div>
+                    <!-- //subSearchArea -->
+                </nav>
+                <!-- //gnb -->
+
+                <!-- utilArea -->
+                <article class="utilArea">
+                    <!-- btnArea -->
+                    <article class="btnArea">
+                        <button type="button" class="btn user">
+                            <em>홍길동</em>
+                            님
+                        </button>
+                        <button type="button" class="btn log logOut">로그아웃</button>
+                        <!-- <button type="button" class="btn log logIn">로그인</button> -->
+                        <button type="button" class="btn subSearch">
+                            <span class="hidden">검색</span>
+                        </button>
+                        <button type="button" class="btn subSearchClose">
+                            <span class="hidden">검색닫기</span>
+                        </button>
+                        <!-- <button type="button" class="btn drawer">
+                            <span class="line line01"></span>
+                            <span class="line line02"></span>
+                            <span class="line line03"></span>
+                        </button> -->
+                        
+                    </article>
+                    <!-- //btnArea -->
+
+                    
+                </article>
+                <!-- //utilArea -->
+            </section>
+            <!-- //headerArea -->
+
+            <!-- breadCrumb -->
+            <div class="breadCrumb">
+                <ul>
+                    <li class="home">
+                        <a href="#">
+                            <span class="hidden">홈</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">사업</a>
+                    </li>
+                    <li class="hasDepth">
+                        <a href="#">지원사업</a>
+                        <button type="button" class="btnDepthMore" aria-expanded="false">
+                            <span class="hidden">메뉴 더보기 펼치기</span>
+                        </button>
+                        <!-- dep2 -->
+                        <ul class="dep2">
+                            <li>
+                                <a href="#">지원사업</a>
+                            </li>
+                            <li>
+                                <a href="#">청년정책</a>
+                            </li>
+                        </ul>
+                        <!-- //dep2 -->
+                    </li>
+                </ul>
+            </div>
+            <!-- //breadCrumb -->
+
+            <!-- subSearchArea -->
+            <div class="subSearchArea">
+                <!-- inner -->
+                <div class="inner">
+                    <div class="searchArea">
+                        <label for="search">
+                            <input type="text" placeholder="검색어를 입력하세요.">
+                        </label>
+                        <button type="button" class="btn search">검색하기</button>
+                    </div>
+                </div>
+                <!-- //inner -->
+            </div>
+            <!-- //subSearchArea -->
+        </header>
+        <!--header-->
+
+        <!--container-->
+        <main id="container">
+            <!-- contents -->
+            <div id="contents">
+                <!-- content -->
+                <div id="content">
+                    <h2 class="hidden">본문 영역</h2>
+                    <!-- sectionTitArea -->
+                    <section class="sectionTitArea">
+                        <!-- inner -->
+                        <div class="inner">
+                            <h3 class="titPage">
+                                <strong>지원사업</strong>
+                            </h3>
+                        </div>
+                        <!-- //inner -->
+                    </section>
+                    <!-- //sectionTitArea -->
+
+                    <!-- secContainer -->
+                    <article class="secContainer col nowrap">
+                        <!-- inner -->
+                        <div class="inner">
+                            <!-- tableArea -->
+                            <div class="article tableArea type02 default">
+                                <!-- table -->
+                                <div class="table type06 groupType">
+                                    <table>
+                                        <caption>지원사업 정보등록관리 사업정보등록 검색조건 테이블 : 유형 , 사업명 , 지원금액 , 총수량 , 단위,
+                                        신청기간 , 지역 , 지원대상 , 담당자 연락처 , 담당 기관, 담당 부서 , 공고 URL , 사업내용요약 ,첨부파일 ,비고
+                                        </caption>
+                                        <colgroup class="none">
+                                            <col style="width: 150px">
+                                            <col style="width: auto">
+                                            <col style="width: 150px">
+                                            <col style="width: auto">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">
+                                                    <label for="l01" class="label mark type01">유형</label>
+                                                </th>
+                                                <td colspan="3">
+                                                    <!-- anyGroup -->
+                                                    <div class="anyGroup type02">
+                                                        <div class="checkGroup type02 wrap">
+                                                            <ul>
+                                                                <li>
+                                                                    <div class="checkbox">
+                                                                        <input type="checkbox" id="l01">
+                                                                        <label for="l01">
+                                                                            <span class="labelName">자금</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="checkbox">
+                                                                        <input type="checkbox" id="l02">
+                                                                        <label for="l02">
+                                                                            <span class="labelName">취&middot;창업</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="checkbox">
+                                                                        <input type="checkbox" id="l03">
+                                                                        <label for="l03">
+                                                                            <span class="labelName">주거</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="checkbox">
+                                                                        <input type="checkbox" id="l04">
+                                                                        <label for="l04">
+                                                                            <span class="labelName">일자리</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="checkbox">
+                                                                        <input type="checkbox" id="l05">
+                                                                        <label for="l05">
+                                                                            <span class="labelName">농지</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="checkbox">
+                                                                        <input type="checkbox" id="l06">
+                                                                        <label for="l06">
+                                                                            <span class="labelName">네트워크</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="checkbox">
+                                                                        <input type="checkbox" id="l07">
+                                                                        <label for="l07">
+                                                                            <span class="labelName">멘토링&middot;컨설팅</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="checkbox">
+                                                                        <input type="checkbox" id="l08">
+                                                                        <label for="l08">
+                                                                            <span class="labelName">판로</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+    
+                                                        <p class="hint colorType orange">*중복으로 3개까지 선택가능합니다.</p>
+                                                    </div>
+                                                    <!-- //anyGroup -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    <label for="l09" class="label mark type01">사업명</label>
+                                                </th>
+                                                <td>
+                                                    <div class="inputGroup">
+                                                        <input type="text" id="l09" placeholder="사업명을 입력해주세요">
+                                                    </div>
+                                                </td>
+                                                <th scope="row">
+                                                    <label for="l10" class="label">지원금액(천원)</label>
+                                                </th>
+                                                <td>
+                                                    <div class="inputGroup">
+                                                        <input type="text" id="l10" placeholder="금액을 숫자와 ,(콤마)포함하여 입력해주세요">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    <label for="l11" class="label">총수량(지원금액 총수량)</label>
+                                                </th>
+                                                <td>
+                                                    <div class="inputGroup">
+                                                        <input type="text" id="l11" placeholder="총수량(지원금액 총수량)을 입력해주세요">
+                                                    </div>
+                                                </td>
+                                                <th scope="row">
+                                                    <label for="l12" class="label">단위(수량단위)</label>
+                                                </th>
+                                                <td>
+                                                    <div class="inputGroup">
+                                                        <input type="text" id="l12" placeholder="단위(수량단위)를 입력해주세요">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="top">
+                                                <th scope="row">
+                                                    <span class="label mark type01">신청기간</span>
+                                                </th>
+                                                <td>
+                                                    <div class="anyGroup">
+                                                        <label for="l13" class="groupLabel">신청 시작일</label>
+                                                        <div class="selectGroup">
+                                                            <select id="l13">
+                                                                <option selected>2022</option>
+                                                            </select>
+                                                            <select>
+                                                                <option selected>월</option>
+                                                            </select>
+                                                            <select>
+                                                                <option selected>일</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="anyGroup">
+                                                        <label for="l14" class="groupLabel">신청 마감일</label>
+                                                        <div class="selectGroup">
+                                                            <select id="l14">
+                                                                <option selected>2022</option>
+                                                            </select>
+                                                            <select>
+                                                                <option selected>월</option>
+                                                            </select>
+                                                            <select>
+                                                                <option selected>일</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <p class="hint colorType orange">* 최소 년,월까지는 필수입력입니다.</p>
+                                                </td>
+                                                <th scope="row">
+                                                    <label for="l15" class="label mark type01">지역</label>
+                                                </th>
+                                                <td>
+                                                    <div class="selectWrap col">
+                                                        <div class="selectGroup">
+                                                            <select id="l15">
+                                                                <option selected>선택</option>
+                                                            </select>
+                                                            <select>
+                                                                <option selected>선택</option>
+                                                            </select>
+                                                        </div>
+                                                        <p class="hint colorType orange">*지역(도/광역시)는 필수 선택입니다</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    <label for="l16" class="label">지원대상</label>
+                                                </th>
+                                                <td>
+                                                    <div class="inputGroup">
+                                                        <input type="text" id="l16" placeholder="지원대상을 입력해주세요">
+                                                    </div>
+                                                </td>
+                                                <th scope="row">
+                                                    <label for="l17" class="label mark type01">담당자 연락처</label>
+                                                </th>
+                                                <td>
+                                                    <div class="inputGroup">
+                                                        <input type="text" id="l17" placeholder="담당자 연락처를 입력해주세요">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    <label for="l18" class="label mark type01">담당 기관</label>
+                                                </th>
+                                                <td>
+                                                    <div class="inputGroup">
+                                                        <input type="text" id="l18" placeholder="담당 기관을 입력해주세요">
+                                                    </div>
+                                                </td>
+                                                <th scope="row">
+                                                    <label for="l19" class="label">담당 부서</label>
+                                                </th>
+                                                <td>
+                                                    <div class="inputGroup">
+                                                        <input type="text" id="l19" placeholder="담당 부서를 입력해주세요">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    <label for="l20" class="label">공고 URL</label>
+                                                </th>
+                                                <td colspan="3">
+                                                    <div class="inputGroup">
+                                                        <input type="text" id="l20" placeholder="공고 URL을 입력해주시면 해당 공고 보기 버튼을 통해 이동이 가능합니다. 가능한한 해당 공고의 세부페이지 주소를 입력해주세요.">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="default">
+                                                <th scope="row">
+                                                    <span class="label mark type01">사업내용요약</span>
+                                                </th>
+                                                <td colspan="3">
+                                                    <div class="editArea" style="background: #ddd">
+                                                        에디터 영역
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="default">
+                                                <th scope="row">
+                                                    <label for="l21" class="label">첨부파일</label>
+                                                </th>
+                                                <td colspan="3">
+                                                    <div class="fileArea">
+                                                        <input type="file" id="fileSelect01">
+                                                        <div class="flex ac">
+                                                            <label for="fileSelect01">파일선택</label>
+                                                            <p class="hint colorType orange pc">*한글, WORD, 엑셀, PDF파일을 올리실 수 있으며, 최대 5개까지 등록이 가능합니다.</p>
+                                                        </div>
+                                                        
+                                                        <!-- fileList -->
+                                                        <ul class="fileList">
+                                                            <li>
+                                                                <p>
+                                                                    2022년도 청년 농산업 아이디어 경진대회 추진계획.pdf
+                                                                    <button type="button" class="btn delete" title="삭제"></button>
+                                                                </p>
+                                                            </li>
+                                                            <li>
+                                                                <p>
+                                                                    참가신청서 참가신청서 양식(사업계획서, 개인정보동의서 포함).hwp
+                                                                    <button type="button" class="btn delete" title="삭제"></button>
+                                                                </p>
+                                                            </li>
+                                                        </ul>
+                                                        <!-- //fileList -->
+
+                                                        <p class="hint colorType orange mo">*한글, WORD, 엑셀, PDF파일을 올리실 수 있으며, 최대 5개까지 등록이 가능합니다.</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    <label for="l22">비고</label>
+                                                </th>
+                                                <td colspan="3">
+                                                    <div class="inputGroup">
+                                                        <input type="text" id="l22" placeholder="비고">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- //table -->
+                            </div>
+                            <!-- //tableArea -->
+                            <div class="btnArea flex jcC">
+                                <button type="button" class="btn grayRect">목록</button>
+                                <button type="button" class="btn deepBlueRect">등록</button>
+                            </div>
+                        </div>
+                        <!-- //inner -->
+                    </article>
+                    <!-- //secContainer -->
+                </div>
+                <!-- content -->
+            </div>
+            <!-- //contents -->
+        </main>
+        <!--//container-->
+
+        <button type="button" class="btn switch">
+            <span class="open">QUICK<br />MENU</span>
+            <span class="close"></span>
+        </button>
+        <!-- quickMenu -->
+        <aside class="quickMenu">
+            <ul>
+                <li>
+                    <a href="#" class="busi">지원사업</a>
+                </li>
+                <li>
+                    <a href="#" class="cafe">청창농<br class="pc"/>카페</a>
+                </li>
+                <li>
+                    <a href="#" class="tv">청년농업인<br class="pc"/>TV</a>
+                </li>
+                <li>
+                    <a href="#" class="calc">경영<br class="pc"/>모의계산</a>
+                </li>
+                <li>
+                    <a href="#" class="exhi">제철장터<br class="pc"/>기획전</a>
+                </li>
+            </ul>
+        </aside>
+        <!-- //quickMenu -->
+
+        <!--footer-->
+        <footer id="footer">
+            @@include('include/footer.html')
+        </footer>
+        <!--//footer-->
+    </div>
+</body>
+</html>

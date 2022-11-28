@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10">
+  <g id="말풍선삼각형" transform="translate(-866 -508)">
+    <g id="다각형_12" data-name="다각형 12" transform="translate(878 518) rotate(180)" fill="#fff">
+      <path d="M 11.11690044403076 9.5 L 0.8830999732017517 9.5 L 6 0.971833348274231 L 11.11690044403076 9.5 Z" stroke="none"/>
+      <path d="M 6 1.943650245666504 L 1.766189575195312 9 L 10.23381042480469 9 L 6 1.943650245666504 M 6 0 L 12 10 L 0 10 L 6 0 Z" stroke="none" fill="#d8dee3"/>
+    </g>
+    <path id="패스_63825" data-name="패스 63825" d="M867.813,509.016l-.484-1.047h9.453l-.609,1.141Z" transform="translate(0 0.031)" fill="#fff"/>
+  </g>
+</svg>

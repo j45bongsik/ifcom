@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="btn_다운로드" data-name="btn / 다운로드" transform="translate(-689 -906)">
+    <g id="사각형_82" data-name="사각형 82" transform="translate(689 906)" fill="none" stroke="#262a41" stroke-width="1">
+      <rect width="20" height="20" rx="5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="19" height="19" rx="4.5" fill="none"/>
+    </g>
+    <g id="그룹_19022" data-name="그룹 19022" transform="translate(-827.606 308.393)">
+      <path id="패스_16601" data-name="패스 16601" d="M8.485,0H19.515V1H8.485Z" transform="translate(1516.606 617.406) rotate(-45)" fill="#262a41"/>
+      <path id="패스_16602" data-name="패스 16602" d="M8.485,0H19.515V1H8.485Z" transform="translate(1517.313 597.606) rotate(45)" fill="#262a41"/>
+    </g>
+  </g>
+</svg>

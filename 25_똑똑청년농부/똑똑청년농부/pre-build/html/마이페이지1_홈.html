@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html') 
+</head>
+<body>
+    <div id="wrap" class="sub">
+
+        <!--header-->
+        <header id="header">
+            @@include('include/header.html')
+            <!-- headerArea -->
+            <section class="headerArea subType">
+                <!-- logoArea -->
+                <article class="logoArea">
+                    <h2 class="logo">
+                        <a href="#">
+                            <img src="../images/common/logo-pc.svg" alt="똑똑!청년농부" class="pc">
+                            <img src="../images/common/logo-mo.svg" alt="똑똑!청년농부" class="mo">
+                        </a>
+                    </h2>
+                </article>
+                <!-- //logoArea -->
+
+                <!-- gnb -->
+                <nav id="gnb">
+                    <ul>
+                        <li>
+                            <a href="#">사업</a>
+                            <ul class="dep02">
+                                <li>
+                                    <a href="#" >지원사업</a>
+                                </li>
+                                <li>
+                                    <a href="#">청년정책</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">경영</a>
+                            <ul class="dep02">
+                                <li>
+                                    <a href="#">경영모의계산</a>
+                                </li>
+                                <li>
+                                    <a href="#">맞춤귀농서비스</a>
+                                </li>
+                                <li>
+                                    <a href="#">창업솔루션</a>
+                                </li>
+                                <li>
+                                    <a href="#">기술창업</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">사례</a>
+                            <ul class="dep02">
+                                <li>
+                                    <a href="#">청년농영상</a>
+                                </li>
+                                <li>
+                                    <a href="#">청년농소개</a>
+                                </li>
+                                <li>
+                                    <a href="#">기술우수사례</a>
+                                </li>
+                                <li>
+                                    <a href="#">실패ㆍ극복사례</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">도움</a>
+                            <ul class="dep02">
+                                <li>
+                                    <a href="#">귀농귀촌팁</a>
+                                </li>
+                                <li>
+                                    <a href="#">세금이야기</a>
+                                </li>
+                                <li>
+                                    <a href="#">주요사이트안내</a>
+                                </li>
+                                <li>
+                                    <a href="#">전문가네트워크</a>
+                                </li>
+                                <li>
+                                    <a href="#">공지사항</a>
+                                </li>
+                                <li>
+                                    <a href="#">자주묻는질문</a>
+                                </li>
+                                <li>
+                                    <a href="#">자료실</a>
+                                </li>
+                                <li>
+                                    <a href="#">Q&A</a>
+                                </li>
+                                <li>
+                                    <a href="#">소통공간</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn mobileSubSearch">
+                        <span class="hidden">검색</span>
+                    </button>
+                    <button type="button" class="btn mobileSubSearchClose">
+                        <span class="hidden">검색닫기</span>
+                    </button>
+                    <button type="button" class="btn drawer">
+                        <span class="line line01"></span>
+                        <span class="line line02"></span>
+                        <span class="line line03"></span>
+                    </button>
+                    <!-- mobile -->
+                    <div class="mobile">
+                        <div class="inner">
+                            <!-- moUtil -->
+                            <div class="moUtil">
+                                <article class="btnArea">
+                                    <button type="button" class="btn user mo">
+                                        <em>홍길동</em>
+                                        님
+                                    </button>
+                                    <button type="button" class="btn log logOut mo" title="로그아웃">로그아웃</button>
+                                    <!-- <button type="button" class="btn log mo logIn">로그인</button> -->
+                                </article>
+                            </div>
+                            <!-- //moUtil -->
+                            <ul class="cScroll">
+                                <li>
+                                    <a href="javascript:void(0)" class="dep01">사업</a>
+                                    <ul class="dep02">
+                                        <li>
+                                            <a href="#" >지원사업</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">청년정책</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="dep01">경영</a>
+                                    <ul class="dep02">
+                                        <li>
+                                            <a href="#">경영모의계산</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">맞춤귀농서비스</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">창업솔루션</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">기술창업</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="dep01">사례</a>
+                                    <ul class="dep02">
+                                        <li>
+                                            <a href="#">청년농영상</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">청년농소개</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">기술우수사례</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">실패ㆍ극복사례</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="dep01">도움</a>
+                                    <ul class="dep02">
+                                        <li>
+                                            <a href="#">귀농귀촌팁</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">세금이야기</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">주요사이트안내</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">전문가네트워크</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">공지사항</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">자주묻는질문</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">자료실</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Q&A</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">소통공간</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <!-- // mobile -->
+
+
+                    <!-- subSearchArea -->
+                    <div class="subSearchArea">
+                        <!-- inner -->
+                        <div class="inner">
+                            <div class="searchArea">
+                                <label for="search">
+                                    <input type="text" placeholder="검색어를 입력하세요." spellcheck="false">
+                                </label>
+                                <button type="button" class="btn search" title="검색하기">검색하기</button>
+                            </div>
+                        </div>
+                        <!-- //inner -->
+                    </div>
+                    <!-- //subSearchArea -->
+                </nav>
+                <!-- //gnb -->
+
+                <!-- utilArea -->
+                <article class="utilArea">
+                    <!-- btnArea -->
+                    <article class="btnArea">
+                        <button type="button" class="btn user">
+                            <em>홍길동</em>
+                            님
+                        </button>
+                        <button type="button" class="btn log logOut">로그아웃</button>
+                        <!-- <button type="button" class="btn log logIn">로그인</button> -->
+                        <button type="button" class="btn subSearch">
+                            <span class="hidden">검색</span>
+                        </button>
+                        <button type="button" class="btn subSearchClose">
+                            <span class="hidden">검색닫기</span>
+                        </button>
+                        <!-- <button type="button" class="btn drawer">
+                            <span class="line line01"></span>
+                            <span class="line line02"></span>
+                            <span class="line line03"></span>
+                        </button> -->
+                        
+                    </article>
+                    <!-- //btnArea -->
+
+                    
+                </article>
+                <!-- //utilArea -->
+            </section>
+            <!-- //headerArea -->
+
+            <!-- breadCrumb -->
+            <div class="breadCrumb">
+                <ul>
+                    <li class="home">
+                        <a href="#">
+                            <span class="hidden">홈</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">사업</a>
+                    </li>
+                    <li class="hasDepth">
+                        <a href="#">지원사업</a>
+                        <button type="button" class="btnDepthMore" aria-expanded="false">
+                            <span class="hidden">메뉴 더보기 펼치기</span>
+                        </button>
+                        <!-- dep2 -->
+                        <ul class="dep2">
+                            <li>
+                                <a href="#">지원사업</a>
+                            </li>
+                            <li>
+                                <a href="#">청년정책</a>
+                            </li>
+                        </ul>
+                        <!-- //dep2 -->
+                    </li>
+                </ul>
+            </div>
+            <!-- //breadCrumb -->
+
+            <!-- subSearchArea -->
+            <div class="subSearchArea">
+                <!-- inner -->
+                <div class="inner">
+                    <div class="searchArea">
+                        <label for="search">
+                            <input type="text" placeholder="검색어를 입력하세요.">
+                        </label>
+                        <button type="button" class="btn search">검색하기</button>
+                    </div>
+                </div>
+                <!-- //inner -->
+            </div>
+            <!-- //subSearchArea -->
+        </header>
+        <!--header-->
+
+        <!--container-->
+        <main id="container">
+            <!-- contents -->
+            <div id="contents">
+                <!-- content -->
+                <div id="content">
+                    <h2 class="hidden">본문 영역</h2>
+                    <!-- sectionTitArea -->
+                    <section class="sectionTitArea">
+                        <!-- inner -->
+                        <div class="inner">
+                            <h3 class="titPage">
+                                <strong>마이페이지</strong>
+                            </h3>
+                        </div>
+                        <!-- //inner -->
+                    </section>
+                    <!-- //sectionTitArea -->
+
+                    <!-- myArea -->
+                    <section class="myArea">
+                        <!-- inner -->
+                        <div class="inner">
+                            <!-- myAreaIntro -->
+                            <div class="myAreaIntro">
+                                <!-- myAreaID -->
+                                <div class="myAreaID">
+                                    <img src="../images/common/id_sample.png" alt="본인사진">
+                                </div>
+                                <!-- //myAreaID -->
+                                <!-- myAreaInfo -->
+                                <div class="myAreaInfo">
+                                    <div class="hello">
+                                        <p>안녕하세요</p>
+                                        <p class="name"><span>홍길동</span>님</p>
+                                    </div>
+                                    <div class="myInfoRe">
+                                        <a href="#none" class="set">정보수정</a>
+                                        <i>|</i>
+                                        <a href="#none" class="request">권한변경신청</a>
+                                    </div>
+                                    <button type="button" class="btn grayRect type02">
+                                        <span>로그아웃</span>
+                                    </button>
+                                </div>
+                                <!-- //myAreaInfo -->
+                            </div>
+                            <!-- //myAreaIntro -->
+                            <!-- myAreaType -->
+                            <div class="myAreaType">
+                                <div class="type">
+                                    <p class="tit">기업형태</p>
+                                    <p class="txt">일반인</p>
+                                </div>
+                                <div class="locate">
+                                    <p class="tit">지역</p>
+                                    <p class="txt">전북 전주</p>
+                                </div>
+                                <div class="plant">
+                                    <p class="tit">농작물</p>
+                                    <p class="txt">가을배추</p>
+                                </div>
+                            </div>
+                            <!-- //myAreaType -->
+                        </div>
+                        <!-- //inner -->
+                    </section>
+                    <!-- myArea -->
+
+                    <!-- secContainer -->
+                    <article class="secContainer">
+                        <!-- inner -->
+                        <div class="inner">
+
+                            <!-- secGroup -->
+                            <section class="secGroup right type02">
+                                <div class="topArea type02">
+                                    <p class="tit">즐겨찾는 지원사업</p>
+                                    <button type="button" class="btn grayRect type02 viewMore" title="더보기">더보기</button>
+                                </div>
+                                <!-- cardContainer -->
+                                <div class="cardContainer active type02">
+                                    <ul>
+                                        <li>
+                                            <!-- cardBox -->
+                                            <div class="cardBox">
+                                                <!-- top -->
+                                                <div class="top">
+                                                    <!-- tagGroup -->
+                                                    <div class="tagGroup reset">
+                                                        <span class="tag hashtagType">#전국</span>
+                                                        <span class="tag hashtagType">#사업</span>
+                                                        <span class="tag hashtagType">#진행중</span>
+                                                    </div>
+                                                    <!-- //tagGroup -->
+
+                                                    <div class="cardName">
+                                                        <a href="#" class="elips02">22년 노동절감형 생분해성 멀칭 농자재 지원사업사업사업사업사업사업사업사업사업사업사업사업사업사업사업사업사업사업사업사업사업사업</a>
+                                                    </div>
+                                                </div>
+                                                <!-- //top -->
+
+                                                <!-- bottom -->
+                                                <div class="bottom">
+                                                    <!-- tagGroup -->
+                                                    <div class="tagGroup type02">
+                                                        <span class="tag dateType dday">D-17</span>
+                                                        <span class="tag dateType date">2020-09-30</span>
+                                                    </div>
+                                                    <!-- //tagGroup -->
+
+                                                    <!-- btnGroup -->
+                                                    <div class="btnGroup">
+                                                        <button type="button" class="btn btnHwp">
+                                                            <span class="hidden">HWP 파일로 보기</span>
+                                                        </button>
+                                                        <button type="button" class="btn btnPdf">
+                                                            <span class="hidden">PDF 파일로 보기</span>
+                                                        </button>
+                                                    </div>
+                                                    <!-- //btnGroup -->
+                                                </div>
+                                                <!-- //bottom -->
+                                            </div>
+                                            <!-- //cardBox -->
+                                        </li>
+                                        <li>
+                                            <!-- cardBox -->
+                                            <div class="cardBox">
+                                                <!-- top -->
+                                                <div class="top">
+                                                    <!-- tagGroup -->
+                                                    <div class="tagGroup reset">
+                                                        <span class="tag hashtagType">#전국</span>
+                                                        <span class="tag hashtagType">#사업</span>
+                                                        <span class="tag hashtagType">#진행중</span>
+                                                    </div>
+                                                    <!-- //tagGroup -->
+
+                                                    <div class="cardName">
+                                                        <a href="#">22년 노동절감형 생분해성 멀칭 농자재 지원사업</a>
+                                                    </div>
+                                                </div>
+                                                <!-- //top -->
+
+                                                <!-- bottom -->
+                                                <div class="bottom">
+                                                    <!-- tagGroup -->
+                                                    <div class="tagGroup type02">
+                                                        <span class="tag dateType dday">D-17</span>
+                                                        <span class="tag dateType date">2020-09-30</span>
+                                                    </div>
+                                                    <!-- //tagGroup -->
+
+                                                    <!-- btnGroup -->
+                                                    <div class="btnGroup">
+                                                        <button type="button" class="btn btnHwp">
+                                                            <span class="hidden">HWP 파일로 보기</span>
+                                                        </button>
+                                                        <button type="button" class="btn btnPdf">
+                                                            <span class="hidden">PDF 파일로 보기</span>
+                                                        </button>
+                                                    </div>
+                                                    <!-- //btnGroup -->
+                                                </div>
+                                                <!-- //bottom -->
+                                            </div>
+                                            <!-- //cardBox -->
+                                        </li>
+                                        <li>
+                                            <!-- cardBox -->
+                                            <div class="cardBox">
+                                                <!-- top -->
+                                                <div class="top">
+                                                    <!-- tagGroup -->
+                                                    <div class="tagGroup reset">
+                                                        <span class="tag hashtagType">#전국</span>
+                                                        <span class="tag hashtagType">#사업</span>
+                                                        <span class="tag hashtagType">#진행중</span>
+                                                    </div>
+                                                    <!-- //tagGroup -->
+
+                                                    <div class="cardName">
+                                                        <a href="#">22년 노동절감형 생분해성 멀칭 농자재 지원사업</a>
+                                                    </div>
+                                                </div>
+                                                <!-- //top -->
+
+                                                <!-- bottom -->
+                                                <div class="bottom">
+                                                    <!-- tagGroup -->
+                                                    <div class="tagGroup type02">
+                                                        <span class="tag dateType dday">D-17</span>
+                                                        <span class="tag dateType date">2020-09-30</span>
+                                                    </div>
+                                                    <!-- //tagGroup -->
+
+                                                    <!-- btnGroup -->
+                                                    <div class="btnGroup">
+                                                        <button type="button" class="btn btnHwp">
+                                                            <span class="hidden">HWP 파일로 보기</span>
+                                                        </button>
+                                                        <button type="button" class="btn btnPdf">
+                                                            <span class="hidden">PDF 파일로 보기</span>
+                                                        </button>
+                                                    </div>
+                                                    <!-- //btnGroup -->
+                                                </div>
+                                                <!-- //bottom -->
+                                            </div>
+                                            <!-- //cardBox -->
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- //cardContainer -->
+
+                            </section>
+                            <!-- //secGroup -->
+                        </div>
+                        <!-- //inner -->
+                    </article>
+                    <!-- //secContainer -->
+
+                    <!-- secContainer -->
+                    <article class="secContainer">
+                        <!-- inner -->
+                        <div class="inner">
+
+                            <!-- secGroup -->
+                            <section class="secGroup right type02">
+                                <div class="topArea type02">
+                                    <p class="tit">나의 경영 모의 계산</p>
+                                    <button type="button" class="btn grayRect type04 viewMore" title="모의계산하기">모의계산하기</button>
+                                </div>
+                                <!-- calcuArea -->
+                                <div class="manageCalcuArea">
+                                    <div class="crops">
+                                        <p class="tit">농작물</p>
+                                        <p class="txt">가을배추</p>
+                                    </div>
+                                    <div class="calcu">
+                                        <div>
+                                            <p class="tit">필요면적(㎡)</p>
+                                            <p class="txt">333.33(㎡)</p>
+                                        </div>
+                                        <div>
+                                            <p class="tit">경영비</p>
+                                            <p class="txt">1,000,000원</p>
+                                        </div>
+                                        <div>
+                                            <p class="tit">주산물 평가액</p>
+                                            <p class="txt">1,000,000원</p>
+                                        </div>
+                                        <div>
+                                            <p class="tit">주산물 평가액</p>
+                                            <p class="txt">0원</p>
+                                        </div>
+                                        <div>
+                                            <p class="tit">매출합계</p>
+                                            <p class="txt"><span class="colorType orange">1,000,000</span>원</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- //calcuArea -->
+                            </section>
+                            <!-- //secGroup -->
+
+                        </div>
+                        <!-- //inner -->
+                    </article>
+                    <!-- //secContainer -->
+
+                    <!-- secContainer -->
+                    <article class="secContainer">
+                        <!-- inner -->
+                        <div class="inner type02">
+
+                            <!-- secGroup -->
+                            <section class="secGroup right type02">
+                                <div class="topArea type02">
+                                    <p class="tit">추천! 청년 사례</p>
+                                    <button type="button" class="btn grayRect type04 viewMore" title="더보기">더보기</button>
+                                </div>
+
+                                <!-- cardContainer -->
+                                <div class="cardContainer active">
+                                    <div class="introBox type04">
+                                        <!-- listBox -->
+                                        <div class="listBox ">
+                                            <ul>
+                                                <li>
+                                                    <div class="box">
+                                                        <!-- imgArea -->
+                                                        <article class="imgArea">
+                                                            <img src="../images/common/img-youtube01.png" alt="청년농영상">
+                                                        </article>
+                                                        <!-- //imgArea -->
+                                                        <article class="cont">
+                                                            <!-- <p class="people elips">마리농장 서진웅대표</p> -->
+                                                            <ul class="info">
+                                                                <li class="loca">
+                                                                    <p>충북 논산</p>
+                                                                </li>
+                                                                <li class="type">
+                                                                    <p>로메인상추</p>
+                                                                </li>
+                                                            </ul>
+                                                            <p class="desc elips02">아삭아삭 로메인상추, 이렇게 재배한다구? / 농진청년 4화</p>
+                                                            <p class="people02 elips">바른애그리컬처 (정찬수 대표)</p>
+                                                            <a href="#" title="유튜브 바로가기">유튜브 바로가기</a>
+                                                        </article>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="box">
+                                                        <!-- imgArea -->
+                                                        <article class="imgArea">
+                                                            <img src="../images/common/img-youtube02.png" alt="청년농영상">
+                                                        </article>
+                                                        <!-- //imgArea -->
+                                                        <article class="cont">
+                                                            <!-- <p class="people elips">마리농장 서진웅대표</p> -->
+                                                            <ul class="info">
+                                                                <li class="loca">
+                                                                    <p>충남 서산</p>
+                                                                </li>
+                                                                <li class="type">
+                                                                    <p>샤인머스캣,블루베리</p>
+                                                                </li>
+                                                            </ul>
+                                                            <p class="desc elips02">청년농업인을 만나다 EP18 남기원청년농업인을 만나다 EP18 남기원청년농업인을 만나다 EP18 남기원청년농업인을 만나다 EP18 남기원</p>
+                                                            <p class="people02 elips">힐링농장(남기원 대표)</p>
+                                                            <a href="#" title="유튜브 바로가기">유튜브 바로가기</a>
+                                                        </article>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="box">
+                                                        <!-- imgArea -->
+                                                        <article class="imgArea">
+                                                            <img src="../images/common/img-youtube03.png" alt="청년농영상">
+                                                        </article>
+                                                        <!-- //imgArea -->
+                                                        <article class="cont">
+                                                            <!-- <p class="people elips">마리농장 서진웅대표</p> -->
+                                                            <ul class="info">
+                                                                <li class="loca">
+                                                                    <p>충남 논산</p>
+                                                                </li>
+                                                                <li class="type">
+                                                                    <p>사과</p>
+                                                                </li>
+                                                            </ul>
+                                                            <p class="desc elips02">청년농업인을 만나다 EP17 조혜원</p>
+                                                            <p class="people02 elips">바트로 (조혜원 대표)</p>
+                                                            <a href="#" title="유튜브 바로가기">유튜브 바로가기</a>
+                                                        </article>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="box">
+                                                        <!-- imgArea -->
+                                                        <article class="imgArea">
+                                                            <img src="../images/common/img-youtube04.png" alt="청년농영상">
+                                                        </article>
+                                                        <!-- //imgArea -->
+                                                        <article class="cont">
+                                                            <!-- <p class="people elips">마리농장 서진웅대표</p> -->
+                                                            <ul class="info">
+                                                                <li class="loca">
+                                                                    <p>충남 논산</p>
+                                                                </li>
+                                                                <li class="type">
+                                                                    <p>로메인상추</p>
+                                                                </li>
+                                                            </ul>
+                                                            <p class="desc elips02">아삭아삭 로메인상추, 이렇게 재배한다구? / 농진청년 4화</p>
+                                                            <p class="people02 elips">바른애그리컬처 (정찬수 대표)</p>
+                                                            <a href="#" title="유튜브 바로가기">유튜브 바로가기</a>
+                                                        </article>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- //listBox -->
+                                    </div>
+                                    <!-- //introBox -->
+                                </div>
+                                <!-- //cardContainer -->
+                            </section>
+                            <!-- //secGroup -->
+                            <!-- secGroup -->
+                            <section class="secGroup right type02">
+                                <div class="topArea type02 type03">
+                                    <p class="tit">추천! 전문가 네트워크</p>
+                                    <button type="button" class="btn grayRect type04 viewMore" title="더보기">더보기</button>
+                                </div>
+
+                                <div class="networkArea">
+                                    <div>
+                                       <div class="idPhoto">
+                                            <img src="../images/common/id_pic01.png" alt="">
+                                       </div>
+                                       <div class="idIntro">
+                                            <div class="name">
+                                                <p class="colorType orange">컨설팅 전문가</p>
+                                                <p>김은경</p>
+                                            </div>
+                                            <div class="idInfor">
+                                                <p class="place">제주</p>
+                                                <p class="art">비대면기술</p>
+                                                <p class="number">064-760-7527</p>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    <div>
+                                        <div class="idPhoto">
+                                             <img src="../images/common/id_pic02.png" alt="">
+                                        </div>
+                                        <div class="idIntro">
+                                             <div class="name">
+                                                 <p class="colorType orange">컨설팅 전문가</p>
+                                                 <p>양영문</p>
+                                             </div>
+                                             <div class="idInfor">
+                                                 <p class="place">제주</p>
+                                                 <p class="art">생산기술</p>
+                                                 <p class="number">064-760-7523</p>
+                                             </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="idPhoto">
+                                             <img src="../images/common/id_pic03.png" alt="">
+                                        </div>
+                                        <div class="idIntro">
+                                             <div class="name">
+                                                 <p class="colorType orange">컨설팅 전문가</p>
+                                                 <p>고부영</p>
+                                             </div>
+                                             <div class="idInfor">
+                                                 <p class="place">제주</p>
+                                                 <p class="art">생산기술</p>
+                                                 <p class="number">064-760-7535</p>
+                                             </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="idPhoto">
+                                             <img src="../images/common/id_pic04.png" alt="">
+                                        </div>
+                                        <div class="idIntro">
+                                             <div class="name">
+                                                 <p class="colorType orange">컨설팅 전문가</p>
+                                                 <p>최동근</p>
+                                             </div>
+                                             <div class="idInfor">
+                                                 <p class="place">경남</p>
+                                                 <p class="art">생산기술</p>
+                                                 <p class="number">055-254-1745</p>
+                                             </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="idPhoto">
+                                             <img src="../images/common/id_pic05.png" alt="">
+                                        </div>
+                                        <div class="idIntro">
+                                             <div class="name">
+                                                 <p class="colorType orange">컨설팅 전문가</p>
+                                                 <p>문용익</p>
+                                             </div>
+                                             <div class="idInfor">
+                                                 <p class="place">경남</p>
+                                                 <p class="art">생산기술</p>
+                                                 <p class="number">055-254-1747</p>
+                                             </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="idPhoto">
+                                             <img src="../images/common/id_pic06.png" alt="">
+                                        </div>
+                                        <div class="idIntro">
+                                             <div class="name">
+                                                 <p class="colorType orange">컨설팅 전문가</p>
+                                                 <p>최시양</p>
+                                             </div>
+                                             <div class="idInfor">
+                                                 <p class="place">경남</p>
+                                                 <p class="art">경영기술</p>
+                                                 <p class="number">055-254-1748</p>
+                                             </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="idPhoto">
+                                             <img src="../images/common/id_pic07.png" alt="">
+                                        </div>
+                                        <div class="idIntro">
+                                             <div class="name">
+                                                 <p class="colorType orange">컨설팅 전문가</p>
+                                                 <p>서정호</p>
+                                             </div>
+                                             <div class="idInfor">
+                                                 <p class="place">경남</p>
+                                                 <p class="art">경영기술</p>
+                                                 <p class="number">055-254-1757</p>
+                                             </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="idPhoto">
+                                             <img src="../images/common/id_pic08.png" alt="">
+                                        </div>
+                                        <div class="idIntro">
+                                             <div class="name">
+                                                 <p class="colorType orange">컨설팅 전문가</p>
+                                                 <p>이천식</p>
+                                             </div>
+                                             <div class="idInfor">
+                                                 <p class="place">경남</p>
+                                                 <p class="art">경영기술</p>
+                                                 <p class="number">055-254-1753</p>
+                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- //secGroup -->
+
+                        </div>
+                        <!-- //inner -->
+                    </article>
+                    <!-- //secContainer -->
+
+
+
+                    <!-- mobileFilterArea -->
+                    <div class="mobileFilterArea">
+                        <!-- inner -->
+                        <div class="inner">
+                            <div class="head">
+                                <button type="button" class="btnFilterClose">
+                                    <span class="hidden">모바일 상세필터 창 닫기</span>
+                                </button>
+                            </div>
+
+                            <!-- searchWrap -->
+                            <div class="searchWrap">
+                                <ul>
+                                    <li>
+                                        <!-- itemBox -->
+                                        <div class="itemBox rt">
+                                            <button type="button" class="btn btnFilterReset" title="필터 초기화">
+                                                <i class="ico reset mr"></i>
+                                                <span>필터 초기화</span>
+                                            </button>
+                                        </div>
+                                        <!-- //itemBox -->
+                                    </li>
+                                    <li>
+                                        <!-- itemBox -->
+                                        <div class="itemBox">
+                                            <div class="searchTit">
+                                                <strong>
+                                                    <label for="l01-1">지역</label>
+                                                </strong>
+                                            </div>
+                                            <div class="selectGroup">
+                                                <select id="l01-1">
+                                                    <option selected>전국</option>
+                                                </select>
+                                                <select>
+                                                    <option>시/군/구</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <!-- //itemBox -->
+                                    </li>
+                                    <li>
+                                        <!-- itemBox -->
+                                        <div class="itemBox">
+                                            <div class="searchTit">
+                                                <strong>유형</strong>
+                                            </div>
+                                            <div class="tagGroup">
+                                                <span class="tag bgOrange">전체 선택</span>
+                                                <span class="tag bgOrange">사업</span>
+                                                <span class="tag bgOrange">교육</span>
+                                            </div>
+                                        </div>
+                                        <!-- //itemBox -->
+                                    </li>
+                                    <li>
+                                        <!-- itemBox -->
+                                        <div class="itemBox">
+                                            <div class="searchTit">
+                                                <strong>유형</strong>
+                                            </div>
+                                            <div class="tagGroup">
+                                                <span class="tag bgOrange">전체 선택</span>
+                                                <span class="tag bgOrange">예정</span>
+                                                <span class="tag bgOrange">진행중</span>
+                                                <span class="tag bgOrange">마감</span>
+                                            </div>
+                                        </div>
+                                        <!-- //itemBox -->
+                                    </li>
+                                    <li>
+                                        <!-- itemBox -->
+                                        <div class="itemBox">
+                                            <div class="searchTit">
+                                                <strong>진행</strong>
+                                            </div>
+
+                                            <!-- radioGroup -->
+                                            <div class="radioGroup">
+                                                <ul>
+                                                    <li>
+                                                        <div class="radio">
+                                                            <input type="radio" name="rd01-1" id="l02-1" checked>
+                                                            <label for="l02-1">
+                                                                <span class="labelName">전체</span>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="radio">
+                                                            <input type="radio" name="rd01-1" id="l03-1">
+                                                            <label for="l03-1">
+                                                                <span class="labelName">1개월</span>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="radio">
+                                                            <input type="radio" name="rd01-1" id="l04-1">
+                                                            <label for="l04-1">
+                                                                <span class="labelName">6개월</span>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="radio">
+                                                            <input type="radio" name="rd01-1" id="l05-1">
+                                                            <label for="l05-1">
+                                                                <span class="labelName">1년</span>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- //radioGroup -->
+
+                                            <!-- inputGroup -->
+                                            <div class="inputGroup">
+                                                <input type="text" placeholder="연도-월-일" title="연도-월-일 언제부터 입력" class="cal wd120">
+                                                <span class="dash">-</span>
+                                                <input type="text" placeholder="연도-월-일" title="연도-월-일 언제까지 입력" class="cal wd120">
+                                            </div>
+                                            <!-- //inputGroup -->
+                                        </div>
+                                        <!-- //itemBox -->
+                                    </li>
+                                    <li>
+                                        <!-- itemBox -->
+                                        <div class="itemBox">
+                                            <div class="searchTit">
+                                                <strong>
+                                                    <label for="l06-1">기관검색</label>
+                                                </strong>
+                                            </div>
+
+                                            <!-- inputGroup -->
+                                            <div class="inputGroup">
+                                                <input type="text" id="l06-1" placeholder="기관명을 입력하세요" title="기관명을 입력하세요" class="type02 f1">
+                                                <button type="button" class="btnCommonSearch">
+                                                    <span class="hidden">검색</span>
+                                                </button>
+                                            </div>
+                                            <!-- //inputGroup -->
+                                        </div>
+                                        <!-- //itemBox -->
+                                    </li>
+                                    <li>
+                                        <!-- itemBox -->
+                                        <div class="itemBox">
+                                            <div class="searchTit sb">
+                                                <strong>항목 포함 검색</strong>
+                                                <button type="button" class="btnSwitchToggle" aria-pressed="false">
+                                                    <span class="hidden">비활성화됨</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!-- //itemBox -->
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //searchWrap -->
+                        </div>
+                        <!-- //inner -->
+                    </div>
+                    <!-- //mobileFilterArea -->
+                </div>
+                <!-- content -->
+            </div>
+            <!-- //contents -->
+        </main>
+        <!--//container-->
+
+        <button type="button" class="btn switch">
+            <span class="open">QUICK<br />MENU</span>
+            <span class="close"></span>
+        </button>
+        <!-- quickMenu -->
+        <aside class="quickMenu">
+            <ul>
+                <li>
+                    <a href="#" class="busi">지원사업</a>
+                </li>
+                <li>
+                    <a href="#" class="cafe">청창농<br class="pc"/>카페</a>
+                </li>
+                <li>
+                    <a href="#" class="tv">청년농업인<br class="pc"/>TV</a>
+                </li>
+                <li>
+                    <a href="#" class="calc">경영<br class="pc"/>모의계산</a>
+                </li>
+                <li>
+                    <a href="#" class="exhi">제철장터<br class="pc"/>기획전</a>
+                </li>
+            </ul>
+        </aside>
+        <!-- //quickMenu -->
+
+        <!--footer-->
+        <footer id="footer">
+            @@include('include/footer.html')
+        </footer>
+        <!--//footer-->
+    </div>
+</body>
+</html>

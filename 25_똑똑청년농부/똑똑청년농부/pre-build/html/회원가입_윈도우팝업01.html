@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+    <div id="wrap" class="sub window">
+        <!--container-->
+        <main id="container">
+            <!-- contents -->
+            <div id="contents">
+                <!-- content -->
+                <div id="content">
+                    <h2 class="hidden">본문 영역</h2>
+                    <!-- sectionTitArea -->
+                    <section class="sectionTitArea">
+                        <!-- inner -->
+                        <div class="inner col">
+                            <h3 class="titPage lock">
+                                <strong>비밀번호 찾기</strong>
+                            </h3>
+                            <p class="hintTxt">비밀번호가 기억나지 않으세요?<br/>
+                            본인인증을 통해 새 비밀번호를 설정하실 수 있습니다.</p>
+                            
+                            <!-- inputArea -->
+                            <article class="inputArea">
+                                <!-- inputGroup -->
+                                <div class="inputGroup col">
+                                    <div class="labelArea">
+                                        <strong class="inputLabel">
+                                            <label for="l01">휴대폰 번호</label>
+                                        </strong>
+                                    </div>
+
+                                    <!-- row -->
+                                    <div class="row">
+                                        <select id="l01">
+                                            <option selected>010</options>
+                                        </select>
+                                        <span class="dash">-</span>
+                                        <input type="text" title="휴대폰 번호 중간자리 입력">
+                                        <span class="dash">-</span>
+                                        <input type="text" title="휴대폰 번호 마지막 자리 입력">
+                                    </div>
+                                    <!-- //row -->
+                                </div>
+                                <!-- //inputGroup -->
+
+                                <!-- inputGroup -->
+                                <div class="inputGroup col">
+                                    <div class="labelArea">
+                                        <strong class="inputLabel">
+                                            <label for="l02">이름</label>
+                                        </strong>
+                                    </div>
+
+                                    <!-- row -->
+                                    <div class="row">
+                                        <input type="text" placeholder="이름을 입력하세요" id="l02" class="full">
+                                    </div>
+                                    <!-- //row -->
+                                </div>
+                                <!-- //inputGroup -->
+                            </article>
+                            <!-- //inputArea -->
+
+                            <div class="btnArea flex jcC">
+                                <button type="button" class="btn deepBlueRect">휴대폰 인증</button>
+                            </div>
+                        </div>
+                        <!-- //inner -->
+                    </section>
+                    <!-- //sectionTitArea -->
+                </div>
+                <!-- content -->
+            </div>
+            <!-- //contents -->
+        </main>
+        <!--//container-->
+    </div>
+</body>
+</html>

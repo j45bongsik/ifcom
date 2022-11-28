@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="icon" transform="translate(-1230 -310)">
+    <rect id="area" width="40" height="40" transform="translate(1230 310)" fill="none"/>
+    <g id="icon-2" data-name="icon" transform="translate(1185.358 265)">
+      <path id="패스_17003" data-name="패스 17003" d="M74,92.667l-2-2H69.333l-2.667-1.333h-2L63.333,88l-2.667,2H58l-2.667,1.333L54,92.667" transform="translate(-1.333 -12.667)" fill="none" stroke="#999" stroke-miterlimit="10" stroke-width="1.4"/>
+      <path id="패스_17004" data-name="패스 17004" d="M64.667,77.333C64.667,75.21,63.8,64.114,58,56" transform="translate(-2.667 -2)" fill="none" stroke="#999" stroke-miterlimit="10" stroke-width="1.4"/>
+      <path id="패스_17005" data-name="패스 17005" d="M60.212,61.488c1.729-1.291,2.083-4.8,1.447-6.155-1.389-2.945-4.5-3.583-7.333-5.333-2.576,4.206-1.583,9.5,4,11.333" transform="translate(-0.992)" fill="none" stroke="#999" stroke-miterlimit="10" stroke-width="1.4"/>
+      <path id="패스_17006" data-name="패스 17006" d="M76.463,64.616c-3.889,1.883-8.411,5.223-9.075,11.362" transform="translate(-5.796 -4.872)" fill="none" stroke="#999" stroke-miterlimit="10" stroke-width="1.4"/>
+      <path id="패스_17007" data-name="패스 17007" d="M70.364,66.365c-1.411-1.813-1.081-5.821,1.26-8.241,2.936-3.036,10.654-4.152,14.168-4.268,0,4.837-1.369,15.688-14.617,14.763" transform="translate(-6.508 -1.285)" fill="none" stroke="#999" stroke-miterlimit="10" stroke-width="1.4"/>
+      <path id="패스_17008" data-name="패스 17008" d="M56.667,73.623c1.907,1.108,2,4,2,4s-2.759,1.107-4.667,0-4-4.667-4-4.667S54.759,72.515,56.667,73.623Z" transform="translate(0 -7.623)" fill="none" stroke="#999" stroke-miterlimit="10" stroke-width="1.4"/>
+    </g>
+  </g>
+</svg>

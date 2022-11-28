@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <g id="icon_달력" data-name="icon / 달력" transform="translate(-1733 -678)">
+    <rect id="area" width="18" height="18" transform="translate(1733 678)" fill="none"/>
+    <g id="Icon_feather-calendar" data-name="Icon feather-calendar" transform="translate(1732.527 678.474)">
+      <path id="패스_6" data-name="패스 6" d="M5.605,6h7.736a1.105,1.105,0,0,1,1.105,1.105v7.736a1.105,1.105,0,0,1-1.105,1.105H5.605A1.105,1.105,0,0,1,4.5,14.841V7.105A1.105,1.105,0,0,1,5.605,6Z" transform="translate(0 -1.895)" fill="none" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="패스_7" data-name="패스 7" d="M24,3V5.21" transform="translate(-12.316 0)" fill="none" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="패스_8" data-name="패스 8" d="M12,3V5.21" transform="translate(-4.737 0)" fill="none" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="패스_9" data-name="패스 9" d="M4.5,15h9.946" transform="translate(0 -7.579)" fill="none" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

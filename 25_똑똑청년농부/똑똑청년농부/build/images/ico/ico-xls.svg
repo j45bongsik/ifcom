@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <g id="icon_엑셀" data-name="icon / 엑셀" transform="translate(-728 -441)">
+    <rect id="area" width="22" height="22" transform="translate(728 441)" fill="none"/>
+    <g id="그룹_18926" data-name="그룹 18926" transform="translate(-178.106 -221.791)">
+      <g id="그룹_18925" data-name="그룹 18925" transform="translate(908.98 663.46)">
+        <path id="패스_10647" data-name="패스 10647" d="M2221.446,2766.105v-.516h-2.364v3.441h.594v-1.481h1.385v-.517h-1.385v-.926Z" transform="translate(-2208.971 -2749.365)" fill="#fff"/>
+        <path id="패스_10651" data-name="패스 10651" d="M2684,665.861a.8.8,0,0,0,.5.156h1.748l-.486-.486-.343-.343-.184-.184-.606-.606-.938-.938v.533c0,.1,0,.193,0,.288s0,.165,0,.247,0,.158,0,.236c0,.155,0,.316,0,.474A.784.784,0,0,0,2684,665.861Z" transform="translate(-2669.992 -663.46)" fill="#e6e7e8"/>
+        <path id="패스_10652" data-name="패스 10652" d="M908.98,664.317V678.3h10.6l5.021,0h.634V666.346h-1.721a1.81,1.81,0,0,1-.324-.019,1.05,1.05,0,0,1-.841-1.005c-.006-.388,0-.784,0-1.167,0-.162,0-.331,0-.5v-.2H909.866a.8.8,0,0,0-.787.34.854.854,0,0,0-.1.479C908.98,664.292,908.98,664.3,908.98,664.317Z" transform="translate(-908.98 -663.46)" fill="#e6e7e8"/>
+        <path id="패스_10653" data-name="패스 10653" d="M925.244,2635.763c0-.144,0-.292,0-.436,0-.073,0-.148,0-.223v-4.081h-.23c-.138,0-.278,0-.414,0h-5.569l-4.66,0H908.99v4.7c0,.008,0,.016,0,.024s0,.037,0,.056a.7.7,0,0,0,.694.7h14.858a.715.715,0,0,0,.491-.2.705.705,0,0,0,.211-.49v-.012C925.244,2635.78,925.244,2635.772,925.244,2635.763Z" transform="translate(-908.99 -2615.833)" fill="#10643a"/>
+        <text id="EXCEL" transform="translate(4.127 19.331)" fill="#fff" font-size="3.5" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR" letter-spacing="-0.05em"><tspan x="0" y="0">EXCEL</tspan></text>
+      </g>
+      <path id="패스_16445" data-name="패스 16445" d="M0,1H2L7,9H5Z" transform="translate(914.106 666.791)" fill="#10643a"/>
+      <path id="패스_16446" data-name="패스 16446" d="M7,1H5L0,9H2Z" transform="translate(914.106 666.791)" fill="#10643a"/>
+    </g>
+  </g>
+</svg>
