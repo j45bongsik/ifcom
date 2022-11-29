@@ -704,6 +704,15 @@
     }
   }
 
+  .subjectArea{padding: 30px; margin-bottom: 130px;}
+
+  .networkArea{
+    &.type02{
+      >div{width: calc(100% / 2 - 10px);
+        &:nth-child(2n){margin-left: 0;}
+      }
+    }
+  }
 
 }// 1280px
 
@@ -833,7 +842,6 @@
       }
     }
   }
-
 
   #gnb {
     height: 60px;
@@ -1056,6 +1064,7 @@
         &:nth-child(2n) {
           margin-left: 5px;
         }
+        &:nth-child(2){margin-top: 0;}
       }
     }
   }
@@ -1092,6 +1101,26 @@
       }
     }
     &.type02 {
+    }
+  }
+
+  .tabNav {
+    &.type02 {
+      &.widthFree {
+        >.inner {
+          .tabList {
+            justify-content: flex-start;
+            li {
+              width: inherit;
+              .btn {
+                span {
+                  word-break: keep-all;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
   
@@ -1288,6 +1317,19 @@
     }
   }
 
+  .subjectArea{margin-top: 30px; padding: 35px 10px 0; margin-bottom: 330px;
+    h4{text-align: left;}
+    .network{
+      .networkEx{text-align: left;}
+      .networkType{flex-direction: column; row-gap: 10px; column-gap: 0;
+        >div{width: 100%;}
+      }
+    }
+    &.type02{margin-top: 30px; height: auto; padding: 30px 0;
+      h4{text-align: center;}
+    }
+  }
+
 }// 1024px
 
 @media screen and (max-width: 960px) {
@@ -1481,6 +1523,9 @@
       //row
       &.type04 {
         table {
+          colgroup{
+            &.none{display: none;}
+          }
           > * {display: revert;}
           tbody {
             tr {
@@ -1529,7 +1574,9 @@
       &.type06 {
         table {
           colgroup{
-            &.none{display: none;}
+            &.none{display: none;
+              &.type02{display: revert;}
+            }
           }
           > * {display: revert;}
           tbody {
@@ -1554,7 +1601,7 @@
       &.type07{
         table{
           tbody{
-            tr{padding: 15px 0 34px;
+            tr{padding: 15px 0;
               td{
                 &.us{display: unset;
                   &.type01{@include font(13px,'Noto Sans Medium',#666); 
@@ -1562,10 +1609,32 @@
                   }
                   +.us{padding-left: 0;}
                 }
-                &.link{height: auto; padding: 10px 8px 10px 8px;}
+                &.link{height: auto; padding: 10px 0;}
                 &.file{bottom: unset;}
               }
             }
+          }
+        }
+      }
+      // 전문가네트워크 테이블 반응형
+      &.tableRes{
+        table{
+          th,td{display: block; text-align: left;}
+          td{
+            &.moBgGray{background-color: #F8F8F8; padding: 10px;}
+            &.write{display: inline-block;}
+            &.date{display: inline-block;}
+            .checkbox{justify-content: flex-start; margin-bottom: 10px;}
+            .itemInfo{display: flex; align-items: center; font-size: 12px; margin-top: 10px;
+              span{position: relative; padding: 0 12px;
+                &:before{content: ''; position: absolute; top: 50%; left: 0; transform: translateY(-50%); width: 2px; height: 12px; background-color: #ddd;}
+                &:first-child{padding-left: 0;
+                  &::before{display: none;}
+                }
+              }
+            }
+            &.moS{font-size: 14px; color: #666; line-height: 24px;}
+            &.abTd{position: absolute; right: 0; top: 50%; transform: translateY(-50%);}
           }
         }
       }
@@ -2457,6 +2526,21 @@
           &.depthBottom{padding-bottom: 55px;}
         }
       }
+      &.widthFree {
+        >.inner {
+          .tabList {
+            width: 485px;
+            min-width: 485px !important;
+            li {
+              width: auto;
+              // padding: 0;
+              .btn {
+
+              }
+            }
+          }
+        }
+      }
     }
     &.type03 {
       .inner {
@@ -2495,6 +2579,7 @@
             margin-top: 20px;
             background: #fff url("../images/ico/ico-arrow-right.svg") no-repeat center right 16px;
             font-size: 12px;
+            
           }
         }
       }
@@ -2592,6 +2677,10 @@
         }
       }
     }
+  }
+  
+  .selectBox{
+    select{height: 34px;}
   }
 
   .title {
@@ -2870,6 +2959,16 @@
   }
 
   .tableArea {
+    .table{
+      &.type06{
+        table{
+          colgroup{
+            &.type02.none{display: none;}
+          }
+        }
+      }
+    }
+
     &.type02{border: 0; border-radius: 0; padding: 0;
       &.default{
         .table{
@@ -2885,6 +2984,15 @@
     }
     
     .table {
+      &.commonPd{padding-bottom: 0;
+        table{
+          tbody{
+            tr{
+              td{padding: 0 10px;}
+            }
+          }
+        }
+      }
       &.pc{}
       &.mobile{}
 
@@ -2959,6 +3067,11 @@
           > * {}
           tbody {
             tr {
+              &.top{
+                th{
+                  label{display: unset; justify-content: unset; height: auto; padding: 0;}
+                }
+              }
               th, td {
                 height: auto;
                 display: block;
@@ -3170,6 +3283,16 @@
         }
       }
     }
+    &.type02{
+      >ul{
+        >li{
+          >a{
+            padding: 23px 15px;
+            line-height: inherit;
+          }
+        }
+      }
+    }
   }
 
   .bannerArea {
@@ -3338,10 +3461,18 @@
   .guideArea {
     padding-bottom: 40px;
     .title {}
+    .titArea {
+      .title {
+        font-size: 20px;
+      }
+    }
     .descArea {
       padding: 20px;
       p {
         font-size: 13px;
+      }
+      &+.tabNav {
+        margin-top: 30px;
       }
     }
     .imgDesc {
@@ -3574,7 +3705,6 @@
     }
     .btnFirst,.btnPrev,.btnNext,.btnLast,a{}
   }
-
 
   .ciArea {
     .logo {
@@ -4217,6 +4347,10 @@
         height: 30px;
         padding: 0px 18px;
       }
+      &.type03 {
+        height: 30px;
+        font-size: 12px;
+      }
     }
     &.whiteRect {
       min-width: 90px;
@@ -4406,9 +4540,11 @@
     }
   }
 
-  .selectGroup{flex-direction: column;
-    select{flex: none; width: 100%; margin-bottom: 10px;}
+  .selectGroup{
     .btn{width: 100%;}
+    &.type03{flex-direction: column;
+      select{flex: none; width: 100%; margin-bottom: 10px;}
+    }
   }
 
   .titArea{
@@ -4422,6 +4558,32 @@
   .hint{
     &.pc{display: none;}
     &.mo{display: block;}
+  }
+
+  textarea{
+    &.mo{display: block;}
+    &.urlInput{height: 78px;}
+    ~input.pc{display: none;}
+  }
+
+  .ratioTime {
+    margin-top: -20px;
+  }
+  
+  .rangeSlider {
+    display: block;
+    padding: 0;
+    .tit {
+      font-size: 14px;
+    }
+    .slider {
+      padding: 0;
+      margin-top: 10px;
+    }
+    .value {
+      position: static;
+      margin-top: 10px;
+    }
   }
 }// 768px
 
@@ -4457,6 +4619,17 @@
       }
     }
   }
+  .topArea{position: relative;
+    &.type03{align-items: flex-start;
+      .rightGroup{padding-bottom: 44px;
+        &.type02{flex-direction: column-reverse; align-items: flex-end;}
+        .searchArea{margin-right: 0;}
+        .selectBox{margin-top: 10px; position: absolute; bottom: 0; right: 0;
+          select{border-radius: 5px;}
+        }
+      }
+    }
+  }
 }
 
 @media screen and(max-width: 570px){
@@ -4464,6 +4637,11 @@
     >div{width: 100%;
       &:nth-child(2n){margin-left: 0px;}
       &+div{margin-top: 20px;}
+    }
+    &.type02{
+      >div{width: 100%;
+        &+div{margin-top: 0px;}
+      }
     }
   }
   .stepArea{
@@ -4477,6 +4655,7 @@
       }
     }
   }
+  .subjectArea{margin-bottom: 380px;}
 }
 
 @media screen and(max-width: 520px){
@@ -4510,39 +4689,6 @@
           }
         }
       }
-    }
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .itemBox{
-    .selectGroup{
-      select{padding: 0 22px 0 10px;}
-    }
-    .inputGroup{
-      input[type="text"].cal{min-width: 110px; max-width: 120px; width: auto;}
-    }
-  }
-
-  .stepArea{
-    &.type02{
-      ul{
-        li{
-          &.stepItem{
-            &:after{width: calc(100% + 50px); right: -87px;}
-          }
-        }
-      }
-    }
-  }
-
-  .titArea{
-    .btnGroup{width: 80%;}
-  }
-
-  .contArea{
-    .tableArea{
-      +.btnArea{width: 80%;}
     }
   }
 
@@ -4579,6 +4725,9 @@
               &:nth-child(n+3) {
                 margin-top: 4px;
               }
+              &:last-of-type{
+                &:before{display: none;}
+              }
             }
           }
         }
@@ -4601,10 +4750,10 @@
       }
     }
   }
+  
 }
 
 @media screen and (max-width: 425px) {
-
 
   .itemBox{
     .selectGroup{
@@ -4633,7 +4782,7 @@
 
   .contArea{
     .tableArea{
-      +.btnArea{width: 80%;}
+      +.btnArea{width: 75%;}
     }
   }
 }
@@ -4779,5 +4928,6 @@
     }
   }
 
+  .subjectArea{margin-bottom: 400px;}
 
 }//375px

@@ -513,6 +513,13 @@ $(document).ready(function () {
                 }
             }
         });
+
+        $('.table.type06.groupType .label').on({
+            'click': function () {
+                let labelFor = $(this).closest('th').next('td').find('textarea.mo').attr('id');
+                $(this).attr('for', labelFor);
+            }
+        });
     } else {
         $('.tabNav.type02.mobileHasDepth .inner').removeClass('depthBottom');
     }
@@ -527,24 +534,50 @@ $(document).ready(function () {
     });
 
     //slider
-    var slider = $('.rangeSlider .slider'),
-    range = $('.rangeSlider .range'),
-    value = $('.rangeSlider .value');
-      
-    slider.each(function(){
-  
-      value.find('input').on('keyup', function(){
-        var volume = $(this).val()
-        // console.log(volume)
-        $(this).parents().prev().val(volume)
-      });
-  
-      range.on('input', function(){
-        $(this).next(value).find('input').val(this.value)
-        var val = $(this).val();
-        $(this).css('background', 'linear-gradient(to right, #4EA61F 0%, #4EA61F '+ val +'%, #eee ' + val + '%, #eee 100%)');
-      });
+    $('.rangeSlider .slider').each(function(){
+        var $this = $(this),
+            $range = '.range',
+            $value = '.value';
+        
+        var val = $this.find($value).find('input').val();
+        $this.find($range).val(val).css('background', 'linear-gradient(to right, #4EA61F 0%, #4EA61F '+ val +'%, #eee ' + val + '%, #eee 100%)');
+        
+
+        // 텍스트 인풋 입력
+        $this.find($value).find('input').on('keyup', function(){
+            var val = $(this).val()
+            // console.log($(this))
+            $(this).parent($value).siblings($range).val(val).css('background', 'linear-gradient(to right, #4EA61F 0%, #4EA61F '+ val +'%, #eee ' + val + '%, #eee 100%)');
+        });
+         
+        // 레인지
+        $this.find($range).on('input', function(){
+            var val = $(this).val();
+            $(this).siblings($value).find('input').val(val)
+            $(this).css('background', 'linear-gradient(to right, #4EA61F 0%, #4EA61F '+ val +'%, #eee ' + val + '%, #eee 100%)');
+        });
     });
  
- 
+
+    // table 체크박스 전체선택
+    $('.chkAll input[type="checkbox"]').on({
+        'click': function () {
+            if ($(this).prop('checked')) {
+                $(this).closest('.table').find('input[type="checkbox"][name="chk1"]').prop('checked', true);
+            } else {
+                $(this).closest('.table').find('input[type="checkbox"][name="chk1"]').prop('checked', false);
+            }
+        }
+    });
+
+    // table 체크박스 전체선택
+    $('.chkAll input[type="checkbox"]').on({
+        'click': function () {
+            if ($(this).prop('checked')) {
+                $(this).closest('.table').find('input[type="checkbox"][name="chk2"]').prop('checked', true);
+            } else {
+                $(this).closest('.table').find('input[type="checkbox"][name="chk2"]').prop('checked', false);
+            }
+        }
+    });
 })

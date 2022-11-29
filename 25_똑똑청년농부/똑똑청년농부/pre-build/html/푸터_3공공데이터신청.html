@@ -307,7 +307,7 @@
                         <div class="inner">
                             <h3 class="titPage">
                                 <strong>공공데이터 신청</strong>
-                                <span class="status">신청현황</span>
+                                <!-- <span class="status">신청현황</span> -->
                             </h3>
                         </div>
                         <!-- //inner -->
@@ -320,18 +320,13 @@
                         <div class="inner">
 
                             <!-- tabNav -->
-                            <article class="tabNav type02">
+                            <article class="tabNav type02 widthFree">
                                 <div class="inner">
                                     <!-- tabList -->
-                                    <ul class="tabList" style="min-width: 480px;">
+                                    <ul class="tabList" style="min-width: 560px;">
                                         <li  class="active">
                                             <button type="btn" class="btn">
-                                                <span>공공데이터 소개</span>
-                                            </button>
-                                        </li>
-                                        <li>
-                                            <button type="btn" class="btn">
-                                                <span>개발자 가이드</span>
+                                                <span>공공데이터 소개 및 개발가이드</span>
                                             </button>
                                         </li>
                                         <li>
@@ -342,6 +337,11 @@
                                         <li>
                                             <button type="btn" class="btn">
                                                 <span>인증키 요청</span>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="btn" class="btn">
+                                                <span>신청현황</span>
                                             </button>
                                         </li>
                                         
@@ -369,60 +369,6 @@
                                                 </div>
                                                 <!-- //descArea -->
 
-                                                <!-- imgDesc -->
-                                                <div class="imgDesc">
-                                                    <ul>
-                                                        <li>
-                                                            <div class="imgArea img01">
-                                                                <img src="../images/common/img-guide01.png" alt="공공데이터">
-                                                            </div>
-                                                            
-                                                            <div class="desc">
-                                                                <p class="tit">지원 사업ㆍ교육</p>
-                                                                <p class="txt">
-                                                                    청년 농업인 또는 농업을 준비하는 예비농업인을 위해<br />
-                                                                    전국 각지에서 지원되는 지원 사업ㆍ교육정보 들을 모아<br />
-                                                                    종합 데이터로 바로 활용 할 수 있도록 정보를 제공합니다.
-                                                                </p>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="imgArea img02">
-                                                                <img src="../images/common/img-guide02.png" alt="공공데이터">
-                                                            </div>
-                                                            
-                                                            <div class="desc">
-                                                                <p class="tit">청년 사례</p>
-                                                                <p class="txt">
-                                                                    청년 농업인 정보 소통 활성화를 위해 청년농 소개,<br />
-                                                                    청년농업인 영상, 극복ㆍ실패 사례 정보를 제공합니다.
-                                                                </p>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <!-- //imgDesc -->
-
-                                            </article>
-                                            <!-- //guideArea -->
-                                        </div>
-                                        <!-- //cardContainer -->
-
-                                    </section>
-                                    <!-- //secGroup -->
-                                </div>
-                                <!-- //tabCont -->
-
-                                <!-- tabCont -->
-                                <div class="tabCont">
-                                    <div class="secGroup right">
-                                        <!-- cardContainer -->
-                                        <div class="cardContainer active">
-                                            
-                                            <!-- guideArea -->
-                                            <article class="guideArea">
-                                                <h4 class="title type03">개발자 가이드</h4>
-                                                
                                                 <!-- tabNav -->
                                                 <article class="tabNav type03">
                                                     <!-- inner -->
@@ -443,256 +389,343 @@
 
                                                     <!-- tabCont -->
                                                     <div class="tabCont active">
-                                                        <!-- tableArea -->
-                                                        <div class="tableArea">
 
-                                                            <!-- tablebox -->
-                                                            <div class="tableBox">
-                                                                <h4 class="title type04">기본 정보</h4>
-                                                                <!-- table -->
-                                                                <div class="table type03">
-                                                                    <table style="min-width: 450px;">
-                                                                        <caption>기본 정보 게시물로 메서드, 요청URL, 출력포멧 등의 정보를 제공합니다.</caption>
-                                                                        <colgroup>
-                                                                            <col style="width: 180px">
-                                                                            <col style="width: auto;">
-                                                                            <col style="width: 180px">
-                                                                        </colgroup>
-                                                                        <thead>
-                                                                            <tr>
-                                                                                <th scope="col">메서드</th>
-                                                                                <th scope="col">요청URL</th>
-                                                                                <th scope="col">출력포멧</th>
-                                                                            </tr>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td>GET</td>
-                                                                                <td>https://rda.go.kr/young/api/policy/json?</td>
-                                                                                <td>JSON</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>GET</td>
-                                                                                <td>https://rda.go.kr/young/api/policy/xml?</td>
-                                                                                <td>XML</td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
-                                                                <!-- table -->
-                                                            </div>
-                                                            <!-- //tablebox -->
-
-                                                            <!-- tablebox -->
-                                                            <div class="tableBox">
-                                                                <h4 class="title type04">요청 인자</h4>
-                                                                <!-- table -->
-                                                                <div class="table type03">
-                                                                    <table style="min-width: 850px;">
-                                                                        <caption>요청인자 게시물로 요청키, 명칭, 타입, 필수여부, 설명 등의 정보를 제공합니다. </caption>
-                                                                        <colgroup>
-                                                                            <col style="width: 180px;">
-                                                                            <col style="width: 180px;">
-                                                                            <col style="width: 180px;">
-                                                                            <col style="width: 180px;">
-                                                                            <col style="width: 560px;">
-                                                                        </colgroup>
-                                                                        <thead>
-                                                                            <tr>
-                                                                                <th scope="col">요청키</th>
-                                                                                <th scope="col">명칭</th>
-                                                                                <th scope="col">타입</th>
-                                                                                <th scope="col">필수여부</th>
-                                                                                <th scope="col">설명</th>
-                                                                            </tr>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td>secretKey</td>
-                                                                                <td>인증키</td>
-                                                                                <td>String</td>
-                                                                                <td>필수</td>
-                                                                                <td>인증키</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>search_category</td>
-                                                                                <td>카테고리</td>
-                                                                                <td>String</td>
-                                                                                <td>옵션</td>
-                                                                                <td>
-                                                                                    검색하고자 하는 카테고리( 개수가 2개 이상인경우 , 를 붙여 검색 ) <br class="pc"/>
-                                                                                    (※코드표 참조 001)
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>search_area1</td>
-                                                                                <td>지역코드</td>
-                                                                                <td>Integer</td>
-                                                                                <td>옵션</td>
-                                                                                <td>
-                                                                                    지역코드 ( 광역시 / 도 )<br class="pc"/>
-                                                                                    (※코드표 참조 002)
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>search_area2</td>
-                                                                                <td>지역코드</td>
-                                                                                <td>Integer</td>
-                                                                                <td>옵션</td>
-                                                                                <td>
-                                                                                    지역코드 ( 시 / 군 )<br class="pc"/>
-                                                                                    (※코드표 참조 003)
-                                                                                </td>
-                                                                            </tr>
-
-                                                                            <tr>
-                                                                                <td>search_area2</td>
-                                                                                <td>지역코드</td>
-                                                                                <td>Integer</td>
-                                                                                <td>옵션</td>
-                                                                                <td>
-                                                                                    지역코드 ( 시 / 군 )<br class="pc"/>
-                                                                                    (※코드표 참조 003)
-                                                                                </td>
-                                                                            </tr>
-                                                                            
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
-                                                                <!-- table -->
-                                                            </div>
-                                                            <!-- //tablebox -->
-
-                                                            <!-- tablebox -->
-                                                            <div class="tableBox">
-                                                                <h4 class="title type04">응답 결과</h4>
-                                                                <!-- table -->
-                                                                <div class="table type03">
-                                                                    <table style="min-width: 400px;">
-                                                                        <caption>응답결과 게시물로 응답키, 타입, 출력 설명 등의 정보를 제공합니다. </caption>
-                                                                        <colgroup>
-                                                                            <col style="width: 180px;">
-                                                                            <col style="width: 180px;">
-                                                                            <col style="width: 918px;">
-                                                                        </colgroup>
-                                                                        <thead>
-                                                                            <tr>
-                                                                                <th scope="col">응답키</th>
-                                                                                <th scope="col">타입</th>
-                                                                                <th scope="col">출력 설명</th>
-                                                                            </tr>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td>seq</td>
-                                                                                <td>String</td>
-                                                                                <td>게시글 순번</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>typeDv</td>
-                                                                                <td>String</td>
-                                                                                <td>게시글 타입(edu교육, policy사업)</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>title</td>
-                                                                                <td>String</td>
-                                                                                <td>제목</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>contents</td>
-                                                                                <td>String</td>
-                                                                                <td>내용</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>writer</td>
-                                                                                <td>String</td>
-                                                                                <td>작성자</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>category</td>
-                                                                                <td>String</td>
-                                                                                <td>카테고리</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>viewCnt</td>
-                                                                                <td>String</td>
-                                                                                <td>조회수</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>applStDt</td>
-                                                                                <td>String</td>
-                                                                                <td>신청시작일</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>appEdDt</td>
-                                                                                <td>String</td>
-                                                                                <td>신청마감일</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>eduStDt</td>
-                                                                                <td>String</td>
-                                                                                <td>교육신청시작일</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>eduEdDt</td>
-                                                                                <td>String</td>
-                                                                                <td>교육신청마감일</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>eduTime</td>
-                                                                                <td>String</td>
-                                                                                <td>교육시간</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>eduCnt</td>
-                                                                                <td>String</td>
-                                                                                <td>교육인원</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>eduTarget</td>
-                                                                                <td>String</td>
-                                                                                <td>교육대상</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>area1</td>
-                                                                                <td>String</td>
-                                                                                <td>지역코드(도)</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>area1Nm</td>
-                                                                                <td>String</td>
-                                                                                <td>지역명(도)</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>area2</td>
-                                                                                <td>String</td>
-                                                                                <td>지역코드(시군구)</td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
-                                                                <!-- table -->
-                                                            </div>
-                                                            <!-- //tablebox -->
-                                                            
+                                                        <!-- imgDesc -->
+                                                        <div class="imgDesc">
+                                                            <ul>
+                                                                <li>
+                                                                    <div class="imgArea img01">
+                                                                        <img src="../images/common/img-guide01.png" alt="공공데이터">
+                                                                    </div>
+                                                                    
+                                                                    <div class="desc">
+                                                                        <p class="tit">지원 사업ㆍ교육</p>
+                                                                        <p class="txt">
+                                                                            청년농업인 또는 농업을 준비하는 예비농업인을 위해<br />
+                                                                            전국 각지에서 지원되는 지원 사업ㆍ교육정보 들을 모아<br />
+                                                                            종합 데이터로 바로 활용 할 수 있도록 정보를 제공합니다.
+                                                                        </p>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="imgArea img02">
+                                                                        <img src="../images/common/img-guide02.png" alt="공공데이터">
+                                                                    </div>
+                                                                    
+                                                                    <div class="desc">
+                                                                        <p class="tit">청년 사례</p>
+                                                                        <p class="txt">
+                                                                            청년농업인 정보 소통 활성화를 위해 청년농 소개,<br />
+                                                                            청년농업인 영상, 극복ㆍ실패 사례 정보를 제공합니다.
+                                                                        </p>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
                                                         </div>
-                                                        <!-- //tableArea -->
+                                                        <!-- //imgDesc -->
+
+                                                        <!-- guideArea -->
+                                                        <div class="guideArea">
+                                                            
+                                                            <div class="titArea">
+                                                                <h4 class="title type05">개발자 가이드</h4>
+                                                                <button type="button" class="btn grayLine type03">개발자 가이드 내려받기</button>
+                                                            </div>
+
+                                                            <!-- tableArea -->
+                                                            <div class="tableArea">
+
+                                                                <!-- tablebox -->
+                                                                <div class="tableBox">
+                                                                    
+                                                                    <h4 class="title type04">기본 정보</h4>
+                                                                    <!-- table -->
+                                                                    <div class="table type03">
+                                                                        <table style="min-width: 450px;">
+                                                                            <caption>기본 정보 게시물로 메서드, 요청URL, 출력포멧 등의 정보를 제공합니다.</caption>
+                                                                            <colgroup>
+                                                                                <col style="width: 180px">
+                                                                                <col style="width: auto;">
+                                                                                <col style="width: 180px">
+                                                                            </colgroup>
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th scope="col">메서드</th>
+                                                                                    <th scope="col">요청URL</th>
+                                                                                    <th scope="col">출력포멧</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>GET</td>
+                                                                                    <td>https://rda.go.kr/young/api/policy/json?</td>
+                                                                                    <td>JSON</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>GET</td>
+                                                                                    <td>https://rda.go.kr/young/api/policy/xml?</td>
+                                                                                    <td>XML</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                    <!-- table -->
+                                                                </div>
+                                                                <!-- //tablebox -->
+
+                                                                <!-- tablebox -->
+                                                                <div class="tableBox">
+                                                                    <h4 class="title type04">요청 인자</h4>
+                                                                    <!-- table -->
+                                                                    <div class="table type03">
+                                                                        <table style="min-width: 850px;">
+                                                                            <caption>요청인자 게시물로 요청키, 명칭, 타입, 필수여부, 설명 등의 정보를 제공합니다. </caption>
+                                                                            <colgroup>
+                                                                                <col style="width: 180px;">
+                                                                                <col style="width: 180px;">
+                                                                                <col style="width: 180px;">
+                                                                                <col style="width: 180px;">
+                                                                                <col style="width: 560px;">
+                                                                            </colgroup>
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th scope="col">요청키</th>
+                                                                                    <th scope="col">명칭</th>
+                                                                                    <th scope="col">타입</th>
+                                                                                    <th scope="col">필수여부</th>
+                                                                                    <th scope="col">설명</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>secretKey</td>
+                                                                                    <td>인증키</td>
+                                                                                    <td>String</td>
+                                                                                    <td>필수</td>
+                                                                                    <td>인증키</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>search_category</td>
+                                                                                    <td>카테고리</td>
+                                                                                    <td>String</td>
+                                                                                    <td>옵션</td>
+                                                                                    <td>
+                                                                                        검색하고자 하는 카테고리( 개수가 2개 이상인경우 , 를 붙여 검색 ) <br class="pc"/>
+                                                                                        (※코드표 참조 001)
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>search_area1</td>
+                                                                                    <td>지역코드</td>
+                                                                                    <td>Integer</td>
+                                                                                    <td>옵션</td>
+                                                                                    <td>
+                                                                                        지역코드 ( 광역시 / 도 )<br class="pc"/>
+                                                                                        (※코드표 참조 002)
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>search_area2</td>
+                                                                                    <td>지역코드</td>
+                                                                                    <td>Integer</td>
+                                                                                    <td>옵션</td>
+                                                                                    <td>
+                                                                                        지역코드 ( 시 / 군 )<br class="pc"/>
+                                                                                        (※코드표 참조 003)
+                                                                                    </td>
+                                                                                </tr>
+
+                                                                                <tr>
+                                                                                    <td>search_area2</td>
+                                                                                    <td>지역코드</td>
+                                                                                    <td>Integer</td>
+                                                                                    <td>옵션</td>
+                                                                                    <td>
+                                                                                        지역코드 ( 시 / 군 )<br class="pc"/>
+                                                                                        (※코드표 참조 003)
+                                                                                    </td>
+                                                                                </tr>
+                                                                                
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                    <!-- table -->
+                                                                </div>
+                                                                <!-- //tablebox -->
+
+                                                                <!-- tablebox -->
+                                                                <div class="tableBox">
+                                                                    <h4 class="title type04">응답 결과</h4>
+                                                                    <!-- table -->
+                                                                    <div class="table type03">
+                                                                        <table style="min-width: 400px;">
+                                                                            <caption>응답결과 게시물로 응답키, 타입, 출력 설명 등의 정보를 제공합니다. </caption>
+                                                                            <colgroup>
+                                                                                <col style="width: 180px;">
+                                                                                <col style="width: 180px;">
+                                                                                <col style="width: 918px;">
+                                                                            </colgroup>
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th scope="col">응답키</th>
+                                                                                    <th scope="col">타입</th>
+                                                                                    <th scope="col">출력 설명</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>seq</td>
+                                                                                    <td>String</td>
+                                                                                    <td>게시글 순번</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>typeDv</td>
+                                                                                    <td>String</td>
+                                                                                    <td>게시글 타입(edu교육, policy사업)</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>title</td>
+                                                                                    <td>String</td>
+                                                                                    <td>제목</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>contents</td>
+                                                                                    <td>String</td>
+                                                                                    <td>내용</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>writer</td>
+                                                                                    <td>String</td>
+                                                                                    <td>작성자</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>category</td>
+                                                                                    <td>String</td>
+                                                                                    <td>카테고리</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>viewCnt</td>
+                                                                                    <td>String</td>
+                                                                                    <td>조회수</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>applStDt</td>
+                                                                                    <td>String</td>
+                                                                                    <td>신청시작일</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>appEdDt</td>
+                                                                                    <td>String</td>
+                                                                                    <td>신청마감일</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>eduStDt</td>
+                                                                                    <td>String</td>
+                                                                                    <td>교육신청시작일</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>eduEdDt</td>
+                                                                                    <td>String</td>
+                                                                                    <td>교육신청마감일</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>eduTime</td>
+                                                                                    <td>String</td>
+                                                                                    <td>교육시간</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>eduCnt</td>
+                                                                                    <td>String</td>
+                                                                                    <td>교육인원</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>eduTarget</td>
+                                                                                    <td>String</td>
+                                                                                    <td>교육대상</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>area1</td>
+                                                                                    <td>String</td>
+                                                                                    <td>지역코드(도)</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>area1Nm</td>
+                                                                                    <td>String</td>
+                                                                                    <td>지역명(도)</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>area2</td>
+                                                                                    <td>String</td>
+                                                                                    <td>지역코드(시군구)</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                    <!-- table -->
+                                                                </div>
+                                                                <!-- //tablebox -->
+                                                                
+                                                            </div>
+                                                            <!-- //tableArea -->
+                                                        </div>
+                                                        <!-- //guideArea -->
+                                                        
                                                     </div>
                                                     <!-- //tabCont -->
 
                                                     <div class="tabCont">
-                                                        22
+                                                        <!-- imgDesc -->
+                                                        <div class="imgDesc">
+                                                            <ul>
+                                                                <li>
+                                                                    <div class="imgArea img01">
+                                                                        <img src="../images/common/img-guide01.png" alt="공공데이터">
+                                                                    </div>
+                                                                    
+                                                                    <div class="desc">
+                                                                        <p class="tit">지원 사업ㆍ교육</p>
+                                                                        <p class="txt">
+                                                                            청년농업인 또는 농업을 준비하는 예비농업인을 위해<br />
+                                                                            전국 각지에서 지원되는 지원 사업ㆍ교육정보 들을 모아<br />
+                                                                            종합 데이터로 바로 활용 할 수 있도록 정보를 제공합니다.
+                                                                        </p>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="imgArea img02">
+                                                                        <img src="../images/common/img-guide02.png" alt="공공데이터">
+                                                                    </div>
+                                                                    
+                                                                    <div class="desc">
+                                                                        <p class="tit">청년 사례</p>
+                                                                        <p class="txt">
+                                                                            청년농업인 정보 소통 활성화를 위해 청년농 소개,<br />
+                                                                            청년농업인 영상, 극복ㆍ실패 사례 정보를 제공합니다.
+                                                                        </p>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <!-- //imgDesc -->
+
+                                                        <!-- guideArea -->
+                                                        <div class="guideArea">
+                                                            22
+                                                            
+                                                        </div>
+                                                        <!-- //guideArea -->
                                                     </div>
                                                 </article>
                                                 <!-- //tabNav -->
-
                                             </article>
                                             <!-- //guideArea -->
                                         </div>
                                         <!-- //cardContainer -->
-                                    </div>
+
+                                    </section>
+                                    <!-- //secGroup -->
                                 </div>
-                                <!-- // tabCont -->
+                                <!-- //tabCont -->
 
                                 <!-- tabCont -->
                                 <div class="tabCont">
@@ -794,15 +827,11 @@
                                                                 </code>
                                                             </pre>
                                                         </div>
-
-
                                                     </div>
                                                     <!-- //tabCont -->
 
-                                                    
                                                 </article>
                                                 <!-- //tabNav -->
-
                                             </article>
                                             <!-- //guideArea -->
                                         </div>
@@ -816,7 +845,6 @@
                                     <div class="secGroup right">
                                         <!-- cardContainer -->
                                         <div class="cardContainer active">
-                                            
                                             <!-- guideArea -->
                                             <article class="guideArea">
                                                 <h4 class="title type03">인증키 요청</h4>
@@ -900,6 +928,20 @@
 
                                             </article>
                                             <!-- //guideArea -->
+                                            
+                                        </div>
+                                        <!-- //cardContainer -->
+                                    </div>
+                                </div>
+                                <!-- // tabCont -->
+
+                                <!-- tabCont -->
+                                <div class="tabCont">
+                                    <div class="secGroup right">
+                                        <!-- cardContainer -->
+                                        <div class="cardContainer active">
+                                            
+                                            44
                                         </div>
                                         <!-- //cardContainer -->
                                     </div>

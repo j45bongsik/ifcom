@@ -347,7 +347,7 @@
                             <!-- tableArea -->
                             <article class="tableArea">
                                 <!-- table -->
-                                <div class="table type04 tdLeft">
+                                <div class="table type04 tdLeft commonPd">
                                     <table>
                                         <caption>회원가입 회원정보입력 테이블 : 아이디 , 비밀번호 , 비밀번호 확인 , 이름 , 이메일 , 가입형태 ,
                                         지역 , 주요생산품목</caption>
@@ -362,24 +362,26 @@
                                                 </th>
                                                 <td>01077777777</td>
                                             </tr>
-                                            <tr>
+                                            <tr class="top">
                                                 <th scope="row">
                                                     <label for="l01" class="mark type01">비밀번호</label>
                                                 </th>
                                                 <td>
-                                                    <div class="inputGroup">
+                                                    <div class="inputGroup col2">
                                                         <input type="password" id="l01" placeholder="대/소문자,숫자,특수문자 조합 10글자입니다."
                                                         title="대/소문자,숫자,특수문자 조합 10글자입니다.">
+                                                        <span class="colorType red valid">비밀번호는 필수 입력값입니다.</span>
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <tr class="top">
                                                 <th scope="row">
                                                     <label for="l02" class="mark type01">비밀번호 확인</label>
                                                 </th>
                                                 <td>
-                                                    <div class="inputGroup">
+                                                    <div class="inputGroup col2">
                                                         <input type="password" id="l02" placeholder="비밀번호를 다시 입력해주세요." title="비밀번호를 다시 입력해주세요.">
+                                                        <span class="colorType red valid">비밀번호가 다릅니다. 다시 입력해주세요.</span>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -475,6 +477,332 @@
                                 <!-- //table -->
                             </article>
                             <!-- //tableArea -->
+
+                            <!-- tableWrap -->
+                            <div class="tableWrap t01">
+                                <h4 class="subTit type03 bullet">
+                                    <strong>추가 정보 설정</strong>
+                                </h4>
+                                <!-- tableArea -->
+                                <article class="tableArea">
+                                    <!-- table -->
+                                    <div class="table type04 tdLeft commonPd">
+                                        <table>
+                                            <caption>추가정보설정 테이블 : 권한등록 신청정보 , 기관명 , 기관명 입력 , 담당부서명 , 기관연락처 , 권한신청</caption>
+                                            <colgroup class="none">
+                                                <col style="width: 170px">
+                                                <col style="width: auto">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <label for="l01-1">신청정보</label>
+                                                    </th>
+                                                    <td>
+                                                        <!-- radioGroup -->
+                                                        <div class="radioGroup">
+                                                            <ul>
+                                                                <li>
+                                                                    <div class="radio option01">
+                                                                        <input type="radio" name="rd03" id="l01-1">
+                                                                        <label for="l01-1">
+                                                                            <span class="labelName">농촌진흥기관 (청,소속기관,지방농총진흥기관)</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="radio option02">
+                                                                        <input type="radio" name="rd03" id="l02-1">
+                                                                        <label for="l02-1">
+                                                                            <span class="labelName">그 외 기관</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <!-- //radioGroup -->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <label for="l05-1">기관명</label>
+                                                    </th>
+                                                    <td>
+                                                        <div class="selectGroup type02">
+                                                            <select id="l05-1">
+                                                                <option selected>선택</option>
+                                                            </select>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <label for="l06-1">기관명 입력</label>
+                                                    </th>
+                                                    <td>
+                                                        <div class="inputGroup">
+                                                            <input type="text" class="disabled" id="l06-1" placeholder="기관명을 입력해 주세요." title="기관명을 입력해 주세요." disabled=>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <label for="l07-1">담당부서명</label>
+                                                    </th>
+                                                    <td>
+                                                        <div class="inputGroup">
+                                                            <input type="text" class="disabled" id="l07-1" placeholder="담당 부서명을 입력해 주세요." title="담당 부서명을 입력해 주세요." disabled>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <label for="l08-1">기관연락처</label>
+                                                    </th>
+                                                    <td>
+                                                        <!-- inputGroup -->
+                                                        <div class="inputGroup col">
+                                                            <div class="inputBox">
+                                                                <select id="l08-1">
+                                                                    <option selected>02</option>
+                                                                </select>
+                                                            </div>
+                                                            <span class="at pc">-</span>
+                                                            <div class="inputBox double">
+                                                                <input type="text" title="앞자리 연락처 입력">
+                                                                <span class="at">-</span>
+                                                                <input type="text" title="뒷자리 연락처 입력">
+                                                            </div>  
+                                                        </div>
+                                                        <!-- //inputGroup -->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <label for="l09">권한신청</label>
+                                                    </th>
+                                                    <td>
+                                                         <!-- radioGroup -->
+                                                         <div class="radioGroup">
+                                                            <ul>
+                                                                <li>
+                                                                    <div class="checkArea">
+                                                                        <!-- checkbox -->
+                                                                        <div class="checkbox type02">
+                                                                            <input type="checkbox" name="chk1" id="l09">
+                                                                            <label for="l09">
+                                                                                <span class="labelTxt">
+                                                                                    사업정보
+                                                                                </span>
+                                                                            </label>
+                                                                        </div>
+                                                                        <!-- //checkbox -->
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="checkArea">
+                                                                        <!-- checkbox -->
+                                                                        <div class="checkbox type02">
+                                                                            <input type="checkbox" name="chk1" id="l10">
+                                                                            <label for="l10">
+                                                                                <span class="labelTxt">
+                                                                                    교육정보
+                                                                                </span>
+                                                                            </label>
+                                                                        </div>
+                                                                        <!-- //checkbox -->
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="checkArea">
+                                                                        <!-- checkbox -->
+                                                                        <div class="checkbox type02">
+                                                                            <input type="checkbox" name="chk1" id="l11">
+                                                                            <label for="l11">
+                                                                                <span class="labelTxt">
+                                                                                    Q&A게시판
+                                                                                </span>
+                                                                            </label>
+                                                                        </div>
+                                                                        <!-- //checkbox -->
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <!-- //radioGroup -->
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- //table -->
+                                </article>
+                                <!-- //tableArea -->
+                            </div>
+                            <!-- //tableWrap -->
+                            
+                            <!-- tableWrap -->
+                            <div class="tableWrap t02">
+                                <h4 class="subTit type03 bullet">
+                                    <strong>추가 정보 설정</strong>
+                                </h4>
+                                <!-- tableArea -->
+                                <article class="tableArea">
+                                    <!-- table -->
+                                    <div class="table type04 tdLeft commonPd">
+                                        <table>
+                                            <caption>추가정보설정 테이블 : 권한등록 신청정보 , 기관명 , 기관명 입력 , 담당부서명 , 기관연락처 , 권한신청</caption>
+                                            <colgroup class="none">
+                                                <col style="width: 170px">
+                                                <col style="width: auto">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <label for="l01-1">신청정보</label>
+                                                    </th>
+                                                    <td>
+                                                        <!-- radioGroup -->
+                                                        <div class="radioGroup">
+                                                            <ul>
+                                                                <li>
+                                                                    <div class="radio option01">
+                                                                        <input type="radio" name="rd04" id="l01-2">
+                                                                        <label for="l01-1">
+                                                                            <span class="labelName">농촌진흥기관 (청,소속기관,지방농총진흥기관)</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="radio option02">
+                                                                        <input type="radio" name="rd04" id="l02-2">
+                                                                        <label for="l02-1">
+                                                                            <span class="labelName">그 외 기관</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <!-- //radioGroup -->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <label for="l05-2">기관명</label>
+                                                    </th>
+                                                    <td>
+                                                        <div class="selectGroup type02">
+                                                            <select id="l05-2" class="disabled" disabled>
+                                                                <option selected>선택</option>
+                                                            </select>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <label for="l06-2">기관명 입력</label>
+                                                    </th>
+                                                    <td>
+                                                        <div class="inputGroup">
+                                                            <input type="text" id="l06-2" placeholder="기관명을 입력해 주세요." title="기관명을 입력해 주세요.">
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <label for="l07-2">담당부서명</label>
+                                                    </th>
+                                                    <td>
+                                                        <div class="inputGroup">
+                                                            <input type="text" id="l07-2" placeholder="담당 부서명을 입력해 주세요." title="담당 부서명을 입력해 주세요.">
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <label for="l08-2">기관연락처</label>
+                                                    </th>
+                                                    <td>
+                                                        <!-- inputGroup -->
+                                                        <div class="inputGroup col">
+                                                            <div class="inputBox">
+                                                                <select id="l08-2">
+                                                                    <option selected>02</option>
+                                                                </select>
+                                                            </div>
+                                                            <span class="at pc">-</span>
+                                                            <div class="inputBox double">
+                                                                <input type="text" title="앞자리 연락처 입력">
+                                                                <span class="at">-</span>
+                                                                <input type="text" title="뒷자리 연락처 입력">
+                                                            </div>  
+                                                        </div>
+                                                        <!-- //inputGroup -->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <label for="l09-1">권한신청</label>
+                                                    </th>
+                                                    <td>
+                                                         <!-- radioGroup -->
+                                                         <div class="radioGroup">
+                                                            <ul>
+                                                                <li>
+                                                                    <div class="checkArea">
+                                                                        <!-- checkbox -->
+                                                                        <div class="checkbox type02">
+                                                                            <input type="checkbox" name="chk1" id="l09-1">
+                                                                            <label for="l09-1">
+                                                                                <span class="labelTxt">
+                                                                                    사업정보
+                                                                                </span>
+                                                                            </label>
+                                                                        </div>
+                                                                        <!-- //checkbox -->
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="checkArea">
+                                                                        <!-- checkbox -->
+                                                                        <div class="checkbox type02">
+                                                                            <input type="checkbox" id="l10-1">
+                                                                            <label for="l10-1">
+                                                                                <span class="labelTxt">
+                                                                                    교육정보
+                                                                                </span>
+                                                                            </label>
+                                                                        </div>
+                                                                        <!-- //checkbox -->
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="checkArea">
+                                                                        <!-- checkbox -->
+                                                                        <div class="checkbox type02">
+                                                                            <input type="checkbox" id="l11-1">
+                                                                            <label for="l11-1">
+                                                                                <span class="labelTxt">
+                                                                                    Q&A게시판
+                                                                                </span>
+                                                                            </label>
+                                                                        </div>
+                                                                        <!-- //checkbox -->
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <!-- //radioGroup -->
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- //table -->
+                                </article>
+                                <!-- //tableArea -->
+                            </div>
+                            <!-- //tableWrap -->
 
                             <div class="btnArea flex jcC cg10">
                                 <button type="button" class="btn grayRect type02">취소</button>

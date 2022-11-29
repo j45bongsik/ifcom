@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+    <div id="wrap" class="sub window">
+        <!--container-->
+        <main id="container">
+            <!-- contents -->
+            <div id="contents">
+                <!-- content -->
+                <div id="content">
+                    <h2 class="hidden">본문 영역</h2>
+                    <!-- sectionTitArea -->
+                    <section class="sectionTitArea">
+                        <!-- inner -->
+                        <div class="inner col">
+                            <h3 class="titPage excel">
+                                <strong>교육정보 엑셀등록</strong>
+                            </h3>
+                            
+                            <!-- inputArea -->
+                            <article class="inputArea">
+                                <!-- inputGroup -->
+                                <div class="inputGroup col">
+                                    <div class="labelArea">
+                                        <strong class="inputLabel">
+                                            양식 내려받기
+                                        </strong>
+                                    </div>
+
+                                    <button type="button" class="btn grayRect full">내려받기</button>
+                                </div>
+                                <!-- //inputGroup -->
+
+                                <!-- inputGroup -->
+                                <div class="inputGroup col">
+                                    <div class="labelArea">
+                                        <strong class="inputLabel">
+                                            <label for="fileSelect01">업로드</label>
+                                        </strong>
+                                    </div>
+
+                                    <!-- row -->
+                                    <div class="row">
+                                        <div class="fileArea type02">
+                                            <input type="file" id="fileSelect01">
+                                            <label for="fileSelect01">파일선택</label>
+                                            <span class="fileName elips">선택된 파일 없음</span>
+                                        </div>
+                                    </div>
+                                    <!-- //row -->
+                                </div>
+                                <!-- //inputGroup -->
+                            </article>
+                            <!-- //inputArea -->
+
+                            <div class="btnArea flex jcC">
+                                <button type="button" class="btn whiteRect">취소</button>
+                                <button type="button" class="btn deepBlueRect">업로드</button>
+                            </div>
+                        </div>
+                        <!-- //inner -->
+                    </section>
+                    <!-- //sectionTitArea -->
+                </div>
+                <!-- content -->
+            </div>
+            <!-- //contents -->
+        </main>
+        <!--//container-->
+    </div>
+</body>
+</html>

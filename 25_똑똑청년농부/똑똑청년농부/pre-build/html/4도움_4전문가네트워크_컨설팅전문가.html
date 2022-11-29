@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html') 
+</head>
+<body>
+    <div id="wrap" class="sub">
+        <!--header-->
+        <header id="header">
+            @@include('include/header.html')
+            <!-- headerArea -->
+            <section class="headerArea subType">
+                <!-- logoArea -->
+                <article class="logoArea">
+                    <h2 class="logo">
+                        <a href="#">
+                            <img src="../images/common/logo-pc.svg" alt="똑똑!청년농부" class="pc">
+                            <img src="../images/common/logo-mo.svg" alt="똑똑!청년농부" class="mo">
+                        </a>
+                    </h2>
+                </article>
+                <!-- //logoArea -->
+
+                <!-- gnb -->
+                <nav id="gnb">
+                    <ul>
+                        <li>
+                            <a href="#">사업</a>
+                            <ul class="dep02">
+                                <li>
+                                    <a href="#" >지원사업</a>
+                                </li>
+                                <li>
+                                    <a href="#">청년정책</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">경영</a>
+                            <ul class="dep02">
+                                <li>
+                                    <a href="#">경영모의계산</a>
+                                </li>
+                                <li>
+                                    <a href="#">맞춤귀농서비스</a>
+                                </li>
+                                <li>
+                                    <a href="#">창업솔루션</a>
+                                </li>
+                                <li>
+                                    <a href="#">기술창업</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">사례</a>
+                            <ul class="dep02">
+                                <li>
+                                    <a href="#">청년농영상</a>
+                                </li>
+                                <li>
+                                    <a href="#">청년농소개</a>
+                                </li>
+                                <li>
+                                    <a href="#">기술우수사례</a>
+                                </li>
+                                <li>
+                                    <a href="#">실패ㆍ극복사례</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">도움</a>
+                            <ul class="dep02">
+                                <li>
+                                    <a href="#">귀농귀촌팁</a>
+                                </li>
+                                <li>
+                                    <a href="#">세금이야기</a>
+                                </li>
+                                <li>
+                                    <a href="#">주요사이트안내</a>
+                                </li>
+                                <li>
+                                    <a href="#">전문가네트워크</a>
+                                </li>
+                                <li>
+                                    <a href="#">공지사항</a>
+                                </li>
+                                <li>
+                                    <a href="#">자주묻는질문</a>
+                                </li>
+                                <li>
+                                    <a href="#">자료실</a>
+                                </li>
+                                <li>
+                                    <a href="#">Q&A</a>
+                                </li>
+                                <li>
+                                    <a href="#">소통공간</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn mobileSubSearch">
+                        <span class="hidden">검색</span>
+                    </button>
+                    <button type="button" class="btn mobileSubSearchClose">
+                        <span class="hidden">검색닫기</span>
+                    </button>
+                    <button type="button" class="btn drawer">
+                        <span class="line line01"></span>
+                        <span class="line line02"></span>
+                        <span class="line line03"></span>
+                    </button>
+                    <!-- mobile -->
+                    <div class="mobile">
+                        <div class="inner">
+                            <!-- moUtil -->
+                            <div class="moUtil">
+                                <article class="btnArea">
+                                    <button type="button" class="btn user mo">
+                                        <em>홍길동</em>
+                                        님
+                                    </button>
+                                    <button type="button" class="btn log logOut mo" title="로그아웃">로그아웃</button>
+                                    <!-- <button type="button" class="btn log mo logIn">로그인</button> -->
+                                </article>
+                            </div>
+                            <!-- //moUtil -->
+                            <ul class="cScroll">
+                                <li>
+                                    <a href="javascript:void(0)" class="dep01">사업</a>
+                                    <ul class="dep02">
+                                        <li>
+                                            <a href="#" >지원사업</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">청년정책</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="dep01">경영</a>
+                                    <ul class="dep02">
+                                        <li>
+                                            <a href="#">경영모의계산</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">맞춤귀농서비스</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">창업솔루션</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">기술창업</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="dep01">사례</a>
+                                    <ul class="dep02">
+                                        <li>
+                                            <a href="#">청년농영상</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">청년농소개</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">기술우수사례</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">실패ㆍ극복사례</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="dep01">도움</a>
+                                    <ul class="dep02">
+                                        <li>
+                                            <a href="#">귀농귀촌팁</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">세금이야기</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">주요사이트안내</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">전문가네트워크</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">공지사항</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">자주묻는질문</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">자료실</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Q&A</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">소통공간</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <!-- // mobile -->
+
+                    <!-- subSearchArea -->
+                    <div class="subSearchArea">
+                        <!-- inner -->
+                        <div class="inner">
+                            <div class="searchArea">
+                                <label for="search">
+                                    <input type="text" placeholder="검색어를 입력하세요." spellcheck="false">
+                                </label>
+                                <button type="button" class="btn search" title="검색하기">검색하기</button>
+                            </div>
+                        </div>
+                        <!-- //inner -->
+                    </div>
+                    <!-- //subSearchArea -->
+                </nav>
+                <!-- //gnb -->
+
+                <!-- utilArea -->
+                <article class="utilArea">
+                    <!-- btnArea -->
+                    <article class="btnArea">
+                        <button type="button" class="btn user">
+                            <em>홍길동</em>
+                            님
+                        </button>
+                        <button type="button" class="btn log logOut">로그아웃</button>
+                        <!-- <button type="button" class="btn log logIn">로그인</button> -->
+                        <button type="button" class="btn subSearch">
+                            <span class="hidden">검색</span>
+                        </button>
+                        <button type="button" class="btn subSearchClose">
+                            <span class="hidden">검색닫기</span>
+                        </button>
+                        <!-- <button type="button" class="btn drawer">
+                            <span class="line line01"></span>
+                            <span class="line line02"></span>
+                            <span class="line line03"></span>
+                        </button> -->
+                        
+                    </article>
+                    <!-- //btnArea -->
+
+                    
+                </article>
+                <!-- //utilArea -->
+            </section>
+            <!-- //headerArea -->
+
+            <!-- breadCrumb -->
+            <div class="breadCrumb">
+                <ul>
+                    <li class="home">
+                        <a href="#">
+                            <span class="hidden">홈</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">도움</a>
+                    </li>
+                    <li class="hasDepth">
+                        <a href="#">전문가네트워크</a>
+                        <button type="button" class="btnDepthMore" aria-expanded="false">
+                            <span class="hidden">메뉴 더보기 펼치기</span>
+                        </button>
+                        <!-- dep2 -->
+                        <ul class="dep2">
+                            <li>
+                                <a href="#">귀농귀촌팁</a>
+                            </li>
+                            <li>
+                                <a href="#">세금이야기</a>
+                            </li>
+                            <li>
+                                <a href="#">주요사이트안내</a>
+                            </li>
+                            <li>
+                                <a href="#">전문가네트워크</a>
+                            </li>
+                            <li>
+                                <a href="#">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="#">자주묻는질문</a>
+                            </li>
+                            <li>
+                                <a href="#">자료실</a>
+                            </li>
+                            <li>
+                                <a href="#">Q&A</a>
+                            </li>
+                            <li>
+                                <a href="#">소통공간</a>
+                            </li>
+                        </ul>
+                        <!-- //dep2 -->
+                    </li>
+                </ul>
+            </div>
+            <!-- //breadCrumb -->
+
+            <!-- subSearchArea -->
+            <div class="subSearchArea">
+                <!-- inner -->
+                <div class="inner">
+                    <div class="searchArea">
+                        <label for="search">
+                            <input type="text" placeholder="검색어를 입력하세요.">
+                        </label>
+                        <button type="button" class="btn search">검색하기</button>
+                    </div>
+                </div>
+                <!-- //inner -->
+            </div>
+            <!-- //subSearchArea -->
+        </header>
+        <!--header-->
+
+        <!--container-->
+        <main id="container">
+            <!-- contents -->
+            <div id="contents">
+                <!-- content -->
+                <div id="content">
+                    <h2 class="hidden">본문 영역</h2>
+                    <!-- sectionTitArea -->
+                    <section class="sectionTitArea">
+                        <!-- inner -->
+                        <div class="inner">
+                            <h3 class="titPage">
+                                <strong>전문가 네트워크</strong>
+                            </h3>
+                        </div>
+                        <!-- //inner -->
+                    </section>
+                    <!-- //sectionTitArea -->
+
+                    <!-- secContainer -->
+                    <article class="secContainer type02">
+                        <!-- inner -->
+                        <div class="inner">
+                            
+                            <!-- lnb -->
+                            <nav id="lnb" class="type02">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="item">품목모임</a>
+                                        <!-- <ul class="dep02">
+
+                                        </ul> -->
+                                    </li>
+                                    <li>
+                                        <a href="#" class="consulting active">컨설팅 전문가</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="agricultural">농업기술센터</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <!-- //lnb -->
+
+                            <!-- secGroup -->
+                            <section class="secGroup right">
+                                <!-- subjectArea -->
+                                <div class="subjectArea type02">
+                                    <h4>컨설팅 전문가</h4>
+                                    <hr>
+                                    <p>똑똑! 청년농부에서는 지역별, 농업 기술별 <br class="mo">컨설팅 전문가 네트워크를 구축하고 있습니다</p>
+                                </div>
+                                <!-- //subjectArea -->
+
+                                <!-- topArea -->
+                                <div class="topArea mt30 type03">
+                                    <!-- resultBox -->
+                                    <div class="resultBox mtA">
+                                        <p class="resTxt">총 <strong>548</strong>명</p>
+                                    </div>
+                                    <!-- //resultBox -->
+
+                                    <!-- rightGroup -->
+                                    <div class="rightGroup type02">
+                                        <div class="selectBox">
+                                            <select name="" id="">
+                                                <option value="">지역 전체</option>
+                                            </select>
+                                            <select name="" id="">
+                                                <option value="">기술 전체</option>
+                                            </select>
+                                        </div>
+                                        <article class="searchArea type02">
+                                            <label for="search">
+                                                <input type="text" placeholder="검색어를 입력하세요">
+                                            </label>
+                                        </article>
+                                    </div>
+                                    <!-- //rightGroup -->
+                                </div>
+                                <!-- //topArea -->
+                                <div class="networkArea type02">
+                                    <div>
+                                        <div class="idPhoto">
+                                                <img src="../images/common/id_pic01.png" alt="">
+                                        </div>
+                                        <div class="idIntro">
+                                                <div class="name">
+                                                    <p class="colorType orange">컨설팅 전문가</p>
+                                                    <p>김은경</p>
+                                                </div>
+                                                <div class="idInfor">
+                                                    <p class="place">제주</p>
+                                                    <p class="art">비대면기술</p>
+                                                    <p class="number">064-760-7527</p>
+                                                </div>
+                                        </div>
+                                        <!-- checkbox -->
+                                        <div class="checkbox type02">
+                                            <input type="checkbox" name="chk1" id="l01" title="체크박스">
+                                            <label for="l01"></label>
+                                        </div>
+                                        <!-- //checkbox -->
+                                    </div>
+                                    <div>
+                                        <div class="idPhoto">
+                                             <img src="../images/common/id_pic02.png" alt="">
+                                        </div>
+                                        <div class="idIntro">
+                                             <div class="name">
+                                                 <p class="colorType orange">컨설팅 전문가</p>
+                                                 <p>양영문</p>
+                                             </div>
+                                             <div class="idInfor">
+                                                 <p class="place">제주</p>
+                                                 <p class="art">생산기술</p>
+                                                 <p class="number">064-760-7523</p>
+                                             </div>
+                                        </div>
+                                        <!-- checkbox -->
+                                        <div class="checkbox type02">
+                                            <input type="checkbox" name="chk1" id="l02" title="체크박스">
+                                            <label for="l02"></label>
+                                        </div>
+                                        <!-- //checkbox -->
+                                    </div>
+                                    <div>
+                                        <div class="idPhoto">
+                                             <img src="../images/common/id_pic03.png" alt="">
+                                        </div>
+                                        <div class="idIntro">
+                                             <div class="name">
+                                                 <p class="colorType orange">컨설팅 전문가</p>
+                                                 <p>고부영</p>
+                                             </div>
+                                             <div class="idInfor">
+                                                 <p class="place">제주</p>
+                                                 <p class="art">생산기술</p>
+                                                 <p class="number">064-760-7535</p>
+                                             </div>
+                                        </div>
+                                        <!-- checkbox -->
+                                        <div class="checkbox type02">
+                                            <input type="checkbox" name="chk1" id="l03" title="체크박스">
+                                            <label for="l03"></label>
+                                        </div>
+                                        <!-- //checkbox -->
+                                    </div>
+                                    <div>
+                                        <div class="idPhoto">
+                                             <img src="../images/common/id_pic04.png" alt="">
+                                        </div>
+                                        <div class="idIntro">
+                                             <div class="name">
+                                                 <p class="colorType orange">컨설팅 전문가</p>
+                                                 <p>최동근</p>
+                                             </div>
+                                             <div class="idInfor">
+                                                 <p class="place">경남</p>
+                                                 <p class="art">생산기술</p>
+                                                 <p class="number">055-254-1745</p>
+                                             </div>
+                                        </div>
+                                        <!-- checkbox -->
+                                        <div class="checkbox type02">
+                                            <input type="checkbox" name="chk1" id="l04" title="체크박스">
+                                            <label for="l04"></label>
+                                        </div>
+                                        <!-- //checkbox -->
+                                    </div>
+                                    <div>
+                                        <div class="idPhoto">
+                                             <img src="../images/common/id_pic05.png" alt="">
+                                        </div>
+                                        <div class="idIntro">
+                                             <div class="name">
+                                                 <p class="colorType orange">컨설팅 전문가</p>
+                                                 <p>문용익</p>
+                                             </div>
+                                             <div class="idInfor">
+                                                 <p class="place">경남</p>
+                                                 <p class="art">생산기술</p>
+                                                 <p class="number">055-254-1747</p>
+                                             </div>
+                                        </div>
+                                        <!-- checkbox -->
+                                        <div class="checkbox type02">
+                                            <input type="checkbox" name="chk1" id="l05" title="체크박스">
+                                            <label for="l05"></label>
+                                        </div>
+                                        <!-- //checkbox -->
+                                    </div>
+                                    <div>
+                                        <div class="idPhoto">
+                                             <img src="../images/common/id_pic06.png" alt="">
+                                        </div>
+                                        <div class="idIntro">
+                                             <div class="name">
+                                                 <p class="colorType orange">컨설팅 전문가</p>
+                                                 <p>최시양</p>
+                                             </div>
+                                             <div class="idInfor">
+                                                 <p class="place">경남</p>
+                                                 <p class="art">경영기술</p>
+                                                 <p class="number">055-254-1748</p>
+                                             </div>
+                                        </div>
+                                        <!-- checkbox -->
+                                        <div class="checkbox type02">
+                                            <input type="checkbox" name="chk1" id="l06" title="체크박스">
+                                            <label for="l06"></label>
+                                        </div>
+                                        <!-- //checkbox -->
+                                    </div>
+                                    <div>
+                                        <div class="idPhoto">
+                                             <img src="../images/common/id_pic07.png" alt="">
+                                        </div>
+                                        <div class="idIntro">
+                                             <div class="name">
+                                                 <p class="colorType orange">컨설팅 전문가</p>
+                                                 <p>서정호</p>
+                                             </div>
+                                             <div class="idInfor">
+                                                 <p class="place">경남</p>
+                                                 <p class="art">경영기술</p>
+                                                 <p class="number">055-254-1757</p>
+                                             </div>
+                                        </div>
+                                        <!-- checkbox -->
+                                        <div class="checkbox type02">
+                                            <input type="checkbox" name="chk1" id="l07" title="체크박스">
+                                            <label for="l07"></label>
+                                        </div>
+                                        <!-- //checkbox -->
+                                    </div>
+                                    <div>
+                                        <div class="idPhoto">
+                                             <img src="../images/common/id_pic08.png" alt="">
+                                        </div>
+                                        <div class="idIntro">
+                                             <div class="name">
+                                                 <p class="colorType orange">컨설팅 전문가</p>
+                                                 <p>이천식</p>
+                                             </div>
+                                             <div class="idInfor">
+                                                 <p class="place">경남</p>
+                                                 <p class="art">경영기술</p>
+                                                 <p class="number">055-254-1753</p>
+                                             </div>
+                                        </div>
+                                        <!-- checkbox -->
+                                        <div class="checkbox type02">
+                                            <input type="checkbox" name="chk1" id="l08" title="체크박스">
+                                            <label for="l08"></label>
+                                        </div>
+                                        <!-- //checkbox -->
+                                    </div>
+                                    <div>
+                                        <div class="idPhoto">
+                                             <img src="../images/common/id_pic08.png" alt="">
+                                        </div>
+                                        <div class="idIntro">
+                                             <div class="name">
+                                                 <p class="colorType orange">컨설팅 전문가</p>
+                                                 <p>이천식</p>
+                                             </div>
+                                             <div class="idInfor">
+                                                 <p class="place">경남</p>
+                                                 <p class="art">경영기술</p>
+                                                 <p class="number">055-254-1753</p>
+                                             </div>
+                                        </div>
+                                        <!-- checkbox -->
+                                        <div class="checkbox type02">
+                                            <input type="checkbox" name="chk1" id="l09" title="체크박스">
+                                            <label for="l09"></label>
+                                        </div>
+                                        <!-- //checkbox -->
+                                    </div>
+                                    <div>
+                                        <div class="idPhoto">
+                                             <img src="../images/common/id_pic07.png" alt="">
+                                        </div>
+                                        <div class="idIntro">
+                                             <div class="name">
+                                                 <p class="colorType orange">컨설팅 전문가</p>
+                                                 <p>서정호</p>
+                                             </div>
+                                             <div class="idInfor">
+                                                 <p class="place">경남</p>
+                                                 <p class="art">경영기술</p>
+                                                 <p class="number">055-254-1757</p>
+                                             </div>
+                                        </div>
+                                        <!-- checkbox -->
+                                        <div class="checkbox type02">
+                                            <input type="checkbox" name="chk1" id="l10" title="체크박스">
+                                            <label for="l10"></label>
+                                        </div>
+                                        <!-- //checkbox -->
+                                    </div>
+                                    <div>
+                                        <div class="idPhoto">
+                                             <img src="../images/common/id_pic08.png" alt="">
+                                        </div>
+                                        <div class="idIntro">
+                                             <div class="name">
+                                                 <p class="colorType orange">컨설팅 전문가</p>
+                                                 <p>이천식</p>
+                                             </div>
+                                             <div class="idInfor">
+                                                 <p class="place">경남</p>
+                                                 <p class="art">경영기술</p>
+                                                 <p class="number">055-254-1753</p>
+                                             </div>
+                                        </div>
+                                        <!-- checkbox -->
+                                        <div class="checkbox type02">
+                                            <input type="checkbox" name="chk1" id="l11" title="체크박스">
+                                            <label for="l11"></label>
+                                        </div>
+                                        <!-- //checkbox -->
+                                    </div>
+                                    <div>
+                                        <div class="idPhoto">
+                                             <img src="../images/common/id_pic08.png" alt="">
+                                        </div>
+                                        <div class="idIntro">
+                                             <div class="name">
+                                                 <p class="colorType orange">컨설팅 전문가</p>
+                                                 <p>이천식</p>
+                                             </div>
+                                             <div class="idInfor">
+                                                 <p class="place">경남</p>
+                                                 <p class="art">경영기술</p>
+                                                 <p class="number">055-254-1753</p>
+                                             </div>
+                                        </div>
+                                        <!-- checkbox -->
+                                        <div class="checkbox type02">
+                                            <input type="checkbox" name="chk1" id="l12" title="체크박스">
+                                            <label for="l12"></label>
+                                        </div>
+                                        <!-- //checkbox -->
+                                    </div>
+                                </div>
+
+                                <div class="btnArea type02">
+                                    <button type="button" class="btn whiteRect">선택 삭제</button>
+                                    <button type="button" class="btn deepBlueRect">등록</button>
+                                </div>
+
+                                <!-- pagination -->
+                                <div class="pagination">
+                                    <button type="button" class="btnFirst">
+                                        <span class="hidden">처음으로</span>
+                                    </button>
+                                    <button type="button" class="btnPrev">
+                                        <span class="hidden">이전으로</span>
+                                    </button>
+                                    <a href="#" class="active">1</a>
+                                    <a href="#">2</a>
+                                    <a href="#">3</a>
+                                    <a href="#">4</a>
+                                    <a href="#">5</a>
+                                    <a href="#" class="pc">6</a>
+                                    <a href="#" class="pc">7</a>
+                                    <a href="#" class="pc">8</a>
+                                    <a href="#" class="pc">9</a>
+                                    <a href="#" class="pc">10</a>
+                                    <button type="button" class="btnNext">
+                                        <span class="hidden">다음으로</span>
+                                    </button>
+                                    <button type="button" class="btnLast">
+                                        <span class="hidden">마지막으로</span>
+                                    </button>
+                                </div>
+                                <!-- //pagination -->
+                            </section>
+                            <!-- //secGroup -->
+                        </div>
+                        <!-- //inner -->
+                    </article>
+                    <!-- //secContainer -->
+                </div>
+                <!-- content -->
+            </div>
+            <!-- //contents -->
+        </main>
+        <!--//container-->
+
+        <button type="button" class="btn switch">
+            <span class="open">QUICK<br />MENU</span>
+            <span class="close"></span>
+        </button>
+        <!-- quickMenu -->
+        <aside class="quickMenu">
+            <ul>
+                <li>
+                    <a href="#" class="busi">지원사업</a>
+                </li>
+                <li>
+                    <a href="#" class="cafe">청창농<br class="pc"/>카페</a>
+                </li>
+                <li>
+                    <a href="#" class="tv">청년농업인<br class="pc"/>TV</a>
+                </li>
+                <li>
+                    <a href="#" class="calc">경영<br class="pc"/>모의계산</a>
+                </li>
+                <li>
+                    <a href="#" class="exhi">제철장터<br class="pc"/>기획전</a>
+                </li>
+            </ul>
+        </aside>
+        <!-- //quickMenu -->
+
+        <!--footer-->
+        <footer id="footer">
+            @@include('include/footer.html')
+        </footer>
+        <!--//footer-->
+    </div>
+</body>
+</html>

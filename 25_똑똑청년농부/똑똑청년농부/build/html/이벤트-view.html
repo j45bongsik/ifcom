@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="똑똑청년농부">
+<meta name="description" content="똑똑청년농부">
+
+<!-- 오픈그래프 이미지의 경우 최소한 600 x 315 px은 되어야 하며, 1200 x 630 px을 권장함 -->
+<meta property="og:image" content="">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:url" content="">
+<!-- 다음의 태그는 필수는 아니지만, 포함하는 것을 추천함 -->
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<link rel="stylesheet" href="../lib/swiper/css/swiper.css">
+<link rel="stylesheet" href="../lib/jquery-ui.css">
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/mobile.css">
+<script src="../lib/jquery-1.12.4.js"></script>
+<script src="../lib/jquery-ui.js"></script>
+<script src="../lib/swiper/js/swiper.js"></script>
+<script src="../js/ui.js"></script>
+<script src="../js/swiper.js"></script>
+
+<title>Title</title>
+
+
+</head>
+
+<body>
+    <div id="wrap" class="sub">
+        <!--header-->
+        <header id="header">
+            <!--accNav-->
+<div id="accNav">
+    <a href="#container">본문 바로가기</a>
+</div>
+<!--//accNav-->
+
+
+
+            <!-- headerArea -->
+            <section class="headerArea subType">
+                <!-- logoArea -->
+                <article class="logoArea">
+                    <h2 class="logo">
+                        <a href="#">
+                            <img src="../images/common/logo-pc.svg" alt="똑똑!청년농부" class="pc">
+                            <img src="../images/common/logo-mo.svg" alt="똑똑!청년농부" class="mo">
+                        </a>
+                    </h2>
+                </article>
+                <!-- //logoArea -->
+
+                <!-- gnb -->
+                <nav id="gnb">
+                    <ul>
+                        <li>
+                            <a href="#">사업</a>
+                            <ul class="dep02">
+                                <li>
+                                    <a href="#">지원사업</a>
+                                </li>
+                                <li>
+                                    <a href="#">청년정책</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">경영</a>
+                            <ul class="dep02">
+                                <li>
+                                    <a href="#">경영모의계산</a>
+                                </li>
+                                <li>
+                                    <a href="#">맞춤귀농서비스</a>
+                                </li>
+                                <li>
+                                    <a href="#">창업솔루션</a>
+                                </li>
+                                <li>
+                                    <a href="#">기술창업</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">사례</a>
+                            <ul class="dep02">
+                                <li>
+                                    <a href="#">청년농영상</a>
+                                </li>
+                                <li>
+                                    <a href="#">청년농소개</a>
+                                </li>
+                                <li>
+                                    <a href="#">기술우수사례</a>
+                                </li>
+                                <li>
+                                    <a href="#">실패ㆍ극복사례</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">도움</a>
+                            <ul class="dep02">
+                                <li>
+                                    <a href="#">귀농귀촌팁</a>
+                                </li>
+                                <li>
+                                    <a href="#">세금이야기</a>
+                                </li>
+                                <li>
+                                    <a href="#">주요사이트안내</a>
+                                </li>
+                                <li>
+                                    <a href="#">전문가네트워크</a>
+                                </li>
+                                <li>
+                                    <a href="#">공지사항</a>
+                                </li>
+                                <li>
+                                    <a href="#">자주묻는질문</a>
+                                </li>
+                                <li>
+                                    <a href="#">자료실</a>
+                                </li>
+                                <li>
+                                    <a href="#">Q&A</a>
+                                </li>
+                                <li>
+                                    <a href="#">소통공간</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn mobileSubSearch">
+                        <span class="hidden">검색</span>
+                    </button>
+                    <button type="button" class="btn mobileSubSearchClose">
+                        <span class="hidden">검색닫기</span>
+                    </button>
+                    <button type="button" class="btn drawer">
+                        <span class="line line01"></span>
+                        <span class="line line02"></span>
+                        <span class="line line03"></span>
+                    </button>
+                    <!-- mobile -->
+                    <div class="mobile">
+                        <div class="inner">
+                            <!-- moUtil -->
+                            <div class="moUtil">
+                                <article class="btnArea">
+                                    <button type="button" class="btn user mo">
+                                        <em>홍길동</em>
+                                        님
+                                    </button>
+                                    <button type="button" class="btn log logOut mo" title="로그아웃">로그아웃</button>
+                                    <!-- <button type="button" class="btn log mo logIn">로그인</button> -->
+                                </article>
+                            </div>
+                            <!-- //moUtil -->
+                            <ul class="cScroll">
+                                <li>
+                                    <a href="javascript:void(0)" class="dep01">사업</a>
+                                    <ul class="dep02">
+                                        <li>
+                                            <a href="#">지원사업</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">청년정책</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="dep01">경영</a>
+                                    <ul class="dep02">
+                                        <li>
+                                            <a href="#">경영모의계산</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">맞춤귀농서비스</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">창업솔루션</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">기술창업</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="dep01">사례</a>
+                                    <ul class="dep02">
+                                        <li>
+                                            <a href="#">청년농영상</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">청년농소개</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">기술우수사례</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">실패ㆍ극복사례</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="dep01">도움</a>
+                                    <ul class="dep02">
+                                        <li>
+                                            <a href="#">귀농귀촌팁</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">세금이야기</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">주요사이트안내</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">전문가네트워크</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">공지사항</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">자주묻는질문</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">자료실</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Q&A</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">소통공간</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!-- // mobile -->
+                    <!-- subSearchArea -->
+                    <div class="subSearchArea">
+                        <!-- inner -->
+                        <div class="inner">
+                            <div class="searchArea">
+                                <label for="search">
+                                    <input type="text" placeholder="검색어를 입력하세요." spellcheck="false">
+                                </label>
+                                <button type="button" class="btn search" title="검색하기">검색하기</button>
+                            </div>
+                        </div>
+                        <!-- //inner -->
+                    </div>
+                    <!-- //subSearchArea -->
+                </nav>
+                <!-- //gnb -->
+
+                <!-- utilArea -->
+                <article class="utilArea">
+                    <!-- btnArea -->
+                    <article class="btnArea">
+                        <button type="button" class="btn user">
+                            <em>홍길동</em>
+                            님
+                        </button>
+                        <button type="button" class="btn log logOut">로그아웃</button>
+                        <!-- <button type="button" class="btn log logIn">로그인</button> -->
+                        <button type="button" class="btn subSearch">
+                            <span class="hidden">검색</span>
+                        </button>
+                        <button type="button" class="btn subSearchClose">
+                            <span class="hidden">검색닫기</span>
+                        </button>
+                        <!-- <button type="button" class="btn drawer">
+                            <span class="line line01"></span>
+                            <span class="line line02"></span>
+                            <span class="line line03"></span>
+                        </button> -->
+
+                    </article>
+                    <!-- //btnArea -->
+
+
+                </article>
+                <!-- //utilArea -->
+            </section>
+            <!-- //headerArea -->
+
+            <!-- breadCrumb -->
+            <div class="breadCrumb">
+                <ul>
+                    <li class="home">
+                        <a href="#">
+                            <span class="hidden">홈</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">이벤트</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- //breadCrumb -->
+
+            <!-- subSearchArea -->
+            <div class="subSearchArea">
+                <!-- inner -->
+                <div class="inner">
+                    <div class="searchArea">
+                        <label for="search">
+                            <input type="text" placeholder="검색어를 입력하세요.">
+                        </label>
+                        <button type="button" class="btn search">검색하기</button>
+                    </div>
+                </div>
+                <!-- //inner -->
+            </div>
+            <!-- //subSearchArea -->
+        </header>
+        <!--header-->
+
+        <!--container-->
+        <main id="container">
+            <!-- contents -->
+            <div id="contents">
+                <!-- content -->
+                <div id="content">
+                    <h2 class="hidden">본문 영역</h2>
+                    <!-- sectionTitArea -->
+                    <section class="sectionTitArea">
+                        <!-- inner -->
+                        <div class="inner">
+                            <h3 class="titPage">
+                                <strong>이벤트</strong>
+                            </h3>
+                        </div>
+                        <!-- //inner -->
+                    </section>
+                    <!-- //sectionTitArea -->
+
+                    <!-- secContainer -->
+                    <article class="secContainer type02">
+                        <!-- inner -->
+                        <div class="inner">
+
+                            <!-- secGroup -->
+                            <section class="secGroup right">
+                                
+                                <!-- cardContainer -->
+                                <div class="cardContainer active">
+
+                                    <!-- viewArea -->
+                                    <article class="viewArea">
+                                        <!-- viewHead -->
+                                        <div class="viewHead">
+                                            <!-- titGroup -->
+                                            <div class="titGroup">
+                                                <span class="nMing card">D- 12</span>
+                                                <!-- <span class="nMing video">종료</span> -->
+                                                <!-- <span class="nMing img">당첨자발표</span> -->
+                                                <h4 class="title type05 elips02">
+                                                    똑똑!청년농부 댓글참여 이벤트 똑똑!청년농부 댓글참여 이벤트똑똑!청년농부 댓글참여 이벤트 똑똑!청년농부 댓글참여 이벤트똑똑!청년농부 댓글참여 이벤트 똑똑!청년농부 댓글참여 이벤트똑똑!청년농부 댓글참여 이벤트 똑똑!청년농부 댓글참여 이벤트똑똑!청년농부 댓글참여 이벤트 똑똑!청년농부 댓글참여 이벤트똑똑!청년농부 댓글참여 이벤트 똑똑!청년농부 댓글참여 이벤트똑똑!청년농부 댓글참여 이벤트 똑똑!청년농부 댓글참여 이벤트똑똑!청년농부 댓글참여 이벤트 똑똑!청년농부 댓글참여 이벤트
+                                                </h4>
+                                            </div>
+                                            <!-- //titGroup -->
+                                            <!-- info -->
+                                            <div class="info">
+                                                <ul>
+                                                    <li>
+                                                        <p>등록일시 <span>2022-12-21 19:50</span></p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- //info -->
+                                        </div>
+                                        <!-- //viewHead -->
+                                        <!-- viewBody -->
+                                        <div class="viewBody">
+                                            <!-- cont -->
+                                            <div class="cont">
+                                                <p>
+                                                    똑똑!청년농부 댓글참여 이벤트 똑똑!청년농부 댓글참여 이벤트<br />
+                                                    똑똑!청년농부 댓글참여 이벤트 똑똑!청년농부 댓글참여 이벤트
+                                                    <br /> <br />
+                                                    <img src="../images/common/img-boardview01.png" alt="게시글 이미지">
+                                                </p>
+                                            </div>
+                                            <!-- //cont -->
+
+                                        </div>
+                                        <!-- //viewBody -->
+
+                                        <!-- pageMove -->
+                                        <article class="pageMove">
+                                            <a href="#" class="prev" title="이전글">
+                                                <span class="move">이전 글</span>
+                                                <span class="desc elips">2022년 최고품질 농산물 생산단지 선정 계획 계획 계획</span>
+                                            </a>
+                                            <a href="#" class="next disabled" title="이전글">
+                                                <span class="move">다음 글</span>
+                                                <span class="desc elips">다음글이 없습니다.</span>
+                                            </a>
+                                        </article>
+                                        <!-- //pageMove -->
+
+                                    </article>
+                                    <!-- //viewArea -->
+
+                                    <!-- btnArea -->
+                                    <div class="btnArea flex jcC">
+                                        <button type="button" class="btn grayRect">목록</button>
+                                        <div class="inner">
+                                            <button type="button" class="btn whiteRect">수정</button>
+                                            <button type="button" class="btn whiteRect">삭제</button>
+                                            <button type="button" class="btn deepBlueRect">등록</button>
+                                        </div>
+                                    </div>
+                                    <!-- //btnArea -->
+                                    
+                                </div>
+                                <!-- //cardContainer -->
+
+                            </section>
+                            <!-- //secGroup -->
+                            
+                        </div>
+                        <!-- //inner -->
+                    </article>
+                    <!-- //secContainer -->
+                </div>
+                <!-- content -->
+            </div>
+            <!-- //contents -->
+        </main>
+        <!--//container-->
+
+        <button type="button" class="btn switch">
+            <span class="open">QUICK<br />MENU</span>
+            <span class="close"></span>
+        </button>
+        <!-- quickMenu -->
+        <aside class="quickMenu">
+            <ul>
+                <li>
+                    <a href="#" class="busi">지원사업</a>
+                </li>
+                <li>
+                    <a href="#" class="cafe">청창농<br class="pc" />카페</a>
+                </li>
+                <li>
+                    <a href="#" class="tv">청년농업인<br class="pc" />TV</a>
+                </li>
+                <li>
+                    <a href="#" class="calc">경영<br class="pc" />모의계산</a>
+                </li>
+                <li>
+                    <a href="#" class="exhi">제철장터<br class="pc" />기획전</a>
+                </li>
+            </ul>
+        </aside>
+        <!-- //quickMenu -->
+
+        <!--footer-->
+        <footer id="footer">
+            <!-- inner -->
+<div class="inner">
+    <!-- box -->
+    <div class="box type02">
+        <!-- ciArea -->
+        <article class="ciArea">
+            <h2 class="logo">
+                <a href="#">
+                    <img src="../images/common/logo-foot01-pc.svg" alt="농촌진흥청" class="pc">
+                    <img src="../images/common/logo-foot01-mo.svg" alt="농촌진흥청" class="mo">
+                </a>
+            </h2>
+            <h2 class="logo">
+                <a href="#">
+                    <img src="../images/common/logo-foot02-pc.svg" alt="똑똑!청년농부" class="pc">
+                    <img src="../images/common/logo-foot02-mo.svg" alt="똑똑!청년농부" class="mo">
+                </a>
+            </h2>
+        </article>
+        <!-- //ciArea -->
+
+        <!-- policyArea -->
+        <article class="policyArea">
+            <ul>
+                <li>
+                    <a href="#">개선의견요청</a>
+                </li>
+                <li>
+                    <a href="#">서비스이용안내</a>
+                </li>
+                <li>
+                    <a href="#">공공데이터신청</a>
+                </li>
+                <li>
+                    <a href="#">개인정보처리방침</a>
+                </li>
+                <li>
+                    <a href="#">사이트맵</a>
+                </li>
+            </ul>
+        </article>
+        <!-- //policyArea -->
+    </div>
+    <!-- //box -->
+    <!-- box -->
+    <div class="box">
+        <!-- addressArea -->
+        <div class="addressArea">
+            <address>54875 전라북도 전주시 덕진구 농생명로 300</address>
+            <p class="call">대표전화 063-238-1000 (월~금 9:00~18:00, 공휴일 제외, 야간 0005~7) </p>
+            <p class="call">팩스 063-238-1766 (야간1785)</p>
+        </div>
+        <!-- addressArea -->
+        <p class="copy">COPYRIGHT ©. ALL RIGHTS RESERVED</p>
+    </div>
+    <!-- //box -->
+</div>
+<!-- //inner -->
+        </footer>
+        <!--//footer-->
+
+    </div>
+</body>
+
+</html>
